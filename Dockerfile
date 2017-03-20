@@ -5,4 +5,5 @@ RUN apt-get update && apt-get install -y \
     g++ \
     gcc \
     make \
-    qt5-default
+    qt5-default \
+    doxygen

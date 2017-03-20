@@ -7,3 +7,4 @@ Image configuration:
 - Qt 5.6.1
 - GCC/G++ 6.1.1
 - CMake 3.5.2
+- Doxygen 1.8.11
