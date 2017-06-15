@@ -4,7 +4,7 @@ Dockerfile for creating images for building and automated testing of Qt 5 applic
 
 Image configuration:
 - Ubuntu Yakkety (16.10)
-- Qt 5.6.1
+- Qt 5.6.2
 - GCC/G++ 6.1.1
 - CMake 3.5.2
 - Doxygen 1.8.11
