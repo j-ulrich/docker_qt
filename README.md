@@ -1,10 +1,10 @@
-# Dockerfile: Ubuntu Yakkety, CMake, Qt 5.6
+# Dockerfile: Ubuntu Yakkety, Zesty, Qt 5.7
 
 Dockerfile for creating images for building and automated testing of Qt 5 applications.
 
 Image configuration:
-- Ubuntu Yakkety (16.10)
-- Qt 5.6.2
-- GCC/G++ 6.1.1
-- CMake 3.5.2
-- Doxygen 1.8.11
+- Ubuntu Zesty (17.04)
+- Qt 5.7.1
+- GCC/G++ 6.3.0
+- CMake 3.7.2
+- Doxygen 1.8.13
