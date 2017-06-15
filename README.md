@@ -1,4 +1,4 @@
-# Dockerfile: Ubuntu Yakkety, Zesty, Qt 5.7
+# Dockerfile: Ubuntu Zesty, CMake, Qt 5.7
 
 Dockerfile for creating images for building and automated testing of Qt 5 applications.
 
