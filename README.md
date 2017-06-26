@@ -8,3 +8,4 @@ Image configuration:
 - GCC/G++ 6.3.0
 - CMake 3.7.2
 - Doxygen 1.8.13
+- gcovr 3.3

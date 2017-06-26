@@ -6,4 +6,5 @@ RUN apt-get update && apt-get install -y \
     gcc \
     make \
     doxygen \
-    qt5-default
+    qt5-default \
+    gcovr
