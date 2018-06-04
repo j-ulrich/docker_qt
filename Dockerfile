@@ -8,6 +8,9 @@ RUN apt-get update && apt-get install -y \
     doxygen \
     qt5-default \
     gcovr \
+    openjdk-8-jre
+
+COPY sonar-scanner /opt/sonar-scanner/
 
 COPY qt5-tags/activeqt.tags              /usr/share/qt5/doc/activeqt/activeqt.tags
 COPY qt5-tags/qdoc.tags                  /usr/share/qt5/doc/qdoc/qdoc.tags
