@@ -188,6 +188,10 @@
             <anchor>Error-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="UnsupportedDiscoveryMethod">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member name="UnknownError">
             <anchor>Error-enum</anchor>
             <arglist></arglist>
@@ -203,6 +207,29 @@
         </member>
         <member name="LimitedInquiry">
             <anchor>InquiryType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>DiscoveryMethod</name>
+            <anchor>DiscoveryMethod-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoMethod">
+            <anchor>DiscoveryMethod-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ClassicMethod">
+            <anchor>DiscoveryMethod-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="LowEnergyMethod">
+            <anchor>DiscoveryMethod-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QBluetoothDeviceDiscoveryAgent::DiscoveryMethod">
+            <name>DiscoveryMethods</name>
+            <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
+            <anchor>DiscoveryMethod-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -270,10 +297,38 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setLowEnergyDiscoveryTimeout</name>
+            <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
+            <anchor>setLowEnergyDiscoveryTimeout</anchor>
+            <arglist>(int timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>lowEnergyDiscoveryTimeout</name>
+            <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
+            <anchor>lowEnergyDiscoveryTimeout</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>DiscoveryMethods</type>
+            <name>supportedDiscoveryMethods</name>
+            <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
+            <anchor>supportedDiscoveryMethods</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>start</name>
             <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
             <anchor>start</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>start</name>
+            <anchorfile>qbluetoothdevicediscoveryagent.html</anchorfile>
+            <anchor>start-1</anchor>
+            <arglist>(DiscoveryMethods methods)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -4655,6 +4710,13 @@
             <name>remoteAddress</name>
             <anchorfile>qlowenergycontroller.html</anchorfile>
             <anchor>remoteAddress</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBluetoothUuid</type>
+            <name>remoteDeviceUuid</name>
+            <anchorfile>qlowenergycontroller.html</anchorfile>
+            <anchor>remoteDeviceUuid</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

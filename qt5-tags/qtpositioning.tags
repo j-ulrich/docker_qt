@@ -616,6 +616,13 @@
             <arglist>(double degreesLatitude, double degreesLongitude) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>extendCircle</name>
+            <anchorfile>qgeocircle.html</anchorfile>
+            <anchor>extendCircle</anchor>
+            <arglist>(const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>toString</name>
             <anchorfile>qgeocircle.html</anchorfile>
@@ -933,6 +940,184 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QGeoPath</name>
+        <filename>qgeopath.html</filename>
+        <base>QGeoShape</base>
+        <member kind="property" type="QList&lt;QGeoCoordinate&gt;">
+            <name>path</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>path-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="qreal">
+            <name>width</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>width-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGeoPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>QGeoPath</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGeoPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>QGeoPath-1</anchor>
+            <arglist>(const QList&lt;QGeoCoordinate&gt; &amp;path, const qreal &amp;width)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGeoPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>QGeoPath-2</anchor>
+            <arglist>(const QGeoPath &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGeoPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>QGeoPath-3</anchor>
+            <arglist>(const QGeoShape &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QGeoPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>dtor.QGeoPath</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGeoPath &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QGeoPath &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>operator-eq-eq</anchor>
+            <arglist>(const QGeoPath &amp;other) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QGeoPath &amp;other) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPath</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>path-prop</anchor>
+            <arglist>(const QList&lt;QGeoCoordinate&gt; &amp;path)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QList&lt;QGeoCoordinate&gt; &amp;</type>
+            <name>path</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>path</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setWidth</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>width-prop</anchor>
+            <arglist>(const qreal &amp;width)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>width</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>width</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>translate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>translate</anchor>
+            <arglist>(double degreesLatitude, double degreesLongitude)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGeoPath</type>
+            <name>translated</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>translated</anchor>
+            <arglist>(double degreesLatitude, double degreesLongitude) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>length</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>length</anchor>
+            <arglist>(int indexFrom, int indexTo) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>addCoordinate</anchor>
+            <arglist>(const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>insertCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>insertCoordinate</anchor>
+            <arglist>(int index, const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>replaceCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>replaceCoordinate</anchor>
+            <arglist>(int index, const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGeoCoordinate</type>
+            <name>coordinateAt</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>coordinateAt</anchor>
+            <arglist>(int index) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>containsCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>containsCoordinate</anchor>
+            <arglist>(const QGeoCoordinate &amp;coordinate) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>removeCoordinate</anchor>
+            <arglist>(const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeCoordinate</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>removeCoordinate-1</anchor>
+            <arglist>(int index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>toString</name>
+            <anchorfile>qgeopath.html</anchorfile>
+            <anchor>toString</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QGeoPositionInfo</name>
         <filename>qgeopositioninfo.html</filename>
         <member kind="enum">
@@ -984,6 +1169,13 @@
             <anchorfile>qgeopositioninfo.html</anchorfile>
             <anchor>QGeoPositionInfo-2</anchor>
             <arglist>(const QGeoPositionInfo &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGeoPositionInfo</name>
+            <anchorfile>qgeopositioninfo.html</anchorfile>
+            <anchor>QGeoPositionInfo-3</anchor>
+            <arglist>(QGeoPositionInfoPrivate &amp;dd)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1563,6 +1755,13 @@
             <arglist>(double degreesLatitude, double degreesLongitude) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>extendRectangle</name>
+            <anchorfile>qgeorectangle.html</anchorfile>
+            <anchor>extendRectangle</anchor>
+            <arglist>(const QGeoCoordinate &amp;coordinate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoRectangle</type>
             <name>united</name>
             <anchorfile>qgeorectangle.html</anchorfile>
@@ -1953,6 +2152,10 @@
             <anchor>ShapeType-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="PathType">
+            <anchor>ShapeType-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>ShapeType</type>
             <name>type</name>
@@ -1982,6 +2185,13 @@
             <arglist>(const QGeoCoordinate &amp;coordinate) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGeoRectangle</type>
+            <name>boundingGeoRectangle</name>
+            <anchorfile>qgeoshape.html</anchorfile>
+            <anchor>boundingGeoRectangle</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoCoordinate</type>
             <name>center</name>
             <anchorfile>qgeoshape.html</anchorfile>
@@ -1991,7 +2201,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>extendShape</name>
-            <anchorfile>qgeoshape.html</anchorfile>
+            <anchorfile>qgeoshape-obsolete.html</anchorfile>
             <anchor>extendShape</anchor>
             <arglist>(const QGeoCoordinate &amp;coordinate)</arglist>
         </member>

@@ -245,6 +245,123 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QHstsPolicy</name>
+        <filename>qhstspolicy.html</filename>
+        <member kind="enum">
+            <name>PolicyFlag</name>
+            <anchor>PolicyFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="IncludeSubDomains">
+            <anchor>PolicyFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QHstsPolicy::PolicyFlag">
+            <name>PolicyFlags</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>PolicyFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHstsPolicy</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>QHstsPolicy</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHstsPolicy</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>QHstsPolicy-1</anchor>
+            <arglist>(const QDateTime &amp;expiry, PolicyFlags flags, const QString &amp;host, QUrl::ParsingMode mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHstsPolicy</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>QHstsPolicy-2</anchor>
+            <arglist>(const QHstsPolicy &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHstsPolicy &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QHstsPolicy &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHstsPolicy &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QHstsPolicy &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QHstsPolicy</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>dtor.QHstsPolicy</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QHstsPolicy &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHost</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>setHost</anchor>
+            <arglist>(const QString &amp;host, QUrl::ParsingMode mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>host</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>host</anchor>
+            <arglist>(QUrl::ComponentFormattingOptions options) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setExpiry</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>setExpiry</anchor>
+            <arglist>(const QDateTime &amp;expiry)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDateTime</type>
+            <name>expiry</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>expiry</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setIncludesSubDomains</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>setIncludesSubDomains</anchor>
+            <arglist>(bool include)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>includesSubDomains</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>includesSubDomains</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isExpired</name>
+            <anchorfile>qhstspolicy.html</anchorfile>
+            <anchor>isExpired</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QHttpPart</name>
         <filename>qhttppart.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -496,6 +613,13 @@
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearConnectionCache</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>clearConnectionCache</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkProxy</type>
             <name>proxy</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
@@ -552,6 +676,34 @@
             <arglist>(QNetworkCookieJar *cookieJar)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setStrictTransportSecurityEnabled</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>setStrictTransportSecurityEnabled</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isStrictTransportSecurityEnabled</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>isStrictTransportSecurityEnabled</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addStrictTransportSecurityHosts</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>addStrictTransportSecurityHosts</anchor>
+            <arglist>(const QVector&lt;QHstsPolicy&gt; &amp;knownHosts)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVector&lt;QHstsPolicy&gt;</type>
+            <name>strictTransportSecurityHosts</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>strictTransportSecurityHosts</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
             <name>head</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
@@ -581,13 +733,6 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
-            <name>post</name>
-            <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>post-2</anchor>
-            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QNetworkReply *</type>
             <name>put</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>put</anchor>
@@ -602,13 +747,6 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
-            <name>put</name>
-            <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>put-2</anchor>
-            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QNetworkReply *</type>
             <name>deleteResource</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>deleteResource</anchor>
@@ -620,6 +758,34 @@
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>sendCustomRequest</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;verb, QIODevice *data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>sendCustomRequest</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>sendCustomRequest-1</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;verb, const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>post-2</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>put-2</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>sendCustomRequest</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>sendCustomRequest-2</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;verb, QHttpMultiPart *multiPart)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -669,6 +835,20 @@
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>connectToHost</anchor>
             <arglist>(const QString &amp;hostName, quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRedirectPolicy</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>setRedirectPolicy</anchor>
+            <arglist>(QNetworkRequest::RedirectPolicy policy)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest::RedirectPolicy</type>
+            <name>redirectPolicy</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>redirectPolicy</anchor>
+            <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -724,7 +904,7 @@
             <name>createRequest</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>createRequest</anchor>
-            <arglist>(Operation op, const QNetworkRequest &amp;req, QIODevice *outgoingData)</arglist>
+            <arglist>(Operation op, const QNetworkRequest &amp;originalReq, QIODevice *outgoingData)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>QStringList</type>
@@ -1488,6 +1668,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>redirectAllowed</name>
+            <anchorfile>qnetworkreply.html</anchorfile>
+            <anchor>redirectAllowed</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>uploadProgress</name>
             <anchorfile>qnetworkreply.html</anchorfile>
             <anchor>uploadProgress</anchor>
@@ -1722,6 +1909,22 @@
             <anchor>Attribute-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="HTTP2AllowedAttribute">
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="HTTP2WasUsedAttribute">
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OriginalContentLengthAttribute">
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RedirectPolicyAttribute">
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member name="User">
             <anchor>Attribute-enum</anchor>
             <arglist></arglist>
@@ -1779,6 +1982,27 @@
         </member>
         <member name="LowPriority">
             <anchor>Priority-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>RedirectPolicy</name>
+            <anchor>RedirectPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ManualRedirectPolicy">
+            <anchor>RedirectPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoLessSafeRedirectPolicy">
+            <anchor>RedirectPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="SameOriginRedirectPolicy">
+            <anchor>RedirectPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UserVerifiedRedirectPolicy">
+            <anchor>RedirectPolicy-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2360,6 +2584,20 @@
             <anchorfile>qnetworkconfiguration.html</anchorfile>
             <anchor>isValid</anchor>
             <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>connectTimeout</name>
+            <anchorfile>qnetworkconfiguration.html</anchorfile>
+            <anchor>connectTimeout</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>setConnectTimeout</name>
+            <anchorfile>qnetworkconfiguration.html</anchorfile>
+            <anchor>setConnectTimeout</anchor>
+            <arglist>(int timeout)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -3450,6 +3688,41 @@
             <anchor>SpecialAddress-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enum">
+            <name>ConversionModeFlag</name>
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ConvertV4MappedToIPv4">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ConvertV4CompatToIPv4">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ConvertUnspecifiedAddress">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ConvertLocalHost">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="TolerantConversion">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="StrictConversion">
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QHostAddress::ConversionModeFlag">
+            <name>ConversionMode</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>ConversionModeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHostAddress</name>
@@ -3542,6 +3815,13 @@
             <arglist>(const QString &amp;address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHostAddress &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>operator-eq-3</anchor>
+            <arglist>(SpecialAddress address)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swap</name>
             <anchorfile>qhostaddress.html</anchorfile>
@@ -3591,6 +3871,13 @@
             <arglist>(const QString &amp;address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAddress</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>setAddress-6</anchor>
+            <arglist>(SpecialAddress address)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAbstractSocket::NetworkLayerProtocol</type>
             <name>protocol</name>
             <anchorfile>qhostaddress.html</anchorfile>
@@ -3638,6 +3925,13 @@
             <anchorfile>qhostaddress.html</anchorfile>
             <anchor>setScopeId</anchor>
             <arglist>(const QString &amp;id)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isEqual</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>isEqual</anchor>
+            <arglist>(const QHostAddress &amp;other, ConversionMode mode) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -3869,6 +4163,199 @@
             <anchorfile>qhostinfo.html</anchorfile>
             <anchor>localDomainName</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>int</type>
+            <name>lookupHost</name>
+            <anchorfile>qhostinfo.html</anchorfile>
+            <anchor>lookupHost-1</anchor>
+            <arglist>(const QString &amp;name, const QObject *receiver, PointerToMemberFunction function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>int</type>
+            <name>lookupHost</name>
+            <anchorfile>qhostinfo.html</anchorfile>
+            <anchor>lookupHost-2</anchor>
+            <arglist>(const QString &amp;name, Functor functor)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>int</type>
+            <name>lookupHost</name>
+            <anchorfile>qhostinfo.html</anchorfile>
+            <anchor>lookupHost-3</anchor>
+            <arglist>(const QString &amp;name, const QObject *context, Functor functor)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QNetworkDatagram</name>
+        <filename>qnetworkdatagram.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkDatagram</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>QNetworkDatagram</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkDatagram</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>QNetworkDatagram-1</anchor>
+            <arglist>(const QByteArray &amp;data, const QHostAddress &amp;destinationAddress, quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkDatagram</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>QNetworkDatagram-2</anchor>
+            <arglist>(const QNetworkDatagram &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkDatagram &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QNetworkDatagram &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QNetworkDatagram</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>dtor.QNetworkDatagram</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkDatagram</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>QNetworkDatagram-3</anchor>
+            <arglist>(QNetworkDatagram &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkDatagram &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QNetworkDatagram &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QNetworkDatagram &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clear</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>clear</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isNull</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>isNull</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>uint</type>
+            <name>interfaceIndex</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>interfaceIndex</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInterfaceIndex</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>setInterfaceIndex</anchor>
+            <arglist>(uint index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHostAddress</type>
+            <name>senderAddress</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>senderAddress</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHostAddress</type>
+            <name>destinationAddress</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>destinationAddress</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>senderPort</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>senderPort</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>destinationPort</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>destinationPort</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSender</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>setSender</anchor>
+            <arglist>(const QHostAddress &amp;address, quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDestination</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>setDestination</anchor>
+            <arglist>(const QHostAddress &amp;address, quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>hopLimit</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>hopLimit</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHopLimit</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>setHopLimit</anchor>
+            <arglist>(int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>data</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>data</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setData</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>setData</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkDatagram</type>
+            <name>makeReply</name>
+            <anchorfile>qnetworkdatagram.html</anchorfile>
+            <anchor>makeReply</anchor>
+            <arglist>(const QByteArray &amp;data) const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -4175,11 +4662,19 @@
             <anchor>QueryType-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="SctpSocket">
+            <anchor>QueryType-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member name="TcpServer">
             <anchor>QueryType-enum</anchor>
             <arglist></arglist>
         </member>
         <member name="UrlRequest">
+            <anchor>QueryType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="SctpServer">
             <anchor>QueryType-enum</anchor>
             <arglist></arglist>
         </member>
@@ -4437,6 +4932,14 @@
             <anchor>Capability-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="SctpTunnelingCapability">
+            <anchor>Capability-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="SctpListeningCapability">
+            <anchor>Capability-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="typedef" type="QNetworkProxy::Capability">
             <name>Capabilities</name>
             <anchorfile>qnetworkproxy.html</anchorfile>
@@ -4686,6 +5189,13 @@
             <arglist>(const QNetworkProxyQuery &amp;query) = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>bool</type>
+            <name>usesSystemConfiguration</name>
+            <anchorfile>qnetworkproxyfactory.html</anchorfile>
+            <anchor>usesSystemConfiguration</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
             <type>void</type>
             <name>setUseSystemConfiguration</name>
             <anchorfile>qnetworkproxyfactory.html</anchorfile>
@@ -4728,6 +5238,10 @@
             <arglist></arglist>
         </member>
         <member name="UdpSocket">
+            <anchor>SocketType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="SctpSocket">
             <anchor>SocketType-enum</anchor>
             <arglist></arglist>
         </member>
@@ -5844,6 +6358,135 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QSctpServer</name>
+        <filename>qsctpserver.html</filename>
+        <base>QTcpServer</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSctpServer</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>QSctpServer</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSctpServer</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>dtor.QSctpServer</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMaximumChannelCount</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>setMaximumChannelCount</anchor>
+            <arglist>(int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>maximumChannelCount</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>maximumChannelCount</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSctpSocket *</type>
+            <name>nextPendingDatagramConnection</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>nextPendingDatagramConnection</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>incomingConnection</name>
+            <anchorfile>qsctpserver.html</anchorfile>
+            <anchor>incomingConnection</anchor>
+            <arglist>(qintptr socketDescriptor)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSctpSocket</name>
+        <filename>qsctpsocket.html</filename>
+        <base>QTcpSocket</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSctpSocket</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>QSctpSocket</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSctpSocket</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>dtor.QSctpSocket</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>close</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>close</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>disconnectFromHost</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>disconnectFromHost</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMaximumChannelCount</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>setMaximumChannelCount</anchor>
+            <arglist>(int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>maximumChannelCount</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>maximumChannelCount</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isInDatagramMode</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>isInDatagramMode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkDatagram</type>
+            <name>readDatagram</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>readDatagram</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>writeDatagram</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>writeDatagram</anchor>
+            <arglist>(const QNetworkDatagram &amp;datagram)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual qint64</type>
+            <name>readData</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>readData</anchor>
+            <arglist>(char *data, qint64 maxSize)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual qint64</type>
+            <name>readLineData</name>
+            <anchorfile>qsctpsocket.html</anchorfile>
+            <anchor>readLineData</anchor>
+            <arglist>(char *data, qint64 maxlen)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QTcpServer</name>
         <filename>qtcpserver.html</filename>
         <base>QObject</base>
@@ -6110,11 +6753,25 @@
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkDatagram</type>
+            <name>receiveDatagram</name>
+            <anchorfile>qudpsocket.html</anchorfile>
+            <anchor>receiveDatagram</anchor>
+            <arglist>(qint64 maxSize)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>qint64</type>
             <name>readDatagram</name>
             <anchorfile>qudpsocket.html</anchorfile>
             <anchor>readDatagram</anchor>
             <arglist>(char *data, qint64 maxSize, QHostAddress *address, quint16 *port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qint64</type>
+            <name>writeDatagram</name>
+            <anchorfile>qudpsocket.html</anchorfile>
+            <anchor>writeDatagram-1</anchor>
+            <arglist>(const QNetworkDatagram &amp;datagram)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>qint64</type>
@@ -6127,7 +6784,7 @@
             <type>qint64</type>
             <name>writeDatagram</name>
             <anchorfile>qudpsocket.html</anchorfile>
-            <anchor>writeDatagram-1</anchor>
+            <anchor>writeDatagram-2</anchor>
             <arglist>(const QByteArray &amp;datagram, const QHostAddress &amp;host, quint16 port)</arglist>
         </member>
     </compound>
@@ -7113,6 +7770,34 @@
             <anchor>supportedEllipticCurves</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>preSharedKeyIdentityHint</name>
+            <anchorfile>qsslconfiguration.html</anchorfile>
+            <anchor>preSharedKeyIdentityHint</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPreSharedKeyIdentityHint</name>
+            <anchorfile>qsslconfiguration.html</anchorfile>
+            <anchor>setPreSharedKeyIdentityHint</anchor>
+            <arglist>(const QByteArray &amp;hint)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslDiffieHellmanParameters</type>
+            <name>diffieHellmanParameters</name>
+            <anchorfile>qsslconfiguration.html</anchorfile>
+            <anchor>diffieHellmanParameters</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDiffieHellmanParameters</name>
+            <anchorfile>qsslconfiguration.html</anchorfile>
+            <anchor>setDiffieHellmanParameters</anchor>
+            <arglist>(const QSslDiffieHellmanParameters &amp;dhparams)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QSslConfiguration</type>
             <name>defaultConfiguration</name>
@@ -7170,6 +7855,125 @@
             <name>nextProtocolNegotiationStatus</name>
             <anchorfile>qsslconfiguration.html</anchorfile>
             <anchor>nextProtocolNegotiationStatus</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSslDiffieHellmanParameters</name>
+        <filename>qssldiffiehellmanparameters.html</filename>
+        <member kind="enum">
+            <name>Error</name>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="InvalidInputDataError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnsafeParametersError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QSslDiffieHellmanParameters</type>
+            <name>defaultParameters</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>defaultParameters</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSslDiffieHellmanParameters</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>QSslDiffieHellmanParameters</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSslDiffieHellmanParameters</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>QSslDiffieHellmanParameters-1</anchor>
+            <arglist>(const QSslDiffieHellmanParameters &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSslDiffieHellmanParameters</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>QSslDiffieHellmanParameters-2</anchor>
+            <arglist>(QSslDiffieHellmanParameters &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QSslDiffieHellmanParameters</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>dtor.QSslDiffieHellmanParameters</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslDiffieHellmanParameters &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QSslDiffieHellmanParameters &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslDiffieHellmanParameters &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QSslDiffieHellmanParameters &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QSslDiffieHellmanParameters &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QSslDiffieHellmanParameters</type>
+            <name>fromEncoded</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>fromEncoded</anchor>
+            <arglist>(const QByteArray &amp;encoded, QSsl::EncodingFormat encoding)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QSslDiffieHellmanParameters</type>
+            <name>fromEncoded</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>fromEncoded-1</anchor>
+            <arglist>(QIODevice *device, QSsl::EncodingFormat encoding)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isEmpty</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>isEmpty</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Error</type>
+            <name>error</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorString</name>
+            <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
+            <anchor>errorString</anchor>
             <arglist>() const</arglist>
         </member>
     </compound>

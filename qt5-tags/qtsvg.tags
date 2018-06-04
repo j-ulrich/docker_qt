@@ -91,21 +91,21 @@
             <name>boundingRect</name>
             <anchorfile>qgraphicssvgitem.html</anchorfile>
             <anchor>boundingRect</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>paint</name>
             <anchorfile>qgraphicssvgitem.html</anchorfile>
             <anchor>paint</anchor>
-            <arglist>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)</arglist>
+            <arglist>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>type</name>
             <anchorfile>qgraphicssvgitem.html</anchorfile>
             <anchor>type</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -285,14 +285,14 @@
             <name>paintEngine</name>
             <anchorfile>qsvggenerator.html</anchorfile>
             <anchor>paintEngine</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>metric</name>
             <anchorfile>qsvggenerator.html</anchorfile>
             <anchor>metric</anchor>
-            <arglist>(QPaintDevice::PaintDeviceMetric metric) const</arglist>
+            <arglist>(QPaintDevice::PaintDeviceMetric metric) const override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -517,7 +517,7 @@
             <name>sizeHint</name>
             <anchorfile>qsvgwidget.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -538,7 +538,7 @@
             <name>paintEvent</name>
             <anchorfile>qsvgwidget.html</anchorfile>
             <anchor>paintEvent</anchor>
-            <arglist>(QPaintEvent *event)</arglist>
+            <arglist>(QPaintEvent *event) override</arglist>
         </member>
     </compound>
 </tagfile>

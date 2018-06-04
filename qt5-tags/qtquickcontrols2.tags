@@ -24,26 +24,20 @@
             <anchor>setStyle</anchor>
             <arglist>(const QString &amp;style)</arglist>
         </member>
-    </compound>
-    <compound kind="class">
-        <name>Qt.labs.calendar.Calendar</name>
-        <filename>qml-qt-labs-calendar2-calendar.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>Qt.labs.calendar.CalendarModel</name>
-        <filename>qml-qt-labs-calendar2-calendarmodel.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>Qt.labs.calendar.DayOfWeekRow</name>
-        <filename>qml-qt-labs-calendar2-dayofweekrow.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>Qt.labs.calendar.MonthGrid</name>
-        <filename>qml-qt-labs-calendar2-monthgrid.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>Qt.labs.calendar.WeekNumberColumn</name>
-        <filename>qml-qt-labs-calendar2-weeknumbercolumn.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setFallbackStyle</name>
+            <anchorfile>qquickstyle.html</anchorfile>
+            <anchor>setFallbackStyle</anchor>
+            <arglist>(const QString &amp;style)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QStringList</type>
+            <name>availableStyles</name>
+            <anchorfile>qquickstyle.html</anchorfile>
+            <anchor>availableStyles</anchor>
+            <arglist>()</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.AbstractButton</name>
@@ -86,8 +80,20 @@
         <filename>qml-qtquick-controls2-control.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.Controls.DelayButton</name>
+        <filename>qml-qtquick-controls2-delaybutton.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.Controls.Dial</name>
         <filename>qml-qtquick-controls2-dial.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Controls.Dialog</name>
+        <filename>qml-qtquick-controls2-dialog.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Controls.DialogButtonBox</name>
+        <filename>qml-qtquick-controls2-dialogbuttonbox.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Drawer</name>
@@ -116,6 +122,10 @@
     <compound kind="class">
         <name>QtQuick.Controls.MenuItem</name>
         <filename>qml-qtquick-controls2-menuitem.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Controls.MenuSeparator</name>
+        <filename>qml-qtquick-controls2-menuseparator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Page</name>
@@ -150,12 +160,20 @@
         <filename>qml-qtquick-controls2-rangeslider.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.Controls.RoundButton</name>
+        <filename>qml-qtquick-controls2-roundbutton.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.Controls.ScrollBar</name>
         <filename>qml-qtquick-controls2-scrollbar.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ScrollIndicator</name>
         <filename>qml-qtquick-controls2-scrollindicator.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Controls.ScrollView</name>
+        <filename>qml-qtquick-controls2-scrollview.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Slider</name>
@@ -208,6 +226,10 @@
     <compound kind="class">
         <name>QtQuick.Controls.ToolButton</name>
         <filename>qml-qtquick-controls2-toolbutton.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Controls.ToolSeparator</name>
+        <filename>qml-qtquick-controls2-toolseparator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ToolTip</name>

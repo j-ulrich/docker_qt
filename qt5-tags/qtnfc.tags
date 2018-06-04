@@ -1115,6 +1115,10 @@
             <anchor>Error-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="CommandError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
         <class>QNearFieldTarget::RequestId</class>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1160,6 +1164,27 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>keepConnection</name>
+            <anchorfile>qnearfieldtarget.html</anchorfile>
+            <anchor>keepConnection</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>setKeepConnection</name>
+            <anchorfile>qnearfieldtarget.html</anchorfile>
+            <anchor>setKeepConnection</anchor>
+            <arglist>(bool isPersistent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>disconnect</name>
+            <anchorfile>qnearfieldtarget.html</anchorfile>
+            <anchor>disconnect</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isProcessingCommand</name>
             <anchorfile>qnearfieldtarget.html</anchorfile>
             <anchor>isProcessingCommand</anchor>
@@ -1185,6 +1210,13 @@
             <anchorfile>qnearfieldtarget.html</anchorfile>
             <anchor>writeNdefMessages</anchor>
             <arglist>(const QList&lt;QNdefMessage&gt; &amp;messages)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>maxCommandLength</name>
+            <anchorfile>qnearfieldtarget.html</anchorfile>
+            <anchor>maxCommandLength</anchor>
+            <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual RequestId</type>

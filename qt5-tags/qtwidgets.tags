@@ -423,7 +423,7 @@
             <name>setVisible</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>setVisible</anchor>
-            <arglist>(bool visible)</arglist>
+            <arglist>(bool visible) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -458,14 +458,14 @@
             <name>sizeHint</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>minimumSizeHint</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>minimumSizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -559,53 +559,46 @@
             <arglist>(bool showIt)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>event</name>
-            <anchorfile>qdialog.html</anchorfile>
-            <anchor>event</anchor>
-            <arglist>(QEvent *e)</arglist>
-        </member>
-        <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyPressEvent</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>closeEvent</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>closeEvent</anchor>
-            <arglist>(QCloseEvent *e)</arglist>
+            <arglist>(QCloseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>showEvent</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>showEvent</anchor>
-            <arglist>(QShowEvent *event)</arglist>
+            <arglist>(QShowEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>resizeEvent</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>resizeEvent</anchor>
-            <arglist>(QResizeEvent *)</arglist>
+            <arglist>(QResizeEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>contextMenuEvent</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>contextMenuEvent</anchor>
-            <arglist>(QContextMenuEvent *e)</arglist>
+            <arglist>(QContextMenuEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>eventFilter</name>
             <anchorfile>qdialog.html</anchorfile>
             <anchor>eventFilter</anchor>
-            <arglist>(QObject *o, QEvent *e)</arglist>
+            <arglist>(QObject *o, QEvent *e) override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -970,6 +963,13 @@
             <anchorfile>qfiledialog.html</anchorfile>
             <anchor>selectNameFilter</anchor>
             <arglist>(const QString &amp;filter)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>selectedMimeTypeFilter</name>
+            <anchorfile>qfiledialog.html</anchorfile>
+            <anchor>selectedMimeTypeFilter</anchor>
+            <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
@@ -2837,13 +2837,6 @@
             <anchorfile>qmessagebox.html</anchorfile>
             <anchor>removeButton</anchor>
             <arglist>(QAbstractButton *button)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void</type>
-            <name>setVisible</name>
-            <anchorfile>qmessagebox.html</anchorfile>
-            <anchor>setVisible</anchor>
-            <arglist>(bool visible)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -16299,14 +16292,14 @@
             <name>createWidget</name>
             <anchorfile>qstandarditemeditorcreator.html</anchorfile>
             <anchor>createWidget</anchor>
-            <arglist>(QWidget *parent) const</arglist>
+            <arglist>(QWidget *parent) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QByteArray</type>
             <name>valuePropertyName</name>
             <anchorfile>qstandarditemeditorcreator.html</anchorfile>
             <anchor>valuePropertyName</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -22112,12 +22105,6 @@
             <anchor>styleSheet-prop</anchor>
             <arglist></arglist>
         </member>
-        <member kind="property" type="int">
-            <name>autoMaximizeThreshold</name>
-            <anchorfile>qapplication-obsolete.html</anchorfile>
-            <anchor>autoMaximizeThreshold-prop</anchor>
-            <arglist></arglist>
-        </member>
         <member kind="property" type="bool">
             <name>autoSipEnabled</name>
             <anchorfile>qapplication.html</anchorfile>
@@ -22179,14 +22166,14 @@
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>int</type>
             <name>colorSpec</name>
-            <anchorfile>qapplication.html</anchorfile>
+            <anchorfile>qapplication-obsolete.html</anchorfile>
             <anchor>colorSpec</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>void</type>
             <name>setColorSpec</name>
-            <anchorfile>qapplication.html</anchorfile>
+            <anchorfile>qapplication-obsolete.html</anchorfile>
             <anchor>setColorSpec</anchor>
             <arglist>(int spec)</arglist>
         </member>
@@ -22498,8 +22485,8 @@
             <anchor>exec</anchor>
             <arglist>()</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual bool</type>
             <name>notify</name>
             <anchorfile>qapplication.html</anchorfile>
             <anchor>notify</anchor>
@@ -22556,20 +22543,6 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
-            <name>setAutoMaximizeThreshold</name>
-            <anchorfile>qapplication-obsolete.html</anchorfile>
-            <anchor>autoMaximizeThreshold-prop</anchor>
-            <arglist>(const int threshold)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>int</type>
-            <name>autoMaximizeThreshold</name>
-            <anchorfile>qapplication-obsolete.html</anchorfile>
-            <anchor>autoMaximizeThreshold-prop</anchor>
-            <arglist>() const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
             <name>setAutoSipEnabled</name>
             <anchorfile>qapplication.html</anchorfile>
             <anchor>autoSipEnabled-prop</anchor>
@@ -22596,8 +22569,8 @@
             <anchor>aboutQt</anchor>
             <arglist>()</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type>bool</type>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
             <name>event</name>
             <anchorfile>qapplication.html</anchorfile>
             <anchor>event</anchor>
@@ -23175,6 +23148,7 @@
             <anchor>ItemRole-enum</anchor>
             <arglist></arglist>
         </member>
+        <class>QFormLayout::TakeRowResult</class>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QFormLayout</name>
@@ -23373,6 +23347,48 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>removeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>removeRow</anchor>
+            <arglist>(int row)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>removeRow-1</anchor>
+            <arglist>(QWidget *widget)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>removeRow-2</anchor>
+            <arglist>(QLayout *layout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>TakeRowResult</type>
+            <name>takeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>takeRow</anchor>
+            <arglist>(int row)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>TakeRowResult</type>
+            <name>takeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>takeRow-1</anchor>
+            <arglist>(QWidget *widget)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>TakeRowResult</type>
+            <name>takeRow</name>
+            <anchorfile>qformlayout.html</anchorfile>
+            <anchor>takeRow-2</anchor>
+            <arglist>(QLayout *layout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setItem</name>
             <anchorfile>qformlayout.html</anchorfile>
             <anchor>setItem</anchor>
@@ -23518,6 +23534,10 @@
             <anchor>rowCount</anchor>
             <arglist>() const</arglist>
         </member>
+    </compound>
+    <compound kind="class">
+        <name>QFormLayout::TakeRowResult</name>
+        <filename>qformlayout-takerowresult.html</filename>
     </compound>
     <compound kind="class">
         <name>QGesture</name>
@@ -25197,56 +25217,56 @@
             <name>sizeHint</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>minimumSize</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>minimumSize</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>maximumSize</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>maximumSize</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual Qt::Orientations</type>
             <name>expandingDirections</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>expandingDirections</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>isEmpty</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>isEmpty</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setGeometry</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>setGeometry</anchor>
-            <arglist>(const QRect &amp;r)</arglist>
+            <arglist>(const QRect &amp;r) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QRect</type>
             <name>geometry</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>geometry</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSpacerItem *</type>
             <name>spacerItem</name>
             <anchorfile>qspaceritem.html</anchorfile>
             <anchor>spacerItem</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSizePolicy</type>
@@ -25279,77 +25299,77 @@
             <name>sizeHint</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>minimumSize</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>minimumSize</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>maximumSize</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>maximumSize</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual Qt::Orientations</type>
             <name>expandingDirections</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>expandingDirections</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>isEmpty</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>isEmpty</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setGeometry</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>setGeometry</anchor>
-            <arglist>(const QRect &amp;rect)</arglist>
+            <arglist>(const QRect &amp;rect) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QRect</type>
             <name>geometry</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>geometry</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QWidget *</type>
             <name>widget</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>widget</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>hasHeightForWidth</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>hasHeightForWidth</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>heightForWidth</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>heightForWidth</anchor>
-            <arglist>(int w) const</arglist>
+            <arglist>(int w) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSizePolicy::ControlTypes</type>
             <name>controlTypes</name>
             <anchorfile>qwidgetitem.html</anchorfile>
             <anchor>controlTypes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -25960,6 +25980,13 @@
             <anchor>transpose</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSizePolicy</type>
+            <name>transposed</name>
+            <anchorfile>qsizepolicy.html</anchorfile>
+            <anchor>transposed</anchor>
+            <arglist>() const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QStackedLayout</name>
@@ -26462,6 +26489,12 @@
             <name>mouseTracking</name>
             <anchorfile>qwidget.html</anchorfile>
             <anchor>mouseTracking-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>tabletTracking</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>tabletTracking-prop</anchor>
             <arglist></arglist>
         </member>
         <member kind="property" type="bool">
@@ -27225,6 +27258,20 @@
             <name>underMouse</name>
             <anchorfile>qwidget.html</anchorfile>
             <anchor>underMouse</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTabletTracking</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>tabletTracking-prop</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>hasTabletTracking</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>tabletTracking-prop</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -28220,6 +28267,13 @@
             <anchorfile>qwidget.html</anchorfile>
             <anchor>windowFlags-prop</anchor>
             <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setWindowFlag</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>setWindowFlag</anchor>
+            <arglist>(Qt::WindowType flag, bool on)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -30796,6 +30850,14 @@
             <arglist></arglist>
         </member>
         <member name="PM_HeaderDefaultSectionSizeVertical">
+            <anchor>PixelMetric-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="PM_TitleBarButtonIconSize">
+            <anchor>PixelMetric-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="PM_TitleBarButtonSize">
             <anchor>PixelMetric-enum</anchor>
             <arglist></arglist>
         </member>
@@ -34638,6 +34700,13 @@
             <type>void</type>
             <name>showMessage</name>
             <anchorfile>qsystemtrayicon.html</anchorfile>
+            <anchor>showMessage-1</anchor>
+            <arglist>(const QString &amp;title, const QString &amp;message, const QIcon &amp;icon, int millisecondsTimeoutHint)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>showMessage</name>
+            <anchorfile>qsystemtrayicon.html</anchorfile>
             <anchor>showMessage</anchor>
             <arglist>(const QString &amp;title, const QString &amp;message, QSystemTrayIcon::MessageIcon icon, int millisecondsTimeoutHint)</arglist>
         </member>
@@ -34888,6 +34957,20 @@
             <anchor>setText</anchor>
             <arglist>(const QString &amp;text)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isObsolete</name>
+            <anchorfile>qundocommand.html</anchorfile>
+            <anchor>isObsolete</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setObsolete</name>
+            <anchorfile>qundocommand.html</anchorfile>
+            <anchor>setObsolete</anchor>
+            <arglist>(bool obsolete)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>id</name>
@@ -35085,6 +35168,13 @@
             <name>setClean</name>
             <anchorfile>qundostack.html</anchorfile>
             <anchor>setClean</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>resetClean</name>
+            <anchorfile>qundostack.html</anchorfile>
+            <anchor>resetClean</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -36697,14 +36787,14 @@
             <name>sizeHint</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>minimumSizeHint</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>minimumSizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -36718,14 +36808,14 @@
             <name>event</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *event)</arglist>
+            <arglist>(QEvent *event) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QVariant</type>
             <name>inputMethodQuery</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>inputMethodQuery</anchor>
-            <arglist>(Qt::InputMethodQuery query) const</arglist>
+            <arglist>(Qt::InputMethodQuery query) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QValidator::State</type>
@@ -36781,112 +36871,112 @@
             <name>resizeEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>resizeEvent</anchor>
-            <arglist>(QResizeEvent *event)</arglist>
+            <arglist>(QResizeEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyPressEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *event)</arglist>
+            <arglist>(QKeyEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyReleaseEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>keyReleaseEvent</anchor>
-            <arglist>(QKeyEvent *event)</arglist>
+            <arglist>(QKeyEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>wheelEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>wheelEvent</anchor>
-            <arglist>(QWheelEvent *event)</arglist>
+            <arglist>(QWheelEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusInEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>focusInEvent</anchor>
-            <arglist>(QFocusEvent *event)</arglist>
+            <arglist>(QFocusEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusOutEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>focusOutEvent</anchor>
-            <arglist>(QFocusEvent *event)</arglist>
+            <arglist>(QFocusEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>contextMenuEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>contextMenuEvent</anchor>
-            <arglist>(QContextMenuEvent *event)</arglist>
+            <arglist>(QContextMenuEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>changeEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>changeEvent</anchor>
-            <arglist>(QEvent *event)</arglist>
+            <arglist>(QEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>closeEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>closeEvent</anchor>
-            <arglist>(QCloseEvent *event)</arglist>
+            <arglist>(QCloseEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>hideEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>hideEvent</anchor>
-            <arglist>(QHideEvent *event)</arglist>
+            <arglist>(QHideEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mousePressEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>mousePressEvent</anchor>
-            <arglist>(QMouseEvent *event)</arglist>
+            <arglist>(QMouseEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseReleaseEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>mouseReleaseEvent</anchor>
-            <arglist>(QMouseEvent *event)</arglist>
+            <arglist>(QMouseEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseMoveEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>mouseMoveEvent</anchor>
-            <arglist>(QMouseEvent *event)</arglist>
+            <arglist>(QMouseEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>timerEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>timerEvent</anchor>
-            <arglist>(QTimerEvent *event)</arglist>
+            <arglist>(QTimerEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>paintEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>paintEvent</anchor>
-            <arglist>(QPaintEvent *event)</arglist>
+            <arglist>(QPaintEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>showEvent</name>
             <anchorfile>qabstractspinbox.html</anchorfile>
             <anchor>showEvent</anchor>
-            <arglist>(QShowEvent *event)</arglist>
+            <arglist>(QShowEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>void</type>
@@ -39097,28 +39187,28 @@
             <name>sizeHint</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>clear</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>clear</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>stepBy</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>stepBy</anchor>
-            <arglist>(int steps)</arglist>
+            <arglist>(int steps) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>event</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *event)</arglist>
+            <arglist>(QEvent *event) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -39167,42 +39257,42 @@
             <name>keyPressEvent</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *event)</arglist>
+            <arglist>(QKeyEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>wheelEvent</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>wheelEvent</anchor>
-            <arglist>(QWheelEvent *event)</arglist>
+            <arglist>(QWheelEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusInEvent</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>focusInEvent</anchor>
-            <arglist>(QFocusEvent *event)</arglist>
+            <arglist>(QFocusEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>focusNextPrevChild</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>focusNextPrevChild</anchor>
-            <arglist>(bool next)</arglist>
+            <arglist>(bool next) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual QValidator::State</type>
             <name>validate</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>validate</anchor>
-            <arglist>(QString &amp;text, int &amp;pos) const</arglist>
+            <arglist>(QString &amp;text, int &amp;pos) const override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>fixup</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>fixup</anchor>
-            <arglist>(QString &amp;input) const</arglist>
+            <arglist>(QString &amp;input) const override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual QDateTime</type>
@@ -39223,21 +39313,21 @@
             <name>stepEnabled</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>stepEnabled</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mousePressEvent</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>mousePressEvent</anchor>
-            <arglist>(QMouseEvent *event)</arglist>
+            <arglist>(QMouseEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>paintEvent</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>paintEvent</anchor>
-            <arglist>(QPaintEvent *event)</arglist>
+            <arglist>(QPaintEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>void</type>
@@ -42388,7 +42478,7 @@
             <name>sizeHint</name>
             <anchorfile>qmacnativewidget.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>NSView *</type>
@@ -42402,7 +42492,7 @@
             <name>event</name>
             <anchorfile>qmacnativewidget.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *ev)</arglist>
+            <arglist>(QEvent *ev) override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -42876,6 +42966,13 @@
             <anchorfile>qmainwindow.html</anchorfile>
             <anchor>toolButtonStyleChanged</anchor>
             <arglist>(Qt::ToolButtonStyle toolButtonStyle)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>tabifiedDockWidgetActivated</name>
+            <anchorfile>qmainwindow.html</anchorfile>
+            <anchor>tabifiedDockWidgetActivated</anchor>
+            <arglist>(QDockWidget *dockWidget)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -44301,21 +44398,21 @@
             <name>sizeHint</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>sizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSize</type>
             <name>minimumSizeHint</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>minimumSizeHint</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>heightForWidth</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>heightForWidth</anchor>
-            <arglist>(int ) const</arglist>
+            <arglist>(int ) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QRect</type>
@@ -44346,20 +44443,6 @@
             <arglist>(Qt::Corner corner) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>setDefaultAction</name>
-            <anchorfile>qmenubar.html</anchorfile>
-            <anchor>setDefaultAction</anchor>
-            <arglist>(QAction *act)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAction *</type>
-            <name>defaultAction</name>
-            <anchorfile>qmenubar.html</anchorfile>
-            <anchor>defaultAction</anchor>
-            <arglist>() const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>NSMenu *</type>
             <name>toNSMenu</name>
             <anchorfile>qmenubar.html</anchorfile>
@@ -44385,7 +44468,7 @@
             <name>setVisible</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>setVisible</anchor>
-            <arglist>(bool visible)</arglist>
+            <arglist>(bool visible) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -44406,98 +44489,98 @@
             <name>changeEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>changeEvent</anchor>
-            <arglist>(QEvent *e)</arglist>
+            <arglist>(QEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyPressEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseReleaseEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>mouseReleaseEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mousePressEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>mousePressEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseMoveEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>mouseMoveEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>leaveEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>leaveEvent</anchor>
-            <arglist>(QEvent *)</arglist>
+            <arglist>(QEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>paintEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>paintEvent</anchor>
-            <arglist>(QPaintEvent *e)</arglist>
+            <arglist>(QPaintEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>resizeEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>resizeEvent</anchor>
-            <arglist>(QResizeEvent *)</arglist>
+            <arglist>(QResizeEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>actionEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>actionEvent</anchor>
-            <arglist>(QActionEvent *e)</arglist>
+            <arglist>(QActionEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusOutEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>focusOutEvent</anchor>
-            <arglist>(QFocusEvent *)</arglist>
+            <arglist>(QFocusEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusInEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>focusInEvent</anchor>
-            <arglist>(QFocusEvent *)</arglist>
+            <arglist>(QFocusEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>timerEvent</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>timerEvent</anchor>
-            <arglist>(QTimerEvent *e)</arglist>
+            <arglist>(QTimerEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>eventFilter</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>eventFilter</anchor>
-            <arglist>(QObject *object, QEvent *event)</arglist>
+            <arglist>(QObject *object, QEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>event</name>
             <anchorfile>qmenubar.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *e)</arglist>
+            <arglist>(QEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>void</type>
@@ -45902,13 +45985,6 @@
             <arglist>(QEvent *e)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>hitButton</name>
-            <anchorfile>qpushbutton.html</anchorfile>
-            <anchor>hitButton</anchor>
-            <arglist>(const QPoint &amp;pos) const</arglist>
-        </member>
-        <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>paintEvent</name>
             <anchorfile>qpushbutton.html</anchorfile>
@@ -46818,14 +46894,14 @@
             <name>event</name>
             <anchorfile>qspinbox.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *event)</arglist>
+            <arglist>(QEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual QValidator::State</type>
             <name>validate</name>
             <anchorfile>qspinbox.html</anchorfile>
             <anchor>validate</anchor>
-            <arglist>(QString &amp;text, int &amp;pos) const</arglist>
+            <arglist>(QString &amp;text, int &amp;pos) const override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual int</type>
@@ -46846,7 +46922,7 @@
             <name>fixup</name>
             <anchorfile>qspinbox.html</anchorfile>
             <anchor>fixup</anchor>
-            <arglist>(QString &amp;input) const</arglist>
+            <arglist>(QString &amp;input) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -47046,7 +47122,7 @@
             <name>validate</name>
             <anchorfile>qdoublespinbox.html</anchorfile>
             <anchor>validate</anchor>
-            <arglist>(QString &amp;text, int &amp;pos) const</arglist>
+            <arglist>(QString &amp;text, int &amp;pos) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual double</type>
@@ -47067,7 +47143,7 @@
             <name>fixup</name>
             <anchorfile>qdoublespinbox.html</anchorfile>
             <anchor>fixup</anchor>
-            <arglist>(QString &amp;input) const</arglist>
+            <arglist>(QString &amp;input) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -47255,6 +47331,13 @@
             <name>insertWidget</name>
             <anchorfile>qsplitter.html</anchorfile>
             <anchor>insertWidget</anchor>
+            <arglist>(int index, QWidget *widget)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWidget *</type>
+            <name>replaceWidget</name>
+            <anchorfile>qsplitter.html</anchorfile>
+            <anchor>replaceWidget</anchor>
             <arglist>(int index, QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -48390,6 +48473,20 @@
             <anchorfile>qtabbar.html</anchorfile>
             <anchor>changeCurrentOnDrag-prop</anchor>
             <arglist>(bool change)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>accessibleTabName</name>
+            <anchorfile>qtabbar.html</anchorfile>
+            <anchor>accessibleTabName</anchor>
+            <arglist>(int index) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAccessibleTabName</name>
+            <anchorfile>qtabbar.html</anchorfile>
+            <anchor>setAccessibleTabName</anchor>
+            <arglist>(int index, const QString &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

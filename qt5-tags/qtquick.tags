@@ -159,6 +159,7 @@
         <name>QQuickItem</name>
         <filename>qquickitem.html</filename>
         <base>QObject</base>
+        <base>QQmlParserStatus</base>
         <member kind="property" type="QQuickItem *">
             <name>parent</name>
             <anchorfile>qquickitem.html</anchorfile>
@@ -1151,15 +1152,15 @@
             <anchor>heightValid</anchor>
             <arglist>() const</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type>void</type>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
             <name>classBegin</name>
             <anchorfile>qquickitem.html</anchorfile>
             <anchor>classBegin</anchor>
             <arglist>()</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type>void</type>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
             <name>componentComplete</name>
             <anchorfile>qquickitem.html</anchorfile>
             <anchor>componentComplete</anchor>
@@ -1384,7 +1385,7 @@
             <name>saveToFile</name>
             <anchorfile>qquickitemgrabresult.html</anchorfile>
             <anchor>saveToFile</anchor>
-            <arglist>(const QString &amp;fileName)</arglist>
+            <arglist>(const QString &amp;fileName) const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1987,35 +1988,35 @@
             <name>keyPressEvent</name>
             <anchorfile>qquickview.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyReleaseEvent</name>
             <anchorfile>qquickview.html</anchorfile>
             <anchor>keyReleaseEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mousePressEvent</name>
             <anchorfile>qquickview.html</anchorfile>
             <anchor>mousePressEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseReleaseEvent</name>
             <anchorfile>qquickview.html</anchorfile>
             <anchor>mouseReleaseEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseMoveEvent</name>
             <anchorfile>qquickview.html</anchorfile>
             <anchor>mouseMoveEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2147,7 +2148,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>sendEvent</name>
-            <anchorfile>qquickwindow.html</anchorfile>
+            <anchorfile>qquickwindow-obsolete.html</anchorfile>
             <anchor>sendEvent</anchor>
             <arglist>(QQuickItem *item, QEvent *e)</arglist>
         </member>
@@ -2331,6 +2332,55 @@
             <name>effectiveDevicePixelRatio</name>
             <anchorfile>qquickwindow.html</anchorfile>
             <anchor>effectiveDevicePixelRatio</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGRendererInterface *</type>
+            <name>rendererInterface</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>rendererInterface</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setSceneGraphBackend</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>setSceneGraphBackend</anchor>
+            <arglist>(QSGRendererInterface::GraphicsApi api)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setSceneGraphBackend</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>setSceneGraphBackend-1</anchor>
+            <arglist>(const QString &amp;backend)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>sceneGraphBackend</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>sceneGraphBackend</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGRectangleNode *</type>
+            <name>createRectangleNode</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>createRectangleNode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGImageNode *</type>
+            <name>createImageNode</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>createImageNode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGNinePatchNode *</type>
+            <name>createNinePatchNode</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>createNinePatchNode</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2694,6 +2744,122 @@
     <compound kind="class">
         <name>QSGGeometry</name>
         <filename>qsggeometry.html</filename>
+        <member kind="enum">
+            <name>AttributeType</name>
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnknownAttribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="PositionAttribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ColorAttribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="TexCoordAttribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="TexCoord1Attribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="TexCoord2Attribute">
+            <anchor>AttributeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>DataPattern</name>
+            <anchor>DataPattern-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="AlwaysUploadPattern">
+            <anchor>DataPattern-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="StreamPattern">
+            <anchor>DataPattern-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DynamicPattern">
+            <anchor>DataPattern-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="StaticPattern">
+            <anchor>DataPattern-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>DrawingMode</name>
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawPoints">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawLines">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawLineLoop">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawLineStrip">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawTriangles">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawTriangleStrip">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DrawTriangleFan">
+            <anchor>DrawingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Type</name>
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ByteType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnsignedByteType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ShortType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnsignedShortType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="IntType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnsignedIntType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="FloatType">
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
         <class>QSGGeometry::Attribute</class>
         <class>QSGGeometry::AttributeSet</class>
         <class>QSGGeometry::Point2D</class>
@@ -2720,27 +2886,6 @@
             <anchor>defaultAttributes_ColoredPoint2D</anchor>
             <arglist>()</arglist>
         </member>
-        <member kind="enum">
-            <name>DataPattern</name>
-            <anchor>DataPattern-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="AlwaysUploadPattern">
-            <anchor>DataPattern-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="StreamPattern">
-            <anchor>DataPattern-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="DynamicPattern">
-            <anchor>DataPattern-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="StaticPattern">
-            <anchor>DataPattern-enum</anchor>
-            <arglist></arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSGGeometry</name>
@@ -2760,10 +2905,10 @@
             <name>setDrawingMode</name>
             <anchorfile>qsggeometry.html</anchorfile>
             <anchor>setDrawingMode</anchor>
-            <arglist>(GLenum mode)</arglist>
+            <arglist>(unsigned int mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>GLenum</type>
+            <type>unsigned int</type>
             <name>drawingMode</name>
             <anchorfile>qsggeometry.html</anchorfile>
             <anchor>drawingMode</anchor>
@@ -2937,6 +3082,13 @@
             <anchor>updateTexturedRectGeometry</anchor>
             <arglist>(QSGGeometry *g, const QRectF &amp;rect, const QRectF &amp;textureRect)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>updateColoredRectGeometry</name>
+            <anchorfile>qsggeometry.html</anchorfile>
+            <anchor>updateColoredRectGeometry</anchor>
+            <arglist>(QSGGeometry *g, const QRectF &amp;rect)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setIndexDataPattern</name>
@@ -3003,6 +3155,13 @@
             <anchorfile>qsggeometry-attribute.html</anchorfile>
             <anchor>create</anchor>
             <arglist>(int pos, int tupleSize, int primitiveType, bool isPosition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>Attribute</type>
+            <name>createWithAttributeType</name>
+            <anchorfile>qsggeometry-attribute.html</anchorfile>
+            <anchor>createWithAttributeType</anchor>
+            <arglist>(int pos, int tupleSize, int primitiveType, AttributeType attributeType)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -3147,6 +3306,14 @@
             <anchor>DirtyState-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="DirtyCachedMaterialData">
+            <anchor>DirtyState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DirtyAll">
+            <anchor>DirtyState-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="typedef" type="QSGMaterialShader::RenderState::DirtyState">
             <name>DirtyStates</name>
             <anchorfile>qsgmaterialshader-renderstate.html</anchorfile>
@@ -3172,6 +3339,13 @@
             <name>isOpacityDirty</name>
             <anchorfile>qsgmaterialshader-renderstate.html</anchorfile>
             <anchor>isOpacityDirty</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isCachedMaterialDataDirty</name>
+            <anchorfile>qsgmaterialshader-renderstate.html</anchorfile>
+            <anchor>isCachedMaterialDataDirty</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3337,6 +3511,10 @@
             <arglist></arglist>
         </member>
         <member name="OpacityNodeType">
+            <anchor>NodeType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RenderNodeType">
             <anchor>NodeType-enum</anchor>
             <arglist></arglist>
         </member>
@@ -3763,6 +3941,366 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QSGRendererInterface</name>
+        <filename>qsgrendererinterface.html</filename>
+        <member kind="enum">
+            <name>GraphicsApi</name>
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Unknown">
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Software">
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OpenGL">
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Direct3D12">
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OpenVG">
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Resource</name>
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DeviceResource">
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CommandQueueResource">
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CommandListResource">
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="PainterResource">
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>ShaderType</name>
+            <anchor>ShaderType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="UnknownShadingLanguage">
+            <anchor>ShaderType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="GLSL">
+            <anchor>ShaderType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="HLSL">
+            <anchor>ShaderType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>ShaderCompilationType</name>
+            <anchor>ShaderCompilationType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RuntimeCompilation">
+            <anchor>ShaderCompilationType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OfflineCompilation">
+            <anchor>ShaderCompilationType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSGRendererInterface::ShaderCompilationType">
+            <name>ShaderCompilationTypes</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>ShaderCompilationType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>ShaderSourceType</name>
+            <anchor>ShaderSourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ShaderSourceString">
+            <anchor>ShaderSourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ShaderSourceFile">
+            <anchor>ShaderSourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ShaderByteCode">
+            <anchor>ShaderSourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSGRendererInterface::ShaderSourceType">
+            <name>ShaderSourceTypes</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>ShaderSourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSGRendererInterface</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>dtor.QSGRendererInterface</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual GraphicsApi</type>
+            <name>graphicsApi</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>graphicsApi</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void *</type>
+            <name>getResource</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>getResource</anchor>
+            <arglist>(QQuickWindow *window, Resource resource) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void *</type>
+            <name>getResource</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>getResource-1</anchor>
+            <arglist>(QQuickWindow *window, const char *resource) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual ShaderType</type>
+            <name>shaderType</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>shaderType</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual ShaderCompilationTypes</type>
+            <name>shaderCompilationType</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>shaderCompilationType</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual ShaderSourceTypes</type>
+            <name>shaderSourceType</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>shaderSourceType</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSGRenderNode</name>
+        <filename>qsgrendernode.html</filename>
+        <base>QSGNode</base>
+        <member kind="enum">
+            <name>StateFlag</name>
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DepthState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="StencilState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ScissorState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ColorState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="BlendState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CullState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ViewportState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RenderTargetState">
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSGRenderNode::StateFlag">
+            <name>StateFlags</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>StateFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>RenderingFlag</name>
+            <anchor>RenderingFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="BoundedRectRendering">
+            <anchor>RenderingFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="DepthAwareRendering">
+            <anchor>RenderingFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OpaqueRendering">
+            <anchor>RenderingFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSGRenderNode::RenderingFlag">
+            <name>RenderingFlags</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>RenderingFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <class>QSGRenderNode::RenderState</class>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSGRenderNode</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>QSGRenderNode</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QSGRenderNode</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>dtor.QSGRenderNode</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual StateFlags</type>
+            <name>changedStates</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>changedStates</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>render</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>render</anchor>
+            <arglist>(const RenderState *state) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>releaseResources</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>releaseResources</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual RenderingFlags</type>
+            <name>flags</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>flags</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QRectF</type>
+            <name>rect</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>rect</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QMatrix4x4 *</type>
+            <name>matrix</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>matrix</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QSGClipNode *</type>
+            <name>clipList</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>clipList</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>inheritedOpacity</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>inheritedOpacity</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSGRenderNode::RenderState</name>
+        <filename>qsgrendernode-renderstate.html</filename>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~RenderState</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>dtor.RenderState</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual const QMatrix4x4 *</type>
+            <name>projectionMatrix</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>projectionMatrix</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QRect</type>
+            <name>scissorRect</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>scissorRect</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>scissorEnabled</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>scissorEnabled</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual int</type>
+            <name>stencilValue</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>stencilValue</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>stencilEnabled</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>stencilEnabled</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual const QRegion *</type>
+            <name>clipRegion</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>clipRegion</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void *</type>
+            <name>get</name>
+            <anchorfile>qsgrendernode-renderstate.html</anchorfile>
+            <anchor>get</anchor>
+            <arglist>(const char *state) const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QSGEngine</name>
         <filename>qsgengine.html</filename>
         <base>QObject</base>
@@ -3842,6 +4380,34 @@
             <anchor>createTextureFromId</anchor>
             <arglist>(uint id, const QSize &amp;size, CreateTextureOptions options) const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGRendererInterface *</type>
+            <name>rendererInterface</name>
+            <anchorfile>qsgengine.html</anchorfile>
+            <anchor>rendererInterface</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGRectangleNode *</type>
+            <name>createRectangleNode</name>
+            <anchorfile>qsgengine.html</anchorfile>
+            <anchor>createRectangleNode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGImageNode *</type>
+            <name>createImageNode</name>
+            <anchorfile>qsgengine.html</anchorfile>
+            <anchor>createImageNode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGNinePatchNode *</type>
+            <name>createNinePatchNode</name>
+            <anchorfile>qsgengine.html</anchorfile>
+            <anchor>createNinePatchNode</anchor>
+            <arglist>() const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QSGFlatColorMaterial</name>
@@ -3867,6 +4433,207 @@
             <anchorfile>qsgflatcolormaterial.html</anchorfile>
             <anchor>color</anchor>
             <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSGImageNode</name>
+        <filename>qsgimagenode.html</filename>
+        <base>QSGGeometryNode</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSGImageNode</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>dtor.QSGImageNode</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setRect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setRect</anchor>
+            <arglist>(const QRectF &amp;rect) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setRect-1</anchor>
+            <arglist>(qreal x, qreal y, qreal w, qreal h)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QRectF</type>
+            <name>rect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>rect</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setSourceRect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setSourceRect</anchor>
+            <arglist>(const QRectF &amp;rect) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSourceRect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setSourceRect-1</anchor>
+            <arglist>(qreal x, qreal y, qreal w, qreal h)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QRectF</type>
+            <name>sourceRect</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>sourceRect</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setTexture</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setTexture</anchor>
+            <arglist>(QSGTexture *texture) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QSGTexture *</type>
+            <name>texture</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>texture</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setFiltering</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setFiltering</anchor>
+            <arglist>(QSGTexture::Filtering filtering) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QSGTexture::Filtering</type>
+            <name>filtering</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>filtering</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setMipmapFiltering</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setMipmapFiltering</anchor>
+            <arglist>(QSGTexture::Filtering filtering) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QSGTexture::Filtering</type>
+            <name>mipmapFiltering</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>mipmapFiltering</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="enum">
+            <name>TextureCoordinatesTransformFlag</name>
+            <anchor>TextureCoordinatesTransformFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoTransform">
+            <anchor>TextureCoordinatesTransformFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="MirrorHorizontally">
+            <anchor>TextureCoordinatesTransformFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="MirrorVertically">
+            <anchor>TextureCoordinatesTransformFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSGImageNode::TextureCoordinatesTransformFlag">
+            <name>TextureCoordinatesTransformMode</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>TextureCoordinatesTransformFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setTextureCoordinatesTransform</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setTextureCoordinatesTransform</anchor>
+            <arglist>(TextureCoordinatesTransformMode mode) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual TextureCoordinatesTransformMode</type>
+            <name>textureCoordinatesTransform</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>textureCoordinatesTransform</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setOwnsTexture</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>setOwnsTexture</anchor>
+            <arglist>(bool owns) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>ownsTexture</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>ownsTexture</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>rebuildGeometry</name>
+            <anchorfile>qsgimagenode.html</anchorfile>
+            <anchor>rebuildGeometry</anchor>
+            <arglist>(QSGGeometry *g, QSGTexture *texture, const QRectF &amp;rect, QRectF sourceRect, TextureCoordinatesTransformMode texCoordMode)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSGRectangleNode</name>
+        <filename>qsgrectanglenode.html</filename>
+        <base>QSGGeometryNode</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QSGRectangleNode</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>dtor.QSGRectangleNode</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setRect</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>setRect</anchor>
+            <arglist>(const QRectF &amp;rect) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRect</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>setRect-1</anchor>
+            <arglist>(qreal x, qreal y, qreal w, qreal h)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QRectF</type>
+            <name>rect</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>rect</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setColor</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>setColor</anchor>
+            <arglist>(const QColor &amp;color) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QColor</type>
+            <name>color</name>
+            <anchorfile>qsgrectanglenode.html</anchorfile>
+            <anchor>color</anchor>
+            <arglist>() const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -4156,6 +4923,31 @@
             <anchor>Filtering-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enum">
+            <name>AnisotropyLevel</name>
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="AnisotropyNone">
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Anisotropy2x">
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Anisotropy4x">
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Anisotropy8x">
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Anisotropy16x">
+            <anchor>AnisotropyLevel-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual int</type>
             <name>textureId</name>
@@ -4245,6 +5037,20 @@
             <name>filtering</name>
             <anchorfile>qsgtexture.html</anchorfile>
             <anchor>filtering</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAnisotropyLevel</name>
+            <anchorfile>qsgtexture.html</anchorfile>
+            <anchor>setAnisotropyLevel</anchor>
+            <arglist>(AnisotropyLevel level)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGTexture::AnisotropyLevel</type>
+            <name>anisotropyLevel</name>
+            <anchorfile>qsgtexture.html</anchorfile>
+            <anchor>anisotropyLevel</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4374,6 +5180,20 @@
             <name>verticalWrapMode</name>
             <anchorfile>qsgopaquetexturematerial.html</anchorfile>
             <anchor>verticalWrapMode</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAnisotropyLevel</name>
+            <anchorfile>qsgopaquetexturematerial.html</anchorfile>
+            <anchor>setAnisotropyLevel</anchor>
+            <arglist>(QSGTexture::AnisotropyLevel level)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGTexture::AnisotropyLevel</type>
+            <name>anisotropyLevel</name>
+            <anchorfile>qsgopaquetexturematerial.html</anchorfile>
+            <anchor>anisotropyLevel</anchor>
             <arglist>() const</arglist>
         </member>
     </compound>
@@ -4517,6 +5337,7 @@
     <compound kind="class">
         <name>QQuickImageProvider</name>
         <filename>qquickimageprovider.html</filename>
+        <base>QQmlImageProviderBase</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QQuickImageProvider</name>
@@ -4531,19 +5352,19 @@
             <anchor>dtor.QQuickImageProvider</anchor>
             <arglist>()</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>ImageType</type>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual ImageType</type>
             <name>imageType</name>
             <anchorfile>qquickimageprovider.html</anchorfile>
             <anchor>imageType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>Flags</type>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual Flags</type>
             <name>flags</name>
             <anchorfile>qquickimageprovider.html</anchorfile>
             <anchor>flags</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QImage</type>
@@ -4801,112 +5622,119 @@
             <name>keyPressEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>keyPressEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>keyReleaseEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>keyReleaseEvent</anchor>
-            <arglist>(QKeyEvent *e)</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mousePressEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>mousePressEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseReleaseEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>mouseReleaseEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseMoveEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>mouseMoveEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>mouseDoubleClickEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>mouseDoubleClickEvent</anchor>
-            <arglist>(QMouseEvent *e)</arglist>
+            <arglist>(QMouseEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>showEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>showEvent</anchor>
-            <arglist>(QShowEvent *)</arglist>
+            <arglist>(QShowEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>hideEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>hideEvent</anchor>
-            <arglist>(QHideEvent *)</arglist>
+            <arglist>(QHideEvent *) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusInEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>focusInEvent</anchor>
-            <arglist>(QFocusEvent *event)</arglist>
+            <arglist>(QFocusEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>focusOutEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>focusOutEvent</anchor>
-            <arglist>(QFocusEvent *event)</arglist>
+            <arglist>(QFocusEvent *event) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>wheelEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>wheelEvent</anchor>
-            <arglist>(QWheelEvent *e)</arglist>
+            <arglist>(QWheelEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>dragEnterEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>dragEnterEvent</anchor>
-            <arglist>(QDragEnterEvent *e)</arglist>
+            <arglist>(QDragEnterEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>dragMoveEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>dragMoveEvent</anchor>
-            <arglist>(QDragMoveEvent *e)</arglist>
+            <arglist>(QDragMoveEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>dragLeaveEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>dragLeaveEvent</anchor>
-            <arglist>(QDragLeaveEvent *e)</arglist>
+            <arglist>(QDragLeaveEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>dropEvent</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>dropEvent</anchor>
-            <arglist>(QDropEvent *e)</arglist>
+            <arglist>(QDropEvent *e) override</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type>bool</type>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
             <name>event</name>
             <anchorfile>qquickwidget.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *e)</arglist>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>paintEvent</name>
+            <anchorfile>qquickwidget.html</anchorfile>
+            <anchor>paintEvent</anchor>
+            <arglist>(QPaintEvent *event) override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -4944,6 +5772,10 @@
     <compound kind="class">
         <name>QtTest.TestCase</name>
         <filename>qml-qttest-testcase.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtTest.TouchEventSequence</name>
+        <filename>qml-qttest-toucheventsequence.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.XmlListModel.XmlRole</name>
@@ -5138,6 +5970,10 @@
         <filename>qml-qtquick-focusscope.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.GraphicsInfo</name>
+        <filename>qml-qtquick-graphicsinfo.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.GridView</name>
         <filename>qml-qtquick-gridview.html</filename>
     </compound>
@@ -5206,6 +6042,10 @@
         <filename>qml-qtquick-touchpoint.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.GestureEvent</name>
+        <filename>qml-qtquick-gestureevent.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.MultiPointTouchArea</name>
         <filename>qml-qtquick-multipointtoucharea.html</filename>
     </compound>
@@ -5272,6 +6112,10 @@
     <compound kind="class">
         <name>QtQuick.GridMesh</name>
         <filename>qml-qtquick-gridmesh.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.BorderImageMesh</name>
+        <filename>qml-qtquick-borderimagemesh.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.ShaderEffectSource</name>

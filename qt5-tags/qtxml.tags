@@ -2028,6 +2028,13 @@
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qxmlattributes.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QXmlAttributes &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>index</name>
             <anchorfile>qxmlattributes.html</anchorfile>

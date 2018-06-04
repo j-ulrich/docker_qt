@@ -928,6 +928,89 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QHumidityReading</name>
+        <filename>qhumidityreading.html</filename>
+        <base>QSensorReading</base>
+        <member kind="property" type="qreal">
+            <name>relativeHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>relativeHumidity-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="qreal">
+            <name>absoluteHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>absoluteHumidity-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>relativeHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>relativeHumidity-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRelativeHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>setRelativeHumidity</anchor>
+            <arglist>(qreal humidity)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>absoluteHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>absoluteHumidity-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAbsoluteHumidity</name>
+            <anchorfile>qhumidityreading.html</anchorfile>
+            <anchor>setAbsoluteHumidity</anchor>
+            <arglist>(qreal value)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QHumidityFilter</name>
+        <filename>qhumidityfilter.html</filename>
+        <base>QSensorFilter</base>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>filter</name>
+            <anchorfile>qhumidityfilter.html</anchorfile>
+            <anchor>filter</anchor>
+            <arglist>(QHumidityReading *reading) = 0</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QHumiditySensor</name>
+        <filename>qhumiditysensor.html</filename>
+        <base>QSensor</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHumiditySensor</name>
+            <anchorfile>qhumiditysensor.html</anchorfile>
+            <anchor>QHumiditySensor</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QHumiditySensor</name>
+            <anchorfile>qhumiditysensor.html</anchorfile>
+            <anchor>dtor.QHumiditySensor</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHumidityReading *</type>
+            <name>reading</name>
+            <anchorfile>qhumiditysensor.html</anchorfile>
+            <anchor>reading</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QIRProximityReading</name>
         <filename>qirproximityreading.html</filename>
         <base>QSensorReading</base>
@@ -986,6 +1069,103 @@
             <type>QIRProximityReading *</type>
             <name>reading</name>
             <anchorfile>qirproximitysensor.html</anchorfile>
+            <anchor>reading</anchor>
+            <arglist>() const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QLidReading</name>
+        <filename>qlidreading.html</filename>
+        <base>QSensorReading</base>
+        <member kind="property" type="bool">
+            <name>backLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>backLidClosed-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>frontLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>frontLidClosed-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>backLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>backLidClosed-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBackLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>setBackLidClosed</anchor>
+            <arglist>(bool closed)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>frontLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>frontLidClosed-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFrontLidClosed</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>setFrontLidClosed</anchor>
+            <arglist>(bool closed)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>backLidChanged</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>backLidChanged</anchor>
+            <arglist>(bool closed)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>frontLidChanged</name>
+            <anchorfile>qlidreading.html</anchorfile>
+            <anchor>frontLidChanged</anchor>
+            <arglist>(bool closed)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QLidFilter</name>
+        <filename>qlidfilter.html</filename>
+        <base>QSensorFilter</base>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual bool</type>
+            <name>filter</name>
+            <anchorfile>qlidfilter.html</anchorfile>
+            <anchor>filter</anchor>
+            <arglist>(QLidReading *reading) = 0</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QLidSensor</name>
+        <filename>qlidsensor.html</filename>
+        <base>QSensor</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QLidSensor</name>
+            <anchorfile>qlidsensor.html</anchorfile>
+            <anchor>QLidSensor</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QLidSensor</name>
+            <anchorfile>qlidsensor.html</anchorfile>
+            <anchor>dtor.QLidSensor</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QLidReading *</type>
+            <name>reading</name>
+            <anchorfile>qlidsensor.html</anchorfile>
             <anchor>reading</anchor>
             <arglist>() const</arglist>
         </member>
@@ -2735,12 +2915,28 @@
         <filename>qml-qtsensors-holsterreading.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtSensors.HumiditySensor</name>
+        <filename>qml-qtsensors-humiditysensor.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtSensors.HumidityReading</name>
+        <filename>qml-qtsensors-humidityreading.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtSensors.IRProximitySensor</name>
         <filename>qml-qtsensors-irproximitysensor.html</filename>
     </compound>
     <compound kind="class">
         <name>QtSensors.IRProximityReading</name>
         <filename>qml-qtsensors-irproximityreading.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtSensors.LidSensor</name>
+        <filename>qml-qtsensors-lidsensor.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtSensors.LidReading</name>
+        <filename>qml-qtsensors-lidreading.html</filename>
     </compound>
     <compound kind="class">
         <name>QtSensors.LightSensor</name>

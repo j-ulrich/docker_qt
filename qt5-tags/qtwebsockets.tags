@@ -408,6 +408,13 @@
             <anchor>sslErrors</anchor>
             <arglist>(const QList&lt;QSslError&gt; &amp;errors)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>preSharedKeyAuthenticationRequired</name>
+            <anchorfile>qwebsocket.html</anchorfile>
+            <anchor>preSharedKeyAuthenticationRequired</anchor>
+            <arglist>(QSslPreSharedKeyAuthenticator *authenticator)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QWebSocketCorsAuthenticator</name>
@@ -786,6 +793,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>handleConnection</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>handleConnection</anchor>
+            <arglist>(QTcpSocket *socket) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>acceptError</name>
             <anchorfile>qwebsocketserver.html</anchorfile>
             <anchor>acceptError</anchor>
@@ -825,6 +839,13 @@
             <anchorfile>qwebsocketserver.html</anchorfile>
             <anchor>sslErrors</anchor>
             <arglist>(const QList&lt;QSslError&gt; &amp;errors)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>preSharedKeyAuthenticationRequired</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>preSharedKeyAuthenticationRequired</anchor>
+            <arglist>(QSslPreSharedKeyAuthenticator *authenticator)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

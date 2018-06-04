@@ -62,6 +62,20 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QJSValue</type>
+            <name>newQMetaObject</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>newQMetaObject</anchor>
+            <arglist>(const QMetaObject *metaObject)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QJSValue</type>
+            <name>newQMetaObject</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>newQMetaObject-1</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QJSValue</type>
             <name>toScriptValue</name>
             <anchorfile>qjsengine.html</anchorfile>
             <anchor>toScriptValue</anchor>
@@ -281,6 +295,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isQMetaObject</name>
+            <anchorfile>qjsvalue.html</anchorfile>
+            <anchor>isQMetaObject</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isObject</name>
             <anchorfile>qjsvalue.html</anchorfile>
             <anchor>isObject</anchor>
@@ -361,6 +382,13 @@
             <name>toQObject</name>
             <anchorfile>qjsvalue.html</anchorfile>
             <anchor>toQObject</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QMetaObject *</type>
+            <name>toQMetaObject</name>
+            <anchorfile>qjsvalue.html</anchorfile>
+            <anchor>toQMetaObject</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -626,7 +654,7 @@
             <name>rootObjects</name>
             <anchorfile>qqmlapplicationengine.html</anchorfile>
             <anchor>rootObjects</anchor>
-            <arglist>()</arglist>
+            <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1215,6 +1243,13 @@
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>offlineStorageDatabaseFilePath</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>offlineStorageDatabaseFilePath</anchor>
+            <arglist>(const QString &amp;databaseName) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QUrl</type>
             <name>baseUrl</name>
             <anchorfile>qqmlengine.html</anchorfile>
@@ -1288,7 +1323,7 @@
             <name>event</name>
             <anchorfile>qqmlengine.html</anchorfile>
             <anchor>event</anchor>
-            <arglist>(QEvent *e)</arglist>
+            <arglist>(QEvent *e) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1296,6 +1331,13 @@
             <anchorfile>qqmlengine.html</anchorfile>
             <anchor>quit</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>exit</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>exit</anchor>
+            <arglist>(int retCode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1405,6 +1447,20 @@
             <anchorfile>qqmlerror.html</anchorfile>
             <anchor>setObject</anchor>
             <arglist>(QObject *object)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtMsgType</type>
+            <name>messageType</name>
+            <anchorfile>qqmlerror.html</anchorfile>
+            <anchor>messageType</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMessageType</name>
+            <anchorfile>qqmlerror.html</anchorfile>
+            <anchor>setMessageType</anchor>
+            <arglist>(QtMsgType messageType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
@@ -1563,7 +1619,6 @@
         <name>QQmlExtensionPlugin</name>
         <filename>qqmlextensionplugin.html</filename>
         <base>QObject</base>
-        <base>QQmlExtensionInterface</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QQmlExtensionPlugin</name>
@@ -1583,14 +1638,14 @@
             <name>registerTypes</name>
             <anchorfile>qqmlextensionplugin.html</anchorfile>
             <anchor>registerTypes</anchor>
-            <arglist>(const char *uri) = 0</arglist>
+            <arglist>(const char *uri) override = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>initializeEngine</name>
             <anchorfile>qqmlextensionplugin.html</anchorfile>
             <anchor>initializeEngine</anchor>
-            <arglist>(QQmlEngine *engine, const char *uri)</arglist>
+            <arglist>(QQmlEngine *engine, const char *uri) override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2614,6 +2669,10 @@
     <compound kind="class">
         <name>QtQml.Locale</name>
         <filename>qml-qtqml-locale.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.LoggingCategory</name>
+        <filename>qml-qtqml-loggingcategory.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQml.Binding</name>

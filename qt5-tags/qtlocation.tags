@@ -116,6 +116,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>aborted</name>
+            <anchorfile>qgeocodereply.html</anchorfile>
+            <anchor>aborted</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>error</name>
             <anchorfile>qgeocodereply.html</anchorfile>
             <anchor>error-1</anchor>
@@ -777,6 +784,13 @@
             <name>finished</name>
             <anchorfile>qgeoroutereply.html</anchorfile>
             <anchor>finished</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>aborted</name>
+            <anchorfile>qgeoroutereply.html</anchorfile>
+            <anchor>aborted</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4044,6 +4058,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>aborted</name>
+            <anchorfile>qplacereply.html</anchorfile>
+            <anchor>aborted</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>error</name>
             <anchorfile>qplacereply.html</anchorfile>
             <anchor>error-1</anchor>
@@ -4866,6 +4887,94 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QtLocation.MapCircle</name>
+        <filename>qml-qtlocation-mapcircle.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.GeocodeModel</name>
+        <filename>qml-qtlocation-geocodemodel.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.RouteManeuver</name>
+        <filename>qml-qtlocation-routemaneuver.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.Map</name>
+        <filename>qml-qtlocation-map.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapCopyrightNotice</name>
+        <filename>qml-qtlocation-mapcopyrightnotice.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapItemGroup</name>
+        <filename>qml-qtlocation-mapitemgroup.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapItemView</name>
+        <filename>qml-qtlocation-mapitemview.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapParameter</name>
+        <filename>qml-qtlocation-mapparameter.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapQuickItem</name>
+        <filename>qml-qtlocation-mapquickitem.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapType</name>
+        <filename>qml-qtlocation-maptype.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.Route</name>
+        <filename>qml-qtlocation-route.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.RouteModel</name>
+        <filename>qml-qtlocation-routemodel.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.RouteQuery</name>
+        <filename>qml-qtlocation-routequery.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.RouteSegment</name>
+        <filename>qml-qtlocation-routesegment.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.Plugin</name>
+        <filename>qml-qtlocation-plugin.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.PluginParameter</name>
+        <filename>qml-qtlocation-pluginparameter.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapPolygon</name>
+        <filename>qml-qtlocation-mappolygon.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapPolyline</name>
+        <filename>qml-qtlocation-mappolyline.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapRectangle</name>
+        <filename>qml-qtlocation-maprectangle.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapRoute</name>
+        <filename>qml-qtlocation-maproute.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapPinchEvent</name>
+        <filename>qml-qtlocation-mappinchevent.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtLocation.MapGestureArea</name>
+        <filename>qml-qtlocation-mapgesturearea.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtLocation.Category</name>
         <filename>qml-qtlocation-category.html</filename>
     </compound>
@@ -4928,81 +5037,5 @@
     <compound kind="class">
         <name>QtLocation.CategoryModel</name>
         <filename>qml-qtlocation-categorymodel.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapCircle</name>
-        <filename>qml-qtlocation-mapcircle.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.GeocodeModel</name>
-        <filename>qml-qtlocation-geocodemodel.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.RouteManeuver</name>
-        <filename>qml-qtlocation-routemaneuver.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.Map</name>
-        <filename>qml-qtlocation-map.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapItemView</name>
-        <filename>qml-qtlocation-mapitemview.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapQuickItem</name>
-        <filename>qml-qtlocation-mapquickitem.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapType</name>
-        <filename>qml-qtlocation-maptype.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.Route</name>
-        <filename>qml-qtlocation-route.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.RouteModel</name>
-        <filename>qml-qtlocation-routemodel.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.RouteQuery</name>
-        <filename>qml-qtlocation-routequery.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.RouteSegment</name>
-        <filename>qml-qtlocation-routesegment.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.Plugin</name>
-        <filename>qml-qtlocation-plugin.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.PluginParameter</name>
-        <filename>qml-qtlocation-pluginparameter.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapPolygon</name>
-        <filename>qml-qtlocation-mappolygon.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapPolyline</name>
-        <filename>qml-qtlocation-mappolyline.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapRectangle</name>
-        <filename>qml-qtlocation-maprectangle.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapRoute</name>
-        <filename>qml-qtlocation-maproute.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapPinchEvent</name>
-        <filename>qml-qtlocation-mappinchevent.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtLocation.MapGestureArea</name>
-        <filename>qml-qtlocation-mapgesturearea.html</filename>
     </compound>
 </tagfile>

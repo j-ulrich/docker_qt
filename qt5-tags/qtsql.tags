@@ -1,91 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
-    <compound kind="namespace">
-        <name>QSql</name>
-        <filename>qsql.html</filename>
-        <member kind="enum">
-            <name>Location</name>
-            <anchor>Location-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="BeforeFirstRow">
-            <anchor>Location-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="AfterLastRow">
-            <anchor>Location-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>ParamTypeFlag</name>
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="In">
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Out">
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="InOut">
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Binary">
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="typedef" type="QSql::ParamTypeFlag">
-            <name>ParamType</name>
-            <anchorfile>qsql.html</anchorfile>
-            <anchor>ParamTypeFlag-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>TableType</name>
-            <anchor>TableType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Tables">
-            <anchor>TableType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="SystemTables">
-            <anchor>TableType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Views">
-            <anchor>TableType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="AllTables">
-            <anchor>TableType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>NumericalPrecisionPolicy</name>
-            <anchor>NumericalPrecisionPolicy-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="LowPrecisionInt32">
-            <anchor>NumericalPrecisionPolicy-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="LowPrecisionInt64">
-            <anchor>NumericalPrecisionPolicy-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="LowPrecisionDouble">
-            <anchor>NumericalPrecisionPolicy-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="HighPrecision">
-            <anchor>NumericalPrecisionPolicy-enum</anchor>
-            <arglist></arglist>
-        </member>
-    </compound>
     <compound kind="class">
         <name>QSqlDriverCreatorBase</name>
         <filename>qsqldrivercreatorbase.html</filename>
@@ -573,47 +487,6 @@
             <anchor>NotificationSource-enum</anchor>
             <arglist></arglist>
         </member>
-        <member kind="enum">
-            <name>DbmsType</name>
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="UnknownDbms">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="MSSqlServer">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="MySqlServer">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="PostgreSQL">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Oracle">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Sybase">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="SQLite">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Interbase">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="DB2">
-            <anchor>DbmsType-enum</anchor>
-            <arglist></arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSqlDriver</name>
@@ -794,13 +667,6 @@
             <name>numericalPrecisionPolicy</name>
             <anchorfile>qsqldriver.html</anchorfile>
             <anchor>numericalPrecisionPolicy</anchor>
-            <arglist>() const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>DbmsType</type>
-            <name>dbmsType</name>
-            <anchorfile>qsqldriver.html</anchorfile>
-            <anchor>dbmsType</anchor>
             <arglist>() const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2246,6 +2112,92 @@
             <arglist>()</arglist>
         </member>
     </compound>
+    <compound kind="namespace">
+        <name>QSql</name>
+        <filename>qsql.html</filename>
+        <member kind="enum">
+            <name>Location</name>
+            <anchor>Location-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="BeforeFirstRow">
+            <anchor>Location-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="AfterLastRow">
+            <anchor>Location-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>ParamTypeFlag</name>
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="In">
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Out">
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="InOut">
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Binary">
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QSql::ParamTypeFlag">
+            <name>ParamType</name>
+            <anchorfile>qsql.html</anchorfile>
+            <anchor>ParamTypeFlag-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>TableType</name>
+            <anchor>TableType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Tables">
+            <anchor>TableType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="SystemTables">
+            <anchor>TableType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Views">
+            <anchor>TableType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="AllTables">
+            <anchor>TableType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>NumericalPrecisionPolicy</name>
+            <anchor>NumericalPrecisionPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="LowPrecisionInt32">
+            <anchor>NumericalPrecisionPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="LowPrecisionInt64">
+            <anchor>NumericalPrecisionPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="LowPrecisionDouble">
+            <anchor>NumericalPrecisionPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="HighPrecision">
+            <anchor>NumericalPrecisionPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
     <compound kind="class">
         <name>QSqlQueryModel</name>
         <filename>qsqlquerymodel.html</filename>
@@ -2421,14 +2373,14 @@
             <name>createEditor</name>
             <anchorfile>qsqlrelationaldelegate.html</anchorfile>
             <anchor>createEditor</anchor>
-            <arglist>(QWidget *parent, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</arglist>
+            <arglist>(QWidget *parent, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setModelData</name>
             <anchorfile>qsqlrelationaldelegate.html</anchorfile>
             <anchor>setModelData</anchor>
-            <arglist>(QWidget *editor, QAbstractItemModel *model, const QModelIndex &amp;index) const</arglist>
+            <arglist>(QWidget *editor, QAbstractItemModel *model, const QModelIndex &amp;index) const override</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2447,6 +2399,13 @@
             <anchorfile>qsqlrelation.html</anchorfile>
             <anchor>QSqlRelation-1</anchor>
             <arglist>(const QString &amp;tableName, const QString &amp;indexColumn, const QString &amp;displayColumn)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qsqlrelation.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QSqlRelation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>

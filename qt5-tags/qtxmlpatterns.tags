@@ -3,6 +3,7 @@
     <compound kind="class">
         <name>QAbstractMessageHandler</name>
         <filename>qabstractmessagehandler.html</filename>
+        <base>QObject</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QAbstractMessageHandler</name>
@@ -35,6 +36,7 @@
     <compound kind="class">
         <name>QAbstractUriResolver</name>
         <filename>qabstracturiresolver.html</filename>
+        <base>QObject</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QAbstractUriResolver</name>
@@ -183,6 +185,7 @@
     <compound kind="class">
         <name>QAbstractXmlNodeModel</name>
         <filename>qabstractxmlnodemodel.html</filename>
+        <base>QSharedData</base>
         <member kind="enum">
             <name>SimpleAxis</name>
             <anchor>SimpleAxis-enum</anchor>
@@ -863,6 +866,13 @@
             <anchorfile>qxmlname.html</anchorfile>
             <anchor>operator-not-eq</anchor>
             <arglist>(const QXmlName &amp;other) const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QXmlName</name>
+            <anchorfile>qxmlname.html</anchorfile>
+            <anchor>QXmlName-2</anchor>
+            <arglist>(const QXmlName &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QXmlName &amp;</type>

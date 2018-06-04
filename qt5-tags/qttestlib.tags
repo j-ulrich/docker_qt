@@ -135,6 +135,10 @@
             <anchor>QBenchmarkMetric-enum</anchor>
             <arglist></arglist>
         </member>
+        <member name="RefCPUCycles">
+            <anchor>QBenchmarkMetric-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>const char *</type>
             <name>benchmarkMetricName</name>
@@ -153,7 +157,7 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-19</anchor>
+            <anchor>toString-14</anchor>
             <arglist>(const QString &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -251,8 +255,22 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-14</anchor>
+            <anchor>toString</anchor>
+            <arglist>(const QUuid &amp;uuid)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>char *</type>
+            <name>toString</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>toString-15</anchor>
             <arglist>(const QVariant &amp;variant)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>char *</type>
+            <name>toString</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>toString-16</anchor>
+            <arglist>(std::nullptr_t )</arglist>
         </member>
         <member kind="enum">
             <name>TestFailMode</name>
@@ -271,35 +289,35 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-15</anchor>
+            <anchor>toString-17</anchor>
             <arglist>(QSizePolicy::Policy p)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-16</anchor>
+            <anchor>toString-18</anchor>
             <arglist>(QSizePolicy::ControlTypes cts)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-17</anchor>
+            <anchor>toString-19</anchor>
             <arglist>(QSizePolicy::ControlType ct)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-18</anchor>
+            <anchor>toString-20</anchor>
             <arglist>(QSizePolicy sp)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString</anchor>
+            <anchor>toString-21</anchor>
             <arglist>(const T &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -406,6 +424,34 @@
             <anchorfile>qtest.html</anchorfile>
             <anchor>newRow</anchor>
             <arglist>(const char *dataTag)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTestData &amp;</type>
+            <name>addRow</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>addRow</anchor>
+            <arglist>(const char *format, ... )</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>compare_ptr_helper</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>compare_ptr_helper</anchor>
+            <arglist>(const volatile void *t1, const volatile void *t2, const char *actual, const char *expected, const char *file, int line)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>compare_ptr_helper</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>compare_ptr_helper-1</anchor>
+            <arglist>(const volatile void *t1, std::nullptr_t , const char *actual, const char *expected, const char *file, int line)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>compare_ptr_helper</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>compare_ptr_helper-2</anchor>
+            <arglist>(std::nullptr_t , const volatile void *t2, const char *actual, const char *expected, const char *file, int line)</arglist>
         </member>
         <member kind="enum">
             <name>AttributeIndex</name>
@@ -797,6 +843,13 @@
             <anchorfile>qtest-obsolete.html</anchorfile>
             <anchor>qWaitForWindowShown</anchor>
             <arglist>(QWidget *widget, int timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTouchDevice *</type>
+            <name>createTouchDevice</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>createTouchDevice</anchor>
+            <arglist>(QTouchDevice::DeviceType devType)</arglist>
         </member>
         <class>QTest::QTouchEventSequence</class>
         <member kind="function" protection="public" virtualness="non" static="no">

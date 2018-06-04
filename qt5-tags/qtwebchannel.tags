@@ -3,6 +3,7 @@
     <compound kind="class">
         <name>QWebChannel</name>
         <filename>qwebchannel.html</filename>
+        <base>QObject</base>
         <member kind="property" type="bool">
             <name>blockUpdates</name>
             <anchorfile>qwebchannel.html</anchorfile>
@@ -90,6 +91,7 @@
     <compound kind="class">
         <name>QWebChannelAbstractTransport</name>
         <filename>qwebchannelabstracttransport.html</filename>
+        <base>QObject</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebChannelAbstractTransport</name>
