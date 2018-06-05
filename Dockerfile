@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     doxygen \
     qt5-default \
     gcovr \
-    openjdk-8-jre
+    openjdk-8-jre \
+    wget
 
 COPY sonar-scanner /opt/sonar-scanner/
 
