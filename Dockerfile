@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     qt5-default \
     gcovr \
     openjdk-8-jre \
-    wget
+    wget \
+    unzip
 
 COPY sonar-scanner /opt/sonar-scanner/
 
