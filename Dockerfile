@@ -10,9 +10,11 @@ RUN apt-get update && apt-get install -y \
     gcovr \
     openjdk-8-jre \
     python3 \
-    wget
+    wget \
+    unzip
 
 COPY sonar-scanner /opt/sonar-scanner/
+RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
 
 COPY qt5-tags/activeqt.tags              /usr/share/qt5/doc/activeqt/activeqt.tags
 COPY qt5-tags/qdoc.tags                  /usr/share/qt5/doc/qdoc/qdoc.tags
