@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     gcovr \
     openjdk-8-jre \
     python3 \
-    wget \
+    curl \
     unzip
 
 COPY sonar-scanner /opt/sonar-scanner/
