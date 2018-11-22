@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     lcov \
     openjdk-8-jre \
     python3 \
+    python3-pip \
     curl \
     unzip
 RUN pip install "coverxygen==1.3.1"
