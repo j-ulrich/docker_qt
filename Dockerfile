@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     curl \
     unzip
-RUN pip install "coverxygen==1.3.1"
+RUN pip3 install "coverxygen==1.3.1"
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
