@@ -7,14 +7,13 @@ RUN apt-get update && apt-get install -y \
     make \
     doxygen \
     qt5-default \
-    gcovr \
     lcov \
     openjdk-8-jre \
     python3 \
     python3-pip \
     curl \
     unzip
-RUN pip3 install "coverxygen==1.5.0"
+RUN pip3 install "coverxygen==1.5.0" gcovr
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
