@@ -13,5 +13,5 @@ Image configuration:
 - lcov 1.13
 - coverxygen 1.5.0
 - Tags files for Qt 5.9.5 (to link in Doxygen documentation)
-- OpenJDK 8 JRE
+- OpenJDK 11 JRE
 - SonarQube Scanner 3.2.0.1227 (located at `/opt/sonar-scanner`)

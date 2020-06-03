@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     doxygen \
     qt5-default \
     lcov \
-    openjdk-8-jre \
+    openjdk-11-jre \
     python3 \
     python3-pip \
     curl \
