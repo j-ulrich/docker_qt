@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     gcc \
     make \
+    lcov \
     qt5-default \
     python3 \
     python3-pip \
