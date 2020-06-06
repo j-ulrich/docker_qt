@@ -9,7 +9,7 @@ Image configuration:
 - GCC/G++ 7.3.0
 - CMake 3.10.2
 - Doxygen 1.8.13
-- gcovr 3.4
+- gcovr 4.2
 - lcov 1.13
 - coverxygen 1.5.0
 - Tags files for Qt 5.9.5 (to link in Doxygen documentation)

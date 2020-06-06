@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     curl \
     unzip
-RUN pip3 install "coverxygen==1.5.0" gcovr
+RUN pip3 install "coverxygen==1.5.0" "gcovr==4.2"
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
