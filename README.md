@@ -1,4 +1,4 @@
-# Dockerfile: Ubuntu Focal, CMake, Qt 5.12
+# Dockerfile: Ubuntu Focal, Qt 5.12
 
 Dockerfile for creating images for building and automated testing of Qt 5 applications.
 
@@ -15,3 +15,8 @@ Image configuration:
 - Tags files for Qt 5.12.8 (to link in Doxygen documentation)
 - OpenJDK 11 JRE
 - SonarQube Scanner 3.2.0.1227 (located at `/opt/sonar-scanner`)
+
+
+### Other Versions ###
+See the [Ubuntu Qt Version Table](https://github.com/j-ulrich/docker_qt/wiki/Ubuntu-Qt-Version-Table) in the project
+wiki for an overview of the provided Ubuntu versions along with the corresponding Qt version.
