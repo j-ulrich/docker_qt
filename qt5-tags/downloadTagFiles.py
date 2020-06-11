@@ -6,64 +6,43 @@ import os
 
 _components = [
 	"activeqt",
-	"global",
 	"qdoc",
-	"qmake",
 	"qt3d",
-	"qtandroidextras",
-	"qtassistant",
 	"qtbluetooth",
-	"qtcanvas3d",
 	"qtconcurrent",
 	"qtcore",
-	"qtdbus",
-	"qtdesigner",
-	"qtdoc",
-	"qtgamepad",
 	"qtgraphicaleffects",
 	"qtgui",
-	"qthelp",
-	"qtimageformats",
 	"qtlabscalendar",
 	"qtlabsplatform",
-	"qtlinguist",
 	"qtlocation",
-	"qtmacextras",
-	"qtmultimedia",
 	"qtnetwork",
 	"qtnfc",
-	"qtopengl",
-	"qtplatformheaders",
 	"qtpositioning",
 	"qtprintsupport",
 	"qtqml",
 	"qtquick",
 	"qtquickcontrols",
-	"qtquickcontrols2",
-	"qtquickdialogs",
-	"qtquickextras",
+	"qtquickcontrols1",
+	"qtremoteobjects",
 	"qtscxml",
 	"qtsensors",
 	"qtserialbus",
-	"qtserialport",
+	"qtspeech",
 	"qtsql",
 	"qtsvg",
 	"qttestlib",
-	"qtuitools",
-	"qtwaylandcompositor",
 	"qtwebchannel",
 	"qtwebengine",
 	"qtwebsockets",
-	"qtwebview",
 	"qtwidgets",
-	"qtwinextras",
-	"qtx11extras",
 	"qtxml",
 	"qtxmlpatterns",
 ]
 _args = None
 
 def main():
+	logging.basicConfig( level=logging.INFO )
 	global _args
 	_args = parseArguments()
 	downloadTagFiles()
@@ -91,8 +70,9 @@ def downloadTagFile(component):
 		storeTagFileContent(component, tagFileContent)
 
 def fetchTagFileContent(component):
-	response = requests.get('http://doc.qt.io/qt-{0}/{1}.tags'.format(_args.qtVersion, component))
+	response = requests.get('https://doc.qt.io/qt-{0}/{1}.tags'.format(_args.qtVersion, component))
 	if response.status_code == requests.status_codes.codes.OK:
+		logging.info( 'Downloaded {}.tags'.format( component ) )
 		return response.content
 	else:
 		logging.warn('Could not download .tags file for component {0}'.format(component))

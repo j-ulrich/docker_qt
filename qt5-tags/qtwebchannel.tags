@@ -4,6 +4,41 @@
         <name>QWebChannel</name>
         <filename>qwebchannel.html</filename>
         <base>QObject</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual const QMetaObject *</type>
+            <name>metaObject</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>metaObject</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void *</type>
+            <name>qt_metacast</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>qt_metacast</anchor>
+            <arglist>(const char *)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual int</type>
+            <name>qt_metacall</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>qt_metacall</anchor>
+            <arglist>(QMetaObject::Call , int , void **)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>tr</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>tr</anchor>
+            <arglist>(const char *s, const char *c, int n)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>trUtf8</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>trUtf8</anchor>
+            <arglist>(const char *s, const char *c, int n)</arglist>
+        </member>
         <member kind="property" type="bool">
             <name>blockUpdates</name>
             <anchorfile>qwebchannel.html</anchorfile>
@@ -17,8 +52,8 @@
             <anchor>QWebChannel</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
             <name>~QWebChannel</name>
             <anchorfile>qwebchannel.html</anchorfile>
             <anchor>dtor.QWebChannel</anchor>
@@ -36,7 +71,7 @@
             <name>registeredObjects</name>
             <anchorfile>qwebchannel.html</anchorfile>
             <anchor>registeredObjects</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -57,7 +92,7 @@
             <name>blockUpdates</name>
             <anchorfile>qwebchannel.html</anchorfile>
             <anchor>blockUpdates-prop</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -92,6 +127,41 @@
         <name>QWebChannelAbstractTransport</name>
         <filename>qwebchannelabstracttransport.html</filename>
         <base>QObject</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual const QMetaObject *</type>
+            <name>metaObject</name>
+            <anchorfile>qwebchannelabstracttransport.html</anchorfile>
+            <anchor>metaObject</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void *</type>
+            <name>qt_metacast</name>
+            <anchorfile>qwebchannelabstracttransport.html</anchorfile>
+            <anchor>qt_metacast</anchor>
+            <arglist>(const char *)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual int</type>
+            <name>qt_metacall</name>
+            <anchorfile>qwebchannelabstracttransport.html</anchorfile>
+            <anchor>qt_metacall</anchor>
+            <arglist>(QMetaObject::Call , int , void **)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>tr</name>
+            <anchorfile>qwebchannelabstracttransport.html</anchorfile>
+            <anchor>tr</anchor>
+            <arglist>(const char *s, const char *c, int n)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>trUtf8</name>
+            <anchorfile>qwebchannelabstracttransport.html</anchorfile>
+            <anchor>trUtf8</anchor>
+            <arglist>(const char *s, const char *c, int n)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebChannelAbstractTransport</name>

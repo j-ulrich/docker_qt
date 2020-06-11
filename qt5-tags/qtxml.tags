@@ -36,21 +36,21 @@
             <name>operator==</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomImplementation &amp;x) const</arglist>
+            <arglist>(const QDomImplementation &amp;x) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomImplementation &amp;x) const</arglist>
+            <arglist>(const QDomImplementation &amp;x) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>hasFeature</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>hasFeature</anchor>
-            <arglist>(const QString &amp;feature, const QString &amp;version) const</arglist>
+            <arglist>(const QString &amp;feature, const QString &amp;version) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocumentType</type>
@@ -84,7 +84,7 @@
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>InvalidDataPolicy</type>
+            <type>QDomImplementation::InvalidDataPolicy</type>
             <name>invalidDataPolicy</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>invalidDataPolicy</anchor>
@@ -95,7 +95,7 @@
             <name>setInvalidDataPolicy</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>setInvalidDataPolicy</anchor>
-            <arglist>(InvalidDataPolicy policy)</arglist>
+            <arglist>(QDomImplementation::InvalidDataPolicy policy)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -208,14 +208,14 @@
             <name>operator==</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNode &amp;n) const</arglist>
+            <arglist>(const QDomNode &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNode &amp;n) const</arglist>
+            <arglist>(const QDomNode &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -264,14 +264,14 @@
             <name>hasChildNodes</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>hasChildNodes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>cloneNode</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>cloneNode</anchor>
-            <arglist>(bool deep) const</arglist>
+            <arglist>(bool deep) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -285,105 +285,105 @@
             <name>isSupported</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isSupported</anchor>
-            <arglist>(const QString &amp;feature, const QString &amp;version) const</arglist>
+            <arglist>(const QString &amp;feature, const QString &amp;version) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>nodeName</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>nodeName</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>NodeType</type>
+            <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>parentNode</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>parentNode</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNodeList</type>
             <name>childNodes</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>childNodes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>firstChild</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>firstChild</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>lastChild</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>lastChild</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>previousSibling</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>previousSibling</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>nextSibling</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>nextSibling</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNamedNodeMap</type>
             <name>attributes</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>attributes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument</type>
             <name>ownerDocument</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>ownerDocument</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>namespaceURI</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>namespaceURI</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>localName</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>localName</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>hasAttributes</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>hasAttributes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>nodeValue</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>nodeValue</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -397,7 +397,7 @@
             <name>prefix</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>prefix</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -411,105 +411,105 @@
             <name>isAttr</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isAttr</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isCDATASection</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isCDATASection</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isDocumentFragment</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isDocumentFragment</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isDocument</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isDocument</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isDocumentType</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isDocumentType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isElement</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isEntityReference</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isEntityReference</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isText</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isText</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isEntity</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isEntity</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isNotation</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isNotation</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isProcessingInstruction</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isProcessingInstruction</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isCharacterData</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isCharacterData</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isComment</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isComment</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>namedItem</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>namedItem</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isNull</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>isNull</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -523,140 +523,140 @@
             <name>toAttr</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toAttr</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomCDATASection</type>
             <name>toCDATASection</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toCDATASection</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocumentFragment</type>
             <name>toDocumentFragment</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toDocumentFragment</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument</type>
             <name>toDocument</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toDocument</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocumentType</type>
             <name>toDocumentType</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toDocumentType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>toElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toElement</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomEntityReference</type>
             <name>toEntityReference</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toEntityReference</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomText</type>
             <name>toText</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toText</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomEntity</type>
             <name>toEntity</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toEntity</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNotation</type>
             <name>toNotation</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toNotation</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomProcessingInstruction</type>
             <name>toProcessingInstruction</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toProcessingInstruction</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomCharacterData</type>
             <name>toCharacterData</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toCharacterData</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomComment</type>
             <name>toComment</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>toComment</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>save</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>save</anchor>
-            <arglist>(QTextStream &amp;stream, int indent, EncodingPolicy encodingPolicy) const</arglist>
+            <arglist>(QTextStream &amp;stream, int indent, QDomNode::EncodingPolicy encodingPolicy) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>firstChildElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>firstChildElement</anchor>
-            <arglist>(const QString &amp;tagName) const</arglist>
+            <arglist>(const QString &amp;tagName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>lastChildElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>lastChildElement</anchor>
-            <arglist>(const QString &amp;tagName) const</arglist>
+            <arglist>(const QString &amp;tagName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>previousSiblingElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>previousSiblingElement</anchor>
-            <arglist>(const QString &amp;tagName) const</arglist>
+            <arglist>(const QString &amp;tagName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>nextSiblingElement</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>nextSiblingElement</anchor>
-            <arglist>(const QString &amp;tagName) const</arglist>
+            <arglist>(const QString &amp;tagName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>lineNumber</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>lineNumber</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>columnNumber</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>columnNumber</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -688,14 +688,14 @@
             <name>operator==</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNodeList &amp;n) const</arglist>
+            <arglist>(const QDomNodeList &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNodeList &amp;n) const</arglist>
+            <arglist>(const QDomNodeList &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -709,42 +709,42 @@
             <name>item</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>item</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>at</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>at</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>length</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>length</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>count</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>count</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>size</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>size</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isEmpty</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>isEmpty</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -777,49 +777,49 @@
             <name>name</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>name</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNamedNodeMap</type>
             <name>entities</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>entities</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNamedNodeMap</type>
             <name>notations</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>notations</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>publicId</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>publicId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>systemId</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>systemId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>internalSubset</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>internalSubset</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -929,7 +929,7 @@
             <name>elementsByTagName</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>elementsByTagName</anchor>
-            <arglist>(const QString &amp;tagname) const</arglist>
+            <arglist>(const QString &amp;tagname) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
@@ -971,28 +971,28 @@
             <name>doctype</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>doctype</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomImplementation</type>
             <name>implementation</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>implementation</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>documentElement</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>documentElement</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -1055,14 +1055,14 @@
             <name>toString</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>toString</anchor>
-            <arglist>(int indent) const</arglist>
+            <arglist>(int indent) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QByteArray</type>
             <name>toByteArray</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>toByteArray</anchor>
-            <arglist>(int indent) const</arglist>
+            <arglist>(int indent) const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1094,14 +1094,14 @@
             <name>operator==</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n) const</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n) const</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;n) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1115,7 +1115,7 @@
             <name>namedItem</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>namedItem</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
@@ -1136,14 +1136,14 @@
             <name>item</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>item</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
             <name>namedItemNS</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>namedItemNS</anchor>
-            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const</arglist>
+            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
@@ -1164,35 +1164,35 @@
             <name>length</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>length</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>count</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>count</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>size</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>size</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isEmpty</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>isEmpty</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>contains</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>contains</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1225,7 +1225,7 @@
             <name>nodeType</name>
             <anchorfile>qdomdocumentfragment.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1293,14 +1293,14 @@
             <name>length</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>length</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>data</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>data</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1314,7 +1314,7 @@
             <name>nodeType</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1347,28 +1347,28 @@
             <name>name</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>name</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>specified</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>specified</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
             <name>ownerElement</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>ownerElement</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>value</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>value</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1382,7 +1382,7 @@
             <name>nodeType</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1415,7 +1415,7 @@
             <name>attribute</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>attribute</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;defValue) const</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;defValue) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1499,21 +1499,21 @@
             <name>elementsByTagName</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>elementsByTagName</anchor>
-            <arglist>(const QString &amp;tagname) const</arglist>
+            <arglist>(const QString &amp;tagname) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>hasAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>hasAttribute</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>attributeNS</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>attributeNS</anchor>
-            <arglist>(const QString nsURI, const QString &amp;localName, const QString &amp;defValue) const</arglist>
+            <arglist>(const QString nsURI, const QString &amp;localName, const QString &amp;defValue) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1583,21 +1583,21 @@
             <name>elementsByTagNameNS</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>elementsByTagNameNS</anchor>
-            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const</arglist>
+            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>hasAttributeNS</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>hasAttributeNS</anchor>
-            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const</arglist>
+            <arglist>(const QString &amp;nsURI, const QString &amp;localName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>tagName</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>tagName</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1611,21 +1611,21 @@
             <name>attributes</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>attributes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>text</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>text</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1665,7 +1665,7 @@
             <name>nodeType</name>
             <anchorfile>qdomtext.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1698,7 +1698,7 @@
             <name>nodeType</name>
             <anchorfile>qdomcomment.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1731,7 +1731,7 @@
             <name>nodeType</name>
             <anchorfile>qdomcdatasection.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1764,21 +1764,21 @@
             <name>publicId</name>
             <anchorfile>qdomnotation.html</anchorfile>
             <anchor>publicId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>systemId</name>
             <anchorfile>qdomnotation.html</anchorfile>
             <anchor>systemId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomnotation.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1811,28 +1811,28 @@
             <name>publicId</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>publicId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>systemId</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>systemId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>notationName</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>notationName</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
             <name>nodeType</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1865,7 +1865,7 @@
             <name>nodeType</name>
             <anchorfile>qdomentityreference.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1898,14 +1898,14 @@
             <name>target</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>target</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>data</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>data</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1919,7 +1919,7 @@
             <name>nodeType</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>nodeType</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1951,42 +1951,42 @@
             <name>prefix</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>prefix</anchor>
-            <arglist>(const QString &amp;uri) const</arglist>
+            <arglist>(const QString &amp;uri) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>uri</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>uri</anchor>
-            <arglist>(const QString &amp;prefix) const</arglist>
+            <arglist>(const QString &amp;prefix) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>splitName</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>splitName</anchor>
-            <arglist>(const QString &amp;qname, QString &amp;prefix, QString &amp;localname) const</arglist>
+            <arglist>(const QString &amp;qname, QString &amp;prefix, QString &amp;localname) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>processName</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>processName</anchor>
-            <arglist>(const QString &amp;qname, bool isAttribute, QString &amp;nsuri, QString &amp;localname) const</arglist>
+            <arglist>(const QString &amp;qname, bool isAttribute, QString &amp;nsuri, QString &amp;localname) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QStringList</type>
             <name>prefixes</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>prefixes</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QStringList</type>
             <name>prefixes</name>
             <anchorfile>qxmlnamespacesupport.html</anchorfile>
             <anchor>prefixes-1</anchor>
-            <arglist>(const QString &amp;uri) const</arglist>
+            <arglist>(const QString &amp;uri) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2020,6 +2020,34 @@
             <anchor>QXmlAttributes</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QXmlAttributes</name>
+            <anchorfile>qxmlattributes.html</anchorfile>
+            <anchor>QXmlAttributes-1</anchor>
+            <arglist>(const QXmlAttributes &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QXmlAttributes</name>
+            <anchorfile>qxmlattributes.html</anchorfile>
+            <anchor>QXmlAttributes-2</anchor>
+            <arglist>(QXmlAttributes &amp;&amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QXmlAttributes &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qxmlattributes.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QXmlAttributes &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QXmlAttributes &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qxmlattributes.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QXmlAttributes &amp;&amp;)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual </type>
             <name>~QXmlAttributes</name>
@@ -2039,105 +2067,105 @@
             <name>index</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>index</anchor>
-            <arglist>(const QString &amp;qName) const</arglist>
+            <arglist>(const QString &amp;qName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>index</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>index-1</anchor>
-            <arglist>(QLatin1String qName) const</arglist>
+            <arglist>(QLatin1String qName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>index</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>index-2</anchor>
-            <arglist>(const QString &amp;uri, const QString &amp;localPart) const</arglist>
+            <arglist>(const QString &amp;uri, const QString &amp;localPart) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>length</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>length</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>count</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>count</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>localName</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>localName</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>qName</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>qName</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>uri</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>uri</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>type</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>type</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>type</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>type-1</anchor>
-            <arglist>(const QString &amp;qName) const</arglist>
+            <arglist>(const QString &amp;qName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>type</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>type-2</anchor>
-            <arglist>(const QString &amp;uri, const QString &amp;localName) const</arglist>
+            <arglist>(const QString &amp;uri, const QString &amp;localName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>value</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>value</anchor>
-            <arglist>(int index) const</arglist>
+            <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>value</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>value-1</anchor>
-            <arglist>(const QString &amp;qName) const</arglist>
+            <arglist>(const QString &amp;qName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>value</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>value-2</anchor>
-            <arglist>(QLatin1String qName) const</arglist>
+            <arglist>(QLatin1String qName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>value</name>
             <anchorfile>qxmlattributes.html</anchorfile>
             <anchor>value-3</anchor>
-            <arglist>(const QString &amp;uri, const QString &amp;localName) const</arglist>
+            <arglist>(const QString &amp;uri, const QString &amp;localName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2204,7 +2232,7 @@
             <name>data</name>
             <anchorfile>qxmlinputsource.html</anchorfile>
             <anchor>data</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QChar</type>
@@ -2257,35 +2285,35 @@
             <name>columnNumber</name>
             <anchorfile>qxmlparseexception.html</anchorfile>
             <anchor>columnNumber</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>lineNumber</name>
             <anchorfile>qxmlparseexception.html</anchorfile>
             <anchor>lineNumber</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>publicId</name>
             <anchorfile>qxmlparseexception.html</anchorfile>
             <anchor>publicId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>systemId</name>
             <anchorfile>qxmlparseexception.html</anchorfile>
             <anchor>systemId</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>message</name>
             <anchorfile>qxmlparseexception.html</anchorfile>
             <anchor>message</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2303,7 +2331,7 @@
             <name>feature</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>feature</anchor>
-            <arglist>(const QString &amp;name, bool *ok) const = 0</arglist>
+            <arglist>(const QString &amp;name, bool *ok) const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2317,14 +2345,14 @@
             <name>hasFeature</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>hasFeature</anchor>
-            <arglist>(const QString &amp;name) const = 0</arglist>
+            <arglist>(const QString &amp;name) const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void *</type>
             <name>property</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>property</anchor>
-            <arglist>(const QString &amp;name, bool *ok) const = 0</arglist>
+            <arglist>(const QString &amp;name, bool *ok) const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2338,7 +2366,7 @@
             <name>hasProperty</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>hasProperty</anchor>
-            <arglist>(const QString &amp;name) const = 0</arglist>
+            <arglist>(const QString &amp;name) const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2352,7 +2380,7 @@
             <name>entityResolver</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>entityResolver</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2366,7 +2394,7 @@
             <name>DTDHandler</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>DTDHandler</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2380,7 +2408,7 @@
             <name>contentHandler</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>contentHandler</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2394,7 +2422,7 @@
             <name>errorHandler</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>errorHandler</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2408,7 +2436,7 @@
             <name>lexicalHandler</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>lexicalHandler</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual void</type>
@@ -2422,7 +2450,7 @@
             <name>declHandler</name>
             <anchorfile>qxmlreader.html</anchorfile>
             <anchor>declHandler</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual bool</type>
@@ -2462,140 +2490,140 @@
             <name>feature</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>feature</anchor>
-            <arglist>(const QString &amp;name, bool *ok) const</arglist>
+            <arglist>(const QString &amp;name, bool *ok) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setFeature</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setFeature</anchor>
-            <arglist>(const QString &amp;name, bool enable)</arglist>
+            <arglist>(const QString &amp;name, bool enable) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>hasFeature</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>hasFeature</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void *</type>
             <name>property</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>property</anchor>
-            <arglist>(const QString &amp;name, bool *ok) const</arglist>
+            <arglist>(const QString &amp;name, bool *ok) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setProperty</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setProperty</anchor>
-            <arglist>(const QString &amp;name, void *value)</arglist>
+            <arglist>(const QString &amp;name, void *value) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>hasProperty</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>hasProperty</anchor>
-            <arglist>(const QString &amp;name) const</arglist>
+            <arglist>(const QString &amp;name) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setEntityResolver</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setEntityResolver</anchor>
-            <arglist>(QXmlEntityResolver *handler)</arglist>
+            <arglist>(QXmlEntityResolver *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlEntityResolver *</type>
             <name>entityResolver</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>entityResolver</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setDTDHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setDTDHandler</anchor>
-            <arglist>(QXmlDTDHandler *handler)</arglist>
+            <arglist>(QXmlDTDHandler *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlDTDHandler *</type>
             <name>DTDHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>DTDHandler</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setContentHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setContentHandler</anchor>
-            <arglist>(QXmlContentHandler *handler)</arglist>
+            <arglist>(QXmlContentHandler *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlContentHandler *</type>
             <name>contentHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>contentHandler</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setErrorHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setErrorHandler</anchor>
-            <arglist>(QXmlErrorHandler *handler)</arglist>
+            <arglist>(QXmlErrorHandler *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlErrorHandler *</type>
             <name>errorHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>errorHandler</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setLexicalHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setLexicalHandler</anchor>
-            <arglist>(QXmlLexicalHandler *handler)</arglist>
+            <arglist>(QXmlLexicalHandler *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlLexicalHandler *</type>
             <name>lexicalHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>lexicalHandler</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>setDeclHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>setDeclHandler</anchor>
-            <arglist>(QXmlDeclHandler *handler)</arglist>
+            <arglist>(QXmlDeclHandler *handler) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QXmlDeclHandler *</type>
             <name>declHandler</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>declHandler</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>parse</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>parse</anchor>
-            <arglist>(const QXmlInputSource &amp;input)</arglist>
+            <arglist>(const QXmlInputSource &amp;input) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>parse</name>
             <anchorfile>qxmlsimplereader.html</anchorfile>
             <anchor>parse-1</anchor>
-            <arglist>(const QXmlInputSource *input)</arglist>
+            <arglist>(const QXmlInputSource *input) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
@@ -2634,14 +2662,14 @@
             <name>columnNumber</name>
             <anchorfile>qxmllocator.html</anchorfile>
             <anchor>columnNumber</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual int</type>
             <name>lineNumber</name>
             <anchorfile>qxmllocator.html</anchorfile>
             <anchor>lineNumber</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2736,7 +2764,7 @@
             <name>errorString</name>
             <anchorfile>qxmlcontenthandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2775,7 +2803,7 @@
             <name>errorString</name>
             <anchorfile>qxmlerrorhandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2807,7 +2835,7 @@
             <name>errorString</name>
             <anchorfile>qxmldtdhandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2832,7 +2860,7 @@
             <name>errorString</name>
             <anchorfile>qxmlentityresolver.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2899,7 +2927,7 @@
             <name>errorString</name>
             <anchorfile>qxmllexicalhandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2938,7 +2966,7 @@
             <name>errorString</name>
             <anchorfile>qxmldeclhandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const = 0</arglist>
+            <arglist>() const const = 0</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2969,196 +2997,196 @@
             <name>setDocumentLocator</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>setDocumentLocator</anchor>
-            <arglist>(QXmlLocator *locator)</arglist>
+            <arglist>(QXmlLocator *locator) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startDocument</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startDocument</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endDocument</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endDocument</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startPrefixMapping</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startPrefixMapping</anchor>
-            <arglist>(const QString &amp;prefix, const QString &amp;uri)</arglist>
+            <arglist>(const QString &amp;prefix, const QString &amp;uri) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endPrefixMapping</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endPrefixMapping</anchor>
-            <arglist>(const QString &amp;prefix)</arglist>
+            <arglist>(const QString &amp;prefix) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startElement</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startElement</anchor>
-            <arglist>(const QString &amp;namespaceURI, const QString &amp;localName, const QString &amp;qName, const QXmlAttributes &amp;atts)</arglist>
+            <arglist>(const QString &amp;namespaceURI, const QString &amp;localName, const QString &amp;qName, const QXmlAttributes &amp;atts) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endElement</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endElement</anchor>
-            <arglist>(const QString &amp;namespaceURI, const QString &amp;localName, const QString &amp;qName)</arglist>
+            <arglist>(const QString &amp;namespaceURI, const QString &amp;localName, const QString &amp;qName) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>characters</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>characters</anchor>
-            <arglist>(const QString &amp;ch)</arglist>
+            <arglist>(const QString &amp;ch) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>ignorableWhitespace</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>ignorableWhitespace</anchor>
-            <arglist>(const QString &amp;ch)</arglist>
+            <arglist>(const QString &amp;ch) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>processingInstruction</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>processingInstruction</anchor>
-            <arglist>(const QString &amp;target, const QString &amp;data)</arglist>
+            <arglist>(const QString &amp;target, const QString &amp;data) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>skippedEntity</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>skippedEntity</anchor>
-            <arglist>(const QString &amp;name)</arglist>
+            <arglist>(const QString &amp;name) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>warning</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>warning</anchor>
-            <arglist>(const QXmlParseException &amp;exception)</arglist>
+            <arglist>(const QXmlParseException &amp;exception) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>error</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>error</anchor>
-            <arglist>(const QXmlParseException &amp;exception)</arglist>
+            <arglist>(const QXmlParseException &amp;exception) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>fatalError</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>fatalError</anchor>
-            <arglist>(const QXmlParseException &amp;exception)</arglist>
+            <arglist>(const QXmlParseException &amp;exception) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>notationDecl</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>notationDecl</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId)</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>unparsedEntityDecl</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>unparsedEntityDecl</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId, const QString &amp;notationName)</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId, const QString &amp;notationName) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>resolveEntity</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>resolveEntity</anchor>
-            <arglist>(const QString &amp;publicId, const QString &amp;systemId, QXmlInputSource *&amp;ret)</arglist>
+            <arglist>(const QString &amp;publicId, const QString &amp;systemId, QXmlInputSource *&amp;ret) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startDTD</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startDTD</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId)</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endDTD</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endDTD</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startEntity</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startEntity</anchor>
-            <arglist>(const QString &amp;name)</arglist>
+            <arglist>(const QString &amp;name) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endEntity</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endEntity</anchor>
-            <arglist>(const QString &amp;name)</arglist>
+            <arglist>(const QString &amp;name) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>startCDATA</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>startCDATA</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>endCDATA</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>endCDATA</anchor>
-            <arglist>()</arglist>
+            <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>comment</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>comment</anchor>
-            <arglist>(const QString &amp;ch)</arglist>
+            <arglist>(const QString &amp;ch) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>attributeDecl</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>attributeDecl</anchor>
-            <arglist>(const QString &amp;eName, const QString &amp;aName, const QString &amp;type, const QString &amp;valueDefault, const QString &amp;value)</arglist>
+            <arglist>(const QString &amp;eName, const QString &amp;aName, const QString &amp;type, const QString &amp;valueDefault, const QString &amp;value) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>internalEntityDecl</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>internalEntityDecl</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;value)</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;value) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>externalEntityDecl</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>externalEntityDecl</anchor>
-            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId)</arglist>
+            <arglist>(const QString &amp;name, const QString &amp;publicId, const QString &amp;systemId) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QString</type>
             <name>errorString</name>
             <anchorfile>qxmldefaulthandler.html</anchorfile>
             <anchor>errorString</anchor>
-            <arglist>() const</arglist>
+            <arglist>() const const override</arglist>
         </member>
     </compound>
 </tagfile>
