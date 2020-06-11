@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     cmake \
     g++ \
     gcc \
@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     curl \
-    unzip
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
 RUN pip3 install "coverxygen==1.5.0" "gcovr==4.2"
 
 COPY sonar-scanner /opt/sonar-scanner/
