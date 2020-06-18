@@ -1,128 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
     <compound kind="class">
-        <name>QScxmlError</name>
-        <filename>qscxmlerror.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>qt_check_for_QGADGET_macro</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>qt_check_for_QGADGET_macro</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="typedef" type="">
-            <name>QtGadgetHelper</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QtGadgetHelper-typedef</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="property" type="bool">
-            <name>valid</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>valid-prop</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="property" type="QString">
-            <name>fileName</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>fileName-prop</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="property" type="int">
-            <name>line</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>line-prop</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="property" type="int">
-            <name>column</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>column-prop</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="property" type="QString">
-            <name>description</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>description-prop</anchor>
-            <arglist></arglist>
-        </member>
+        <name>QtScxml.EventConnection</name>
+        <filename>qml-qtscxml-eventconnection.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>QScxmlError</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QScxmlError</anchor>
-            <arglist>()</arglist>
+            <name>occurred</name>
+            <anchorfile>qml-qtscxml-eventconnection.html</anchorfile>
+            <anchor>occurred-signal</anchor>
+            <arglist>( event)</arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlError</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QScxmlError-1</anchor>
-            <arglist>(const QString &amp;fileName, int line, int column, const QString &amp;description)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlError</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QScxmlError-2</anchor>
-            <arglist>(const QScxmlError &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QScxmlError &amp;</type>
-            <name>operator=</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>operator-eq</anchor>
-            <arglist>(const QScxmlError &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>~QScxmlError</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>dtor.QScxmlError</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>isValid</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>isValid</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QString</type>
-            <name>fileName</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>fileName</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>int</type>
-            <name>line</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>line</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>int</type>
-            <name>column</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>column</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QString</type>
-            <name>description</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>description</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QString</type>
-            <name>toString</name>
-            <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>toString</anchor>
-            <arglist>() const const</arglist>
-        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtScxml.InvokedServices</name>
+        <filename>qml-qtscxml-invokedservices.html</filename>
     </compound>
     <compound kind="class">
         <name>QScxmlCompiler</name>
@@ -210,119 +101,92 @@
             <arglist>(const QString &amp;name, const QString &amp;baseDir, QStringList *errors) = 0</arglist>
         </member>
     </compound>
-    <compound kind="namespace">
-        <name>QScxmlExecutableContent</name>
-        <filename>qscxmlexecutablecontent.html</filename>
-        <member kind="typedef" type="">
-            <name>ContainerId</name>
-            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
-            <anchor>ContainerId-typedef</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>anonymous</name>
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="NoContainer">
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="NoString">
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="NoInstruction">
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="NoEvaluator">
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="typedef" type="">
-            <name>StringId</name>
-            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
-            <anchor>StringId-typedef</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="typedef" type="">
-            <name>InstructionId</name>
-            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
-            <anchor>InstructionId-typedef</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="typedef" type="">
-            <name>EvaluatorId</name>
-            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
-            <anchor>EvaluatorId-typedef</anchor>
-            <arglist></arglist>
-        </member>
-        <class>QScxmlExecutableContent::EvaluatorInfo</class>
-        <class>QScxmlExecutableContent::AssignmentInfo</class>
-        <class>QScxmlExecutableContent::ForeachInfo</class>
-        <class>QScxmlExecutableContent::ParameterInfo</class>
-        <class>QScxmlExecutableContent::InvokeInfo</class>
-    </compound>
     <compound kind="class">
-        <name>QScxmlExecutableContent::EvaluatorInfo</name>
-        <filename>qscxmlexecutablecontent-evaluatorinfo.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlExecutableContent::AssignmentInfo</name>
-        <filename>qscxmlexecutablecontent-assignmentinfo.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlExecutableContent::ForeachInfo</name>
-        <filename>qscxmlexecutablecontent-foreachinfo.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlExecutableContent::ParameterInfo</name>
-        <filename>qscxmlexecutablecontent-parameterinfo.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlExecutableContent::InvokeInfo</name>
-        <filename>qscxmlexecutablecontent-invokeinfo.html</filename>
+        <name>QScxmlCppDataModel</name>
+        <filename>qscxmlcppdatamodel.html</filename>
+        <base>QScxmlDataModel</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QScxmlCppDataModel</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>QScxmlCppDataModel</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>setup</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>setup</anchor>
+            <arglist>(const QVariantMap &amp;initialDataValues) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>evaluateAssignment</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>evaluateAssignment</anchor>
+            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>evaluateInitialization</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>evaluateInitialization</anchor>
+            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>evaluateForeach</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>evaluateForeach</anchor>
+            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok, QScxmlDataModel::ForeachLoopBody *body) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>setScxmlEvent</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>setScxmlEvent</anchor>
+            <arglist>(const QScxmlEvent &amp;event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QScxmlEvent &amp;</type>
+            <name>scxmlEvent</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>scxmlEvent</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QVariant</type>
+            <name>scxmlProperty</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>scxmlProperty</anchor>
+            <arglist>(const QString &amp;name) const const override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>hasScxmlProperty</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>hasScxmlProperty</anchor>
+            <arglist>(const QString &amp;name) const const override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>setScxmlProperty</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>setScxmlProperty</anchor>
+            <arglist>(const QString &amp;name, const QVariant &amp;value, const QString &amp;context) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>inState</name>
+            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
+            <anchor>inState</anchor>
+            <arglist>(const QString &amp;stateName) const const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QScxmlDataModel</name>
         <filename>qscxmldatamodel.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmldatamodel.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmldatamodel.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmldatamodel.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmldatamodel.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmldatamodel.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="QScxmlStateMachine*">
             <name>stateMachine</name>
             <anchorfile>qscxmldatamodel.html</anchorfile>
@@ -457,7 +321,7 @@
             <type></type>
             <name>ForeachLoopBody</name>
             <anchorfile>qscxmldatamodel-foreachloopbody.html</anchorfile>
-            <anchor>ForeachLoopBody</anchor>
+            <anchor>ForeachLoopBody-1</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -476,161 +340,28 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QScxmlCppDataModel</name>
-        <filename>qscxmlcppdatamodel.html</filename>
-        <base>QScxmlDataModel</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
+        <name>QScxmlDynamicScxmlServiceFactory</name>
+        <filename>qscxmldynamicscxmlservicefactory.html</filename>
+        <base>QScxmlInvokableServiceFactory</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>QScxmlCppDataModel</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>QScxmlCppDataModel</anchor>
-            <arglist>(QObject *parent)</arglist>
+            <name>QScxmlDynamicScxmlServiceFactory</name>
+            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
+            <anchor>QScxmlDynamicScxmlServiceFactory</anchor>
+            <arglist>(const QScxmlExecutableContent::InvokeInfo &amp;invokeInfo, const QVector&lt;QScxmlExecutableContent::StringId&gt; &amp;names, const QVector&lt;QScxmlExecutableContent::ParameterInfo&gt; &amp;parameters, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>setup</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>setup</anchor>
-            <arglist>(const QVariantMap &amp;initialDataValues) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void</type>
-            <name>evaluateAssignment</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>evaluateAssignment</anchor>
-            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void</type>
-            <name>evaluateInitialization</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>evaluateInitialization</anchor>
-            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void</type>
-            <name>evaluateForeach</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>evaluateForeach</anchor>
-            <arglist>(QScxmlExecutableContent::EvaluatorId id, bool *ok, QScxmlDataModel::ForeachLoopBody *body) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void</type>
-            <name>setScxmlEvent</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>setScxmlEvent</anchor>
-            <arglist>(const QScxmlEvent &amp;event) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>const QScxmlEvent &amp;</type>
-            <name>scxmlEvent</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>scxmlEvent</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual QVariant</type>
-            <name>scxmlProperty</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>scxmlProperty</anchor>
-            <arglist>(const QString &amp;name) const const override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>hasScxmlProperty</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>hasScxmlProperty</anchor>
-            <arglist>(const QString &amp;name) const const override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>setScxmlProperty</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>setScxmlProperty</anchor>
-            <arglist>(const QString &amp;name, const QVariant &amp;value, const QString &amp;context) override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>inState</name>
-            <anchorfile>qscxmlcppdatamodel.html</anchorfile>
-            <anchor>inState</anchor>
-            <arglist>(const QString &amp;stateName) const const</arglist>
+            <type>virtual QScxmlInvokableService *</type>
+            <name>invoke</name>
+            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
+            <anchor>invoke</anchor>
+            <arglist>(QScxmlStateMachine *parentStateMachine) override</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QScxmlEcmaScriptDataModel</name>
         <filename>qscxmlecmascriptdatamodel.html</filename>
         <base>QScxmlDataModel</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlecmascriptdatamodel.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlecmascriptdatamodel.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlecmascriptdatamodel.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlecmascriptdatamodel.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlecmascriptdatamodel.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QScxmlEcmaScriptDataModel</name>
@@ -724,21 +455,119 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QScxmlEvent</name>
-        <filename>qscxmlevent.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>qt_check_for_QGADGET_macro</name>
-            <anchorfile>qscxmlevent.html</anchorfile>
-            <anchor>qt_check_for_QGADGET_macro</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="typedef" type="">
-            <name>QtGadgetHelper</name>
-            <anchorfile>qscxmlevent.html</anchorfile>
-            <anchor>QtGadgetHelper-typedef</anchor>
+        <name>QScxmlError</name>
+        <filename>qscxmlerror.html</filename>
+        <member kind="property" type="bool">
+            <name>valid</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>valid-prop</anchor>
             <arglist></arglist>
         </member>
+        <member kind="property" type="QString">
+            <name>fileName</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>fileName-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>line</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>line-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>column</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>column-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>description</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>description-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QScxmlError</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>QScxmlError</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QScxmlError</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>QScxmlError-1</anchor>
+            <arglist>(const QString &amp;fileName, int line, int column, const QString &amp;description)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QScxmlError</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>QScxmlError-2</anchor>
+            <arglist>(const QScxmlError &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QScxmlError &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QScxmlError &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QScxmlError</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>dtor.QScxmlError</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>fileName</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>fileName</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>line</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>line</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>column</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>column</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>description</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>description</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>toString</name>
+            <anchorfile>qscxmlerror.html</anchorfile>
+            <anchor>toString</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlEvent</name>
+        <filename>qscxmlevent.html</filename>
         <member kind="property" type="QString">
             <name>name</name>
             <anchorfile>qscxmlevent.html</anchorfile>
@@ -998,45 +827,84 @@
             <arglist>(const QString &amp;message)</arglist>
         </member>
     </compound>
+    <compound kind="namespace">
+        <name>QScxmlExecutableContent</name>
+        <filename>qscxmlexecutablecontent.html</filename>
+        <member kind="typedef" type="">
+            <name>ContainerId</name>
+            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
+            <anchor>ContainerId-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>anonymous</name>
+            <anchor>anonymous-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoContainer">
+            <anchor>anonymous-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoString">
+            <anchor>anonymous-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoInstruction">
+            <anchor>anonymous-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoEvaluator">
+            <anchor>anonymous-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>StringId</name>
+            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
+            <anchor>StringId-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>InstructionId</name>
+            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
+            <anchor>InstructionId-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>EvaluatorId</name>
+            <anchorfile>qscxmlexecutablecontent.html</anchorfile>
+            <anchor>EvaluatorId-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <class>QScxmlExecutableContent::EvaluatorInfo</class>
+        <class>QScxmlExecutableContent::AssignmentInfo</class>
+        <class>QScxmlExecutableContent::ForeachInfo</class>
+        <class>QScxmlExecutableContent::ParameterInfo</class>
+        <class>QScxmlExecutableContent::InvokeInfo</class>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlExecutableContent::AssignmentInfo</name>
+        <filename>qscxmlexecutablecontent-assignmentinfo.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlExecutableContent::EvaluatorInfo</name>
+        <filename>qscxmlexecutablecontent-evaluatorinfo.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlExecutableContent::ForeachInfo</name>
+        <filename>qscxmlexecutablecontent-foreachinfo.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlExecutableContent::InvokeInfo</name>
+        <filename>qscxmlexecutablecontent-invokeinfo.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QScxmlExecutableContent::ParameterInfo</name>
+        <filename>qscxmlexecutablecontent-parameterinfo.html</filename>
+    </compound>
     <compound kind="class">
         <name>QScxmlInvokableService</name>
         <filename>qscxmlinvokableservice.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="QScxmlStateMachine*">
             <name>parentStateMachine</name>
             <anchorfile>qscxmlinvokableservice.html</anchorfile>
@@ -1054,13 +922,6 @@
             <anchorfile>qscxmlinvokableservice.html</anchorfile>
             <anchor>name-prop</anchor>
             <arglist></arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlInvokableService</name>
-            <anchorfile>qscxmlinvokableservice.html</anchorfile>
-            <anchor>QScxmlInvokableService</anchor>
-            <arglist>(QScxmlStateMachine *parentStateMachine, QScxmlInvokableServiceFactory *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QScxmlStateMachine *</type>
@@ -1102,41 +963,6 @@
         <name>QScxmlInvokableServiceFactory</name>
         <filename>qscxmlinvokableservicefactory.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="QScxmlExecutableContent::InvokeInfo">
             <name>invokeInfo</name>
             <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
@@ -1154,13 +980,6 @@
             <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
             <anchor>names-prop</anchor>
             <arglist></arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlInvokableServiceFactory</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>QScxmlInvokableServiceFactory</anchor>
-            <arglist>(const QScxmlExecutableContent::InvokeInfo &amp;invokeInfo, const QVector&lt;QScxmlExecutableContent::StringId&gt; &amp;names, const QVector&lt;QScxmlExecutableContent::ParameterInfo&gt; &amp;parameters, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual QScxmlInvokableService *</type>
@@ -1190,161 +1009,11 @@
             <anchor>names-prop</anchor>
             <arglist>() const const</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlInvokableServiceFactory</name>
-            <anchorfile>qscxmlinvokableservicefactory.html</anchorfile>
-            <anchor>QScxmlInvokableServiceFactory-1</anchor>
-            <arglist>(QScxmlInvokableServiceFactoryPrivate &amp;dd, QObject *parent)</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlStaticScxmlServiceFactory</name>
-        <filename>qscxmlstaticscxmlservicefactory.html</filename>
-        <base>QScxmlInvokableServiceFactory</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlStaticScxmlServiceFactory</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>QScxmlStaticScxmlServiceFactory</anchor>
-            <arglist>(const QMetaObject *metaObject, const QScxmlExecutableContent::InvokeInfo &amp;invokeInfo, const QVector&lt;QScxmlExecutableContent::StringId&gt; &amp;nameList, const QVector&lt;QScxmlExecutableContent::ParameterInfo&gt; &amp;parameters, QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual QScxmlInvokableService *</type>
-            <name>invoke</name>
-            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
-            <anchor>invoke</anchor>
-            <arglist>(QScxmlStateMachine *parentStateMachine) override</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
-        <name>QScxmlDynamicScxmlServiceFactory</name>
-        <filename>qscxmldynamicscxmlservicefactory.html</filename>
-        <base>QScxmlInvokableServiceFactory</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlDynamicScxmlServiceFactory</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>QScxmlDynamicScxmlServiceFactory</anchor>
-            <arglist>(const QScxmlExecutableContent::InvokeInfo &amp;invokeInfo, const QVector&lt;QScxmlExecutableContent::StringId&gt; &amp;names, const QVector&lt;QScxmlExecutableContent::ParameterInfo&gt; &amp;parameters, QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual QScxmlInvokableService *</type>
-            <name>invoke</name>
-            <anchorfile>qscxmldynamicscxmlservicefactory.html</anchorfile>
-            <anchor>invoke</anchor>
-            <arglist>(QScxmlStateMachine *parentStateMachine) override</arglist>
-        </member>
     </compound>
     <compound kind="class">
         <name>QScxmlNullDataModel</name>
         <filename>qscxmlnulldatamodel.html</filename>
         <base>QScxmlDataModel</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlnulldatamodel.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlnulldatamodel.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlnulldatamodel.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlnulldatamodel.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlnulldatamodel.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QScxmlNullDataModel</name>
@@ -1448,41 +1117,6 @@
         <name>QScxmlStateMachine</name>
         <filename>qscxmlstatemachine.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="bool">
             <name>running</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
@@ -1548,20 +1182,6 @@
             <anchorfile>qscxmlstatemachine.html</anchorfile>
             <anchor>tableData-prop</anchor>
             <arglist></arglist>
-        </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlStateMachine</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>QScxmlStateMachine</anchor>
-            <arglist>(const QMetaObject *metaObject, QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type></type>
-            <name>QScxmlStateMachine</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>QScxmlStateMachine-1</anchor>
-            <arglist>(QScxmlStateMachinePrivate &amp;dd, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QScxmlStateMachine *</type>
@@ -1943,6 +1563,18 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QScxmlStaticScxmlServiceFactory</name>
+        <filename>qscxmlstaticscxmlservicefactory.html</filename>
+        <base>QScxmlInvokableServiceFactory</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QScxmlInvokableService *</type>
+            <name>invoke</name>
+            <anchorfile>qscxmlstaticscxmlservicefactory.html</anchorfile>
+            <anchor>invoke</anchor>
+            <arglist>(QScxmlStateMachine *parentStateMachine) override</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QScxmlTableData</name>
         <filename>qscxmltabledata.html</filename>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -2024,23 +1656,106 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>mediaplayer-qml-dynamic</name>
-        <filename>qml-mediaplayer-qml-dynamic.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtScxml.EventConnection</name>
-        <filename>qml-qtscxml-eventconnection.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtScxml.InvokedServices</name>
-        <filename>qml-qtscxml-invokedservices.html</filename>
+        <name>QtScxml.ScxmlStateMachine</name>
+        <filename>qml-qtscxml-scxmlstatemachine.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>stateNames</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>stateNames-method</anchor>
+            <arglist>( compress)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>activeStateNames</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>activeStateNames-method</anchor>
+            <arglist>( compress)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>isActive</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>isActive-method</anchor>
+            <arglist>( scxmlStateName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>init</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>init-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>submitEvent</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>submitEvent-method</anchor>
+            <arglist>( event)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>submitEvent</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>submitEvent-method</anchor>
+            <arglist>( eventName,  var data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>cancelDelayedEvent</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>cancelDelayedEvent-method</anchor>
+            <arglist>( sendId)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>isDispatchableTarget</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>isDispatchableTarget-method</anchor>
+            <arglist>( target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>log</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>log-signal</anchor>
+            <arglist>( label,  string msg)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>reachedStableState</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>reachedStableState-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>finished</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>finished-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>start</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>start-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>stop</name>
+            <anchorfile>qml-qtscxml-scxmlstatemachine.html</anchorfile>
+            <anchor>stop-method</anchor>
+            <arglist>()</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtScxml.StateMachineLoader</name>
         <filename>qml-qtscxml-statemachineloader.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtScxml.ScxmlStateMachine</name>
-        <filename>qml-qtscxml-scxmlstatemachine.html</filename>
+        <name>mediaplayer-qml-dynamic</name>
+        <filename>qml-mediaplayer-qml-dynamic.html</filename>
     </compound>
 </tagfile>

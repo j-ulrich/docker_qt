@@ -47,6 +47,13 @@
     <compound kind="class">
         <name>QtGraphicalEffects.GaussianBlur</name>
         <filename>qml-qtgraphicaleffects-gaussianblur.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>_rebuildShaders</name>
+            <anchorfile>qml-qtgraphicaleffects-gaussianblur.html</anchorfile>
+            <anchor>_rebuildShaders-method</anchor>
+            <arglist>()</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtGraphicalEffects.Glow</name>

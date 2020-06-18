@@ -10,13 +10,6 @@
             <anchor>queryInterface</anchor>
             <arglist>(const QUuid &amp;iid, void **iface) = 0</arglist>
         </member>
-        <member kind="function" protection="protected" virtualness="non" static="no">
-            <type></type>
-            <name>QAxAggregated</name>
-            <anchorfile>qaxaggregated.html</anchorfile>
-            <anchor>QAxAggregated</anchor>
-            <arglist>()</arglist>
-        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual </type>
             <name>~QAxAggregated</name>
@@ -229,6 +222,20 @@
             <anchor>disableEventSink</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>unsigned long</type>
+            <name>classContext</name>
+            <anchorfile>qaxbase.html</anchorfile>
+            <anchor>classContext</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setClassContext</name>
+            <anchorfile>qaxbase.html</anchorfile>
+            <anchor>setClassContext</anchor>
+            <arglist>(unsigned long classContext)</arglist>
+        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>initialize</name>
@@ -272,7 +279,7 @@
             <type></type>
             <name>QAxBindable</name>
             <anchorfile>qaxbindable.html</anchorfile>
-            <anchor>QAxBindable</anchor>
+            <anchor>QAxBindable-2</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -340,7 +347,7 @@
             <type></type>
             <name>QAxFactory</name>
             <anchorfile>qaxfactory.html</anchorfile>
-            <anchor>QAxFactory</anchor>
+            <anchor>QAxFactory-2</anchor>
             <arglist>(const QUuid &amp;libid, const QUuid &amp;appid)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -517,26 +524,54 @@
             <anchor>registerActiveObject</anchor>
             <arglist>(QObject *object)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXFACTORY_DEFAULT</name>
+            <anchorfile>qaxfactory-obsolete.html</anchorfile>
+            <anchor>QAXFACTORY_DEFAULT</anchor>
+            <arglist>( Class,  ClassID,  InterfaceID,  EventID,  LibID,  AppID)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXFACTORY_EXPORT</name>
+            <anchorfile>qaxfactory.html</anchorfile>
+            <anchor>QAXFACTORY_EXPORT</anchor>
+            <arglist>( Class,  LibID,  AppID)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXFACTORY_BEGIN</name>
+            <anchorfile>qaxfactory.html</anchorfile>
+            <anchor>QAXFACTORY_BEGIN</anchor>
+            <arglist>( IDTypeLib,  IDApp)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXCLASS</name>
+            <anchorfile>qaxfactory.html</anchorfile>
+            <anchor>QAXCLASS</anchor>
+            <arglist>( Class)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXTYPE</name>
+            <anchorfile>qaxfactory.html</anchorfile>
+            <anchor>QAXTYPE</anchor>
+            <arglist>( Class)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAXFACTORY_END</name>
+            <anchorfile>qaxfactory.html</anchorfile>
+            <anchor>QAXFACTORY_END</anchor>
+            <arglist>QAXFACTORY_END</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QAxObject</name>
         <filename>qaxobject.html</filename>
         <base>QObject</base>
         <base>QAxBase</base>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qaxobject.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qaxobject.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QAxObject</name>
@@ -581,148 +616,9 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QAxScriptEngine</name>
-        <filename>qaxscriptengine.html</filename>
-        <base>QAxObject</base>
-        <member kind="enum">
-            <name>State</name>
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Uninitialized">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Initialized">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Started">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Connected">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Disconnected">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Closed">
-            <anchor>State-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QAxScriptEngine</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>QAxScriptEngine</anchor>
-            <arglist>(const QString &amp;language, QAxScript *script)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual </type>
-            <name>~QAxScriptEngine</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>dtor.QAxScriptEngine</anchor>
-            <arglist>() override</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>isValid</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>isValid</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>hasIntrospection</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>hasIntrospection</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QString</type>
-            <name>scriptLanguage</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>scriptLanguage</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAxScriptEngine::State</type>
-            <name>state</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>state</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>setState</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>setState</anchor>
-            <arglist>(QAxScriptEngine::State st)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>addItem</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>addItem</anchor>
-            <arglist>(const QString &amp;name)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>long</type>
-            <name>queryInterface</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>queryInterface</anchor>
-            <arglist>(const QUuid &amp;uuid, void **iface) const const</arglist>
-        </member>
-        <member kind="function" protection="protected" virtualness="virtual" static="no">
-            <type>virtual bool</type>
-            <name>initialize</name>
-            <anchorfile>qaxscriptengine.html</anchorfile>
-            <anchor>initialize</anchor>
-            <arglist>(IUnknown **ptr) override</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
         <name>QAxScript</name>
         <filename>qaxscript.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qaxscript.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qaxscript.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qaxscript.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qaxscript.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qaxscript.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="enum">
             <name>FunctionFlags</name>
             <anchor>FunctionFlags-enum</anchor>
@@ -843,44 +739,113 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QAxScriptEngine</name>
+        <filename>qaxscriptengine.html</filename>
+        <base>QAxObject</base>
+        <member kind="enum">
+            <name>State</name>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Uninitialized">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Initialized">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Started">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Connected">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Disconnected">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Closed">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAxScriptEngine</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>QAxScriptEngine</anchor>
+            <arglist>(const QString &amp;language, QAxScript *script)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QAxScriptEngine</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>dtor.QAxScriptEngine</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>hasIntrospection</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>hasIntrospection</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>scriptLanguage</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>scriptLanguage</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAxScriptEngine::State</type>
+            <name>state</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>state</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setState</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>setState</anchor>
+            <arglist>(QAxScriptEngine::State st)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addItem</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>addItem</anchor>
+            <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>long</type>
+            <name>queryInterface</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>queryInterface</anchor>
+            <arglist>(const QUuid &amp;uuid, void **iface) const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>initialize</name>
+            <anchorfile>qaxscriptengine.html</anchorfile>
+            <anchor>initialize</anchor>
+            <arglist>(IUnknown **ptr) override</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QAxScriptManager</name>
         <filename>qaxscriptmanager.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qaxscriptmanager.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qaxscriptmanager.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qaxscriptmanager.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qaxscriptmanager.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qaxscriptmanager.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QAxScriptManager</name>
@@ -984,40 +949,22 @@
         <name>QAxSelect</name>
         <filename>qaxselect.html</filename>
         <base>QDialog</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qaxselect.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
+        <member kind="enum">
+            <name>SandboxingLevel</name>
+            <anchor>SandboxingLevel-enum</anchor>
+            <arglist></arglist>
         </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qaxselect.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
+        <member name="SandboxingNone">
+            <anchor>SandboxingLevel-enum</anchor>
+            <arglist></arglist>
         </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qaxselect.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
+        <member name="SandboxingProcess">
+            <anchor>SandboxingLevel-enum</anchor>
+            <arglist></arglist>
         </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qaxselect.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qaxselect.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
+        <member name="SandboxingLowIntegrity">
+            <anchor>SandboxingLevel-enum</anchor>
+            <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1040,26 +987,19 @@
             <anchor>clsid</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAxSelect::SandboxingLevel</type>
+            <name>sandboxingLevel</name>
+            <anchorfile>qaxselect.html</anchorfile>
+            <anchor>sandboxingLevel</anchor>
+            <arglist>() const const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QAxWidget</name>
         <filename>qaxwidget.html</filename>
         <base>QWidget</base>
         <base>QAxBase</base>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qaxwidget.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qaxwidget.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QAxWidget</name>

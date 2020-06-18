@@ -4,41 +4,6 @@
         <name>QGraphicsSvgItem</name>
         <filename>qgraphicssvgitem.html</filename>
         <base>QGraphicsObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qgraphicssvgitem.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qgraphicssvgitem.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qgraphicssvgitem.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qgraphicssvgitem.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qgraphicssvgitem.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="QString">
             <name>elementId</name>
             <anchorfile>qgraphicssvgitem.html</anchorfile>
@@ -134,15 +99,6 @@
             <anchorfile>qgraphicssvgitem.html</anchorfile>
             <anchor>paint</anchor>
             <arglist>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</arglist>
-        </member>
-        <member kind="enum">
-            <name>anonymous</name>
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Type">
-            <anchor>anonymous-enum</anchor>
-            <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
@@ -343,41 +299,6 @@
         <name>QSvgRenderer</name>
         <filename>qsvgrenderer.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="QRectF">
             <name>viewBox</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
@@ -563,41 +484,6 @@
         <name>QSvgWidget</name>
         <filename>qsvgwidget.html</filename>
         <base>QWidget</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSvgWidget</name>

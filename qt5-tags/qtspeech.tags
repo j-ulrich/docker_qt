@@ -1,167 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
     <compound kind="class">
-        <name>QVoice</name>
-        <filename>qvoice.html</filename>
-        <member kind="enum">
-            <name>Gender</name>
-            <anchor>Gender-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Male">
-            <anchor>Gender-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Female">
-            <anchor>Gender-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Unknown">
-            <anchor>Gender-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>Age</name>
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Child">
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Teenager">
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Adult">
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Senior">
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Other">
-            <anchor>Age-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QVoice</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>QVoice</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QVoice</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>QVoice-1</anchor>
-            <arglist>(const QVoice &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>~QVoice</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>dtor.QVoice</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>operator=</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>operator-eq</anchor>
-            <arglist>(const QVoice &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>operator==</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>operator-eq-eq</anchor>
-            <arglist>(const QVoice &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>operator!=</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>operator-not-eq</anchor>
-            <arglist>(const QVoice &amp;other)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QString</type>
-            <name>name</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>name</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QVoice::Gender</type>
-            <name>gender</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>gender</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QVoice::Age</type>
-            <name>age</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>age</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>genderName</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>genderName</anchor>
-            <arglist>(QVoice::Gender gender)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>ageName</name>
-            <anchorfile>qvoice.html</anchorfile>
-            <anchor>ageName</anchor>
-            <arglist>(QVoice::Age age)</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
         <name>QTextToSpeech</name>
         <filename>qtexttospeech.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qtexttospeech.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qtexttospeech.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qtexttospeech.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qtexttospeech.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qtexttospeech.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="property" type="State">
             <name>state</name>
             <anchorfile>qtexttospeech.html</anchorfile>
@@ -413,54 +255,12 @@
         <name>QTextToSpeechEngine</name>
         <filename>qtexttospeechengine.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTextToSpeechEngine</name>
             <anchorfile>qtexttospeechengine.html</anchorfile>
             <anchor>QTextToSpeechEngine</anchor>
             <arglist>(QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual </type>
-            <name>~QTextToSpeechEngine</name>
-            <anchorfile>qtexttospeechengine.html</anchorfile>
-            <anchor>dtor.QTextToSpeechEngine</anchor>
-            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
             <type>virtual QVector&lt;QLocale&gt;</type>
@@ -607,18 +407,106 @@
         <name>QTextToSpeechPlugin</name>
         <filename>qtexttospeechplugin.html</filename>
         <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual </type>
-            <name>~QTextToSpeechPlugin</name>
-            <anchorfile>qtexttospeechplugin.html</anchorfile>
-            <anchor>dtor.QTextToSpeechPlugin</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QTextToSpeechEngine *</type>
             <name>createTextToSpeechEngine</name>
             <anchorfile>qtexttospeechplugin.html</anchorfile>
             <anchor>createTextToSpeechEngine</anchor>
             <arglist>(const QVariantMap &amp;parameters, QObject *parent, QString *errorString) const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QVoice</name>
+        <filename>qvoice.html</filename>
+        <member kind="enum">
+            <name>Gender</name>
+            <anchor>Gender-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Male">
+            <anchor>Gender-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Female">
+            <anchor>Gender-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Unknown">
+            <anchor>Gender-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Age</name>
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Child">
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Teenager">
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Adult">
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Senior">
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Other">
+            <anchor>Age-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>operator-eq-eq</anchor>
+            <arglist>(const QVoice &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QVoice &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>name</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>name</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVoice::Gender</type>
+            <name>gender</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>gender</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVoice::Age</type>
+            <name>age</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>age</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>genderName</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>genderName</anchor>
+            <arglist>(QVoice::Gender gender)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QString</type>
+            <name>ageName</name>
+            <anchorfile>qvoice.html</anchorfile>
+            <anchor>ageName</anchor>
+            <arglist>(QVoice::Age age)</arglist>
         </member>
     </compound>
 </tagfile>

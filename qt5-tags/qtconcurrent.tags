@@ -15,7 +15,6 @@
             <anchor>UnhandledException-typedef</anchor>
             <arglist></arglist>
         </member>
-        <class>QtConcurrent::IntermediateResults</class>
         <member kind="enum">
             <name>ReduceOption</name>
             <anchor>ReduceOption-enum</anchor>
@@ -207,9 +206,5 @@
             <anchor>run-1</anchor>
             <arglist>(QThreadPool *pool, Function function, ... )</arglist>
         </member>
-    </compound>
-    <compound kind="class">
-        <name>QtConcurrent::IntermediateResults</name>
-        <filename>qtconcurrent-intermediateresults.html</filename>
     </compound>
 </tagfile>

@@ -32,6 +32,7 @@ COPY qt5-tags/qtlabscalendar.tags         /usr/share/qt5/doc/qtlabscalendar/qtla
 COPY qt5-tags/qtlabsplatform.tags         /usr/share/qt5/doc/qtlabsplatform/qtlabsplatform.tags
 COPY qt5-tags/qtlocation.tags             /usr/share/qt5/doc/qtlocation/qtlocation.tags
 COPY qt5-tags/qtnetwork.tags              /usr/share/qt5/doc/qtnetwork/qtnetwork.tags
+COPY qt5-tags/qtnetworkauth.tags          /usr/share/qt5/doc/qtnetworkauth/qtnetworkauth.tags
 COPY qt5-tags/qtnfc.tags                  /usr/share/qt5/doc/qtnfc/qtnfc.tags
 COPY qt5-tags/qtpositioning.tags          /usr/share/qt5/doc/qtpositioning/qtpositioning.tags
 COPY qt5-tags/qtprintsupport.tags         /usr/share/qt5/doc/qtprintsupport/qtprintsupport.tags

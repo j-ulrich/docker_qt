@@ -1,5 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
+    <compound kind="class">
+        <name>QAbstractItemModelTester</name>
+        <filename>qabstractitemmodeltester.html</filename>
+        <base>QObject</base>
+        <member kind="enum">
+            <name>FailureReportingMode</name>
+            <anchor>FailureReportingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="QtTest">
+            <anchor>FailureReportingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Warning">
+            <anchor>FailureReportingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Fatal">
+            <anchor>FailureReportingMode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractItemModelTester</name>
+            <anchorfile>qabstractitemmodeltester.html</anchorfile>
+            <anchor>QAbstractItemModelTester</anchor>
+            <arglist>(QAbstractItemModel *model, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractItemModelTester</name>
+            <anchorfile>qabstractitemmodeltester.html</anchorfile>
+            <anchor>QAbstractItemModelTester-1</anchor>
+            <arglist>(QAbstractItemModel *model, QAbstractItemModelTester::FailureReportingMode mode, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractItemModel *</type>
+            <name>model</name>
+            <anchorfile>qabstractitemmodeltester.html</anchorfile>
+            <anchor>model</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractItemModelTester::FailureReportingMode</type>
+            <name>failureReportingMode</name>
+            <anchorfile>qabstractitemmodeltester.html</anchorfile>
+            <anchor>failureReportingMode</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QEventSizeOfChecker</name>
+        <filename>qeventsizeofchecker.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QMetaTypeId</name>
+        <filename>qmetatypeid.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QSignalSpy</name>
+        <filename>qsignalspy.html</filename>
+        <base>QObject</base>
+        <base>QList</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalSpy</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>QSignalSpy</anchor>
+            <arglist>(const QObject *object, const char *signal)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalSpy</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>QSignalSpy-1</anchor>
+            <arglist>(const QObject *object, PointerToMemberFunction signal)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSignalSpy</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>QSignalSpy-2</anchor>
+            <arglist>(const QObject *obj, const QMetaMethod &amp;signal)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>signal</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>signal</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>wait</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>wait</anchor>
+            <arglist>(int timeout)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QSpontaneKeyEvent</name>
+        <filename>qspontanekeyevent.html</filename>
+    </compound>
     <compound kind="namespace">
         <name>QTest</name>
         <filename>qtest.html</filename>
@@ -282,63 +392,63 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-6</anchor>
+            <anchor>toString-4</anchor>
             <arglist>(const QStringView &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-7</anchor>
+            <anchor>toString-5</anchor>
             <arglist>(const QString &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-8</anchor>
+            <anchor>toString-6</anchor>
             <arglist>(const QLatin1String &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-9</anchor>
+            <anchor>toString-7</anchor>
             <arglist>(const QByteArray &amp;ba)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-10</anchor>
+            <anchor>toString-9</anchor>
             <arglist>(const QTime &amp;time)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-11</anchor>
+            <anchor>toString-10</anchor>
             <arglist>(const QDate &amp;date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-12</anchor>
+            <anchor>toString-11</anchor>
             <arglist>(const QDateTime &amp;dateTime)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-13</anchor>
+            <anchor>toString-12</anchor>
             <arglist>(const QCborError &amp;c)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-14</anchor>
+            <anchor>toString-13</anchor>
             <arglist>(const QChar &amp;character)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -485,35 +595,28 @@
             <type>void</type>
             <name>keyEvent</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyEvent-3</anchor>
+            <anchor>keyEvent-1</anchor>
             <arglist>(QTest::KeyAction action, QWindow *window, char ascii, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyEvent</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyEvent-1</anchor>
+            <anchor>keyEvent-2</anchor>
             <arglist>(QTest::KeyAction action, QWindow *window, Qt::Key key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyClick</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyClick-3</anchor>
+            <anchor>keyClick-1</anchor>
             <arglist>(QWindow *window, Qt::Key key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyClick</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyClick-1</anchor>
-            <arglist>(QWindow *window, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>keyRelease</name>
-            <anchorfile>qtest.html</anchorfile>
-            <anchor>keyRelease-3</anchor>
+            <anchor>keyClick-2</anchor>
             <arglist>(QWindow *window, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -521,20 +624,27 @@
             <name>keyRelease</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>keyRelease-1</anchor>
+            <arglist>(QWindow *window, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>keyRelease</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>keyRelease-2</anchor>
             <arglist>(QWindow *window, Qt::Key key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyPress</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyPress-3</anchor>
+            <anchor>keyPress-1</anchor>
             <arglist>(QWindow *window, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyPress</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyPress-1</anchor>
+            <anchor>keyPress-2</anchor>
             <arglist>(QWindow *window, Qt::Key key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -548,7 +658,7 @@
             <type>void</type>
             <name>keyEvent</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyEvent-2</anchor>
+            <anchor>keyEvent-3</anchor>
             <arglist>(QTest::KeyAction action, QWidget *widget, char ascii, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -569,21 +679,21 @@
             <type>void</type>
             <name>keyPress</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyPress-2</anchor>
+            <anchor>keyPress-3</anchor>
             <arglist>(QWidget *widget, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyRelease</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyRelease-2</anchor>
+            <anchor>keyRelease-3</anchor>
             <arglist>(QWidget *widget, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>keyClick</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>keyClick-2</anchor>
+            <anchor>keyClick-3</anchor>
             <arglist>(QWidget *widget, char key, Qt::KeyboardModifiers modifier, int delay)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -794,6 +904,167 @@
             <anchor>benchmarkMetricUnit</anchor>
             <arglist>(QTest::QBenchmarkMetric metric)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QVERIFY</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QVERIFY</anchor>
+            <arglist>( condition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QVERIFY2</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QVERIFY2</anchor>
+            <arglist>( condition,  message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCOMPARE</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QCOMPARE</anchor>
+            <arglist>( actual,  expected)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QVERIFY_EXCEPTION_THROWN</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QVERIFY_EXCEPTION_THROWN</anchor>
+            <arglist>( expression,  exceptiontype)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_VERIFY_WITH_TIMEOUT</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_VERIFY_WITH_TIMEOUT</anchor>
+            <arglist>( condition,  timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_VERIFY</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_VERIFY</anchor>
+            <arglist>( condition)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_VERIFY2_WITH_TIMEOUT</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_VERIFY2_WITH_TIMEOUT</anchor>
+            <arglist>( condition,  message,  timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_VERIFY2</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_VERIFY2</anchor>
+            <arglist>( condition,  message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_COMPARE_WITH_TIMEOUT</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_COMPARE_WITH_TIMEOUT</anchor>
+            <arglist>( actual,  expected,  timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTRY_COMPARE</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTRY_COMPARE</anchor>
+            <arglist>( actual,  expected)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFETCH</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QFETCH</anchor>
+            <arglist>( type,  name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFETCH_GLOBAL</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QFETCH_GLOBAL</anchor>
+            <arglist>( type,  name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QWARN</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QWARN</anchor>
+            <arglist>( message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFAIL</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QFAIL</anchor>
+            <arglist>( message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTEST</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTEST</anchor>
+            <arglist>( actual,  testElement)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSKIP</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QSKIP</anchor>
+            <arglist>( description)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QEXPECT_FAIL</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QEXPECT_FAIL</anchor>
+            <arglist>( dataIndex,  comment,  mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFINDTESTDATA</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QFINDTESTDATA</anchor>
+            <arglist>( filename)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTEST_MAIN</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTEST_MAIN</anchor>
+            <arglist>( TestClass)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTEST_APPLESS_MAIN</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTEST_APPLESS_MAIN</anchor>
+            <arglist>( TestClass)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTEST_GUILESS_MAIN</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QTEST_GUILESS_MAIN</anchor>
+            <arglist>( TestClass)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QBENCHMARK</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QBENCHMARK</anchor>
+            <arglist>QBENCHMARK</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QBENCHMARK_ONCE</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>QBENCHMARK_ONCE</anchor>
+            <arglist>QBENCHMARK_ONCE</arglist>
+        </member>
         <member kind="enum">
             <name>AttributeIndex</name>
             <anchor>AttributeIndex-enum</anchor>
@@ -977,130 +1248,17 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QAbstractItemModelTester</name>
-        <filename>qabstractitemmodeltester.html</filename>
-        <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="enum">
-            <name>FailureReportingMode</name>
-            <anchor>FailureReportingMode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="QtTest">
-            <anchor>FailureReportingMode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Warning">
-            <anchor>FailureReportingMode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Fatal">
-            <anchor>FailureReportingMode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QAbstractItemModelTester</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>QAbstractItemModelTester</anchor>
-            <arglist>(QAbstractItemModel *model, QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QAbstractItemModelTester</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>QAbstractItemModelTester-1</anchor>
-            <arglist>(QAbstractItemModel *model, QAbstractItemModelTester::FailureReportingMode mode, QObject *parent)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractItemModel *</type>
-            <name>model</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>model</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractItemModelTester::FailureReportingMode</type>
-            <name>failureReportingMode</name>
-            <anchorfile>qabstractitemmodeltester.html</anchorfile>
-            <anchor>failureReportingMode</anchor>
-            <arglist>() const const</arglist>
-        </member>
+        <name>QTestData</name>
+        <filename>qtestdata.html</filename>
     </compound>
     <compound kind="class">
-        <name>QSignalSpy</name>
-        <filename>qsignalspy.html</filename>
-        <base>QObject</base>
-        <base>QList</base>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QSignalSpy</name>
-            <anchorfile>qsignalspy.html</anchorfile>
-            <anchor>QSignalSpy</anchor>
-            <arglist>(const QObject *object, const char *signal)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QSignalSpy</name>
-            <anchorfile>qsignalspy.html</anchorfile>
-            <anchor>QSignalSpy-1</anchor>
-            <arglist>(const QObject *object, PointerToMemberFunction signal)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>isValid</name>
-            <anchorfile>qsignalspy.html</anchorfile>
-            <anchor>isValid</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QByteArray</type>
-            <name>signal</name>
-            <anchorfile>qsignalspy.html</anchorfile>
-            <anchor>signal</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>bool</type>
-            <name>wait</name>
-            <anchorfile>qsignalspy.html</anchorfile>
-            <anchor>wait</anchor>
-            <arglist>(int timeout)</arglist>
-        </member>
+        <name>QTestDelayEvent</name>
+        <filename>qtestdelayevent.html</filename>
+        <base>QTestEvent</base>
+    </compound>
+    <compound kind="class">
+        <name>QTestEvent</name>
+        <filename>qtestevent.html</filename>
     </compound>
     <compound kind="class">
         <name>QTestEventList</name>
@@ -1232,5 +1390,25 @@
             <anchor>simulate</anchor>
             <arglist>(QWidget *w)</arglist>
         </member>
+    </compound>
+    <compound kind="class">
+        <name>QTestEventLoop</name>
+        <filename>qtesteventloop.html</filename>
+        <base>QObject</base>
+    </compound>
+    <compound kind="class">
+        <name>QTestKeyClicksEvent</name>
+        <filename>qtestkeyclicksevent.html</filename>
+        <base>QTestEvent</base>
+    </compound>
+    <compound kind="class">
+        <name>QTestKeyEvent</name>
+        <filename>qtestkeyevent.html</filename>
+        <base>QTestEvent</base>
+    </compound>
+    <compound kind="class">
+        <name>QTestMouseEvent</name>
+        <filename>qtestmouseevent.html</filename>
+        <base>QTestEvent</base>
     </compound>
 </tagfile>

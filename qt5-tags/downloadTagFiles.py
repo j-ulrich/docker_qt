@@ -17,6 +17,7 @@ _components = [
 	"qtlabsplatform",
 	"qtlocation",
 	"qtnetwork",
+	"qtnetworkauth",
 	"qtnfc",
 	"qtpositioning",
 	"qtprintsupport",

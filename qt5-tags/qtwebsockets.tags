@@ -8,7 +8,7 @@
             <type></type>
             <name>QMaskGenerator</name>
             <anchorfile>qmaskgenerator.html</anchorfile>
-            <anchor>QMaskGenerator</anchor>
+            <anchor>QMaskGenerator-1</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -33,152 +33,15 @@
             <arglist>() = 0</arglist>
         </member>
     </compound>
-    <compound kind="namespace">
-        <name>QWebSocketProtocol</name>
-        <filename>qwebsocketprotocol.html</filename>
-        <member kind="enum">
-            <name>Version</name>
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="VersionUnknown">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version0">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version4">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version5">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version6">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version7">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version8">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="Version13">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="VersionLatest">
-            <anchor>Version-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member kind="enum">
-            <name>CloseCode</name>
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeNormal">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeGoingAway">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeProtocolError">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeDatatypeNotSupported">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeReserved1004">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeMissingStatusCode">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeAbnormalDisconnection">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeWrongDatatype">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodePolicyViolated">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeTooMuchData">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeMissingExtension">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeBadOperation">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-        <member name="CloseCodeTlsHandshakeFailed">
-            <anchor>CloseCode-enum</anchor>
-            <arglist></arglist>
-        </member>
-    </compound>
     <compound kind="class">
         <name>QWebSocket</name>
         <filename>qwebsocket.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebSocket</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>QWebSocket</anchor>
+            <anchor>QWebSocket-1</anchor>
             <arglist>(const QString &amp;origin, QWebSocketProtocol::Version version, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -634,45 +497,112 @@
             <arglist>() const const</arglist>
         </member>
     </compound>
+    <compound kind="namespace">
+        <name>QWebSocketProtocol</name>
+        <filename>qwebsocketprotocol.html</filename>
+        <member kind="enum">
+            <name>Version</name>
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="VersionUnknown">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version0">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version4">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version5">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version6">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version7">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version8">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Version13">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="VersionLatest">
+            <anchor>Version-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>CloseCode</name>
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeNormal">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeGoingAway">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeProtocolError">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeDatatypeNotSupported">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeReserved1004">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeMissingStatusCode">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeAbnormalDisconnection">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeWrongDatatype">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodePolicyViolated">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeTooMuchData">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeMissingExtension">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeBadOperation">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="CloseCodeTlsHandshakeFailed">
+            <anchor>CloseCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
     <compound kind="class">
         <name>QWebSocketServer</name>
         <filename>qwebsocketserver.html</filename>
         <base>QObject</base>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual const QMetaObject *</type>
-            <name>metaObject</name>
-            <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>metaObject</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual void *</type>
-            <name>qt_metacast</name>
-            <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>qt_metacast</anchor>
-            <arglist>(const char *)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual int</type>
-            <name>qt_metacall</name>
-            <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>qt_metacall</anchor>
-            <arglist>(QMetaObject::Call , int , void **)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>tr</name>
-            <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>tr</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>QString</type>
-            <name>trUtf8</name>
-            <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>trUtf8</anchor>
-            <arglist>(const char *s, const char *c, int n)</arglist>
-        </member>
         <member kind="enum">
             <name>SslMode</name>
             <anchor>SslMode-enum</anchor>
@@ -690,7 +620,7 @@
             <type></type>
             <name>QWebSocketServer</name>
             <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>QWebSocketServer</anchor>
+            <anchor>QWebSocketServer-1</anchor>
             <arglist>(const QString &amp;serverName, QWebSocketServer::SslMode secureMode, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -733,6 +663,34 @@
             <name>maxPendingConnections</name>
             <anchorfile>qwebsocketserver.html</anchorfile>
             <anchor>maxPendingConnections</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHandshakeTimeout</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>setHandshakeTimeout</anchor>
+            <arglist>(std::chrono::milliseconds msec)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>handshakeTimeout</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>handshakeTimeout</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHandshakeTimeout</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>setHandshakeTimeout-1</anchor>
+            <arglist>(int msec)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>handshakeTimeoutMS</name>
+            <anchorfile>qwebsocketserver.html</anchorfile>
+            <anchor>handshakeTimeoutMS</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -949,9 +907,51 @@
     <compound kind="class">
         <name>QtWebSockets.WebSocket</name>
         <filename>qml-qtwebsockets-websocket.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>textMessageReceived</name>
+            <anchorfile>qml-qtwebsockets-websocket.html</anchorfile>
+            <anchor>textMessageReceived-signal</anchor>
+            <arglist>( message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>binaryMessageReceived</name>
+            <anchorfile>qml-qtwebsockets-websocket.html</anchorfile>
+            <anchor>binaryMessageReceived-signal</anchor>
+            <arglist>( message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>statusChanged</name>
+            <anchorfile>qml-qtwebsockets-websocket.html</anchorfile>
+            <anchor>statusChanged-signal</anchor>
+            <arglist>( status)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>sendTextMessage</name>
+            <anchorfile>qml-qtwebsockets-websocket.html</anchorfile>
+            <anchor>sendTextMessage-method</anchor>
+            <arglist>( message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>sendBinaryMessage</name>
+            <anchorfile>qml-qtwebsockets-websocket.html</anchorfile>
+            <anchor>sendBinaryMessage-method</anchor>
+            <arglist>( message)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtWebSockets.WebSocketServer</name>
         <filename>qml-qtwebsockets-websocketserver.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>clientConnected</name>
+            <anchorfile>qml-qtwebsockets-websocketserver.html</anchorfile>
+            <anchor>clientConnected-signal</anchor>
+            <arglist>( webSocket)</arglist>
+        </member>
     </compound>
 </tagfile>
