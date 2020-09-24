@@ -15,7 +15,7 @@ Image configuration:
 - coverxygen 1.5.0
 - Tags files for Qt 5.12.8 (to link in Doxygen documentation)
 - OpenJDK 11 JRE
-- SonarQube Scanner 3.2.0.1227 (located at `/opt/sonar-scanner`)
+- SonarQube Scanner 4.4.0.2170 (located at `/opt/sonar-scanner`)
 
 
 ### Other Versions ###

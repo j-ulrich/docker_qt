@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# SonarQube Scanner Startup Script for Unix
+# SonarScanner Startup Script for Unix
 #
 # Optional ENV vars:
-#   SONAR_SCANNER_OPTS - Parameters passed to the Java VM when running the SonarQube Scanner
+#   SONAR_SCANNER_OPTS - Parameters passed to the Java VM when running the SonarScanner
 #   SONAR_SCANNER_DEBUG_OPTS - Extra parameters passed to the Java VM for debugging
 #   JAVA_HOME - Location of Java's installation
 
@@ -28,7 +28,7 @@ sonar_scanner_home=$(dirname "$script_path")/..
 # make it fully qualified
 sonar_scanner_home=$(cd "$sonar_scanner_home" && pwd -P)
 
-jar_file=$sonar_scanner_home/lib/sonar-scanner-cli-4.2.0.1873.jar
+jar_file=$sonar_scanner_home/lib/sonar-scanner-cli-4.4.0.2170.jar
 
 # check that sonar_scanner_home has been correctly set
 if [ ! -f "$jar_file" ] ; then
@@ -39,7 +39,7 @@ fi
 
 use_embedded_jre=false
 if [ "$use_embedded_jre" = true ]; then
-  export JAVA_HOME=$sonar_scanner_home/jre
+  export JAVA_HOME="$sonar_scanner_home/jre"
 fi
 
 if [ -n "$JAVA_HOME" ]
