@@ -8,6 +8,7 @@ Image configuration:
 - Qt 5.12.8
 - GCC/G++ 9.3.0
 - CMake 3.16.3
+- Qbs 1.13.1 (default profile: qt-5-12-8-bin)
 - Doxygen 1.8.17
 - gcovr 4.2
 - lcov 1.14

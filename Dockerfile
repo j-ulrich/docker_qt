@@ -7,6 +7,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     make \
     doxygen \
     qt5-default \
+    qbs \
     lcov \
     openjdk-11-jre \
     python3 \
@@ -15,6 +16,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     unzip \
     && rm -rf /var/lib/apt/lists/*
 RUN pip3 install "coverxygen==1.5.0" "gcovr==4.2"
+
+RUN qbs setup-toolchains --detect && qbs setup-qt /bin/qmake qt-5-12-8-bin && qbs config defaultProfile qt-5-12-8-bin
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
