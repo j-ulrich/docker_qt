@@ -1,21 +1,21 @@
-# Dockerfile: Ubuntu Focal, Qt 5.12
+# Dockerfile: Ubuntu Hirsute, Qt 5.15
 
 Dockerfile for creating images for building and automated testing of Qt 5 applications.
 
 Image configuration:
-- Ubuntu Focal (20.04)
-- Python 3.8.2
-- Qt 5.12.8
-- GCC/G++ 9.3.0
-- CMake 3.16.3
-- Qbs 1.13.1 (default profile: qt-5-12-8-bin)
-- Doxygen 1.8.17
+- Ubuntu Hirsute (21.04)
+- Python 3.9.4
+- Qt 5.15.2 (base & declarative/QML) + qmake
+- GCC/G++ 10.3.0
+- CMake 3.18.4
+- Qbs 1.18.0 (default profile: qt-5-15-2-bin)
+- Doxygen 1.9.1
 - gcovr 4.2
 - lcov 1.14
 - coverxygen 1.5.0
-- Tags files for Qt 5.12.8 (to link in Doxygen documentation)
+- Tags files for Qt 5.15.2 (to link in Doxygen documentation)
 - OpenJDK 11 JRE
-- SonarQube Scanner 4.4.0.2170 (located at `/opt/sonar-scanner`)
+- SonarQube Scanner 4.6.2.2472 (located at `/opt/sonar-scanner`)
 
 
 ### Other Versions ###
