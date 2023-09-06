@@ -9,9 +9,7 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -46,3 +44,19 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  update-docker-hub-description:
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'latest'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update Docker Hub Description
+        uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: julrich/docker_qt
+          short-description: ${{ github.event.repository.description }}
+          enable-url-completion: true
