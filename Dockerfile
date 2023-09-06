@@ -26,7 +26,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     && rm -rf /var/lib/apt/lists/*
 RUN pip3 install "coverxygen==1.7.0"
 
-RUN qbs setup-toolchains --detect && qbs setup-qt /bin/qmake qt-6-2-4-bin && qbs config defaultProfile qt-6-2-4-bin
+RUN qtchooser -install 6 /usr/bin/qmake6 && qtchooser -install -f default /usr/bin/qmake6
+RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-2-4-bin && qbs config defaultProfile qt-6-2-4-bin
 
 COPY sonar-scanner /opt/sonar-scanner/
 RUN chmod a+x /opt/sonar-scanner/bin/sonar-scanner*
