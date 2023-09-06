@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="namespace">
+        <name>QtConcurrent</name>
+        <filename>qtconcurrent.html</filename>
+        <member kind="enumeration">
+            <name>FutureResult</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>FutureResult-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Ignore</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>FutureResult-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>InvokeResultType</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>InvokeResultType-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <class>QtConcurrent::QTaskBuilder</class>
+        <member kind="enumeration">
+            <name>ReduceOption</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>ReduceOption-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>UnorderedReduce</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>ReduceOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OrderedReduce</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>ReduceOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SequentialReduce</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>ReduceOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QtConcurrent::ReduceOption">
+            <name>ReduceOptions</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>ReduceOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>filter</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filter</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>filter</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filter-1</anchor>
+            <arglist>(Sequence &amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-2</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-3</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-4</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-5</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-6</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>filteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filteredReduced-7</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;typename std::decay_t&lt;Sequence&gt;::value_type&gt;</type>
+            <name>filtered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filtered</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;typename std::decay_t&lt;Sequence&gt;::value_type&gt;</type>
+            <name>filtered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filtered-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;typename qValueType&lt;Iterator&gt;::value_type&gt;</type>
+            <name>filtered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filtered-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;typename qValueType&lt;Iterator&gt;::value_type&gt;</type>
+            <name>filtered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>filtered-3</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingFilter</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilter</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingFilter</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilter-1</anchor>
+            <arglist>(Sequence &amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-2</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-3</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-4</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-5</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-6</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingFilteredReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFilteredReduced-7</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::decay_t&lt;Sequence&gt;</type>
+            <name>blockingFiltered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFiltered</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::decay_t&lt;Sequence&gt;</type>
+            <name>blockingFiltered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFiltered-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>OutputSequence</type>
+            <name>blockingFiltered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFiltered-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>OutputSequence</type>
+            <name>blockingFiltered</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingFiltered-3</anchor>
+            <arglist>(Iterator begin, Iterator end, KeepFunctor &amp;&amp;filterFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>map</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>map</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>map</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>map-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>map</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>map-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;void&gt;</type>
+            <name>map</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>map-3</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-2</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-3</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-4</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-5</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-6</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;ResultType&gt;</type>
+            <name>mappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mappedReduced-7</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;QtPrivate::MapResultType&lt;Sequence, MapFunctor&gt; &gt;</type>
+            <name>mapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mapped</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;QtPrivate::MapResultType&lt;Sequence, MapFunctor&gt; &gt;</type>
+            <name>mapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mapped-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;QtPrivate::MapResultType&lt;Iterator, MapFunctor&gt; &gt;</type>
+            <name>mapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mapped-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;QtPrivate::MapResultType&lt;Iterator, MapFunctor&gt; &gt;</type>
+            <name>mapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>mapped-3</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingMap</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMap</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingMap</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMap-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingMap</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMap-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>blockingMap</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMap-3</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-1</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-2</anchor>
+            <arglist>(QThreadPool *pool, Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-3</anchor>
+            <arglist>(Sequence &amp;&amp;sequence, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-4</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-5</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-6</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ResultType</type>
+            <name>blockingMappedReduced</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMappedReduced-7</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;mapFunction, ReduceFunctor &amp;&amp;reduceFunction, InitialValueType &amp;&amp;initialValue, QtConcurrent::ReduceOptions reduceOptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>OutputSequence</type>
+            <name>blockingMapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMapped</anchor>
+            <arglist>(QThreadPool *pool, InputSequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>OutputSequence</type>
+            <name>blockingMapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMapped-1</anchor>
+            <arglist>(InputSequence &amp;&amp;sequence, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Sequence</type>
+            <name>blockingMapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMapped-2</anchor>
+            <arglist>(QThreadPool *pool, Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Sequence</type>
+            <name>blockingMapped</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>blockingMapped-3</anchor>
+            <arglist>(Iterator begin, Iterator end, MapFunctor &amp;&amp;function)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;T&gt;</type>
+            <name>run</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>run</anchor>
+            <arglist>(Function function, ...)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;T&gt;</type>
+            <name>run</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>run-1</anchor>
+            <arglist>(QThreadPool *pool, Function function, ...)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTaskBuilder&lt;Task&gt;</type>
+            <name>task</name>
+            <anchorfile>qtconcurrent.html</anchorfile>
+            <anchor>task</anchor>
+            <arglist>(Task &amp;&amp;task)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtConcurrent::QTaskBuilder</name>
+        <filename>qtconcurrent-qtaskbuilder.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFuture&lt;QtConcurrent::InvokeResultType&gt;</type>
+            <name>spawn</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>spawn</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>spawn</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>spawn-1</anchor>
+            <arglist>(QtConcurrent::FutureResult)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTaskBuilder&lt;Task, ExtraArgs...&gt;</type>
+            <name>withArguments</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>withArguments</anchor>
+            <arglist>(ExtraArgs &amp;&amp;... args)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTaskBuilder&lt;Task, Args...&gt; &amp;</type>
+            <name>onThreadPool</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>onThreadPool</anchor>
+            <arglist>(QThreadPool &amp;newThreadPool)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTaskBuilder&lt;Task, Args...&gt; &amp;</type>
+            <name>withPriority</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>withPriority</anchor>
+            <arglist>(int newPriority)</arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>InvokeResultType</name>
+            <anchorfile>qtconcurrent-qtaskbuilder.html</anchorfile>
+            <anchor>InvokeResultType-typedef</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+</tagfile>

@@ -1,21 +1,30 @@
-# Dockerfile: Ubuntu Hirsute, Qt 5.15
+# Dockerfile: Ubuntu Jammy, Qt 6.2
 
-Dockerfile for creating images for building and automated testing of Qt 5 applications.
+Dockerfile for creating images for building and automated testing of Qt 6 applications.
 
 Image configuration:
-- Ubuntu Hirsute (21.04)
-- Python 3.9.4
-- Qt 5.15.2 (base & declarative/QML) + qmake
-- GCC/G++ 10.3.0
-- CMake 3.18.4
-- Qbs 1.18.0 (default profile: qt-5-15-2-bin)
+- Ubuntu Jammy (22.04)
+- Python 3.10.4
+- Qt 6.2.4
+	- qmake6
+	- qt6-base-dev
+	- qt6-base-dev-tools
+	- qt6-documentation-tools
+	- qt6-declarative-dev
+	- qt6-declarative-dev-tools
+	- qt6-image-formats-plugins
+	- qt6-l10n-tools
+	- qt6-translations-l10n
+- GCC/G++ 11.2.0
+- CMake 3.22.1
+- Qbs 1.19.2 (default profile: qt-6-2-4-bin)
 - Doxygen 1.9.1
-- gcovr 4.2
-- lcov 1.14
-- coverxygen 1.5.0
-- Tags files for Qt 5.15.2 (to link in Doxygen documentation)
-- OpenJDK 11 JRE
-- SonarQube Scanner 4.6.2.2472 (located at `/opt/sonar-scanner`)
+- gcovr 5.0
+- lcov 1.15
+- coverxygen 1.7.0
+- Tags files for Qt 6.2.4 (to link in Doxygen documentation)
+- OpenJDK 17 JRE
+- SonarQube Scanner 5.0.1.3006 (located at `/opt/sonar-scanner`)
 
 
 ### Other Versions ###
