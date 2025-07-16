@@ -155,6 +155,29 @@
             <anchor>PersistentCookiesPolicy-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumeration">
+            <name>PersistentPermissionsPolicy</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>AskEveryTime</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StoreInMemory</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StoreOnDisk</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QQuickWebEngineProfile *</type>
             <name>defaultProfile</name>
@@ -188,6 +211,13 @@
             <name>clearHttpCache</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
             <anchor>clearHttpCache</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearHttpCacheCompleted</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>clearHttpCacheCompleted</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -258,6 +288,13 @@
             <name>persistentCookiesPolicyChanged</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
             <anchor>persistentCookiesPolicy-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>persistentPermissionsPolicyChanged</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>persistentPermissionsPolicy-prop</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -360,6 +397,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setPersistentPermissionsPolicy</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>persistentPermissionsPolicy-prop</anchor>
+            <arglist>(QQuickWebEngineProfile::PersistentPermissionsPolicy)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setPersistentStoragePath</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
             <anchor>persistentStoragePath-prop</anchor>
@@ -422,6 +466,27 @@
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listAllPermissions</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>listAllPermissions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listPermissionsForOrigin</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>listPermissionsForOrigin</anchor>
+            <arglist>(const QUrl &amp;securityOrigin) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listPermissionsForPermissionType</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>listPermissionsForPermissionType</anchor>
+            <arglist>(QWebEnginePermission::PermissionType permissionType) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QQuickWebEngineProfile::HttpCacheType</type>
             <name>httpCacheType</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
@@ -433,6 +498,13 @@
             <name>persistentCookiesPolicy</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
             <anchor>persistentCookiesPolicy-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QQuickWebEngineProfile::PersistentPermissionsPolicy</type>
+            <name>persistentPermissionsPolicy</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>persistentPermissionsPolicy-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -492,11 +564,25 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineClientHints *</type>
+            <name>clientHints</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>clientHints</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWebEngineCookieStore *</type>
             <name>cookieStore</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
             <anchor>cookieStore</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEnginePermission</type>
+            <name>queryPermission</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>queryPermission</anchor>
+            <arglist>(const QUrl &amp;securityOrigin, QWebEnginePermission::PermissionType permissionType) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -587,6 +673,12 @@
             <anchor>persistentCookiesPolicy-prop</anchor>
             <arglist></arglist>
         </member>
+        <member kind="property" type="PersistentPermissionsPolicy">
+            <name>persistentPermissionsPolicy</name>
+            <anchorfile>qquickwebengineprofile.html</anchorfile>
+            <anchor>persistentPermissionsPolicy-prop</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="property" type="QString">
             <name>persistentStoragePath</name>
             <anchorfile>qquickwebengineprofile.html</anchorfile>
@@ -619,6 +711,12 @@
             <name>Type</name>
             <anchorfile>qwebenginecertificateerror.html</anchorfile>
             <anchor>Type-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Ok</name>
+            <anchorfile>qwebenginecertificateerror.html</anchorfile>
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>SslPinnedKeyNotInCertificateChain</name>
@@ -779,10 +877,23 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isMainFrame</name>
+            <anchorfile>qwebenginecertificateerror.html</anchorfile>
+            <anchor>isMainFrame-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isOverridable</name>
             <anchorfile>qwebenginecertificateerror.html</anchorfile>
             <anchor>overridable-prop</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>isMainFrame</name>
+            <anchorfile>qwebenginecertificateerror.html</anchorfile>
+            <anchor>isMainFrame-prop</anchor>
+            <arglist></arglist>
         </member>
         <member kind="property" type="bool">
             <name>overridable</name>
@@ -853,6 +964,218 @@
             <anchorfile>qwebengineclientcertificatestore.html</anchorfile>
             <anchor>certificates</anchor>
             <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QWebEngineClientHints</name>
+        <filename>qwebengineclienthints.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isAllClientHintsEnabled</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>isAllClientHintsEnabled-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>resetAll</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>resetAll</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAllClientHintsEnabled</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>isAllClientHintsEnabled-prop</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setArch</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>arch-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBitness</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>bitness-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFullVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersion-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFullVersionList</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersionList-prop</anchor>
+            <arglist>(const QVariantMap &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setIsMobile</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>mobile-prop</anchor>
+            <arglist>(bool)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setIsWow64</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>wow64-prop</anchor>
+            <arglist>(bool)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setModel</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>model-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPlatform</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platform-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPlatformVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platformVersion-prop</anchor>
+            <arglist>(const QString &amp;)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>arch</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>arch-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>bitness</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>bitness-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>fullVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersion-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>model</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>model-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>platform</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platform-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>platformVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platformVersion-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVariantMap</type>
+            <name>fullVersionList</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersionList-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isMobile</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>mobile-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isWow64</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>wow64-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>arch</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>arch-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>bitness</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>bitness-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>fullVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersion-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QVariantMap">
+            <name>fullVersionList</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>fullVersionList-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>isAllClientHintsEnabled</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>isAllClientHintsEnabled-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>mobile</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>mobile-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>model</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>model-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>platform</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platform-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>platformVersion</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>platformVersion-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>wow64</name>
+            <anchorfile>qwebengineclienthints.html</anchorfile>
+            <anchor>wow64-prop</anchor>
+            <arglist></arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1228,6 +1551,45 @@
         <filename>qwebenginecookiestore-filterrequest.html</filename>
     </compound>
     <compound kind="class">
+        <name>QWebEngineDesktopMediaRequest</name>
+        <filename>qwebenginedesktopmediarequest.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractListModel *</type>
+            <name>screensModel</name>
+            <anchorfile>qwebenginedesktopmediarequest.html</anchorfile>
+            <anchor>screensModel</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractListModel *</type>
+            <name>windowsModel</name>
+            <anchorfile>qwebenginedesktopmediarequest.html</anchorfile>
+            <anchor>windowsModel</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>cancel</name>
+            <anchorfile>qwebenginedesktopmediarequest.html</anchorfile>
+            <anchor>cancel</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>selectScreen</name>
+            <anchorfile>qwebenginedesktopmediarequest.html</anchorfile>
+            <anchor>selectScreen</anchor>
+            <arglist>(const QModelIndex &amp;index) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>selectWindow</name>
+            <anchorfile>qwebenginedesktopmediarequest.html</anchorfile>
+            <anchor>selectWindow</anchor>
+            <arglist>(const QModelIndex &amp;index) const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QWebEngineDownloadRequest</name>
         <filename>qwebenginedownloadrequest.html</filename>
         <base>QObject</base>
@@ -1476,7 +1838,7 @@
             <type>void</type>
             <name>interruptReasonChanged</name>
             <anchorfile>qwebenginedownloadrequest.html</anchorfile>
-            <anchor>interruptReasonChanged</anchor>
+            <anchor>interruptReason-prop</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1836,6 +2198,108 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QWebEngineFrame</name>
+        <filename>qwebengineframe.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QWebEngineFrame &amp;left, const QWebEngineFrame &amp;right)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>operator-eq-eq</anchor>
+            <arglist>(const QWebEngineFrame &amp;left, const QWebEngineFrame &amp;right)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>printToPdf</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>printToPdf</anchor>
+            <arglist>(const QString &amp;filePath)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>printToPdf</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>printToPdf-1</anchor>
+            <arglist>(const std::function&lt;void (const QByteArray &amp;)&gt; &amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>runJavaScript</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>runJavaScript</anchor>
+            <arglist>(const QString &amp;script, const std::function&lt;void (const QVariant &amp;)&gt; &amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>runJavaScript</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>runJavaScript-1</anchor>
+            <arglist>(const QString &amp;script, quint32 worldId)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>runJavaScript</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>runJavaScript-2</anchor>
+            <arglist>(const QString &amp;script, quint32 worldId, const std::function&lt;void (const QVariant &amp;)&gt; &amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEngineFrame&gt;</type>
+            <name>children</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>children</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSizeF</type>
+            <name>size</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>size</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>htmlName</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>htmlName</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>name</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>name</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrl</type>
+            <name>url</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>url</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isMainFrame</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>isMainFrame</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qwebengineframe.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QWebEngineFullScreenRequest</name>
         <filename>qwebenginefullscreenrequest.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1926,14 +2390,14 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qwebenginehistory.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;stream, const QWebEngineHistory &amp;history)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qwebenginehistory.html</anchorfile>
-            <anchor>operator-gt-gt-1</anchor>
+            <anchor>operator-gt-gt</anchor>
             <arglist>(QDataStream &amp;stream, QWebEngineHistory &amp;history)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2195,7 +2659,7 @@
             <type>QWebEngineHttpRequest &amp;</type>
             <name>operator=</name>
             <anchorfile>qwebenginehttprequest.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QWebEngineHttpRequest &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -2209,14 +2673,14 @@
             <type></type>
             <name>QWebEngineHttpRequest</name>
             <anchorfile>qwebenginehttprequest.html</anchorfile>
-            <anchor>QWebEngineHttpRequest</anchor>
+            <anchor>QWebEngineHttpRequest-1</anchor>
             <arglist>(const QUrl &amp;url, const QWebEngineHttpRequest::Method &amp;method)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebEngineHttpRequest</name>
             <anchorfile>qwebenginehttprequest.html</anchorfile>
-            <anchor>QWebEngineHttpRequest-1</anchor>
+            <anchor>QWebEngineHttpRequest</anchor>
             <arglist>(const QWebEngineHttpRequest &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2537,10 +3001,23 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>hasFormData</name>
+            <anchorfile>qwebenginenavigationrequest.html</anchorfile>
+            <anchor>hasFormData-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isMainFrame</name>
             <anchorfile>qwebenginenavigationrequest.html</anchorfile>
             <anchor>isMainFrame-prop</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>hasFormData</name>
+            <anchorfile>qwebenginenavigationrequest.html</anchorfile>
+            <anchor>hasFormData-prop</anchor>
+            <arglist></arglist>
         </member>
         <member kind="property" type="bool">
             <name>isMainFrame</name>
@@ -2785,54 +3262,66 @@
         <base>QObject</base>
         <member kind="enumeration">
             <name>Feature</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
         </member>
         <member kind="enumvalue">
             <name>Notifications</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>Geolocation</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>MediaAudioCapture</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>MediaVideoCapture</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>MediaAudioVideoCapture</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>MouseLock</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>DesktopVideoCapture</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>DesktopAudioVideoCapture</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
+            <anchor>Feature-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ClipboardReadWrite</name>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
+            <anchor>Feature-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>LocalFontsAccess</name>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>Feature-enum</anchor>
             <arglist></arglist>
         </member>
@@ -2977,24 +3466,24 @@
         </member>
         <member kind="enumeration">
             <name>PermissionPolicy</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>PermissionPolicy-enum</anchor>
         </member>
         <member kind="enumvalue">
             <name>PermissionUnknown</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>PermissionPolicy-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>PermissionGrantedByUser</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>PermissionPolicy-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
             <name>PermissionDeniedByUser</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>PermissionPolicy-enum</anchor>
             <arglist></arglist>
         </member>
@@ -3362,6 +3851,13 @@
             <anchor>chooseFiles</anchor>
             <arglist>(QWebEnginePage::FileSelectionMode mode, const QStringList &amp;oldFiles, const QStringList &amp;acceptedMimeTypes)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineFrame</type>
+            <name>mainFrame</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>mainFrame</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual QWebEnginePage *</type>
             <name>createWindow</name>
@@ -3419,6 +3915,13 @@
             <arglist>(const QUrl &amp;securityOrigin, const QString &amp;msg, const QString &amp;defaultValue, QString *result)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;QWebEngineFrame&gt;</type>
+            <name>findFrameByName</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>findFrameByName</anchor>
+            <arglist>(QAnyStringView name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>audioMutedChanged</name>
             <anchorfile>qwebenginepage.html</anchorfile>
@@ -3448,6 +3951,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>desktopMediaRequested</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>desktopMediaRequested</anchor>
+            <arglist>(const QWebEngineDesktopMediaRequest &amp;request)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>download</name>
             <anchorfile>qwebenginepage.html</anchorfile>
             <anchor>download</anchor>
@@ -3456,14 +3966,14 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>featurePermissionRequestCanceled</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>featurePermissionRequestCanceled</anchor>
             <arglist>(const QUrl &amp;securityOrigin, QWebEnginePage::Feature feature)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>featurePermissionRequested</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>featurePermissionRequested</anchor>
             <arglist>(const QUrl &amp;securityOrigin, QWebEnginePage::Feature feature)</arglist>
         </member>
@@ -3609,10 +4119,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>permissionRequested</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>permissionRequested</anchor>
+            <arglist>(QWebEnginePermission permission)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>printRequested</name>
             <anchorfile>qwebenginepage.html</anchorfile>
             <anchor>printRequested</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>printRequestedByFrame</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>printRequestedByFrame</anchor>
+            <arglist>(QWebEngineFrame frame)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -3750,7 +4274,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setFeaturePermission</name>
-            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchorfile>qwebenginepage-obsolete.html</anchorfile>
             <anchor>setFeaturePermission</anchor>
             <arglist>(const QUrl &amp;securityOrigin, QWebEnginePage::Feature feature, QWebEnginePage::PermissionPolicy policy)</arglist>
         </member>
@@ -3840,10 +4364,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>webAuthUxRequested</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>webAuthUxRequested</anchor>
+            <arglist>(QWebEngineWebAuthUxRequest *request)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>windowCloseRequested</name>
             <anchorfile>qwebenginepage.html</anchorfile>
             <anchor>windowCloseRequested</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>zoomFactorChanged</name>
+            <anchorfile>qwebenginepage.html</anchorfile>
+            <anchor>zoomFactorChanged</anchor>
+            <arglist>(qreal factor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual </type>
@@ -4171,6 +4709,190 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QWebEnginePermission</name>
+        <filename>qwebenginepermission.html</filename>
+        <member kind="enumeration">
+            <name>PermissionType</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Unsupported</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MediaAudioCapture</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MediaVideoCapture</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MediaAudioVideoCapture</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DesktopVideoCapture</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DesktopAudioVideoCapture</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MouseLock</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Notifications</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Geolocation</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ClipboardReadWrite</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>LocalFontsAccess</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>PermissionType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>State</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>State-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Invalid</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Ask</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Granted</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Denied</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>bool</type>
+            <name>isPersistent</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>isPersistent</anchor>
+            <arglist>(QWebEnginePermission::PermissionType permissionType)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrl</type>
+            <name>origin</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>origin-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEnginePermission::PermissionType</type>
+            <name>permissionType</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>permissionType-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEnginePermission::State</type>
+            <name>state</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>isValid-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>deny</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>deny</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>grant</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>grant</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>reset</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>reset</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>isValid</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>isValid-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QUrl">
+            <name>origin</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>origin-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="PermissionType">
+            <name>permissionType</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>permissionType-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="State">
+            <name>state</name>
+            <anchorfile>qwebenginepermission.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QWebEngineProfile</name>
         <filename>qwebengineprofile.html</filename>
         <base>QObject</base>
@@ -4220,6 +4942,29 @@
             <anchor>PersistentCookiesPolicy-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumeration">
+            <name>PersistentPermissionsPolicy</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>AskEveryTime</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StoreInMemory</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StoreOnDisk</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>PersistentPermissionsPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWebEngineClientCertificateStore *</type>
             <name>clientCertificateStore</name>
@@ -4267,6 +5012,13 @@
             <name>clearHttpCache</name>
             <anchorfile>qwebengineprofile.html</anchorfile>
             <anchor>clearHttpCache</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearHttpCacheCompleted</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>clearHttpCacheCompleted</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4369,6 +5121,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setPersistentPermissionsPolicy</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>setPersistentPermissionsPolicy</anchor>
+            <arglist>(QWebEngineProfile::PersistentPermissionsPolicy newPersistentPermissionsPolicy)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setPersistentStoragePath</name>
             <anchorfile>qwebengineprofile.html</anchorfile>
             <anchor>setPersistentStoragePath</anchor>
@@ -4401,6 +5160,27 @@
             <anchorfile>qwebengineprofile.html</anchorfile>
             <anchor>setUrlRequestInterceptor</anchor>
             <arglist>(QWebEngineUrlRequestInterceptor *interceptor)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listAllPermissions</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>listAllPermissions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listPermissionsForOrigin</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>listPermissionsForOrigin</anchor>
+            <arglist>(const QUrl &amp;securityOrigin) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QWebEnginePermission&gt;</type>
+            <name>listPermissionsForPermissionType</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>listPermissionsForPermissionType</anchor>
+            <arglist>(QWebEnginePermission::PermissionType permissionType) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
@@ -4452,6 +5232,20 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineClientHints *</type>
+            <name>clientHints</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>clientHints</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEnginePermission</type>
+            <name>queryPermission</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>queryPermission</anchor>
+            <arglist>(const QUrl &amp;securityOrigin, QWebEnginePermission::PermissionType permissionType) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWebEngineProfile::HttpCacheType</type>
             <name>httpCacheType</name>
             <anchorfile>qwebengineprofile.html</anchorfile>
@@ -4463,6 +5257,13 @@
             <name>persistentCookiesPolicy</name>
             <anchorfile>qwebengineprofile.html</anchorfile>
             <anchor>persistentCookiesPolicy</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineProfile::PersistentPermissionsPolicy</type>
+            <name>persistentPermissionsPolicy</name>
+            <anchorfile>qwebengineprofile.html</anchorfile>
+            <anchor>persistentPermissionsPolicy</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4726,7 +5527,7 @@
             <type>void</type>
             <name>setSourceUrl</name>
             <anchorfile>qwebenginescript.html</anchorfile>
-            <anchor>sourceUrl-prop</anchor>
+            <anchor>setSourceUrl</anchor>
             <arglist>(const QUrl &amp;url)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4768,7 +5569,7 @@
             <type>QUrl</type>
             <name>sourceUrl</name>
             <anchorfile>qwebenginescript.html</anchorfile>
-            <anchor>sourceUrl-prop</anchor>
+            <anchor>sourceUrl</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4828,14 +5629,14 @@
             <type>void</type>
             <name>insert</name>
             <anchorfile>qwebenginescriptcollection.html</anchorfile>
-            <anchor>insert-1</anchor>
+            <anchor>insert</anchor>
             <arglist>(const QList&lt;QWebEngineScript&gt; &amp;list)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insert</name>
             <anchorfile>qwebenginescriptcollection.html</anchorfile>
-            <anchor>insert</anchor>
+            <anchor>insert-1</anchor>
             <arglist>(const QWebEngineScript &amp;s)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4958,6 +5759,35 @@
             <name>DefaultFixedFontSize</name>
             <anchorfile>qwebenginesettings.html</anchorfile>
             <anchor>FontSize-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>ImageAnimationPolicy</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>ImageAnimationPolicy-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Inherited</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>ImageAnimationPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Allow</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>ImageAnimationPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AnimateOnce</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>ImageAnimationPolicy-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Disallow</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>ImageAnimationPolicy-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="enumeration">
@@ -5192,6 +6022,12 @@
             <anchor>WebAttribute-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>ForceDarkMode</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>WebAttribute-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>resetAttribute</name>
@@ -5212,6 +6048,13 @@
             <anchorfile>qwebenginesettings.html</anchorfile>
             <anchor>resetFontSize</anchor>
             <arglist>(QWebEngineSettings::FontSize type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>resetImageAnimationPolicy</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>resetImageAnimationPolicy</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -5243,6 +6086,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setImageAnimationPolicy</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>setImageAnimationPolicy</anchor>
+            <arglist>(QWebEngineSettings::ImageAnimationPolicy policy)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setUnknownUrlSchemePolicy</name>
             <anchorfile>qwebenginesettings.html</anchorfile>
             <anchor>setUnknownUrlSchemePolicy</anchor>
@@ -5261,6 +6111,13 @@
             <anchorfile>qwebenginesettings.html</anchorfile>
             <anchor>fontFamily</anchor>
             <arglist>(QWebEngineSettings::FontFamily which) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineSettings::ImageAnimationPolicy</type>
+            <name>imageAnimationPolicy</name>
+            <anchorfile>qwebenginesettings.html</anchorfile>
+            <anchor>imageAnimationPolicy</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWebEngineSettings::UnknownUrlSchemePolicy</type>
@@ -5460,6 +6317,12 @@
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
+            <name>ResourceTypeJson</name>
+            <anchorfile>qwebengineurlrequestinfo.html</anchorfile>
+            <anchor>ResourceType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
             <name>ResourceTypeWebSocket</name>
             <anchorfile>qwebengineurlrequestinfo.html</anchorfile>
             <anchor>ResourceType-enum</anchor>
@@ -5504,6 +6367,13 @@
             <name>httpHeaders</name>
             <anchorfile>qwebengineurlrequestinfo.html</anchorfile>
             <anchor>httpHeaders</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QIODevice *</type>
+            <name>requestBody</name>
+            <anchorfile>qwebengineurlrequestinfo.html</anchorfile>
+            <anchor>requestBody</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -5632,6 +6502,13 @@
             <name>requestMethod</name>
             <anchorfile>qwebengineurlrequestjob.html</anchorfile>
             <anchor>requestMethod</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QIODevice *</type>
+            <name>requestBody</name>
+            <anchorfile>qwebengineurlrequestjob.html</anchorfile>
+            <anchor>requestBody</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -5769,14 +6646,14 @@
             <type>QWebEngineUrlScheme &amp;</type>
             <name>operator=</name>
             <anchorfile>qwebengineurlscheme.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QWebEngineUrlScheme &amp;&amp;that)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWebEngineUrlScheme &amp;</type>
             <name>operator=</name>
             <anchorfile>qwebengineurlscheme.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QWebEngineUrlScheme &amp;that)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5797,21 +6674,21 @@
             <type></type>
             <name>QWebEngineUrlScheme</name>
             <anchorfile>qwebengineurlscheme.html</anchorfile>
-            <anchor>QWebEngineUrlScheme-3</anchor>
+            <anchor>QWebEngineUrlScheme-1</anchor>
             <arglist>(QWebEngineUrlScheme &amp;&amp;that)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebEngineUrlScheme</name>
             <anchorfile>qwebengineurlscheme.html</anchorfile>
-            <anchor>QWebEngineUrlScheme-1</anchor>
+            <anchor>QWebEngineUrlScheme-2</anchor>
             <arglist>(const QByteArray &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebEngineUrlScheme</name>
             <anchorfile>qwebengineurlscheme.html</anchorfile>
-            <anchor>QWebEngineUrlScheme-2</anchor>
+            <anchor>QWebEngineUrlScheme-3</anchor>
             <arglist>(const QWebEngineUrlScheme &amp;that)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5960,14 +6837,14 @@
             <type></type>
             <name>QWebEngineView</name>
             <anchorfile>qwebengineview.html</anchorfile>
-            <anchor>QWebEngineView-2</anchor>
+            <anchor>QWebEngineView-1</anchor>
             <arglist>(QWebEnginePage *page, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebEngineView</name>
             <anchorfile>qwebengineview.html</anchorfile>
-            <anchor>QWebEngineView-1</anchor>
+            <anchor>QWebEngineView-2</anchor>
             <arglist>(QWebEngineProfile *profile, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -6130,6 +7007,13 @@
             <anchorfile>qwebengineview.html</anchorfile>
             <anchor>printRequested</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>printRequestedByFrame</name>
+            <anchorfile>qwebengineview.html</anchorfile>
+            <anchor>printRequestedByFrame</anchor>
+            <arglist>(QWebEngineFrame frame)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -6377,6 +7261,333 @@
             <arglist></arglist>
         </member>
     </compound>
+    <compound kind="class">
+        <name>QWebEngineWebAuthPinRequest</name>
+        <filename>qwebenginewebauthpinrequest.html</filename>
+        <member kind="property" type="QWebEngineWebAuthUxRequest::PinEntryError">
+            <name>error</name>
+            <anchorfile>qwebenginewebauthpinrequest.html</anchorfile>
+            <anchor>error-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="qint32">
+            <name>minPinLength</name>
+            <anchorfile>qwebenginewebauthpinrequest.html</anchorfile>
+            <anchor>minPinLength-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QWebEngineWebAuthUxRequest::PinEntryReason">
+            <name>reason</name>
+            <anchorfile>qwebenginewebauthpinrequest.html</anchorfile>
+            <anchor>reason-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>remainingAttempts</name>
+            <anchorfile>qwebenginewebauthpinrequest.html</anchorfile>
+            <anchor>remainingAttempts-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QWebEngineWebAuthUxRequest</name>
+        <filename>qwebenginewebauthuxrequest.html</filename>
+        <base>QObject</base>
+        <member kind="enumeration">
+            <name>PinEntryError</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>NoError</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>InternalUvLocked</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>WrongPin</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TooShort</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>InvalidCharacters</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SameAsCurrentPin</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryError-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>PinEntryReason</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryReason-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Set</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Change</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Challenge</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>PinEntryReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>RequestFailureReason</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Timeout</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>KeyNotRegistered</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>KeyAlreadyRegistered</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SoftPinBlock</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>HardPinBlock</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticatorRemovedDuringPinEntry</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticatorMissingResidentKeys</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticatorMissingUserVerification</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticatorMissingLargeBlob</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NoCommonAlgorithms</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StorageFull</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UserConsentDenied</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>WinUserCancelled</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>RequestFailureReason-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>WebAuthUxState</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>NotStarted</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SelectAccount</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CollectPin</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>FinishTokenCollection</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RequestFailed</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Cancelled</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Completed</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>WebAuthUxState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>cancel</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>cancel</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>retry</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>retry</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPin</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>setPin</anchor>
+            <arglist>(const QString &amp;pin)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSelectedAccount</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>setSelectedAccount</anchor>
+            <arglist>(const QString &amp;selectedAccount)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stateChanged</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>stateChanged</anchor>
+            <arglist>(QWebEngineWebAuthUxRequest::WebAuthUxState state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>relyingPartyId</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>relyingPartyId-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStringList</type>
+            <name>userNames</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>userNames-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineWebAuthPinRequest</type>
+            <name>pinRequest</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>pinRequest-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineWebAuthUxRequest::RequestFailureReason</type>
+            <name>requestFailureReason</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>requestFailureReason-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWebEngineWebAuthUxRequest::WebAuthUxState</type>
+            <name>state</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QWebEngineWebAuthPinRequest">
+            <name>pinRequest</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>pinRequest-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>relyingPartyId</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>relyingPartyId-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="RequestFailureReason">
+            <name>requestFailureReason</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>requestFailureReason-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="WebAuthUxState">
+            <name>state</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QStringList">
+            <name>userNames</name>
+            <anchorfile>qwebenginewebauthuxrequest.html</anchorfile>
+            <anchor>userNames-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
     <compound kind="namespace">
         <name>QtWebEngineQuick</name>
         <filename>qtwebenginequick.html</filename>
@@ -6516,6 +7727,31 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QtWebEngine.WebEngineDesktopMediaRequest</name>
+        <filename>qml-qtwebengine-webenginedesktopmediarequest.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>cancel</name>
+            <anchorfile>qml-qtwebengine-webenginedesktopmediarequest.html</anchorfile>
+            <anchor>cancel-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>selectScreen</name>
+            <anchorfile>qml-qtwebengine-webenginedesktopmediarequest.html</anchorfile>
+            <anchor>selectScreen-method</anchor>
+            <arglist>(QModelIndex index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>selectWindow</name>
+            <anchorfile>qml-qtwebengine-webenginedesktopmediarequest.html</anchorfile>
+            <anchor>selectWindow-method</anchor>
+            <arglist>(QModelIndex index)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QtWebEngine.WebEngineDownloadRequest</name>
         <filename>qml-qtwebengine-webenginedownloadrequest.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -6618,6 +7854,13 @@
         <filename>qml-qtwebengine-webengineprofile.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>clearHttpCacheCompleted</name>
+            <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
+            <anchor>clearHttpCacheCompleted-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>downloadFinished</name>
             <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
             <anchor>downloadFinished-signal</anchor>
@@ -6629,6 +7872,27 @@
             <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
             <anchor>downloadRequested-signal</anchor>
             <arglist>(WebEngineDownloadRequest download)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>list&lt;webEnginePermission&gt;</type>
+            <name>listAllPermissions</name>
+            <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
+            <anchor>listAllPermissions-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>list&lt;webEnginePermission&gt;</type>
+            <name>listPermissionsForOrigin</name>
+            <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
+            <anchor>listPermissionsForOrigin-method</anchor>
+            <arglist>(url securityOrigin)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>list&lt;webEnginePermission&gt;</type>
+            <name>listPermissionsForPermissionType</name>
+            <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
+            <anchor>listPermissionsForPermissionType-method</anchor>
+            <arglist>(WebEnginePermission.PermissionType permissionType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -6644,6 +7908,13 @@
             <anchor>clearHttpCache-method</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>queryPermission</name>
+            <anchorfile>qml-qtwebengine-webengineprofile.html</anchorfile>
+            <anchor>queryPermission-method</anchor>
+            <arglist>(url securityOrigin, WebEnginePermission.PermissionType permissionType)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtWebEngine.WebEngineScript</name>
@@ -6652,6 +7923,13 @@
     <compound kind="class">
         <name>QtWebEngine.WebEngineScriptCollection</name>
         <filename>qml-qtwebengine-webenginescriptcollection.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>contains</name>
+            <anchorfile>qml-qtwebengine-webenginescriptcollection.html</anchorfile>
+            <anchor>contains-method</anchor>
+            <arglist>(WebEngineScript script)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>remove</name>
@@ -6672,13 +7950,6 @@
             <anchorfile>qml-qtwebengine-webenginescriptcollection.html</anchorfile>
             <anchor>clear-method</anchor>
             <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>contains</name>
-            <anchorfile>qml-qtwebengine-webenginescriptcollection.html</anchorfile>
-            <anchor>contains-method</anchor>
-            <arglist>(WebEngineScript script)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -6760,8 +8031,15 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
-            <name>featurePermissionRequested</name>
+            <name>desktopMediaRequested</name>
             <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>desktopMediaRequested-signal</anchor>
+            <arglist>(WebEngineDesktopMediaRequest request)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>featurePermissionRequested</name>
+            <anchorfile>qml-qtwebengine-webengineview-obsolete.html</anchorfile>
             <anchor>featurePermissionRequested-signal</anchor>
             <arglist>(url securityOrigin, Feature feature)</arglist>
         </member>
@@ -6844,10 +8122,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>permissionRequested</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>permissionRequested-signal</anchor>
+            <arglist>(webEnginePermission permission)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>printRequested</name>
             <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
             <anchor>printRequested-signal</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>printRequestedByFrame</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>printRequestedByFrame-signal</anchor>
+            <arglist>(webEngineFrame frame)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -6964,7 +8256,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>grantFeaturePermission</name>
-            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchorfile>qml-qtwebengine-webengineview-obsolete.html</anchorfile>
             <anchor>grantFeaturePermission-method</anchor>
             <arglist>(url securityOrigin, Feature feature, bool granted)</arglist>
         </member>
@@ -7015,6 +8307,13 @@
             <name>runJavaScript</name>
             <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
             <anchor>runJavaScript-method</anchor>
+            <arglist>(string script, int worldId, variant callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>runJavaScript</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>runJavaScript-method</anchor>
             <arglist>(string script, variant callback)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7054,10 +8353,70 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>webAuthUxRequested</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>webAuthUxRequested-signal</anchor>
+            <arglist>(QWebEngineWebAuthUxRequest *request)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>webEngineFrame</type>
+            <name>findFrameByName</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>findFrameByName-method</anchor>
+            <arglist>(string name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>windowCloseRequested</name>
             <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
             <anchor>windowCloseRequested-signal</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>zoomFactorChanged</name>
+            <anchorfile>qml-qtwebengine-webengineview.html</anchorfile>
+            <anchor>zoomFactorChanged-signal</anchor>
+            <arglist>(qreal factor)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtWebEngine.WebEngineWebAuthUxRequest</name>
+        <filename>qml-qtwebengine-webenginewebauthuxrequest.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>cancel</name>
+            <anchorfile>qml-qtwebengine-webenginewebauthuxrequest.html</anchorfile>
+            <anchor>cancel-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>retry</name>
+            <anchorfile>qml-qtwebengine-webenginewebauthuxrequest.html</anchorfile>
+            <anchor>retry-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPin</name>
+            <anchorfile>qml-qtwebengine-webenginewebauthuxrequest.html</anchorfile>
+            <anchor>setPin-method</anchor>
+            <arglist>(const QString &amp;pin)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSelectedAccount</name>
+            <anchorfile>qml-qtwebengine-webenginewebauthuxrequest.html</anchorfile>
+            <anchor>setSelectedAccount-method</anchor>
+            <arglist>(const QString &amp;selectedAccount)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stateChanged</name>
+            <anchorfile>qml-qtwebengine-webenginewebauthuxrequest.html</anchorfile>
+            <anchor>stateChanged-signal</anchor>
+            <arglist>(WebAuthUxState state)</arglist>
         </member>
     </compound>
 </tagfile>

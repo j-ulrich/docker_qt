@@ -213,14 +213,14 @@
             <type></type>
             <name>QRemoteObjectHost</name>
             <anchorfile>qremoteobjecthost.html</anchorfile>
-            <anchor>QRemoteObjectHost-2</anchor>
+            <anchor>QRemoteObjectHost-1</anchor>
             <arglist>(const QUrl &amp;address, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QRemoteObjectHost</name>
             <anchorfile>qremoteobjecthost.html</anchorfile>
-            <anchor>QRemoteObjectHost-1</anchor>
+            <anchor>QRemoteObjectHost-2</anchor>
             <arglist>(const QUrl &amp;address, const QUrl &amp;registryAddress, QRemoteObjectHostBase::AllowedSchemas allowedSchemas, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -236,6 +236,13 @@
             <anchorfile>qremoteobjecthost.html</anchorfile>
             <anchor>hostUrl-prop</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setLocalServerOptions</name>
+            <anchorfile>qremoteobjecthost.html</anchorfile>
+            <anchor>setLocalServerOptions</anchor>
+            <arglist>(QLocalServer::SocketOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QUrl</type>
@@ -406,6 +413,12 @@
         </member>
         <member kind="enumvalue">
             <name>ListenFailed</name>
+            <anchorfile>qremoteobjectnode.html</anchorfile>
+            <anchor>ErrorCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SocketAccessError</name>
             <anchorfile>qremoteobjectnode.html</anchorfile>
             <anchor>ErrorCode-enum</anchor>
             <arglist></arglist>
@@ -684,7 +697,7 @@
         <filename>qremoteobjectpendingreply.html</filename>
         <base>QRemoteObjectPendingCall</base>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QRemoteObjectPendingReply::Type</type>
+            <type>QRemoteObjectPendingReply&lt;T&gt;::Type</type>
             <name>returnValue</name>
             <anchorfile>qremoteobjectpendingreply.html</anchorfile>
             <anchor>returnValue</anchor>

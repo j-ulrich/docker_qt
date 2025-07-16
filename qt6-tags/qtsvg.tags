@@ -341,7 +341,7 @@
             <type></type>
             <name>QSvgRenderer</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>QSvgRenderer-3</anchor>
+            <anchor>QSvgRenderer-1</anchor>
             <arglist>(QXmlStreamReader *contents, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -355,14 +355,14 @@
             <type></type>
             <name>QSvgRenderer</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>QSvgRenderer-1</anchor>
+            <anchor>QSvgRenderer-3</anchor>
             <arglist>(const QString &amp;filename, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>load</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>load-2</anchor>
+            <anchor>load</anchor>
             <arglist>(QXmlStreamReader *contents)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -376,7 +376,7 @@
             <type>bool</type>
             <name>load</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
-            <anchor>load</anchor>
+            <anchor>load-2</anchor>
             <arglist>(const QString &amp;filename)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -409,10 +409,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setAnimationEnabled</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>animationEnabled-prop</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setAspectRatioMode</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
             <anchor>aspectRatioMode-prop</anchor>
             <arglist>(Qt::AspectRatioMode mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setDefaultOptions</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>setDefaultOptions</anchor>
+            <arglist>(QtSvg::Options flags)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -420,6 +434,13 @@
             <anchorfile>qsvgrenderer.html</anchorfile>
             <anchor>framesPerSecond-prop</anchor>
             <arglist>(int num)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setOptions</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>options-prop</anchor>
+            <arglist>(QtSvg::Options flags)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -485,6 +506,13 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtSvg::Options</type>
+            <name>options</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>options-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>animated</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
@@ -500,6 +528,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isAnimationEnabled</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>animationEnabled-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isValid</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
             <anchor>isValid</anchor>
@@ -512,6 +547,12 @@
             <anchor>framesPerSecond-prop</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="property" type="bool">
+            <name>animationEnabled</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>animationEnabled-prop</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="property" type="Qt::AspectRatioMode">
             <name>aspectRatioMode</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
@@ -522,6 +563,12 @@
             <name>framesPerSecond</name>
             <anchorfile>qsvgrenderer.html</anchorfile>
             <anchor>framesPerSecond-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QtSvg::Options">
+            <name>options</name>
+            <anchorfile>qsvgrenderer.html</anchorfile>
+            <anchor>options-prop</anchor>
             <arglist></arglist>
         </member>
         <member kind="property" type="QRectF">
@@ -553,14 +600,14 @@
             <type>void</type>
             <name>load</name>
             <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>load-1</anchor>
+            <anchor>load</anchor>
             <arglist>(const QByteArray &amp;contents)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>load</name>
             <anchorfile>qsvgwidget.html</anchorfile>
-            <anchor>load</anchor>
+            <anchor>load-1</anchor>
             <arglist>(const QString &amp;file)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -569,6 +616,13 @@
             <anchorfile>qsvgwidget.html</anchorfile>
             <anchor>paintEvent</anchor>
             <arglist>(QPaintEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setOptions</name>
+            <anchorfile>qsvgwidget.html</anchorfile>
+            <anchor>setOptions</anchor>
+            <arglist>(QtSvg::Options options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual </type>
@@ -590,6 +644,46 @@
             <anchorfile>qsvgwidget.html</anchorfile>
             <anchor>renderer</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtSvg::Options</type>
+            <name>options</name>
+            <anchorfile>qsvgwidget.html</anchorfile>
+            <anchor>options</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="namespace">
+        <name>QtSvg</name>
+        <filename>qtsvg.html</filename>
+        <member kind="enumeration">
+            <name>Option</name>
+            <anchorfile>qtsvg.html</anchorfile>
+            <anchor>Option-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>NoOption</name>
+            <anchorfile>qtsvg.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Tiny12FeaturesOnly</name>
+            <anchorfile>qtsvg.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AssumeTrustedSource</name>
+            <anchorfile>qtsvg.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QtSvg::Option">
+            <name>Options</name>
+            <anchorfile>qtsvg.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
         </member>
     </compound>
 </tagfile>

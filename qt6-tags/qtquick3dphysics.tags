@@ -5,6 +5,10 @@
         <filename>qml-qtquick3d-physics-boxshape.html</filename>
     </compound>
     <compound kind="class">
+        <name>CapsuleGeometry</name>
+        <filename>qml-capsulegeometry.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick3D.Physics.CapsuleShape</name>
         <filename>qml-qtquick3d-physics-capsuleshape.html</filename>
     </compound>

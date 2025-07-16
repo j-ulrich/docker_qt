@@ -22,7 +22,7 @@
             <type></type>
             <name>QWebChannel</name>
             <anchorfile>qwebchannel.html</anchorfile>
-            <anchor>QWebChannel-1</anchor>
+            <anchor>QWebChannel</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -163,21 +163,35 @@
             <name>connectTo</name>
             <anchorfile>qml-qtwebchannel-webchannel.html</anchorfile>
             <anchor>connectTo-method</anchor>
-            <arglist>(QWebChannelAbstractTransport transport)</arglist>
+            <arglist>(QtObject transport)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>deregisterObject</name>
+            <anchorfile>qml-qtwebchannel-webchannel.html</anchorfile>
+            <anchor>deregisterObject-method</anchor>
+            <arglist>(QtObject object)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>disconnectFrom</name>
             <anchorfile>qml-qtwebchannel-webchannel.html</anchorfile>
             <anchor>disconnectFrom-method</anchor>
-            <arglist>(QWebChannelAbstractTransport transport)</arglist>
+            <arglist>(QtObject transport)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>registerObject</name>
+            <anchorfile>qml-qtwebchannel-webchannel.html</anchorfile>
+            <anchor>registerObject-method</anchor>
+            <arglist>(const string id, QtObject object)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>registerObjects</name>
             <anchorfile>qml-qtwebchannel-webchannel.html</anchorfile>
             <anchor>registerObjects-method</anchor>
-            <arglist>(QVariantMap objects)</arglist>
+            <arglist>(object objects)</arglist>
         </member>
     </compound>
 </tagfile>

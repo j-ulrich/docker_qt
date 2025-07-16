@@ -2301,6 +2301,13 @@
         <filename>qml-qtsensors-sensor.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isFeatureSupported</name>
+            <anchorfile>qml-qtsensors-sensor.html</anchorfile>
+            <anchor>isFeatureSupported-method</anchor>
+            <arglist>(feature)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>start</name>
             <anchorfile>qml-qtsensors-sensor.html</anchorfile>
             <anchor>start-method</anchor>
@@ -2336,5 +2343,9 @@
             <anchor>calibrate-method</anchor>
             <arglist>()</arglist>
         </member>
+    </compound>
+    <compound kind="class">
+        <name>qoutputrange</name>
+        <filename>qoutputrange.html</filename>
     </compound>
 </tagfile>

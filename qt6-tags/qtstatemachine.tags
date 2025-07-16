@@ -812,7 +812,7 @@
             <type></type>
             <name>QSignalTransition</name>
             <anchorfile>qsignaltransition.html</anchorfile>
-            <anchor>QSignalTransition-2</anchor>
+            <anchor>QSignalTransition-3</anchor>
             <arglist>(const QObject *sender, PointerToMemberFunction signal, QState *sourceState)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -947,7 +947,7 @@
             <type>QAbstractTransition *</type>
             <name>addTransition</name>
             <anchorfile>qstate.html</anchorfile>
-            <anchor>addTransition-3</anchor>
+            <anchor>addTransition</anchor>
             <arglist>(QAbstractState *target)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -975,14 +975,14 @@
             <type>QSignalTransition *</type>
             <name>addTransition</name>
             <anchorfile>qstate.html</anchorfile>
-            <anchor>addTransition-2</anchor>
+            <anchor>addTransition-3</anchor>
             <arglist>(const QObject *sender, PointerToMemberFunction signal, QAbstractState *target)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSignalTransition *</type>
             <name>addTransition</name>
             <anchorfile>qstate.html</anchorfile>
-            <anchor>addTransition-1</anchor>
+            <anchor>addTransition-2</anchor>
             <arglist>(const QObject *sender, const char *signal, QAbstractState *target)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1010,7 +1010,7 @@
             <type>void</type>
             <name>addTransition</name>
             <anchorfile>qstate.html</anchorfile>
-            <anchor>addTransition</anchor>
+            <anchor>addTransition-1</anchor>
             <arglist>(QAbstractTransition *transition)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

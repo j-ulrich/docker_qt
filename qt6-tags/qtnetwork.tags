@@ -450,7 +450,7 @@
             <type>bool</type>
             <name>bind</name>
             <anchorfile>qabstractsocket.html</anchorfile>
-            <anchor>bind-1</anchor>
+            <anchor>bind-2</anchor>
             <arglist>(QHostAddress::SpecialAddress addr, quint16 port, QAbstractSocket::BindMode mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -464,7 +464,7 @@
             <type>bool</type>
             <name>bind</name>
             <anchorfile>qabstractsocket.html</anchorfile>
-            <anchor>bind-2</anchor>
+            <anchor>bind-1</anchor>
             <arglist>(quint16 port, QAbstractSocket::BindMode mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -960,7 +960,7 @@
             <type>QDnsDomainNameRecord &amp;</type>
             <name>operator=</name>
             <anchorfile>qdnsdomainnamerecord.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QDnsDomainNameRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1020,7 +1020,7 @@
             <type>QDnsHostAddressRecord &amp;</type>
             <name>operator=</name>
             <anchorfile>qdnshostaddressrecord.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QDnsHostAddressRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1137,6 +1137,23 @@
             <arglist></arglist>
         </member>
         <member kind="enumeration">
+            <name>Protocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>Protocol-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Standard</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>Protocol-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DnsOverTls</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>Protocol-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
             <name>Type</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>Type-enum</anchor>
@@ -1190,10 +1207,23 @@
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
+            <name>TLSA</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>Type-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
             <name>TXT</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>Type-enum</anchor>
             <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QDnsLookup::Protocol&gt;</type>
+            <name>bindableNameserverProtocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverProtocol-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QBindable&lt;QDnsLookup::Type&gt;</type>
@@ -1227,6 +1257,13 @@
             <type></type>
             <name>QDnsLookup</name>
             <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>QDnsLookup-4</anchor>
+            <arglist>(QDnsLookup::Type type, const QString &amp;name, QDnsLookup::Protocol protocol, const QHostAddress &amp;nameserver, quint16 port, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QDnsLookup</name>
+            <anchorfile>qdnslookup.html</anchorfile>
             <anchor>QDnsLookup-1</anchor>
             <arglist>(QDnsLookup::Type type, const QString &amp;name, QObject *parent)</arglist>
         </member>
@@ -1250,6 +1287,20 @@
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>QDnsLookup</anchor>
             <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>bool</type>
+            <name>isProtocolSupported</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>isProtocolSupported</anchor>
+            <arglist>(QDnsLookup::Protocol protocol)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>quint16</type>
+            <name>defaultPortForProtocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>defaultPortForProtocol</anchor>
+            <arglist>(QDnsLookup::Protocol protocol)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1295,10 +1346,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>nameserverProtocolChanged</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverProtocol-prop</anchor>
+            <arglist>(QDnsLookup::Protocol protocol)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setName</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>name-prop</anchor>
             <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNameserver</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserver-prop</anchor>
+            <arglist>(QDnsLookup::Protocol protocol, const QHostAddress &amp;nameserver, quint16 port)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1311,7 +1376,7 @@
             <type>void</type>
             <name>setNameserver</name>
             <anchorfile>qdnslookup.html</anchorfile>
-            <anchor>setNameserver-1</anchor>
+            <anchor>setNameserver</anchor>
             <arglist>(const QHostAddress &amp;nameserver, quint16 port)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1320,6 +1385,20 @@
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>nameserverPort-prop</anchor>
             <arglist>(quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNameserverProtocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverProtocol-prop</anchor>
+            <arglist>(QDnsLookup::Protocol protocol)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSslConfiguration</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>setSslConfiguration</anchor>
+            <arglist>(const QSslConfiguration &amp;sslConfiguration)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1347,6 +1426,13 @@
             <name>error</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>error-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDnsLookup::Protocol</type>
+            <name>nameserverProtocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverProtocol-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1413,6 +1499,20 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QDnsTlsAssociationRecord&gt;</type>
+            <name>tlsAssociationRecords</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>tlsAssociationRecords</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslConfiguration</type>
+            <name>sslConfiguration</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>sslConfiguration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>errorString</name>
             <anchorfile>qdnslookup.html</anchorfile>
@@ -1428,6 +1528,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isAuthenticData</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>authenticData-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isFinished</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>isFinished</anchor>
@@ -1439,6 +1546,12 @@
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>nameserverPort-prop</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>authenticData</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>authenticData-prop</anchor>
+            <arglist></arglist>
         </member>
         <member kind="property" type="Error">
             <name>error</name>
@@ -1470,6 +1583,12 @@
             <anchor>nameserverPort-prop</anchor>
             <arglist></arglist>
         </member>
+        <member kind="property" type="Protocol">
+            <name>nameserverProtocol</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverProtocol-prop</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="property" type="Type">
             <name>type</name>
             <anchorfile>qdnslookup.html</anchorfile>
@@ -1484,7 +1603,7 @@
             <type>QDnsMailExchangeRecord &amp;</type>
             <name>operator=</name>
             <anchorfile>qdnsmailexchangerecord.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QDnsMailExchangeRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1551,7 +1670,7 @@
             <type>QDnsServiceRecord &amp;</type>
             <name>operator=</name>
             <anchorfile>qdnsservicerecord.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QDnsServiceRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1632,7 +1751,7 @@
             <type>QDnsTextRecord &amp;</type>
             <name>operator=</name>
             <anchorfile>qdnstextrecord.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QDnsTextRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1681,6 +1800,221 @@
             <type>quint32</type>
             <name>timeToLive</name>
             <anchorfile>qdnstextrecord.html</anchorfile>
+            <anchor>timeToLive</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QDnsTlsAssociationRecord</name>
+        <filename>qdnstlsassociationrecord.html</filename>
+        <member kind="enumeration">
+            <name>CertificateUsage</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>CertificateAuthorityConstrait</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ServiceCertificateConstraint</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TrustAnchorAssertion</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DomainIssuedCertificate</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivateUse</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PKIX_TA</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PKIX_EE</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DANE_TA</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DANE_EE</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivCert</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>CertificateUsage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>MatchingType</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Exact</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Sha256</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Sha512</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivateUse</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivMatch</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>MatchingType-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>Selector</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>FullCertificate</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SubjectPublicKeyInfo</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivateUse</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Cert</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SPKI</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PrivSel</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>Selector-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDnsTlsAssociationRecord &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QDnsTlsAssociationRecord &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QDnsTlsAssociationRecord</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>QDnsTlsAssociationRecord</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QDnsTlsAssociationRecord</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>QDnsTlsAssociationRecord-1</anchor>
+            <arglist>(const QDnsTlsAssociationRecord &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QDnsTlsAssociationRecord</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>dtor.QDnsTlsAssociationRecord</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>value</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>value</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDnsTlsAssociationRecord::CertificateUsage</type>
+            <name>usage</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>usage</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDnsTlsAssociationRecord::MatchingType</type>
+            <name>matchType</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>matchType</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDnsTlsAssociationRecord::Selector</type>
+            <name>selector</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>selector</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>name</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
+            <anchor>name</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint32</type>
+            <name>timeToLive</name>
+            <anchorfile>qdnstlsassociationrecord.html</anchorfile>
             <anchor>timeToLive</anchor>
             <arglist>() const const</arglist>
         </member>
@@ -2082,6 +2416,153 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QFormDataBuilder</name>
+        <filename>qformdatabuilder.html</filename>
+        <member kind="enumeration">
+            <name>Option</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Default</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OmitRfc8187EncodedFilename</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UseRfc7578PercentEncodedFilename</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PreferLatin1EncodedFilename</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StrictRfc7578</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataBuilder &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(QFormDataBuilder &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFormDataBuilder</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>QFormDataBuilder</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFormDataBuilder</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>QFormDataBuilder-1</anchor>
+            <arglist>(QFormDataBuilder &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder</type>
+            <name>part</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>part</anchor>
+            <arglist>(QAnyStringView name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::unique_ptr&lt;QHttpMultiPart&gt;</type>
+            <name>buildMultiPart</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>buildMultiPart</anchor>
+            <arglist>(QFormDataBuilder::Options options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QFormDataBuilder</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>dtor.QFormDataBuilder</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="typedef" type="QFormDataBuilder::Option">
+            <name>Options</name>
+            <anchorfile>qformdatabuilder.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QFormDataPartBuilder</name>
+        <filename>qformdatapartbuilder.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(QFormDataPartBuilder &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(const QFormDataPartBuilder &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder</type>
+            <name>setBody</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>setBody</anchor>
+            <arglist>(QByteArrayView data, QAnyStringView fileName, QAnyStringView mimeType)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder</type>
+            <name>setBodyDevice</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>setBodyDevice</anchor>
+            <arglist>(QIODevice *body, QAnyStringView fileName, QAnyStringView mimeType)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QFormDataPartBuilder</type>
+            <name>setHeaders</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>setHeaders</anchor>
+            <arglist>(const QHttpHeaders &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFormDataPartBuilder</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>QFormDataPartBuilder</anchor>
+            <arglist>(QFormDataPartBuilder &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QFormDataPartBuilder</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>QFormDataPartBuilder-1</anchor>
+            <arglist>(const QFormDataPartBuilder &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QFormDataPartBuilder</name>
+            <anchorfile>qformdatapartbuilder.html</anchorfile>
+            <anchor>dtor.QFormDataPartBuilder</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QHostAddress</name>
         <filename>qhostaddress.html</filename>
         <member kind="enumeration">
@@ -2190,7 +2671,7 @@
             <type>QHostAddress &amp;</type>
             <name>operator=</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>operator-eq-2</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QHostAddress::SpecialAddress address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2211,49 +2692,56 @@
             <type></type>
             <name>QHostAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>QHostAddress-7</anchor>
-            <arglist>(QHostAddress::SpecialAddress address)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QHostAddress</name>
-            <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>QHostAddress-6</anchor>
-            <arglist>(const QHostAddress &amp;address)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QHostAddress</name>
-            <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>QHostAddress-5</anchor>
-            <arglist>(const QString &amp;address)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>QHostAddress</name>
-            <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>QHostAddress-3</anchor>
-            <arglist>(const Q_IPV6ADDR &amp;ip6Addr)</arglist>
+            <anchor>QHostAddress-1</anchor>
+            <arglist>(QHostAddress &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHostAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
             <anchor>QHostAddress-2</anchor>
-            <arglist>(const quint8 *ip6Addr)</arglist>
+            <arglist>(QHostAddress::SpecialAddress address)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHostAddress</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>QHostAddress-3</anchor>
+            <arglist>(const QHostAddress &amp;address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHostAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
             <anchor>QHostAddress-4</anchor>
+            <arglist>(const QString &amp;address)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHostAddress</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>QHostAddress-5</anchor>
+            <arglist>(const Q_IPV6ADDR &amp;ip6Addr)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHostAddress</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>QHostAddress-6</anchor>
+            <arglist>(const quint8 *ip6Addr)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHostAddress</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>QHostAddress-7</anchor>
             <arglist>(const sockaddr *sockaddr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHostAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>QHostAddress-1</anchor>
+            <anchor>QHostAddress-8</anchor>
             <arglist>(quint32 ip4Addr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -2281,14 +2769,14 @@
             <type>bool</type>
             <name>setAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>setAddress-4</anchor>
+            <anchor>setAddress-2</anchor>
             <arglist>(const QString &amp;address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>size_t</type>
             <name>qHash</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>qHash</anchor>
+            <anchor>qHash-1</anchor>
             <arglist>(const QHostAddress &amp;key, size_t seed)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2302,28 +2790,28 @@
             <type>void</type>
             <name>setAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>setAddress-5</anchor>
+            <anchor>setAddress-1</anchor>
             <arglist>(QHostAddress::SpecialAddress address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>setAddress-2</anchor>
+            <anchor>setAddress-3</anchor>
             <arglist>(const Q_IPV6ADDR &amp;ip6Addr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>setAddress-1</anchor>
+            <anchor>setAddress-4</anchor>
             <arglist>(const quint8 *ip6Addr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAddress</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>setAddress-3</anchor>
+            <anchor>setAddress-5</anchor>
             <arglist>(const sockaddr *sockaddr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2463,28 +2951,28 @@
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>operator-not-eq-1</anchor>
+            <anchor>operator-not-eq</anchor>
             <arglist>(QHostAddress::SpecialAddress other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator!=</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>operator-not-eq</anchor>
+            <anchor>operator-not-eq-1</anchor>
             <arglist>(const QHostAddress &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>operator-eq-eq-1</anchor>
+            <anchor>operator-eq-eq</anchor>
             <arglist>(QHostAddress::SpecialAddress other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qhostaddress.html</anchorfile>
-            <anchor>operator-eq-eq</anchor>
+            <anchor>operator-eq-eq-1</anchor>
             <arglist>(const QHostAddress &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2538,14 +3026,14 @@
             <type>QHostInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QHostInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHostInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QHostInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -2559,7 +3047,7 @@
             <type></type>
             <name>QHostInfo</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>QHostInfo-2</anchor>
+            <anchor>QHostInfo</anchor>
             <arglist>(QHostInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2573,7 +3061,7 @@
             <type></type>
             <name>QHostInfo</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>QHostInfo</anchor>
+            <anchor>QHostInfo-2</anchor>
             <arglist>(int id)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -2594,15 +3082,8 @@
             <type>int</type>
             <name>lookupHost</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>lookupHost-2</anchor>
+            <anchor>lookupHost-1</anchor>
             <arglist>(const QString &amp;name, Functor &amp;&amp;functor)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>int</type>
-            <name>lookupHost</name>
-            <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>lookupHost</anchor>
-            <arglist>(const QString &amp;name, QObject *receiver, const char *member)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>int</type>
@@ -2610,6 +3091,13 @@
             <anchorfile>qhostinfo.html</anchorfile>
             <anchor>lookupHost-1</anchor>
             <arglist>(const QString &amp;name, const QObject *context, Functor functor)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>int</type>
+            <name>lookupHost</name>
+            <anchorfile>qhostinfo.html</anchorfile>
+            <anchor>lookupHost</anchor>
+            <arglist>(const QString &amp;name, const QObject *receiver, const char *member)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>void</type>
@@ -2735,14 +3223,14 @@
             <type></type>
             <name>QHstsPolicy</name>
             <anchorfile>qhstspolicy.html</anchorfile>
-            <anchor>QHstsPolicy-1</anchor>
+            <anchor>QHstsPolicy-2</anchor>
             <arglist>(const QDateTime &amp;expiry, QHstsPolicy::PolicyFlags flags, const QString &amp;host, QUrl::ParsingMode mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHstsPolicy</name>
             <anchorfile>qhstspolicy.html</anchorfile>
-            <anchor>QHstsPolicy-2</anchor>
+            <anchor>QHstsPolicy-1</anchor>
             <arglist>(const QHstsPolicy &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2836,14 +3324,14 @@
             <type>QHttp1Configuration &amp;</type>
             <name>operator=</name>
             <anchorfile>qhttp1configuration.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QHttp1Configuration &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHttp1Configuration &amp;</type>
             <name>operator=</name>
             <anchorfile>qhttp1configuration.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QHttp1Configuration &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2857,14 +3345,14 @@
             <type></type>
             <name>QHttp1Configuration</name>
             <anchorfile>qhttp1configuration.html</anchorfile>
-            <anchor>QHttp1Configuration-2</anchor>
+            <anchor>QHttp1Configuration-1</anchor>
             <arglist>(QHttp1Configuration &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHttp1Configuration</name>
             <anchorfile>qhttp1configuration.html</anchorfile>
-            <anchor>QHttp1Configuration-1</anchor>
+            <anchor>QHttp1Configuration-2</anchor>
             <arglist>(const QHttp1Configuration &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2924,14 +3412,14 @@
             <type>QHttp2Configuration &amp;</type>
             <name>operator=</name>
             <anchorfile>qhttp2configuration.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QHttp2Configuration &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHttp2Configuration &amp;</type>
             <name>operator=</name>
             <anchorfile>qhttp2configuration.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QHttp2Configuration &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2945,14 +3433,14 @@
             <type></type>
             <name>QHttp2Configuration</name>
             <anchorfile>qhttp2configuration.html</anchorfile>
-            <anchor>QHttp2Configuration-2</anchor>
+            <anchor>QHttp2Configuration-1</anchor>
             <arglist>(QHttp2Configuration &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHttp2Configuration</name>
             <anchorfile>qhttp2configuration.html</anchorfile>
-            <anchor>QHttp2Configuration-1</anchor>
+            <anchor>QHttp2Configuration-2</anchor>
             <arglist>(const QHttp2Configuration &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3055,6 +3543,1357 @@
         </member>
     </compound>
     <compound kind="class">
+        <name>QHttpHeaders</name>
+        <filename>qhttpheaders.html</filename>
+        <member kind="enumeration">
+            <name>WellKnownHeader</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>AIM</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Accept</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptAdditions</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptCH</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptDatetime</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptEncoding</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptFeatures</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptLanguage</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptPatch</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptPost</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptRanges</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptSignature</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlAllowCredentials</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlAllowHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlAllowMethods</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlAllowOrigin</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlExposeHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlMaxAge</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlRequestHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AccessControlRequestMethod</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Age</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Allow</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ALPN</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AltSvc</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AltUsed</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Alternates</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ApplyToRedirectRef</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticationControl</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AuthenticationInfo</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Authorization</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CacheControl</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CacheStatus</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CalManagedID</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CalDAVTimezones</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CapsuleProtocol</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CDNCacheControl</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CDNLoop</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CertNotAfter</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CertNotBefore</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ClearSiteData</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ClientCert</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ClientCertChain</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Close</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Connection</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentDigest</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentDisposition</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentEncoding</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentID</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentLanguage</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentLength</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentLocation</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentRange</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentSecurityPolicy</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentSecurityPolicyReportOnly</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ContentType</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Cookie</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CrossOriginEmbedderPolicy</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CrossOriginEmbedderPolicyReportOnly</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CrossOriginOpenerPolicy</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CrossOriginOpenerPolicyReportOnly</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CrossOriginResourcePolicy</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DASL</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Date</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DAV</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DeltaBase</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Depth</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Destination</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DifferentialID</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DPoP</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DPoPNonce</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>EarlyData</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ETag</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Expect</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ExpectCT</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Expires</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Forwarded</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>From</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Hobareg</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Host</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>If</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfMatch</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfModifiedSince</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfNoneMatch</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfRange</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfScheduleTagMatch</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IfUnmodifiedSince</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IM</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>IncludeReferredTokenBindingID</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>KeepAlive</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Label</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>LastEventID</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>LastModified</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Link</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Location</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>LockToken</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MaxForwards</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MementoDatetime</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Meter</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MIMEVersion</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Negotiate</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NEL</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ODataEntityId</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ODataIsolation</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ODataMaxVersion</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ODataVersion</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OptionalWWWAuthenticate</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OrderingType</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Origin</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OriginAgentCluster</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OSCORE</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OSLCCoreVersion</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Overwrite</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PingFrom</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PingTo</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Position</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Prefer</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PreferenceApplied</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Priority</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProxyAuthenticate</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProxyAuthenticationInfo</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProxyAuthorization</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProxyStatus</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PublicKeyPins</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PublicKeyPinsReportOnly</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Range</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RedirectRef</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Referer</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Refresh</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ReplayNonce</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ReprDigest</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RetryAfter</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ScheduleReply</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ScheduleTag</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecPurpose</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecTokenBinding</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecWebSocketAccept</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecWebSocketExtensions</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecWebSocketKey</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecWebSocketProtocol</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SecWebSocketVersion</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Server</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ServerTiming</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SetCookie</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Signature</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SignatureInput</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SLUG</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SoapAction</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StatusURI</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>StrictTransportSecurity</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Sunset</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SurrogateCapability</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SurrogateControl</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TCN</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TE</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Timeout</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Topic</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Traceparent</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Tracestate</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Trailer</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TransferEncoding</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>TTL</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Upgrade</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Urgency</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UserAgent</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>VariantVary</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Vary</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Via</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>WantContentDigest</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>WantReprDigest</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>WWWAuthenticate</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>XContentTypeOptions</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>XFrameOptions</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AcceptCharset</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>CPEPInfo</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Pragma</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProtocolInfo</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ProtocolQuery</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>WellKnownHeader-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QByteArrayView</type>
+            <name>wellKnownHeaderName</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>wellKnownHeaderName</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDebug</type>
+            <name>operator&lt;&lt;</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>operator-lt-lt</anchor>
+            <arglist>(QDebug debug, const QHttpHeaders &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(QHttpHeaders &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(const QHttpHeaders &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QHttpHeaders</type>
+            <name>fromListOfPairs</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>fromListOfPairs</anchor>
+            <arglist>(const QList&lt;std::pair&lt;QByteArray, QByteArray&gt;&gt; &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QHttpHeaders</type>
+            <name>fromMultiHash</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>fromMultiHash</anchor>
+            <arglist>(const QMultiHash&lt;QByteArray, QByteArray&gt; &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QHttpHeaders</type>
+            <name>fromMultiMap</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>fromMultiMap</anchor>
+            <arglist>(const QMultiMap&lt;QByteArray, QByteArray&gt; &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttpHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>QHttpHeaders</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttpHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>QHttpHeaders-1</anchor>
+            <arglist>(QHttpHeaders &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttpHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>QHttpHeaders-2</anchor>
+            <arglist>(const QHttpHeaders &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>append</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>append</anchor>
+            <arglist>(QAnyStringView name, QAnyStringView value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>append</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>append-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name, QAnyStringView value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>insert</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>insert</anchor>
+            <arglist>(qsizetype i, QAnyStringView name, QAnyStringView value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>insert</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>insert-1</anchor>
+            <arglist>(qsizetype i, QHttpHeaders::WellKnownHeader name, QAnyStringView value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>replace</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>replace</anchor>
+            <arglist>(qsizetype i, QAnyStringView name, QAnyStringView newValue)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>replace</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>replace-1</anchor>
+            <arglist>(qsizetype i, QHttpHeaders::WellKnownHeader name, QAnyStringView newValue)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>replaceOrAppend</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>replaceOrAppend-1</anchor>
+            <arglist>(QAnyStringView name, QAnyStringView newValue)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>replaceOrAppend</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>replaceOrAppend</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name, QAnyStringView newValue)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clear</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>clear</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeAll</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>removeAll</anchor>
+            <arglist>(QAnyStringView name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeAll</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>removeAll-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>removeAt</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>removeAt</anchor>
+            <arglist>(qsizetype i)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>reserve</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>reserve</anchor>
+            <arglist>(qsizetype size)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QHttpHeaders &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QHttpHeaders</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>dtor.QHttpHeaders</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>combinedValue</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>combinedValue</anchor>
+            <arglist>(QAnyStringView name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>combinedValue</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>combinedValue-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArrayView</type>
+            <name>value</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>value</anchor>
+            <arglist>(QAnyStringView name, QByteArrayView defaultValue) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArrayView</type>
+            <name>value</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>value-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name, QByteArrayView defaultValue) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArrayView</type>
+            <name>valueAt</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>valueAt</anchor>
+            <arglist>(qsizetype i) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QLatin1StringView</type>
+            <name>nameAt</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>nameAt</anchor>
+            <arglist>(qsizetype i) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QByteArray&gt;</type>
+            <name>values</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>values</anchor>
+            <arglist>(QAnyStringView name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QByteArray&gt;</type>
+            <name>values</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>values-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;std::pair&lt;QByteArray, QByteArray&gt;&gt;</type>
+            <name>toListOfPairs</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>toListOfPairs</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMultiHash&lt;QByteArray, QByteArray&gt;</type>
+            <name>toMultiHash</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>toMultiHash</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMultiMap&lt;QByteArray, QByteArray&gt;</type>
+            <name>toMultiMap</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>toMultiMap</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>contains</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>contains</anchor>
+            <arglist>(QAnyStringView name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>contains</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>contains-1</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isEmpty</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>isEmpty</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qsizetype</type>
+            <name>size</name>
+            <anchorfile>qhttpheaders.html</anchorfile>
+            <anchor>size</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QHttpMultiPart</name>
         <filename>qhttpmultipart.html</filename>
         <base>QObject</base>
@@ -3141,10 +4980,17 @@
         <name>QHttpPart</name>
         <filename>qhttppart.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDebug</type>
+            <name>operator&lt;&lt;</name>
+            <anchorfile>qhttppart.html</anchorfile>
+            <anchor>operator-lt-lt</anchor>
+            <arglist>(QDebug debug, const QHttpPart &amp;part)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHttpPart &amp;</type>
             <name>operator=</name>
             <anchorfile>qhttppart.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QHttpPart &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3311,6 +5157,13 @@
             <anchorfile>qlocalserver.html</anchorfile>
             <anchor>waitForNewConnection</anchor>
             <arglist>(int msec, bool *timedOut)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>addPendingConnection</name>
+            <anchorfile>qlocalserver.html</anchorfile>
+            <anchor>addPendingConnection</anchor>
+            <arglist>(QLocalSocket *socket)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -3925,6 +5778,20 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>get-1</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QIODevice *data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>get-2</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
             <name>head</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>head</anchor>
@@ -3934,7 +5801,7 @@
             <type>QNetworkReply *</type>
             <name>post</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>post-2</anchor>
+            <anchor>post-1</anchor>
             <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3948,14 +5815,21 @@
             <type>QNetworkReply *</type>
             <name>post</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>post-1</anchor>
+            <anchor>post-2</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>post-3</anchor>
+            <arglist>(const QNetworkRequest &amp;request, std::nullptr_t nptr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
             <name>put</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>put-2</anchor>
+            <anchor>put-1</anchor>
             <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *multiPart)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3969,14 +5843,21 @@
             <type>QNetworkReply *</type>
             <name>put</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>put-1</anchor>
+            <anchor>put-2</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>put-3</anchor>
+            <arglist>(const QNetworkRequest &amp;request, std::nullptr_t nptr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkReply *</type>
             <name>sendCustomRequest</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>sendCustomRequest-2</anchor>
+            <anchor>sendCustomRequest-1</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;verb, QHttpMultiPart *multiPart)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3990,7 +5871,7 @@
             <type>QNetworkReply *</type>
             <name>sendCustomRequest</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
-            <anchor>sendCustomRequest-1</anchor>
+            <anchor>sendCustomRequest-2</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;verb, const QByteArray &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4135,6 +6016,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setTransferTimeout</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>setTransferTimeout-1</anchor>
+            <arglist>(std::chrono::milliseconds duration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>sslErrors</name>
             <anchorfile>qnetworkaccessmanager.html</anchorfile>
             <anchor>sslErrors</anchor>
@@ -4231,6 +6119,13 @@
             <anchor>transferTimeout</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>transferTimeoutAsDuration</name>
+            <anchorfile>qnetworkaccessmanager.html</anchorfile>
+            <anchor>transferTimeoutAsDuration</anchor>
+            <arglist>() const const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QNetworkAddressEntry</name>
@@ -4262,14 +6157,14 @@
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qnetworkaddressentry.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-3</anchor>
             <arglist>(QDebug debug, const QNetworkAddressEntry &amp;entry)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkAddressEntry &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkaddressentry.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkAddressEntry &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4441,21 +6336,21 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qnetworkcachemetadata.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-1</anchor>
             <arglist>(QDataStream &amp;out, const QNetworkCacheMetaData &amp;metaData)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qnetworkcachemetadata.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-1</anchor>
             <arglist>(QDataStream &amp;in, QNetworkCacheMetaData &amp;metaData)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkCacheMetaData &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkcachemetadata.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkCacheMetaData &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4485,6 +6380,13 @@
             <anchorfile>qnetworkcachemetadata.html</anchorfile>
             <anchor>setExpirationDate</anchor>
             <arglist>(const QDateTime &amp;dateTime)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkcachemetadata.html</anchorfile>
+            <anchor>setHeaders</anchor>
+            <arglist>(const QHttpHeaders &amp;headers)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -4540,6 +6442,13 @@
             <name>lastModified</name>
             <anchorfile>qnetworkcachemetadata.html</anchorfile>
             <anchor>lastModified</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders</type>
+            <name>headers</name>
+            <anchorfile>qnetworkcachemetadata.html</anchorfile>
+            <anchor>headers</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4664,27 +6573,27 @@
             <name>parseCookies</name>
             <anchorfile>qnetworkcookie.html</anchorfile>
             <anchor>parseCookies</anchor>
-            <arglist>(const QByteArray &amp;cookieString)</arglist>
+            <arglist>(QByteArrayView cookieString)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNetworkCookie &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkcookie.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkCookie &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkCookie</name>
             <anchorfile>qnetworkcookie.html</anchorfile>
-            <anchor>QNetworkCookie</anchor>
+            <anchor>QNetworkCookie-1</anchor>
             <arglist>(const QByteArray &amp;name, const QByteArray &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkCookie</name>
             <anchorfile>qnetworkcookie.html</anchorfile>
-            <anchor>QNetworkCookie-1</anchor>
+            <anchor>QNetworkCookie</anchor>
             <arglist>(const QNetworkCookie &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4945,7 +6854,7 @@
             <type>QNetworkDatagram</type>
             <name>makeReply</name>
             <anchorfile>qnetworkdatagram.html</anchorfile>
-            <anchor>makeReply-1</anchor>
+            <anchor>makeReply</anchor>
             <arglist>(const QByteArray &amp;payload) &amp;&amp;</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4959,14 +6868,14 @@
             <type></type>
             <name>QNetworkDatagram</name>
             <anchorfile>qnetworkdatagram.html</anchorfile>
-            <anchor>QNetworkDatagram-1</anchor>
+            <anchor>QNetworkDatagram-2</anchor>
             <arglist>(const QByteArray &amp;data, const QHostAddress &amp;destinationAddress, quint16 port)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkDatagram</name>
             <anchorfile>qnetworkdatagram.html</anchorfile>
-            <anchor>QNetworkDatagram-2</anchor>
+            <anchor>QNetworkDatagram-1</anchor>
             <arglist>(const QNetworkDatagram &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -5043,7 +6952,7 @@
             <type>QNetworkDatagram</type>
             <name>makeReply</name>
             <anchorfile>qnetworkdatagram.html</anchorfile>
-            <anchor>makeReply</anchor>
+            <anchor>makeReply-1</anchor>
             <arglist>(const QByteArray &amp;payload) const &amp; const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -5327,14 +7236,14 @@
             <type>bool</type>
             <name>load</name>
             <anchorfile>qnetworkinformation-obsolete.html</anchorfile>
-            <anchor>load-1</anchor>
+            <anchor>load</anchor>
             <arglist>(QNetworkInformation::Features features)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>bool</type>
             <name>load</name>
             <anchorfile>qnetworkinformation-obsolete.html</anchorfile>
-            <anchor>load</anchor>
+            <anchor>load-1</anchor>
             <arglist>(QStringView backend)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5609,7 +7518,7 @@
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qnetworkinterface.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-4</anchor>
             <arglist>(QDebug debug, const QNetworkInterface &amp;networkInterface)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5630,7 +7539,7 @@
             <type>QNetworkInterface &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkinterface.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkInterface &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5854,7 +7763,7 @@
             <type>QNetworkProxy &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkproxy.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkProxy &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5875,14 +7784,14 @@
             <type></type>
             <name>QNetworkProxy</name>
             <anchorfile>qnetworkproxy.html</anchorfile>
-            <anchor>QNetworkProxy-1</anchor>
+            <anchor>QNetworkProxy-2</anchor>
             <arglist>(QNetworkProxy::ProxyType type, const QString &amp;hostName, quint16 port, const QString &amp;user, const QString &amp;password)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkProxy</name>
             <anchorfile>qnetworkproxy.html</anchorfile>
-            <anchor>QNetworkProxy-2</anchor>
+            <anchor>QNetworkProxy-1</anchor>
             <arglist>(const QNetworkProxy &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -5905,6 +7814,20 @@
             <anchorfile>qnetworkproxy.html</anchorfile>
             <anchor>setHeader</anchor>
             <arglist>(QNetworkRequest::KnownHeaders header, const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkproxy.html</anchorfile>
+            <anchor>setHeaders</anchor>
+            <arglist>(QHttpHeaders &amp;&amp;newHeaders)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkproxy.html</anchorfile>
+            <anchor>setHeaders-1</anchor>
+            <arglist>(const QHttpHeaders &amp;newHeaders)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -5968,6 +7891,13 @@
             <anchorfile>qnetworkproxy.html</anchorfile>
             <anchor>rawHeader</anchor>
             <arglist>(const QByteArray &amp;headerName) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders</type>
+            <name>headers</name>
+            <anchorfile>qnetworkproxy.html</anchorfile>
+            <anchor>headers</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;QByteArray&gt;</type>
@@ -6175,7 +8105,7 @@
             <type>QNetworkProxyQuery &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkproxyquery.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkProxyQuery &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -6189,21 +8119,21 @@
             <type></type>
             <name>QNetworkProxyQuery</name>
             <anchorfile>qnetworkproxyquery.html</anchorfile>
-            <anchor>QNetworkProxyQuery-4</anchor>
+            <anchor>QNetworkProxyQuery-1</anchor>
             <arglist>(const QNetworkProxyQuery &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkProxyQuery</name>
             <anchorfile>qnetworkproxyquery.html</anchorfile>
-            <anchor>QNetworkProxyQuery-2</anchor>
+            <anchor>QNetworkProxyQuery-4</anchor>
             <arglist>(const QString &amp;hostname, int port, const QString &amp;protocolTag, QNetworkProxyQuery::QueryType queryType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkProxyQuery</name>
             <anchorfile>qnetworkproxyquery.html</anchorfile>
-            <anchor>QNetworkProxyQuery-1</anchor>
+            <anchor>QNetworkProxyQuery-2</anchor>
             <arglist>(const QUrl &amp;requestUrl, QNetworkProxyQuery::QueryType queryType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -6674,6 +8604,20 @@
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkreply.html</anchorfile>
+            <anchor>setHeaders-1</anchor>
+            <arglist>(QHttpHeaders &amp;&amp;newHeaders)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkreply.html</anchorfile>
+            <anchor>setHeaders</anchor>
+            <arglist>(const QHttpHeaders &amp;newHeaders)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
             <name>setOperation</name>
             <anchorfile>qnetworkreply.html</anchorfile>
             <anchor>setOperation</anchor>
@@ -6721,6 +8665,13 @@
             <anchor>setUrl</anchor>
             <arglist>(const QUrl &amp;url)</arglist>
         </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>setWellKnownHeader</name>
+            <anchorfile>qnetworkreply.html</anchorfile>
+            <anchor>setWellKnownHeader</anchor>
+            <arglist>(QHttpHeaders::WellKnownHeader name, QByteArrayView value)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>socketStartedConnecting</name>
@@ -6754,7 +8705,14 @@
             <name>rawHeader</name>
             <anchorfile>qnetworkreply.html</anchorfile>
             <anchor>rawHeader</anchor>
-            <arglist>(const QByteArray &amp;headerName) const const</arglist>
+            <arglist>(QAnyStringView headerName) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders</type>
+            <name>headers</name>
+            <anchorfile>qnetworkreply.html</anchorfile>
+            <anchor>headers</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;QByteArray&gt;</type>
@@ -6824,7 +8782,7 @@
             <name>hasRawHeader</name>
             <anchorfile>qnetworkreply.html</anchorfile>
             <anchor>hasRawHeader</anchor>
-            <arglist>(const QByteArray &amp;headerName) const const</arglist>
+            <arglist>(QAnyStringView headerName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -7051,6 +9009,12 @@
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
+            <name>FullLocalServerNameAttribute</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
             <name>User</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>Attribute-enum</anchor>
@@ -7174,6 +9138,12 @@
             <anchor>KnownHeaders-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>NumKnownHeaders</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>KnownHeaders-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="enumeration">
             <name>LoadControl</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
@@ -7258,7 +9228,7 @@
             <type>QNetworkRequest &amp;</type>
             <name>operator=</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QNetworkRequest &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7272,14 +9242,14 @@
             <type></type>
             <name>QNetworkRequest</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
-            <anchor>QNetworkRequest-2</anchor>
+            <anchor>QNetworkRequest-1</anchor>
             <arglist>(const QNetworkRequest &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNetworkRequest</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
-            <anchor>QNetworkRequest-1</anchor>
+            <anchor>QNetworkRequest-2</anchor>
             <arglist>(const QUrl &amp;url)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7302,6 +9272,20 @@
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>setHeader</anchor>
             <arglist>(QNetworkRequest::KnownHeaders header, const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>setHeaders</anchor>
+            <arglist>(QHttpHeaders &amp;&amp;newHeaders)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setHeaders</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>setHeaders-1</anchor>
+            <arglist>(const QHttpHeaders &amp;newHeaders)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -7368,6 +9352,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setTransferTimeout</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>setTransferTimeout-1</anchor>
+            <arglist>(std::chrono::milliseconds duration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setUrl</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>setUrl</anchor>
@@ -7392,7 +9383,14 @@
             <name>rawHeader</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>rawHeader</anchor>
-            <arglist>(const QByteArray &amp;headerName) const const</arglist>
+            <arglist>(QAnyStringView headerName) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttp1Configuration</type>
+            <name>http1Configuration</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>http1Configuration</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHttp1Configuration</type>
@@ -7406,6 +9404,13 @@
             <name>http2Configuration</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>http2Configuration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders</type>
+            <name>headers</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>headers</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7469,7 +9474,7 @@
             <name>hasRawHeader</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>hasRawHeader</anchor>
-            <arglist>(const QByteArray &amp;headerName) const const</arglist>
+            <arglist>(QAnyStringView headerName) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -7504,6 +9509,304 @@
             <name>decompressedSafetyCheckThreshold</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>decompressedSafetyCheckThreshold</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>transferTimeoutAsDuration</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>transferTimeoutAsDuration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QNetworkRequestFactory</name>
+        <filename>qnetworkrequestfactory.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDebug</type>
+            <name>operator&lt;&lt;</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>operator-lt-lt</anchor>
+            <arglist>(QDebug debug, const QNetworkRequestFactory &amp;factory)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequestFactory &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(QNetworkRequestFactory &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequestFactory &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(const QNetworkRequestFactory &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkRequestFactory</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>QNetworkRequestFactory</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkRequestFactory</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>QNetworkRequestFactory-1</anchor>
+            <arglist>(QNetworkRequestFactory &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkRequestFactory</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>QNetworkRequestFactory-2</anchor>
+            <arglist>(const QNetworkRequestFactory &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QNetworkRequestFactory</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>QNetworkRequestFactory-3</anchor>
+            <arglist>(const QUrl &amp;baseUrl)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearAttribute</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearAttribute</anchor>
+            <arglist>(QNetworkRequest::Attribute attribute)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearAttributes</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearAttributes</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearBearerToken</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearBearerToken</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearCommonHeaders</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearCommonHeaders</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearPassword</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearPassword</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearQueryParameters</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearQueryParameters</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearUserName</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>clearUserName</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAttribute</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setAttribute</anchor>
+            <arglist>(QNetworkRequest::Attribute attribute, const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBaseUrl</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setBaseUrl</anchor>
+            <arglist>(const QUrl &amp;url)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBearerToken</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setBearerToken</anchor>
+            <arglist>(const QByteArray &amp;token)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setCommonHeaders</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setCommonHeaders</anchor>
+            <arglist>(const QHttpHeaders &amp;headers)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPassword</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setPassword</anchor>
+            <arglist>(const QString &amp;password)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPriority</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setPriority</anchor>
+            <arglist>(QNetworkRequest::Priority priority)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setQueryParameters</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setQueryParameters</anchor>
+            <arglist>(const QUrlQuery &amp;query)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSslConfiguration</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setSslConfiguration</anchor>
+            <arglist>(const QSslConfiguration &amp;configuration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTransferTimeout</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setTransferTimeout</anchor>
+            <arglist>(std::chrono::milliseconds timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setUserName</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>setUserName</anchor>
+            <arglist>(const QString &amp;userName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QNetworkRequestFactory &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QNetworkRequestFactory</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>dtor.QNetworkRequestFactory</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>bearerToken</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>bearerToken</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttpHeaders</type>
+            <name>commonHeaders</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>commonHeaders</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest</type>
+            <name>createRequest</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>createRequest</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest</type>
+            <name>createRequest</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>createRequest-1</anchor>
+            <arglist>(const QString &amp;path) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest</type>
+            <name>createRequest</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>createRequest-3</anchor>
+            <arglist>(const QString &amp;path, const QUrlQuery &amp;query) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest</type>
+            <name>createRequest</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>createRequest-2</anchor>
+            <arglist>(const QUrlQuery &amp;query) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkRequest::Priority</type>
+            <name>priority</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>priority</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslConfiguration</type>
+            <name>sslConfiguration</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>sslConfiguration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>password</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>password</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>userName</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>userName</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrl</type>
+            <name>baseUrl</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>baseUrl</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrlQuery</type>
+            <name>queryParameters</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>queryParameters</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVariant</type>
+            <name>attribute</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>attribute</anchor>
+            <arglist>(QNetworkRequest::Attribute attribute) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVariant</type>
+            <name>attribute</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>attribute-1</anchor>
+            <arglist>(QNetworkRequest::Attribute attribute, const QVariant &amp;defaultValue) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>transferTimeout</name>
+            <anchorfile>qnetworkrequestfactory.html</anchorfile>
+            <anchor>transferTimeout</anchor>
             <arglist>() const const</arglist>
         </member>
     </compound>
@@ -7596,14 +9899,14 @@
             <type>QOcspResponse &amp;</type>
             <name>operator=</name>
             <anchorfile>qocspresponse.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QOcspResponse &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QOcspResponse &amp;</type>
             <name>operator=</name>
             <anchorfile>qocspresponse.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QOcspResponse &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7617,14 +9920,14 @@
             <type></type>
             <name>QOcspResponse</name>
             <anchorfile>qocspresponse.html</anchorfile>
-            <anchor>QOcspResponse-2</anchor>
+            <anchor>QOcspResponse-1</anchor>
             <arglist>(QOcspResponse &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOcspResponse</name>
             <anchorfile>qocspresponse.html</anchorfile>
-            <anchor>QOcspResponse-1</anchor>
+            <anchor>QOcspResponse-2</anchor>
             <arglist>(const QOcspResponse &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7700,6 +10003,302 @@
             <anchorfile>qpassworddigestor.html</anchorfile>
             <anchor>deriveKeyPbkdf2</anchor>
             <arglist>(QCryptographicHash::Algorithm algorithm, const QByteArray &amp;data, const QByteArray &amp;salt, int iterations, quint64 dkLen)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QRestAccessManager</name>
+        <filename>qrestaccessmanager.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>deleteResource</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>deleteResource</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>get-6</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QIODevice *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>get-1</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>get-7</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QJsonDocument &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>get</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>head</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>head</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>patch</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>patch-5</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QIODevice *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>patch</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>patch-6</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>patch</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>patch</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QJsonDocument &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>patch</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>patch-7</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QVariantMap &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>post-6</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>post-7</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QIODevice *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>post-8</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>post</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QJsonDocument &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>post-9</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QVariantMap &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>put-6</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QHttpMultiPart *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>put-7</anchor>
+            <arglist>(const QNetworkRequest &amp;request, QIODevice *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>put-8</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>put</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QJsonDocument &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>put</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>put-9</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QVariantMap &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>sendCustomRequest</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>sendCustomRequest-4</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;method, QHttpMultiPart *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>sendCustomRequest</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>sendCustomRequest-5</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;method, QIODevice *data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>sendCustomRequest</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>sendCustomRequest</anchor>
+            <arglist>(const QNetworkRequest &amp;request, const QByteArray &amp;method, const QByteArray &amp;data, const QRestAccessManager::ContextTypeForFunctor&lt;Functor&gt; *context, Functor &amp;&amp;callback)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QRestAccessManager</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>QRestAccessManager</anchor>
+            <arglist>(QNetworkAccessManager *manager, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QRestAccessManager</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>dtor.QRestAccessManager</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkAccessManager *</type>
+            <name>networkAccessManager</name>
+            <anchorfile>qrestaccessmanager.html</anchorfile>
+            <anchor>networkAccessManager</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QRestReply</name>
+        <filename>qrestreply.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArray</type>
+            <name>readBody</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>readBody</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDebug</type>
+            <name>operator&lt;&lt;</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>operator-lt-lt</anchor>
+            <arglist>(QDebug debug, const QRestReply &amp;reply)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRestReply &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(QRestReply &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QRestReply</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>QRestReply</anchor>
+            <arglist>(QNetworkReply *reply)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QRestReply</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>QRestReply-1</anchor>
+            <arglist>(QRestReply &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>readText</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>readText</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;QJsonDocument&gt;</type>
+            <name>readJson</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>readJson</anchor>
+            <arglist>(QJsonParseError *error)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QRestReply</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>dtor.QRestReply</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply *</type>
+            <name>networkReply</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>networkReply</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkReply::NetworkError</type>
+            <name>error</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorString</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>errorString</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>hasError</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>hasError</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isHttpStatusSuccess</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>isHttpStatusSuccess</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isSuccess</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>isSuccess</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>httpStatus</name>
+            <anchorfile>qrestreply.html</anchorfile>
+            <anchor>httpStatus</anchor>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -8524,28 +11123,35 @@
             <type>QSslCertificate &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslcertificate.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslCertificate &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslCertificate</name>
             <anchorfile>qsslcertificate.html</anchorfile>
-            <anchor>QSslCertificate</anchor>
+            <anchor>QSslCertificate-2</anchor>
             <arglist>(QIODevice *device, QSsl::EncodingFormat format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslCertificate</name>
             <anchorfile>qsslcertificate.html</anchorfile>
-            <anchor>QSslCertificate-1</anchor>
+            <anchor>QSslCertificate</anchor>
+            <arglist>(QSslCertificate &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSslCertificate</name>
+            <anchorfile>qsslcertificate.html</anchorfile>
+            <anchor>QSslCertificate-3</anchor>
             <arglist>(const QByteArray &amp;data, QSsl::EncodingFormat format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslCertificate</name>
             <anchorfile>qsslcertificate.html</anchorfile>
-            <anchor>QSslCertificate-2</anchor>
+            <anchor>QSslCertificate-1</anchor>
             <arglist>(const QSslCertificate &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -8759,7 +11365,7 @@
             <type>QSslCertificateExtension &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslcertificateextension.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslCertificateExtension &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8833,7 +11439,7 @@
             <type>QSslCipher &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslcipher.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslCipher &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8847,21 +11453,21 @@
             <type></type>
             <name>QSslCipher</name>
             <anchorfile>qsslcipher.html</anchorfile>
-            <anchor>QSslCipher-3</anchor>
+            <anchor>QSslCipher-1</anchor>
             <arglist>(const QSslCipher &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslCipher</name>
             <anchorfile>qsslcipher.html</anchorfile>
-            <anchor>QSslCipher-1</anchor>
+            <anchor>QSslCipher-2</anchor>
             <arglist>(const QString &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslCipher</name>
             <anchorfile>qsslcipher.html</anchorfile>
-            <anchor>QSslCipher-2</anchor>
+            <anchor>QSslCipher-3</anchor>
             <arglist>(const QString &amp;name, QSsl::SslProtocol protocol)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9007,7 +11613,7 @@
             <type>QSslConfiguration &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslconfiguration.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslConfiguration &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -9042,7 +11648,7 @@
             <type>bool</type>
             <name>addCaCertificates</name>
             <anchorfile>qsslconfiguration.html</anchorfile>
-            <anchor>addCaCertificates</anchor>
+            <anchor>addCaCertificates-1</anchor>
             <arglist>(const QString &amp;path, QSsl::EncodingFormat format, QSslCertificate::PatternSyntax syntax)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9056,7 +11662,7 @@
             <type>void</type>
             <name>addCaCertificates</name>
             <anchorfile>qsslconfiguration.html</anchorfile>
-            <anchor>addCaCertificates-1</anchor>
+            <anchor>addCaCertificates</anchor>
             <arglist>(const QList&lt;QSslCertificate&gt; &amp;certificates)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9475,21 +12081,21 @@
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-5</anchor>
             <arglist>(QDebug debug, const QSslDiffieHellmanParameters &amp;dhparam)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSslDiffieHellmanParameters &amp;</type>
             <name>operator=</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QSslDiffieHellmanParameters &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSslDiffieHellmanParameters &amp;</type>
             <name>operator=</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSslDiffieHellmanParameters &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -9503,14 +12109,14 @@
             <type>QSslDiffieHellmanParameters</type>
             <name>fromEncoded</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>fromEncoded-1</anchor>
+            <anchor>fromEncoded</anchor>
             <arglist>(QIODevice *device, QSsl::EncodingFormat encoding)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QSslDiffieHellmanParameters</type>
             <name>fromEncoded</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>fromEncoded</anchor>
+            <anchor>fromEncoded-1</anchor>
             <arglist>(const QByteArray &amp;encoded, QSsl::EncodingFormat encoding)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9524,14 +12130,14 @@
             <type></type>
             <name>QSslDiffieHellmanParameters</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>QSslDiffieHellmanParameters-2</anchor>
+            <anchor>QSslDiffieHellmanParameters-1</anchor>
             <arglist>(QSslDiffieHellmanParameters &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslDiffieHellmanParameters</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>QSslDiffieHellmanParameters-1</anchor>
+            <anchor>QSslDiffieHellmanParameters-2</anchor>
             <arglist>(const QSslDiffieHellmanParameters &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9552,8 +12158,8 @@
             <type>size_t</type>
             <name>qHash</name>
             <anchorfile>qssldiffiehellmanparameters.html</anchorfile>
-            <anchor>qHash</anchor>
-            <arglist>(const QSslDiffieHellmanParameters &amp;dhparam, size_t seed)</arglist>
+            <anchor>qHash-4</anchor>
+            <arglist>(const QSslDiffieHellmanParameters &amp;key, size_t seed)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -9605,7 +12211,7 @@
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qsslellipticcurve.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-2</anchor>
             <arglist>(QDebug debug, QSslEllipticCurve curve)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -9912,7 +12518,7 @@
             <type>QSslError &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslerror.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslError &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9933,14 +12539,14 @@
             <type></type>
             <name>QSslError</name>
             <anchorfile>qsslerror.html</anchorfile>
-            <anchor>QSslError-2</anchor>
+            <anchor>QSslError-3</anchor>
             <arglist>(QSslError::SslError error, const QSslCertificate &amp;certificate)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslError</name>
             <anchorfile>qsslerror.html</anchorfile>
-            <anchor>QSslError-3</anchor>
+            <anchor>QSslError-2</anchor>
             <arglist>(const QSslError &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10000,7 +12606,7 @@
             <type>QSslKey &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslkey.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(const QSslKey &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10014,28 +12620,28 @@
             <type></type>
             <name>QSslKey</name>
             <anchorfile>qsslkey.html</anchorfile>
-            <anchor>QSslKey-2</anchor>
+            <anchor>QSslKey-3</anchor>
             <arglist>(QIODevice *device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat encoding, QSsl::KeyType type, const QByteArray &amp;passPhrase)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslKey</name>
             <anchorfile>qsslkey.html</anchorfile>
-            <anchor>QSslKey-3</anchor>
+            <anchor>QSslKey-2</anchor>
             <arglist>(Qt::HANDLE handle, QSsl::KeyType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslKey</name>
             <anchorfile>qsslkey.html</anchorfile>
-            <anchor>QSslKey-1</anchor>
+            <anchor>QSslKey-4</anchor>
             <arglist>(const QByteArray &amp;encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat encoding, QSsl::KeyType type, const QByteArray &amp;passPhrase)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSslKey</name>
             <anchorfile>qsslkey.html</anchorfile>
-            <anchor>QSslKey-4</anchor>
+            <anchor>QSslKey-1</anchor>
             <arglist>(const QSslKey &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10130,14 +12736,14 @@
             <type>QSslPreSharedKeyAuthenticator &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslpresharedkeyauthenticator.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QSslPreSharedKeyAuthenticator &amp;&amp;authenticator)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSslPreSharedKeyAuthenticator &amp;</type>
             <name>operator=</name>
             <anchorfile>qsslpresharedkeyauthenticator.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSslPreSharedKeyAuthenticator &amp;authenticator)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10187,7 +12793,7 @@
             <name>swap</name>
             <anchorfile>qsslpresharedkeyauthenticator.html</anchorfile>
             <anchor>swap</anchor>
-            <arglist>(QSslPreSharedKeyAuthenticator &amp;authenticator)</arglist>
+            <arglist>(QSslPreSharedKeyAuthenticator &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -10240,7 +12846,7 @@
             <type></type>
             <name>QSslServer</name>
             <anchorfile>qsslserver.html</anchorfile>
-            <anchor>QSslServer-2</anchor>
+            <anchor>QSslServer</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

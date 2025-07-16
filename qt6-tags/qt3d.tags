@@ -862,10 +862,6 @@
         <filename>qml-qt3d-render-levelofdetail.html</filename>
     </compound>
     <compound kind="class">
-        <name>Qt3D.Render.LevelOfDetailBoundingSphere</name>
-        <filename>qml-qt3d-render-levelofdetailboundingsphere.html</filename>
-    </compound>
-    <compound kind="class">
         <name>Qt3D.Render.LevelOfDetailLoader</name>
         <filename>qml-qt3d-render-levelofdetailloader.html</filename>
     </compound>
@@ -1265,17 +1261,17 @@
             <arglist>(float position)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractAnimation::AnimationType</type>
-            <name>animationType</name>
-            <anchorfile>qt3danimation-qabstractanimation.html</anchorfile>
-            <anchor>animationType-prop</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>animationName</name>
             <anchorfile>qt3danimation-qabstractanimation.html</anchorfile>
             <anchor>animationName-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DAnimation::QAbstractAnimation::AnimationType</type>
+            <name>animationType</name>
+            <anchorfile>qt3danimation-qabstractanimation.html</anchorfile>
+            <anchor>animationType-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2134,7 +2130,7 @@
             <name>setCallback</name>
             <anchorfile>qt3danimation-qcallbackmapping.html</anchorfile>
             <anchor>setCallback</anchor>
-            <arglist>(int type, Qt3DAnimation::QAnimationCallback *callback, QAnimationCallback::Flags flags)</arglist>
+            <arglist>(int type, Qt3DAnimation::QAnimationCallback *callback, Qt3DAnimation::QAnimationCallback::Flags flags)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2349,7 +2345,7 @@
             <name>endModeChanged</name>
             <anchorfile>qt3danimation-qkeyframeanimation.html</anchorfile>
             <anchor>endMode-prop</anchor>
-            <arglist>(QKeyframeAnimation::RepeatMode endMode)</arglist>
+            <arglist>(Qt3DAnimation::QKeyframeAnimation::RepeatMode endMode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2419,7 +2415,7 @@
             <name>startModeChanged</name>
             <anchorfile>qt3danimation-qkeyframeanimation.html</anchorfile>
             <anchor>startMode-prop</anchor>
-            <arglist>(QKeyframeAnimation::RepeatMode startMode)</arglist>
+            <arglist>(Qt3DAnimation::QKeyframeAnimation::RepeatMode startMode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2742,7 +2738,7 @@
             <name>methodChanged</name>
             <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
             <anchor>method-prop</anchor>
-            <arglist>(QMorphingAnimation::Method method)</arglist>
+            <arglist>(Qt3DAnimation::QMorphingAnimation::Method method)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2763,7 +2759,7 @@
             <name>setMethod</name>
             <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
             <anchor>method-prop</anchor>
-            <arglist>(QMorphingAnimation::Method method)</arglist>
+            <arglist>(Qt3DAnimation::QMorphingAnimation::Method method)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2829,13 +2825,6 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QMorphingAnimation::Method</type>
-            <name>method</name>
-            <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
-            <anchor>method-prop</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
             <name>targetName</name>
             <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
@@ -2847,6 +2836,13 @@
             <name>targetPositions</name>
             <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
             <anchor>targetPositions-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DAnimation::QMorphingAnimation::Method</type>
+            <name>method</name>
+            <anchorfile>qt3danimation-qmorphinganimation.html</anchorfile>
+            <anchor>method-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3433,7 +3429,7 @@
             <arglist>() = 0</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>const std::vector&lt;QWeakPointer&lt;QAspectJob&gt;&gt; &amp;</type>
+            <type>const std::vector&lt;QWeakPointer&lt;Qt3DCore::QAspectJob&gt;&gt; &amp;</type>
             <name>dependencies</name>
             <anchorfile>qt3dcore-qaspectjob.html</anchorfile>
             <anchor>dependencies</anchor>
@@ -8671,7 +8667,7 @@
             <type>void</type>
             <name>setSurface</name>
             <anchorfile>qt3dextras-qforwardrenderer.html</anchorfile>
-            <anchor>setSurface</anchor>
+            <anchor>surface-prop</anchor>
             <arglist>(QObject *surface)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8692,7 +8688,7 @@
             <type>void</type>
             <name>surfaceChanged</name>
             <anchorfile>qt3dextras-qforwardrenderer.html</anchorfile>
-            <anchor>surfaceChanged</anchor>
+            <anchor>surface-prop</anchor>
             <arglist>(QObject *surface)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8713,7 +8709,7 @@
             <type>QObject *</type>
             <name>surface</name>
             <anchorfile>qt3dextras-qforwardrenderer.html</anchorfile>
-            <anchor>surface</anchor>
+            <anchor>surface-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -9749,6 +9745,69 @@
         <base>QAbstractCameraController</base>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>inversePanChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inversePan-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>inverseTiltChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseTilt-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>inverseXTranslateChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseXTranslate-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>inverseYTranslateChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseYTranslate-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInversePan</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inversePan-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInverseTilt</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseTilt-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInverseXTranslate</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseXTranslate-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setInverseYTranslate</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseYTranslate-prop</anchor>
+            <arglist>(bool isInverse)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setUpVector</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>upVector-prop</anchor>
+            <arglist>(const QVector3D &amp;upVector)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setZoomInLimit</name>
             <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
             <anchor>zoomInLimit-prop</anchor>
@@ -9756,10 +9815,73 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setZoomTranslateViewCenter</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>zoomTranslateViewCenter-prop</anchor>
+            <arglist>(bool isTranslate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>upVectorChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>upVector-prop</anchor>
+            <arglist>(const QVector3D &amp;upVector)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>zoomInLimitChanged</name>
             <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
             <anchor>zoomInLimit-prop</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>zoomTranslateViewCenterChanged</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>zoomTranslateViewCenter-prop</anchor>
+            <arglist>(bool isTranslate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVector3D</type>
+            <name>upVector</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>upVector-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>inversePan</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inversePan-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>inverseTilt</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseTilt-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>inverseXTranslate</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseXTranslate-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>inverseYTranslate</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>inverseYTranslate-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>zoomTranslateViewCenter</name>
+            <anchorfile>qt3dextras-qorbitcameracontroller.html</anchorfile>
+            <anchor>zoomTranslateViewCenter-prop</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>float</type>
@@ -11208,6 +11330,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setAlignment</name>
+            <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
+            <anchor>alignment-prop</anchor>
+            <arglist>(Qt::Alignment alignment)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setColor</name>
             <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
             <anchor>color-prop</anchor>
@@ -11277,6 +11406,13 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt::Alignment</type>
+            <name>alignment</name>
+            <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
+            <anchor>alignment-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>float</type>
             <name>height</name>
             <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
@@ -11289,6 +11425,12 @@
             <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
             <anchor>width-prop</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="Qt::Alignment">
+            <name>alignment</name>
+            <anchorfile>qt3dextras-qtext2dentity.html</anchorfile>
+            <anchor>alignment-prop</anchor>
+            <arglist></arglist>
         </member>
         <member kind="property" type="QColor">
             <name>color</name>
@@ -12041,7 +12183,7 @@
             <name>statusChanged</name>
             <anchorfile>qt3dinput-qabstractphysicaldeviceproxy.html</anchorfile>
             <anchor>status-prop</anchor>
-            <arglist>(QAbstractPhysicalDeviceProxy::DeviceStatus status)</arglist>
+            <arglist>(Qt3DInput::QAbstractPhysicalDeviceProxy::DeviceStatus status)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
@@ -12323,7 +12465,7 @@
             <name>setSourceAxisType</name>
             <anchorfile>qt3dinput-qaxisaccumulator.html</anchorfile>
             <anchor>setSourceAxisType</anchor>
-            <arglist>(QAxisAccumulator::SourceAxisType sourceAxisType)</arglist>
+            <arglist>(Qt3DInput::QAxisAccumulator::SourceAxisType sourceAxisType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -12337,7 +12479,7 @@
             <name>sourceAxisTypeChanged</name>
             <anchorfile>qt3dinput-qaxisaccumulator.html</anchorfile>
             <anchor>sourceAxisType-prop</anchor>
-            <arglist>(QAxisAccumulator::SourceAxisType sourceAxisType)</arglist>
+            <arglist>(Qt3DInput::QAxisAccumulator::SourceAxisType sourceAxisType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -12723,7 +12865,7 @@
             <type>void</type>
             <name>registerBackendType</name>
             <anchorfile>qt3dinput-qinputdeviceintegration.html</anchorfile>
-            <anchor>registerBackendType-1</anchor>
+            <anchor>registerBackendType</anchor>
             <arglist>(const QMetaObject &amp;metaObject, const Qt3DCore::QBackendNodeMapperPtr &amp;functor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
@@ -13686,7 +13828,7 @@
             <name>QMouseEvent</name>
             <anchorfile>qt3dinput-qmouseevent.html</anchorfile>
             <anchor>QMouseEvent</anchor>
-            <arglist>(const ::QMouseEvent &amp;e)</arglist>
+            <arglist>(const QMouseEvent &amp;e)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -14007,7 +14149,7 @@
             <name>QWheelEvent</name>
             <anchorfile>qt3dinput-qwheelevent.html</anchorfile>
             <anchor>QWheelEvent</anchor>
-            <arglist>(const ::QWheelEvent &amp;e)</arglist>
+            <arglist>(const QWheelEvent &amp;e)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -14519,19 +14661,19 @@
             <anchor>runMode-prop</anchor>
             <arglist>() const const</arglist>
         </member>
-        <member kind="property" type="FilterMode">
+        <member kind="property" type="Qt3DRender::QAbstractRayCaster::FilterMode">
             <name>filterMode</name>
             <anchorfile>qt3drender-qabstractraycaster.html</anchorfile>
             <anchor>filterMode-prop</anchor>
             <arglist></arglist>
         </member>
-        <member kind="property" type="Hits">
+        <member kind="property" type="Qt3DRender::QAbstractRayCaster::Hits">
             <name>hits</name>
             <anchorfile>qt3drender-qabstractraycaster.html</anchorfile>
             <anchor>hits-prop</anchor>
             <arglist></arglist>
         </member>
-        <member kind="property" type="RunMode">
+        <member kind="property" type="Qt3DRender::QAbstractRayCaster::RunMode">
             <name>runMode</name>
             <anchorfile>qt3drender-qabstractraycaster.html</anchorfile>
             <anchor>runMode-prop</anchor>
@@ -15852,7 +15994,7 @@
             <name>faceChanged</name>
             <anchorfile>qt3drender-qabstracttextureimage.html</anchorfile>
             <anchor>face-prop</anchor>
-            <arglist>(QAbstractTexture::CubeMapFace face)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::CubeMapFace face)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -15880,7 +16022,7 @@
             <name>setFace</name>
             <anchorfile>qt3drender-qabstracttextureimage.html</anchorfile>
             <anchor>setFace</anchor>
-            <arglist>(QAbstractTexture::CubeMapFace face)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::CubeMapFace face)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -15897,7 +16039,7 @@
             <arglist>(int level)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::CubeMapFace</type>
+            <type>Qt3DRender::QAbstractTexture::CubeMapFace</type>
             <name>face</name>
             <anchorfile>qt3drender-qabstracttextureimage.html</anchorfile>
             <anchor>face-prop</anchor>
@@ -16789,7 +16931,7 @@
             <name>projectionTypeChanged</name>
             <anchorfile>qt3drender-qcamera.html</anchorfile>
             <anchor>projectionType-prop</anchor>
-            <arglist>(QCameraLens::ProjectionType projectionType)</arglist>
+            <arglist>(Qt3DRender::QCameraLens::ProjectionType projectionType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -16894,7 +17036,7 @@
             <name>setProjectionType</name>
             <anchorfile>qt3drender-qcamera.html</anchorfile>
             <anchor>setProjectionType</anchor>
-            <arglist>(QCameraLens::ProjectionType type)</arglist>
+            <arglist>(Qt3DRender::QCameraLens::ProjectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -17009,13 +17151,6 @@
             <arglist>(const QVector3D &amp;viewVector)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QCameraLens::ProjectionType</type>
-            <name>projectionType</name>
-            <anchorfile>qt3drender-qcamera.html</anchorfile>
-            <anchor>projectionType-prop</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMatrix4x4</type>
             <name>projectionMatrix</name>
             <anchorfile>qt3drender-qcamera.html</anchorfile>
@@ -17097,6 +17232,13 @@
             <name>lens</name>
             <anchorfile>qt3drender-qcamera.html</anchorfile>
             <anchor>lens</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QCameraLens::ProjectionType</type>
+            <name>projectionType</name>
+            <anchorfile>qt3drender-qcamera.html</anchorfile>
+            <anchor>projectionType-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -17372,7 +17514,7 @@
             <name>projectionTypeChanged</name>
             <anchorfile>qt3drender-qcameralens.html</anchorfile>
             <anchor>projectionType-prop</anchor>
-            <arglist>(QCameraLens::ProjectionType projectionType)</arglist>
+            <arglist>(Qt3DRender::QCameraLens::ProjectionType projectionType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -20506,14 +20648,14 @@
             <type></type>
             <name>QParameter</name>
             <anchorfile>qt3drender-qparameter.html</anchorfile>
-            <anchor>QParameter-2</anchor>
+            <anchor>QParameter-1</anchor>
             <arglist>(const QString &amp;name, Qt3DRender::QAbstractTexture *texture, Qt3DCore::QNode *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QParameter</name>
             <anchorfile>qt3drender-qparameter.html</anchorfile>
-            <anchor>QParameter-1</anchor>
+            <anchor>QParameter-2</anchor>
             <arglist>(const QString &amp;name, const QVariant &amp;value, Qt3DCore::QNode *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -21079,21 +21221,21 @@
             <name>faceOrientationPickingModeChanged</name>
             <anchorfile>qt3drender-qpickingsettings.html</anchorfile>
             <anchor>faceOrientationPickingMode-prop</anchor>
-            <arglist>(QPickingSettings::FaceOrientationPickingMode faceOrientationPickingMode)</arglist>
+            <arglist>(Qt3DRender::QPickingSettings::FaceOrientationPickingMode faceOrientationPickingMode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>pickMethodChanged</name>
             <anchorfile>qt3drender-qpickingsettings.html</anchorfile>
             <anchor>pickMethod-prop</anchor>
-            <arglist>(QPickingSettings::PickMethod pickMethod)</arglist>
+            <arglist>(Qt3DRender::QPickingSettings::PickMethod pickMethod)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>pickResultModeChanged</name>
             <anchorfile>qt3drender-qpickingsettings.html</anchorfile>
             <anchor>pickResultMode-prop</anchor>
-            <arglist>(QPickingSettings::PickResultMode pickResult)</arglist>
+            <arglist>(Qt3DRender::QPickingSettings::PickResultMode pickResult)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -22244,21 +22386,21 @@
             <type>Qt3DRender::QRenderCaptureReply *</type>
             <name>requestCapture</name>
             <anchorfile>qt3drender-qrendercapture.html</anchorfile>
-            <anchor>requestCapture-1</anchor>
+            <anchor>requestCapture</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Qt3DRender::QRenderCaptureReply *</type>
             <name>requestCapture</name>
             <anchorfile>qt3drender-qrendercapture.html</anchorfile>
-            <anchor>requestCapture-2</anchor>
+            <anchor>requestCapture-1</anchor>
             <arglist>(const QRect &amp;rect)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Qt3DRender::QRenderCaptureReply *</type>
             <name>requestCapture</name>
             <anchorfile>qt3drender-qrendercapture-obsolete.html</anchorfile>
-            <anchor>requestCapture</anchor>
+            <anchor>requestCapture-2</anchor>
             <arglist>(int captureId)</arglist>
         </member>
     </compound>
@@ -22864,6 +23006,18 @@
             <anchor>AttachmentPoint-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>Left</name>
+            <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
+            <anchor>AttachmentPoint-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Right</name>
+            <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
+            <anchor>AttachmentPoint-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QRenderTargetOutput</name>
@@ -22883,7 +23037,7 @@
             <name>faceChanged</name>
             <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
             <anchor>face-prop</anchor>
-            <arglist>(QAbstractTexture::CubeMapFace face)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::CubeMapFace face)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -22911,7 +23065,7 @@
             <name>setFace</name>
             <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
             <anchor>face-prop</anchor>
-            <arglist>(QAbstractTexture::CubeMapFace face)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::CubeMapFace face)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -22942,17 +23096,17 @@
             <arglist>(Qt3DRender::QAbstractTexture *texture)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::CubeMapFace</type>
-            <name>face</name>
-            <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
-            <anchor>face-prop</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>Qt3DRender::QAbstractTexture *</type>
             <name>texture</name>
             <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
             <anchor>texture-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::CubeMapFace</type>
+            <name>face</name>
+            <anchorfile>qt3drender-qrendertargetoutput.html</anchorfile>
+            <anchor>face-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -25669,14 +25823,14 @@
             <name>setComparisonFunction</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setComparisonFunction</anchor>
-            <arglist>(QAbstractTexture::ComparisonFunction comparisonFunction)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::ComparisonFunction comparisonFunction)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setComparisonMode</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setComparisonMode</anchor>
-            <arglist>(QAbstractTexture::ComparisonMode comparisonMode)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::ComparisonMode comparisonMode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -25690,7 +25844,7 @@
             <name>setFormat</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setFormat</anchor>
-            <arglist>(QAbstractTexture::TextureFormat format)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::TextureFormat format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -25711,7 +25865,7 @@
             <name>setMagnificationFilter</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setMagnificationFilter</anchor>
-            <arglist>(QAbstractTexture::Filter filter)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::Filter filter)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -25725,14 +25879,14 @@
             <name>setMinificationFilter</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setMinificationFilter</anchor>
-            <arglist>(QAbstractTexture::Filter filter)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::Filter filter)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setTarget</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setTarget</anchor>
-            <arglist>(QAbstractTexture::Target target)</arglist>
+            <arglist>(Qt3DRender::QAbstractTexture::Target target)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -25746,63 +25900,21 @@
             <name>setWrapModeX</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setWrapModeX</anchor>
-            <arglist>(QTextureWrapMode::WrapMode wrapModeX)</arglist>
+            <arglist>(Qt3DRender::QTextureWrapMode::WrapMode wrapModeX)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setWrapModeY</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setWrapModeY</anchor>
-            <arglist>(QTextureWrapMode::WrapMode wrapModeY)</arglist>
+            <arglist>(Qt3DRender::QTextureWrapMode::WrapMode wrapModeY)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setWrapModeZ</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>setWrapModeZ</anchor>
-            <arglist>(QTextureWrapMode::WrapMode wrapModeZ)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::ComparisonFunction</type>
-            <name>comparisonFunction</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>comparisonFunction</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::ComparisonMode</type>
-            <name>comparisonMode</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>comparisonMode</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::Filter</type>
-            <name>magnificationFilter</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>magnificationFilter</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::Filter</type>
-            <name>minificationFilter</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>minificationFilter</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::Target</type>
-            <name>target</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>target</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QAbstractTexture::TextureFormat</type>
-            <name>format</name>
-            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
-            <anchor>format</anchor>
-            <arglist>() const const</arglist>
+            <arglist>(Qt3DRender::QTextureWrapMode::WrapMode wrapModeZ)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;Qt3DRender::QTextureImageDataPtr&gt;</type>
@@ -25812,21 +25924,63 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QTextureWrapMode::WrapMode</type>
+            <type>Qt3DRender::QAbstractTexture::ComparisonFunction</type>
+            <name>comparisonFunction</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>comparisonFunction</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::ComparisonMode</type>
+            <name>comparisonMode</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>comparisonMode</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::Filter</type>
+            <name>magnificationFilter</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>magnificationFilter</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::Filter</type>
+            <name>minificationFilter</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>minificationFilter</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::Target</type>
+            <name>target</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>target</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QAbstractTexture::TextureFormat</type>
+            <name>format</name>
+            <anchorfile>qt3drender-qtexturedata.html</anchorfile>
+            <anchor>format</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::QTextureWrapMode::WrapMode</type>
             <name>wrapModeX</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>wrapModeX</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QTextureWrapMode::WrapMode</type>
+            <type>Qt3DRender::QTextureWrapMode::WrapMode</type>
             <name>wrapModeY</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>wrapModeY</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QTextureWrapMode::WrapMode</type>
+            <type>Qt3DRender::QTextureWrapMode::WrapMode</type>
             <name>wrapModeZ</name>
             <anchorfile>qt3drender-qtexturedata.html</anchorfile>
             <anchor>wrapModeZ</anchor>
@@ -26367,7 +26521,7 @@
             <type></type>
             <name>QTextureWrapMode</name>
             <anchorfile>qt3drender-qtexturewrapmode.html</anchorfile>
-            <anchor>QTextureWrapMode-1</anchor>
+            <anchor>QTextureWrapMode</anchor>
             <arglist>(Qt3DRender::QTextureWrapMode::WrapMode x, Qt3DRender::QTextureWrapMode::WrapMode y, Qt3DRender::QTextureWrapMode::WrapMode z, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -26704,7 +26858,7 @@
             <name>renderPolicyChanged</name>
             <anchorfile>qt3drender-quick-qscene2d.html</anchorfile>
             <anchor>renderPolicy-prop</anchor>
-            <arglist>(QScene2D::RenderPolicy policy)</arglist>
+            <arglist>(Qt3DRender::Quick::QScene2D::RenderPolicy policy)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -26732,7 +26886,7 @@
             <name>setRenderPolicy</name>
             <anchorfile>qt3drender-quick-qscene2d.html</anchorfile>
             <anchor>renderPolicy-prop</anchor>
-            <arglist>(QScene2D::RenderPolicy policy)</arglist>
+            <arglist>(Qt3DRender::Quick::QScene2D::RenderPolicy policy)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;Qt3DCore::QEntity *&gt;</type>
@@ -26749,17 +26903,17 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QScene2D::RenderPolicy</type>
-            <name>renderPolicy</name>
-            <anchorfile>qt3drender-quick-qscene2d.html</anchorfile>
-            <anchor>renderPolicy-prop</anchor>
-            <arglist>() const const</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>Qt3DRender::QRenderTargetOutput *</type>
             <name>output</name>
             <anchorfile>qt3drender-quick-qscene2d.html</anchorfile>
             <anchor>output-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Qt3DRender::Quick::QScene2D::RenderPolicy</type>
+            <name>renderPolicy</name>
+            <anchorfile>qt3drender-quick-qscene2d.html</anchorfile>
+            <anchor>renderPolicy-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -26889,17 +27043,6 @@
     <compound kind="class">
         <name>QtQuick.Scene2D.Scene2D</name>
         <filename>qml-qtquick-scene2d-scene2d.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtQuick.Scene3D.Scene3D</name>
-        <filename>qml-qtquick-scene3d-scene3d.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
-            <name>setItemAreaAndDevicePixelRatio</name>
-            <anchorfile>qml-qtquick-scene3d-scene3d.html</anchorfile>
-            <anchor>setItemAreaAndDevicePixelRatio-method</anchor>
-            <arglist>(size area, real devicePixelRatio)</arglist>
-        </member>
     </compound>
     <compound kind="class">
         <name>Qt3D.Render.SceneLoader</name>
@@ -27164,5 +27307,9 @@
     <compound kind="class">
         <name>Qt3D.Input.WheelEvent</name>
         <filename>qml-qt3d-input-wheelevent.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>Qt3D.Render.levelOfDetailBoundingSphere</name>
+        <filename>qml-qt3d-render-levelofdetailboundingsphere.html</filename>
     </compound>
 </tagfile>

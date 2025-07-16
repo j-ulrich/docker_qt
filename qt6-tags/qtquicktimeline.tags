@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
     <compound kind="class">
+        <name>QtQuick.Timeline.BlendTrees.BlendAnimationNode</name>
+        <filename>qml-qtquick-timeline-blendtrees-blendanimationnode.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Timeline.BlendTrees.BlendTreeNode</name>
+        <filename>qml-qtquick-timeline-blendtrees-blendtreenode.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.Timeline.Keyframe</name>
         <filename>qml-qtquick-timeline-keyframe.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -29,5 +37,9 @@
             <anchor>finished-signal</anchor>
             <arglist>()</arglist>
         </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Timeline.BlendTrees.TimelineAnimationNode</name>
+        <filename>qml-qtquick-timeline-blendtrees-timelineanimationnode.html</filename>
     </compound>
 </tagfile>

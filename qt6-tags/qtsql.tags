@@ -170,7 +170,7 @@
             <type></type>
             <name>QSqlDatabase</name>
             <anchorfile>qsqldatabase.html</anchorfile>
-            <anchor>QSqlDatabase-3</anchor>
+            <anchor>QSqlDatabase-2</anchor>
             <arglist>(QSqlDriver *driver)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -184,7 +184,7 @@
             <type></type>
             <name>QSqlDatabase</name>
             <anchorfile>qsqldatabase.html</anchorfile>
-            <anchor>QSqlDatabase-2</anchor>
+            <anchor>QSqlDatabase-3</anchor>
             <arglist>(const QString &amp;type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -221,6 +221,13 @@
             <anchorfile>qsqldatabase.html</anchorfile>
             <anchor>isDriverAvailable</anchor>
             <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>moveToThread</name>
+            <anchorfile>qsqldatabase.html</anchorfile>
+            <anchor>moveToThread</anchor>
+            <arglist>(QThread *targetThread)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -426,6 +433,13 @@
             <arglist>(QSql::TableType type) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QThread *</type>
+            <name>thread</name>
+            <anchorfile>qsqldatabase.html</anchorfile>
+            <anchor>thread</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isOpen</name>
             <anchorfile>qsqldatabase.html</anchorfile>
@@ -452,6 +466,12 @@
             <anchorfile>qsqldatabase.html</anchorfile>
             <anchor>port</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="QSql::NumericalPrecisionPolicy">
+            <name>numericalPrecisionPolicy</name>
+            <anchorfile>qsqldatabase.html</anchorfile>
+            <anchor>numericalPrecisionPolicy-prop</anchor>
+            <arglist></arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -845,6 +865,12 @@
             <anchor>maximumIdentifierLength</anchor>
             <arglist>(QSqlDriver::IdentifierType type) const const</arglist>
         </member>
+        <member kind="property" type="QSql::NumericalPrecisionPolicy">
+            <name>numericalPrecisionPolicy</name>
+            <anchorfile>qsqldriver.html</anchorfile>
+            <anchor>numericalPrecisionPolicy-prop</anchor>
+            <arglist></arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QSqlDriverCreator</name>
@@ -944,21 +970,21 @@
             <type>QSqlError &amp;</type>
             <name>operator=</name>
             <anchorfile>qsqlerror.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QSqlError &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSqlError &amp;</type>
             <name>operator=</name>
             <anchorfile>qsqlerror.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSqlError &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSqlError</name>
             <anchorfile>qsqlerror.html</anchorfile>
-            <anchor>QSqlError-2</anchor>
+            <anchor>QSqlError</anchor>
             <arglist>(QSqlError &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -972,8 +998,8 @@
             <type></type>
             <name>QSqlError</name>
             <anchorfile>qsqlerror.html</anchorfile>
-            <anchor>QSqlError</anchor>
-            <arglist>(const QString &amp;driverText, const QString &amp;databaseText, QSqlError::ErrorType type, const QString &amp;code)</arglist>
+            <anchor>QSqlError-2</anchor>
+            <arglist>(const QString &amp;driverText, const QString &amp;databaseText, QSqlError::ErrorType type, const QString &amp;nativeErrorCode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1090,7 +1116,7 @@
             <type></type>
             <name>QSqlField</name>
             <anchorfile>qsqlfield.html</anchorfile>
-            <anchor>QSqlField-1</anchor>
+            <anchor>QSqlField-2</anchor>
             <arglist>(const QString &amp;fieldName, QMetaType type, const QString &amp;table)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1182,7 +1208,7 @@
             <name>setTableName</name>
             <anchorfile>qsqlfield.html</anchorfile>
             <anchor>setTableName</anchor>
-            <arglist>(const QString &amp;table)</arglist>
+            <arglist>(const QString &amp;tableName)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1324,6 +1350,72 @@
             <anchor>precision</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="property" type="bool">
+            <name>autoValue</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>autoValue-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QVariant">
+            <name>defaultValue</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>defaultValue-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>generated</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>generated-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>length</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>length-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QMetaType">
+            <name>metaType</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>metaType-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>name</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>name-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>precision</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>precision-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>readOnly</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>readOnly-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="RequiredStatus">
+            <name>requiredStatus</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>requiredStatus-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>tableName</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>tableName-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QVariant">
+            <name>value</name>
+            <anchorfile>qsqlfield.html</anchorfile>
+            <anchor>value-prop</anchor>
+            <arglist></arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QSqlIndex</name>
@@ -1341,13 +1433,20 @@
             <name>operator=</name>
             <anchorfile>qsqlindex.html</anchorfile>
             <anchor>operator-eq</anchor>
+            <arglist>(QSqlIndex &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSqlIndex &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qsqlindex.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSqlIndex &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSqlIndex</name>
             <anchorfile>qsqlindex.html</anchorfile>
-            <anchor>QSqlIndex-2</anchor>
+            <anchor>QSqlIndex</anchor>
             <arglist>(QSqlIndex &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1361,7 +1460,7 @@
             <type></type>
             <name>QSqlIndex</name>
             <anchorfile>qsqlindex.html</anchorfile>
-            <anchor>QSqlIndex</anchor>
+            <anchor>QSqlIndex-2</anchor>
             <arglist>(const QString &amp;cursorname, const QString &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1427,6 +1526,18 @@
             <anchor>isDescending</anchor>
             <arglist>(int i) const const</arglist>
         </member>
+        <member kind="property" type="QString">
+            <name>cursorName</name>
+            <anchorfile>qsqlindex.html</anchorfile>
+            <anchor>cursorName-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>name</name>
+            <anchorfile>qsqlindex.html</anchorfile>
+            <anchor>name-prop</anchor>
+            <arglist></arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QSqlQuery</name>
@@ -1452,28 +1563,28 @@
             <type>QSqlQuery &amp;</type>
             <name>operator=</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QSqlQuery &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSqlQuery &amp;</type>
             <name>operator=</name>
             <anchorfile>qsqlquery-obsolete.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSqlQuery &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSqlQuery</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>QSqlQuery-4</anchor>
+            <anchor>QSqlQuery</anchor>
             <arglist>(QSqlQuery &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSqlQuery</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>QSqlQuery</anchor>
+            <anchor>QSqlQuery-1</anchor>
             <arglist>(QSqlResult *result)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1494,21 +1605,21 @@
             <type></type>
             <name>QSqlQuery</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>QSqlQuery-1</anchor>
+            <anchor>QSqlQuery-4</anchor>
             <arglist>(const QString &amp;query, const QSqlDatabase &amp;db)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>exec</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>exec-1</anchor>
+            <anchor>exec</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>exec</name>
             <anchorfile>qsqlquery.html</anchorfile>
-            <anchor>exec</anchor>
+            <anchor>exec-1</anchor>
             <arglist>(const QString &amp;query)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1618,6 +1729,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setPositionalBindingEnabled</name>
+            <anchorfile>qsqlquery.html</anchorfile>
+            <anchor>setPositionalBindingEnabled</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>swap</name>
             <anchorfile>qsqlquery.html</anchorfile>
             <anchor>swap</anchor>
@@ -1705,7 +1823,7 @@
             <name>value</name>
             <anchorfile>qsqlquery.html</anchorfile>
             <anchor>value-1</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QVariant</type>
@@ -1740,7 +1858,7 @@
             <name>isNull</name>
             <anchorfile>qsqlquery.html</anchorfile>
             <anchor>isNull-1</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -1748,6 +1866,13 @@
             <anchorfile>qsqlquery.html</anchorfile>
             <anchor>isNull</anchor>
             <arglist>(int field) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isPositionalBindingEnabled</name>
+            <anchorfile>qsqlquery.html</anchorfile>
+            <anchor>isPositionalBindingEnabled</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -1797,6 +1922,24 @@
             <anchorfile>qsqlquery.html</anchorfile>
             <anchor>size</anchor>
             <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>forwardOnly</name>
+            <anchorfile>qsqlquery.html</anchorfile>
+            <anchor>forwardOnly-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QSql::NumericalPrecisionPolicy">
+            <name>numericalPrecisionPolicy</name>
+            <anchorfile>qsqlquery.html</anchorfile>
+            <anchor>numericalPrecisionPolicy-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>positionalBindingEnabled</name>
+            <anchorfile>qsqlquery.html</anchorfile>
+            <anchor>positionalBindingEnabled-prop</anchor>
+            <arglist></arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1980,6 +2123,13 @@
             <name>operator=</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>operator-eq</anchor>
+            <arglist>(QSqlRecord &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSqlRecord &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qsqlrecord.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QSqlRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2001,6 +2151,13 @@
             <name>QSqlRecord</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>QSqlRecord-1</anchor>
+            <arglist>(QSqlRecord &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSqlRecord</name>
+            <anchorfile>qsqlrecord.html</anchorfile>
+            <anchor>QSqlRecord-2</anchor>
             <arglist>(const QSqlRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2050,7 +2207,7 @@
             <name>setGenerated</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>setGenerated</anchor>
-            <arglist>(const QString &amp;name, bool generated)</arglist>
+            <arglist>(QAnyStringView name, bool generated)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2064,7 +2221,7 @@
             <name>setNull</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>setNull-1</anchor>
-            <arglist>(const QString &amp;name)</arglist>
+            <arglist>(QAnyStringView name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2078,7 +2235,7 @@
             <name>setValue</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>setValue-1</anchor>
-            <arglist>(const QString &amp;name, const QVariant &amp;val)</arglist>
+            <arglist>(QAnyStringView name, const QVariant &amp;val)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2106,7 +2263,7 @@
             <name>field</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>field-1</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSqlField</type>
@@ -2134,7 +2291,7 @@
             <name>value</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>value-1</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QVariant</type>
@@ -2148,7 +2305,7 @@
             <name>contains</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>contains</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -2161,28 +2318,28 @@
             <type>bool</type>
             <name>isGenerated</name>
             <anchorfile>qsqlrecord.html</anchorfile>
-            <anchor>isGenerated</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <anchor>isGenerated-1</anchor>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isGenerated</name>
             <anchorfile>qsqlrecord.html</anchorfile>
-            <anchor>isGenerated-1</anchor>
+            <anchor>isGenerated</anchor>
             <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isNull</name>
             <anchorfile>qsqlrecord.html</anchorfile>
-            <anchor>isNull</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <anchor>isNull-1</anchor>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isNull</name>
             <anchorfile>qsqlrecord.html</anchorfile>
-            <anchor>isNull-1</anchor>
+            <anchor>isNull</anchor>
             <arglist>(int index) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2211,7 +2368,7 @@
             <name>indexOf</name>
             <anchorfile>qsqlrecord.html</anchorfile>
             <anchor>indexOf</anchor>
-            <arglist>(const QString &amp;name) const const</arglist>
+            <arglist>(QAnyStringView name) const const</arglist>
         </member>
     </compound>
     <compound kind="class">

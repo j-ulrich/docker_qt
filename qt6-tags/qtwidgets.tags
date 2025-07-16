@@ -2114,14 +2114,14 @@
             <type>void</type>
             <name>setViewportMargins</name>
             <anchorfile>qabstractscrollarea.html</anchorfile>
-            <anchor>setViewportMargins-1</anchor>
+            <anchor>setViewportMargins</anchor>
             <arglist>(const QMargins &amp;margins)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type>void</type>
             <name>setViewportMargins</name>
             <anchorfile>qabstractscrollarea.html</anchorfile>
-            <anchor>setViewportMargins</anchor>
+            <anchor>setViewportMargins-1</anchor>
             <arglist>(int left, int top, int right, int bottom)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -3333,7 +3333,7 @@
             <arglist>() const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
-            <type>virtual QList&lt;QPair&lt;QAccessibleInterface *, QAccessible::Relation&gt;&gt;</type>
+            <type>virtual QList&lt;std::pair&lt;QAccessibleInterface *, QAccessible::Relation&gt;&gt;</type>
             <name>relations</name>
             <anchorfile>qaccessiblewidget.html</anchorfile>
             <anchor>relations</anchor>
@@ -4429,6 +4429,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setCalendar</name>
+            <anchorfile>qcalendarwidget.html</anchorfile>
+            <anchor>setCalendar</anchor>
+            <arglist>(QCalendar c)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setCurrentPage</name>
             <anchorfile>qcalendarwidget.html</anchorfile>
             <anchor>setCurrentPage</anchor>
@@ -4601,6 +4608,13 @@
             <anchorfile>qcalendarwidget.html</anchorfile>
             <anchor>dtor.QCalendarWidget</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCalendar</type>
+            <name>calendar</name>
+            <anchorfile>qcalendarwidget.html</anchorfile>
+            <anchor>calendar</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCalendarWidget::HorizontalHeaderFormat</type>
@@ -4834,6 +4848,13 @@
             <anchor>event</anchor>
             <arglist>(QEvent *e) override</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>checkStateChanged</name>
+            <anchorfile>qcheckbox.html</anchorfile>
+            <anchor>checkStateChanged</anchor>
+            <arglist>(Qt::CheckState state)</arglist>
+        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>checkStateSet</name>
@@ -4962,6 +4983,12 @@
         </member>
         <member kind="enumvalue">
             <name>DontUseNativeDialog</name>
+            <anchorfile>qcolordialog.html</anchorfile>
+            <anchor>ColorDialogOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NoEyeDropperButton</name>
             <anchorfile>qcolordialog.html</anchorfile>
             <anchor>ColorDialogOption-enum</anchor>
             <arglist></arglist>
@@ -6361,14 +6388,14 @@
             <type>virtual void</type>
             <name>polish</name>
             <anchorfile>qcommonstyle.html</anchorfile>
-            <anchor>polish-1</anchor>
+            <anchor>polish</anchor>
             <arglist>(QApplication *app) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>polish</name>
             <anchorfile>qcommonstyle.html</anchorfile>
-            <anchor>polish</anchor>
+            <anchor>polish-1</anchor>
             <arglist>(QPalette &amp;pal) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -6382,14 +6409,14 @@
             <type>virtual void</type>
             <name>unpolish</name>
             <anchorfile>qcommonstyle.html</anchorfile>
-            <anchor>unpolish-1</anchor>
+            <anchor>unpolish</anchor>
             <arglist>(QApplication *application) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>unpolish</name>
             <anchorfile>qcommonstyle.html</anchorfile>
-            <anchor>unpolish</anchor>
+            <anchor>unpolish-1</anchor>
             <arglist>(QWidget *widget) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -6580,14 +6607,14 @@
             <type>void</type>
             <name>activated</name>
             <anchorfile>qcompleter.html</anchorfile>
-            <anchor>activated-1</anchor>
+            <anchor>activated</anchor>
             <arglist>(const QModelIndex &amp;index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>activated</name>
             <anchorfile>qcompleter.html</anchorfile>
-            <anchor>activated</anchor>
+            <anchor>activated-1</anchor>
             <arglist>(const QString &amp;text)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -6601,14 +6628,14 @@
             <type>void</type>
             <name>highlighted</name>
             <anchorfile>qcompleter.html</anchorfile>
-            <anchor>highlighted-1</anchor>
+            <anchor>highlighted</anchor>
             <arglist>(const QModelIndex &amp;index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>highlighted</name>
             <anchorfile>qcompleter.html</anchorfile>
-            <anchor>highlighted</anchor>
+            <anchor>highlighted-1</anchor>
             <arglist>(const QString &amp;text)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7238,14 +7265,14 @@
             <type></type>
             <name>QDateTimeEdit</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
-            <anchor>QDateTimeEdit-2</anchor>
+            <anchor>QDateTimeEdit-1</anchor>
             <arglist>(QDate date, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QDateTimeEdit</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
-            <anchor>QDateTimeEdit-3</anchor>
+            <anchor>QDateTimeEdit-2</anchor>
             <arglist>(QTime time, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -7259,7 +7286,7 @@
             <type></type>
             <name>QDateTimeEdit</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
-            <anchor>QDateTimeEdit-1</anchor>
+            <anchor>QDateTimeEdit-3</anchor>
             <arglist>(const QDateTime &amp;datetime, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -7366,6 +7393,13 @@
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>paintEvent</anchor>
             <arglist>(QPaintEvent *event) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setCalendar</name>
+            <anchorfile>qdatetimeedit.html</anchorfile>
+            <anchor>setCalendar</anchor>
+            <arglist>(QCalendar calendar)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -7500,6 +7534,13 @@
             <anchor>timeSpec-prop</anchor>
             <arglist>(Qt::TimeSpec spec)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTimeZone</name>
+            <anchorfile>qdatetimeedit.html</anchorfile>
+            <anchor>timeZone-prop</anchor>
+            <arglist>(const QTimeZone &amp;zone)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>stepBy</name>
@@ -7534,6 +7575,13 @@
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>stepEnabled</anchor>
             <arglist>() const const override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCalendar</type>
+            <name>calendar</name>
+            <anchorfile>qdatetimeedit.html</anchorfile>
+            <anchor>calendar</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCalendarWidget *</type>
@@ -7659,6 +7707,13 @@
             <name>time</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>time</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QTimeZone</type>
+            <name>timeZone</name>
+            <anchorfile>qdatetimeedit.html</anchorfile>
+            <anchor>timeZone-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -7810,6 +7865,12 @@
             <name>timeSpec</name>
             <anchorfile>qdatetimeedit.html</anchorfile>
             <anchor>timeSpec-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QTimeZone">
+            <name>timeZone</name>
+            <anchorfile>qdatetimeedit.html</anchorfile>
+            <anchor>timeZone-prop</anchor>
             <arglist></arglist>
         </member>
     </compound>
@@ -8422,7 +8483,7 @@
             <type></type>
             <name>QDialogButtonBox</name>
             <anchorfile>qdialogbuttonbox.html</anchorfile>
-            <anchor>QDialogButtonBox-2</anchor>
+            <anchor>QDialogButtonBox-1</anchor>
             <arglist>(QDialogButtonBox::StandardButtons buttons, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8443,21 +8504,21 @@
             <type></type>
             <name>QDialogButtonBox</name>
             <anchorfile>qdialogbuttonbox.html</anchorfile>
-            <anchor>QDialogButtonBox-1</anchor>
+            <anchor>QDialogButtonBox-2</anchor>
             <arglist>(Qt::Orientation orientation, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPushButton *</type>
             <name>addButton</name>
             <anchorfile>qdialogbuttonbox.html</anchorfile>
-            <anchor>addButton-2</anchor>
+            <anchor>addButton</anchor>
             <arglist>(QDialogButtonBox::StandardButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPushButton *</type>
             <name>addButton</name>
             <anchorfile>qdialogbuttonbox.html</anchorfile>
-            <anchor>addButton-1</anchor>
+            <anchor>addButton-2</anchor>
             <arglist>(const QString &amp;text, QDialogButtonBox::ButtonRole role)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -8478,7 +8539,7 @@
             <type>void</type>
             <name>addButton</name>
             <anchorfile>qdialogbuttonbox.html</anchorfile>
-            <anchor>addButton</anchor>
+            <anchor>addButton-1</anchor>
             <arglist>(QAbstractButton *button, QDialogButtonBox::ButtonRole role)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -8680,14 +8741,14 @@
             <type></type>
             <name>QDockWidget</name>
             <anchorfile>qdockwidget.html</anchorfile>
-            <anchor>QDockWidget-1</anchor>
+            <anchor>QDockWidget</anchor>
             <arglist>(QWidget *parent, Qt::WindowFlags flags)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QDockWidget</name>
             <anchorfile>qdockwidget.html</anchorfile>
-            <anchor>QDockWidget</anchor>
+            <anchor>QDockWidget-1</anchor>
             <arglist>(const QString &amp;title, QWidget *parent, Qt::WindowFlags flags)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -9478,7 +9539,7 @@
             <name>getOpenFileContent</name>
             <anchorfile>qfiledialog.html</anchorfile>
             <anchor>getOpenFileContent</anchor>
-            <arglist>(const QString &amp;nameFilter, const std::function&lt;void (const QString &amp;, const QByteArray &amp;)&gt; &amp;fileOpenCompleted)</arglist>
+            <arglist>(const QString &amp;nameFilter, const std::function&lt;void (const QString &amp;, const QByteArray &amp;)&gt; &amp;fileOpenCompleted, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -9492,7 +9553,7 @@
             <name>saveFileContent</name>
             <anchorfile>qfiledialog.html</anchorfile>
             <anchor>saveFileContent</anchor>
-            <arglist>(const QByteArray &amp;fileContent, const QString &amp;fileNameHint)</arglist>
+            <arglist>(const QByteArray &amp;fileContent, const QString &amp;fileNameHint, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -10439,14 +10500,14 @@
             <type>QFormLayout::TakeRowResult</type>
             <name>takeRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>takeRow-2</anchor>
+            <anchor>takeRow-1</anchor>
             <arglist>(QLayout *layout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QFormLayout::TakeRowResult</type>
             <name>takeRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>takeRow-1</anchor>
+            <anchor>takeRow-2</anchor>
             <arglist>(QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10474,14 +10535,14 @@
             <type>void</type>
             <name>addRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>addRow-5</anchor>
+            <anchor>addRow-1</anchor>
             <arglist>(QLayout *layout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>addRow-1</anchor>
+            <anchor>addRow-3</anchor>
             <arglist>(QWidget *label, QLayout *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10495,35 +10556,35 @@
             <type>void</type>
             <name>addRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>addRow-4</anchor>
+            <anchor>addRow-2</anchor>
             <arglist>(QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>addRow-3</anchor>
+            <anchor>addRow-4</anchor>
             <arglist>(const QString &amp;labelText, QLayout *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>addRow-2</anchor>
+            <anchor>addRow-5</anchor>
             <arglist>(const QString &amp;labelText, QWidget *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>insertRow-5</anchor>
+            <anchor>insertRow-1</anchor>
             <arglist>(int row, QLayout *layout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>insertRow-1</anchor>
+            <anchor>insertRow-3</anchor>
             <arglist>(int row, QWidget *label, QLayout *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10537,21 +10598,21 @@
             <type>void</type>
             <name>insertRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>insertRow-4</anchor>
+            <anchor>insertRow-2</anchor>
             <arglist>(int row, QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>insertRow-3</anchor>
+            <anchor>insertRow-4</anchor>
             <arglist>(int row, const QString &amp;labelText, QLayout *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>insertRow-2</anchor>
+            <anchor>insertRow-5</anchor>
             <arglist>(int row, const QString &amp;labelText, QWidget *field)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -10565,14 +10626,14 @@
             <type>void</type>
             <name>removeRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>removeRow-2</anchor>
+            <anchor>removeRow-1</anchor>
             <arglist>(QLayout *layout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeRow</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>removeRow-1</anchor>
+            <anchor>removeRow-2</anchor>
             <arglist>(QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10635,14 +10696,14 @@
             <type>void</type>
             <name>setRowVisible</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>setRowVisible-2</anchor>
+            <anchor>setRowVisible-1</anchor>
             <arglist>(QLayout *layout, bool on)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setRowVisible</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>setRowVisible-1</anchor>
+            <anchor>setRowVisible-2</anchor>
             <arglist>(QWidget *widget, bool on)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -10705,14 +10766,14 @@
             <type>virtual QLayoutItem *</type>
             <name>itemAt</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>itemAt-1</anchor>
+            <anchor>itemAt</anchor>
             <arglist>(int index) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QLayoutItem *</type>
             <name>itemAt</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>itemAt</anchor>
+            <anchor>itemAt-1</anchor>
             <arglist>(int row, QFormLayout::ItemRole role) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -10775,14 +10836,14 @@
             <type>bool</type>
             <name>isRowVisible</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>isRowVisible-2</anchor>
+            <anchor>isRowVisible-1</anchor>
             <arglist>(QLayout *layout) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isRowVisible</name>
             <anchorfile>qformlayout.html</anchorfile>
-            <anchor>isRowVisible-1</anchor>
+            <anchor>isRowVisible-2</anchor>
             <arglist>(QWidget *widget) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -12393,14 +12454,14 @@
             <type>void</type>
             <name>addItem</name>
             <anchorfile>qgraphicsgridlayout.html</anchorfile>
-            <anchor>addItem-1</anchor>
+            <anchor>addItem</anchor>
             <arglist>(QGraphicsLayoutItem *item, int row, int column, Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addItem</name>
             <anchorfile>qgraphicsgridlayout.html</anchorfile>
-            <anchor>addItem</anchor>
+            <anchor>addItem-1</anchor>
             <arglist>(QGraphicsLayoutItem *item, int row, int column, int rowSpan, int columnSpan, Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -12568,14 +12629,14 @@
             <type>virtual QGraphicsLayoutItem *</type>
             <name>itemAt</name>
             <anchorfile>qgraphicsgridlayout.html</anchorfile>
-            <anchor>itemAt-1</anchor>
+            <anchor>itemAt</anchor>
             <arglist>(int index) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGraphicsLayoutItem *</type>
             <name>itemAt</name>
             <anchorfile>qgraphicsgridlayout.html</anchorfile>
-            <anchor>itemAt</anchor>
+            <anchor>itemAt-1</anchor>
             <arglist>(int row, int column) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -13838,42 +13899,42 @@
             <type>QPainterPath</type>
             <name>mapFromItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromItem-3</anchor>
+            <anchor>mapFromItem</anchor>
             <arglist>(const QGraphicsItem *item, const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapFromParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromParent-3</anchor>
+            <anchor>mapFromParent</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromScene-3</anchor>
+            <anchor>mapFromScene</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapToItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToItem-3</anchor>
+            <anchor>mapToItem</anchor>
             <arglist>(const QGraphicsItem *item, const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapToParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToParent-3</anchor>
+            <anchor>mapToParent</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToScene-3</anchor>
+            <anchor>mapToScene</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -13894,84 +13955,84 @@
             <type>QPointF</type>
             <name>mapFromItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromItem</anchor>
+            <anchor>mapFromItem-1</anchor>
             <arglist>(const QGraphicsItem *item, const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromItem-4</anchor>
+            <anchor>mapFromItem-5</anchor>
             <arglist>(const QGraphicsItem *item, qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromParent</anchor>
+            <anchor>mapFromParent-1</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromParent-4</anchor>
+            <anchor>mapFromParent-5</anchor>
             <arglist>(qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromScene</anchor>
+            <anchor>mapFromScene-1</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromScene-4</anchor>
+            <anchor>mapFromScene-5</anchor>
             <arglist>(qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToItem</anchor>
+            <anchor>mapToItem-1</anchor>
             <arglist>(const QGraphicsItem *item, const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToItem-4</anchor>
+            <anchor>mapToItem-5</anchor>
             <arglist>(const QGraphicsItem *item, qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToParent</anchor>
+            <anchor>mapToParent-1</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToParent-4</anchor>
+            <anchor>mapToParent-5</anchor>
             <arglist>(qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToScene</anchor>
+            <anchor>mapToScene-1</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToScene-4</anchor>
+            <anchor>mapToScene-5</anchor>
             <arglist>(qreal x, qreal y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14006,14 +14067,14 @@
             <type>QPolygonF</type>
             <name>mapFromItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromItem-1</anchor>
+            <anchor>mapFromItem-3</anchor>
             <arglist>(const QGraphicsItem *item, const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapFromItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromItem-5</anchor>
+            <anchor>mapFromItem-4</anchor>
             <arglist>(const QGraphicsItem *item, qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14027,14 +14088,14 @@
             <type>QPolygonF</type>
             <name>mapFromParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromParent-1</anchor>
+            <anchor>mapFromParent-3</anchor>
             <arglist>(const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapFromParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromParent-5</anchor>
+            <anchor>mapFromParent-4</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14048,14 +14109,14 @@
             <type>QPolygonF</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromScene-1</anchor>
+            <anchor>mapFromScene-3</anchor>
             <arglist>(const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapFromScene-5</anchor>
+            <anchor>mapFromScene-4</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14069,14 +14130,14 @@
             <type>QPolygonF</type>
             <name>mapToItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToItem-1</anchor>
+            <anchor>mapToItem-3</anchor>
             <arglist>(const QGraphicsItem *item, const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapToItem</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToItem-5</anchor>
+            <anchor>mapToItem-4</anchor>
             <arglist>(const QGraphicsItem *item, qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14090,14 +14151,14 @@
             <type>QPolygonF</type>
             <name>mapToParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToParent-1</anchor>
+            <anchor>mapToParent-3</anchor>
             <arglist>(const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapToParent</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToParent-5</anchor>
+            <anchor>mapToParent-4</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -14111,14 +14172,14 @@
             <type>QPolygonF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToScene-1</anchor>
+            <anchor>mapToScene-3</anchor>
             <arglist>(const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPolygonF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsitem.html</anchorfile>
-            <anchor>mapToScene-5</anchor>
+            <anchor>mapToScene-4</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
@@ -14651,35 +14712,35 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QList&lt;QPair&lt;qreal, QPointF&gt;&gt;</type>
+            <type>QList&lt;std::pair&lt;qreal, QPointF&gt;&gt;</type>
             <name>posList</name>
             <anchorfile>qgraphicsitemanimation.html</anchorfile>
             <anchor>posList</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QList&lt;QPair&lt;qreal, QPointF&gt;&gt;</type>
+            <type>QList&lt;std::pair&lt;qreal, QPointF&gt;&gt;</type>
             <name>scaleList</name>
             <anchorfile>qgraphicsitemanimation.html</anchorfile>
             <anchor>scaleList</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QList&lt;QPair&lt;qreal, QPointF&gt;&gt;</type>
+            <type>QList&lt;std::pair&lt;qreal, QPointF&gt;&gt;</type>
             <name>shearList</name>
             <anchorfile>qgraphicsitemanimation.html</anchorfile>
             <anchor>shearList</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QList&lt;QPair&lt;qreal, QPointF&gt;&gt;</type>
+            <type>QList&lt;std::pair&lt;qreal, QPointF&gt;&gt;</type>
             <name>translationList</name>
             <anchorfile>qgraphicsitemanimation.html</anchorfile>
             <anchor>translationList</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QList&lt;QPair&lt;qreal, qreal&gt;&gt;</type>
+            <type>QList&lt;std::pair&lt;qreal, qreal&gt;&gt;</type>
             <name>rotationList</name>
             <anchorfile>qgraphicsitemanimation.html</anchorfile>
             <anchor>rotationList</anchor>
@@ -16618,7 +16679,7 @@
             <type>void</type>
             <name>setAxis</name>
             <anchorfile>qgraphicsrotation.html</anchorfile>
-            <anchor>setAxis-1</anchor>
+            <anchor>setAxis</anchor>
             <arglist>(Qt::Axis axis)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -17116,7 +17177,7 @@
             <name>drawItems</name>
             <anchorfile>qgraphicsscene-obsolete.html</anchorfile>
             <anchor>drawItems</anchor>
-            <arglist>(QPainter *painter, int numItems, QGraphicsItem *[] items, const QStyleOptionGraphicsItem [] options, QWidget *widget)</arglist>
+            <arglist>(QPainter *painter, int numItems, QGraphicsItem *[] items, const QStyleOptionGraphicsItem[] options, QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -17486,7 +17547,7 @@
             <type>QList&lt;QGraphicsItem *&gt;</type>
             <name>items</name>
             <anchorfile>qgraphicsscene.html</anchorfile>
-            <anchor>items-4</anchor>
+            <anchor>items-2</anchor>
             <arglist>(const QPainterPath &amp;path, Qt::ItemSelectionMode mode, Qt::SortOrder order, const QTransform &amp;deviceTransform) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -17507,7 +17568,7 @@
             <type>QList&lt;QGraphicsItem *&gt;</type>
             <name>items</name>
             <anchorfile>qgraphicsscene.html</anchorfile>
-            <anchor>items-2</anchor>
+            <anchor>items-4</anchor>
             <arglist>(const QRectF &amp;rect, Qt::ItemSelectionMode mode, Qt::SortOrder order, const QTransform &amp;deviceTransform) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -18093,7 +18154,7 @@
             <type></type>
             <name>QGraphicsSceneMoveEvent</name>
             <anchorfile>qgraphicsscenemoveevent.html</anchorfile>
-            <anchor>QGraphicsSceneMoveEvent-1</anchor>
+            <anchor>QGraphicsSceneMoveEvent</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -18126,7 +18187,7 @@
             <type></type>
             <name>QGraphicsSceneResizeEvent</name>
             <anchorfile>qgraphicssceneresizeevent.html</anchorfile>
-            <anchor>QGraphicsSceneResizeEvent-1</anchor>
+            <anchor>QGraphicsSceneResizeEvent</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -18936,7 +18997,7 @@
             <type>void</type>
             <name>centerOn</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>centerOn-2</anchor>
+            <anchor>centerOn-1</anchor>
             <arglist>(const QGraphicsItem *item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -18950,7 +19011,7 @@
             <type>void</type>
             <name>centerOn</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>centerOn-1</anchor>
+            <anchor>centerOn-2</anchor>
             <arglist>(qreal x, qreal y)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -19000,7 +19061,7 @@
             <name>drawItems</name>
             <anchorfile>qgraphicsview-obsolete.html</anchorfile>
             <anchor>drawItems</anchor>
-            <arglist>(QPainter *painter, int numItems, QGraphicsItem *[] items, const QStyleOptionGraphicsItem [] options)</arglist>
+            <arglist>(QPainter *painter, int numItems, QGraphicsItem *[] items, const QStyleOptionGraphicsItem[] options)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -19013,7 +19074,7 @@
             <type>void</type>
             <name>ensureVisible</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>ensureVisible-2</anchor>
+            <anchor>ensureVisible-1</anchor>
             <arglist>(const QGraphicsItem *item, int xmargin, int ymargin)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19027,14 +19088,14 @@
             <type>void</type>
             <name>ensureVisible</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>ensureVisible-1</anchor>
+            <anchor>ensureVisible-2</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h, int xmargin, int ymargin)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>fitInView</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>fitInView-2</anchor>
+            <anchor>fitInView-1</anchor>
             <arglist>(const QGraphicsItem *item, Qt::AspectRatioMode aspectRatioMode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19048,7 +19109,7 @@
             <type>void</type>
             <name>fitInView</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>fitInView-1</anchor>
+            <anchor>fitInView-2</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h, Qt::AspectRatioMode aspectRatioMode)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -19454,7 +19515,7 @@
             <type>QList&lt;QGraphicsItem *&gt;</type>
             <name>items</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>items-6</anchor>
+            <anchor>items-4</anchor>
             <arglist>(const QPainterPath &amp;path, Qt::ItemSelectionMode mode) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19475,7 +19536,7 @@
             <type>QList&lt;QGraphicsItem *&gt;</type>
             <name>items</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>items-3</anchor>
+            <anchor>items-6</anchor>
             <arglist>(const QRect &amp;rect, Qt::ItemSelectionMode mode) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19489,7 +19550,7 @@
             <type>QList&lt;QGraphicsItem *&gt;</type>
             <name>items</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>items-4</anchor>
+            <anchor>items-3</anchor>
             <arglist>(int x, int y, int w, int h, Qt::ItemSelectionMode mode) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19503,21 +19564,21 @@
             <type>QPainterPath</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapFromScene-3</anchor>
+            <anchor>mapFromScene</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPainterPath</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapToScene-3</anchor>
+            <anchor>mapToScene</anchor>
             <arglist>(const QPainterPath &amp;path) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPoint</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapFromScene</anchor>
+            <anchor>mapFromScene-1</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19531,7 +19592,7 @@
             <type>QPointF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapToScene</anchor>
+            <anchor>mapToScene-1</anchor>
             <arglist>(const QPoint &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19552,7 +19613,7 @@
             <type>QPolygon</type>
             <name>mapFromScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapFromScene-1</anchor>
+            <anchor>mapFromScene-3</anchor>
             <arglist>(const QRectF &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -19573,7 +19634,7 @@
             <type>QPolygonF</type>
             <name>mapToScene</name>
             <anchorfile>qgraphicsview.html</anchorfile>
-            <anchor>mapToScene-1</anchor>
+            <anchor>mapToScene-3</anchor>
             <arglist>(const QRect &amp;rect) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -20044,7 +20105,7 @@
             <type>void</type>
             <name>setGeometry</name>
             <anchorfile>qgraphicswidget.html</anchorfile>
-            <anchor>setGeometry-1</anchor>
+            <anchor>setGeometry</anchor>
             <arglist>(qreal x, qreal y, qreal w, qreal h)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -20462,14 +20523,14 @@
             <type>virtual void</type>
             <name>addItem</name>
             <anchorfile>qgridlayout.html</anchorfile>
-            <anchor>addItem-1</anchor>
+            <anchor>addItem</anchor>
             <arglist>(QLayoutItem *item) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addItem</name>
             <anchorfile>qgridlayout.html</anchorfile>
-            <anchor>addItem</anchor>
+            <anchor>addItem-1</anchor>
             <arglist>(QLayoutItem *item, int row, int column, int rowSpan, int columnSpan, Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -20497,7 +20558,7 @@
             <type>void</type>
             <name>addWidget</name>
             <anchorfile>qgridlayout.html</anchorfile>
-            <anchor>addWidget-1</anchor>
+            <anchor>addWidget</anchor>
             <arglist>(QWidget *widget, int row, int column, Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -21149,14 +21210,14 @@
             <type>void</type>
             <name>resizeSections</name>
             <anchorfile>qheaderview.html</anchorfile>
-            <anchor>resizeSections-1</anchor>
+            <anchor>resizeSections</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>resizeSections</name>
             <anchorfile>qheaderview.html</anchorfile>
-            <anchor>resizeSections</anchor>
+            <anchor>resizeSections-1</anchor>
             <arglist>(QHeaderView::ResizeMode mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -21597,21 +21658,21 @@
             <type>int</type>
             <name>logicalIndexAt</name>
             <anchorfile>qheaderview.html</anchorfile>
-            <anchor>logicalIndexAt-2</anchor>
+            <anchor>logicalIndexAt</anchor>
             <arglist>(const QPoint &amp;pos) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>logicalIndexAt</name>
             <anchorfile>qheaderview.html</anchorfile>
-            <anchor>logicalIndexAt</anchor>
+            <anchor>logicalIndexAt-1</anchor>
             <arglist>(int position) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>logicalIndexAt</name>
             <anchorfile>qheaderview.html</anchorfile>
-            <anchor>logicalIndexAt-1</anchor>
+            <anchor>logicalIndexAt-2</anchor>
             <arglist>(int x, int y) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -21766,6 +21827,18 @@
             <name>minimumSectionSize</name>
             <anchorfile>qheaderview.html</anchorfile>
             <anchor>minimumSectionSize-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>sectionsClickable</name>
+            <anchorfile>qheaderview.html</anchorfile>
+            <anchor>sectionsClickable-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>sectionsMovable</name>
+            <anchorfile>qheaderview.html</anchorfile>
+            <anchor>sectionsMovable-prop</anchor>
             <arglist></arglist>
         </member>
         <member kind="property" type="bool">
@@ -22856,14 +22929,14 @@
             <type>void</type>
             <name>display</name>
             <anchorfile>qlcdnumber.html</anchorfile>
-            <anchor>display-2</anchor>
+            <anchor>display-1</anchor>
             <arglist>(double num)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>display</name>
             <anchorfile>qlcdnumber.html</anchorfile>
-            <anchor>display-1</anchor>
+            <anchor>display-2</anchor>
             <arglist>(int num)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -23296,14 +23369,14 @@
             <type>QPicture</type>
             <name>picture</name>
             <anchorfile>qlabel.html</anchorfile>
-            <anchor>picture-1</anchor>
+            <anchor>picture</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPicture</type>
             <name>picture</name>
             <anchorfile>qlabel-obsolete.html</anchorfile>
-            <anchor>picture</anchor>
+            <anchor>picture-1</anchor>
             <arglist>(Qt::ReturnByValueConstant) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -23674,14 +23747,14 @@
             <type>void</type>
             <name>setContentsMargins</name>
             <anchorfile>qlayout.html</anchorfile>
-            <anchor>setContentsMargins-1</anchor>
+            <anchor>setContentsMargins</anchor>
             <arglist>(const QMargins &amp;margins)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setContentsMargins</name>
             <anchorfile>qlayout.html</anchorfile>
-            <anchor>setContentsMargins</anchor>
+            <anchor>setContentsMargins-1</anchor>
             <arglist>(int left, int top, int right, int bottom)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -23842,14 +23915,14 @@
             <type>virtual int</type>
             <name>indexOf</name>
             <anchorfile>qlayout.html</anchorfile>
-            <anchor>indexOf-1</anchor>
+            <anchor>indexOf</anchor>
             <arglist>(const QLayoutItem *layoutItem) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual int</type>
             <name>indexOf</name>
             <anchorfile>qlayout.html</anchorfile>
-            <anchor>indexOf</anchor>
+            <anchor>indexOf-1</anchor>
             <arglist>(const QWidget *widget) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -24476,14 +24549,14 @@
             <type>void</type>
             <name>setTextMargins</name>
             <anchorfile>qlineedit.html</anchorfile>
-            <anchor>setTextMargins-1</anchor>
+            <anchor>setTextMargins</anchor>
             <arglist>(const QMargins &amp;margins)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setTextMargins</name>
             <anchorfile>qlineedit.html</anchorfile>
-            <anchor>setTextMargins</anchor>
+            <anchor>setTextMargins-1</anchor>
             <arglist>(int left, int top, int right, int bottom)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -25545,14 +25618,14 @@
             <type>void</type>
             <name>addItem</name>
             <anchorfile>qlistwidget.html</anchorfile>
-            <anchor>addItem-1</anchor>
+            <anchor>addItem</anchor>
             <arglist>(QListWidgetItem *item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addItem</name>
             <anchorfile>qlistwidget.html</anchorfile>
-            <anchor>addItem</anchor>
+            <anchor>addItem-1</anchor>
             <arglist>(const QString &amp;label)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -25727,7 +25800,7 @@
             <type>void</type>
             <name>setCurrentRow</name>
             <anchorfile>qlistwidget.html</anchorfile>
-            <anchor>setCurrentRow-1</anchor>
+            <anchor>setCurrentRow</anchor>
             <arglist>(int row, QItemSelectionModel::SelectionFlags command)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -25962,28 +26035,28 @@
             <type></type>
             <name>QListWidgetItem</name>
             <anchorfile>qlistwidgetitem.html</anchorfile>
-            <anchor>QListWidgetItem</anchor>
+            <anchor>QListWidgetItem-1</anchor>
             <arglist>(QListWidget *parent, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QListWidgetItem</name>
             <anchorfile>qlistwidgetitem.html</anchorfile>
-            <anchor>QListWidgetItem-2</anchor>
+            <anchor>QListWidgetItem-3</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, QListWidget *parent, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QListWidgetItem</name>
             <anchorfile>qlistwidgetitem.html</anchorfile>
-            <anchor>QListWidgetItem-3</anchor>
+            <anchor>QListWidgetItem</anchor>
             <arglist>(const QListWidgetItem &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QListWidgetItem</name>
             <anchorfile>qlistwidgetitem.html</anchorfile>
-            <anchor>QListWidgetItem-1</anchor>
+            <anchor>QListWidgetItem-2</anchor>
             <arglist>(const QString &amp;text, QListWidget *parent, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -26081,14 +26154,14 @@
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qlistwidgetitem.html</anchorfile>
-            <anchor>setTextAlignment-2</anchor>
+            <anchor>setTextAlignment</anchor>
             <arglist>(Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qlistwidgetitem-obsolete.html</anchorfile>
-            <anchor>setTextAlignment</anchor>
+            <anchor>setTextAlignment-1</anchor>
             <arglist>(int alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -27531,42 +27604,42 @@
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction-4</anchor>
+            <anchor>addAction-1</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, Functor functor, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction-5</anchor>
+            <anchor>addAction-4</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QObject *context, Functor functor, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction-1</anchor>
+            <anchor>addAction-5</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QObject *receiver, const char *member, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction-2</anchor>
+            <anchor>addAction</anchor>
             <arglist>(const QString &amp;text, Functor functor, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction-3</anchor>
+            <anchor>addAction-2</anchor>
             <arglist>(const QString &amp;text, const QObject *context, Functor functor, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qmenu-obsolete.html</anchorfile>
-            <anchor>addAction</anchor>
+            <anchor>addAction-3</anchor>
             <arglist>(const QString &amp;text, const QObject *receiver, const char *member, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -28693,14 +28766,14 @@
             <type>QPushButton *</type>
             <name>addButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
-            <anchor>addButton-2</anchor>
+            <anchor>addButton-1</anchor>
             <arglist>(QMessageBox::StandardButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPushButton *</type>
             <name>addButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
-            <anchor>addButton-1</anchor>
+            <anchor>addButton-2</anchor>
             <arglist>(const QString &amp;text, QMessageBox::ButtonRole role)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -28728,7 +28801,7 @@
             <type>int</type>
             <name>critical</name>
             <anchorfile>qmessagebox-obsolete.html</anchorfile>
-            <anchor>critical-2</anchor>
+            <anchor>critical-1</anchor>
             <arglist>(QWidget *parent, const QString &amp;title, const QString &amp;text, int button0, int button1, int button2)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -28749,7 +28822,7 @@
             <type>int</type>
             <name>information</name>
             <anchorfile>qmessagebox-obsolete.html</anchorfile>
-            <anchor>information-2</anchor>
+            <anchor>information-1</anchor>
             <arglist>(QWidget *parent, const QString &amp;title, const QString &amp;text, int button0, int button1, int button2)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -28763,7 +28836,7 @@
             <type>int</type>
             <name>question</name>
             <anchorfile>qmessagebox-obsolete.html</anchorfile>
-            <anchor>question-2</anchor>
+            <anchor>question-1</anchor>
             <arglist>(QWidget *parent, const QString &amp;title, const QString &amp;text, int button0, int button1, int button2)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -28777,7 +28850,7 @@
             <type>int</type>
             <name>warning</name>
             <anchorfile>qmessagebox-obsolete.html</anchorfile>
-            <anchor>warning-2</anchor>
+            <anchor>warning-1</anchor>
             <arglist>(QWidget *parent, const QString &amp;title, const QString &amp;text, int button0, int button1, int button2)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -28868,14 +28941,14 @@
             <type>void</type>
             <name>setDefaultButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
-            <anchor>setDefaultButton-1</anchor>
+            <anchor>setDefaultButton</anchor>
             <arglist>(QMessageBox::StandardButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setDefaultButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
-            <anchor>setDefaultButton</anchor>
+            <anchor>setDefaultButton-1</anchor>
             <arglist>(QPushButton *button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -30222,14 +30295,14 @@
             <type>QRect</type>
             <name>cursorRect</name>
             <anchorfile>qplaintextedit.html</anchorfile>
-            <anchor>cursorRect-1</anchor>
+            <anchor>cursorRect</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QRect</type>
             <name>cursorRect</name>
             <anchorfile>qplaintextedit.html</anchorfile>
-            <anchor>cursorRect</anchor>
+            <anchor>cursorRect-1</anchor>
             <arglist>(const QTextCursor &amp;cursor) const const</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
@@ -31123,7 +31196,7 @@
             <type>virtual void</type>
             <name>polish</name>
             <anchorfile>qproxystyle.html</anchorfile>
-            <anchor>polish-2</anchor>
+            <anchor>polish</anchor>
             <arglist>(QApplication *app) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -31137,7 +31210,7 @@
             <type>virtual void</type>
             <name>polish</name>
             <anchorfile>qproxystyle.html</anchorfile>
-            <anchor>polish</anchor>
+            <anchor>polish-2</anchor>
             <arglist>(QWidget *widget) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -31151,14 +31224,14 @@
             <type>virtual void</type>
             <name>unpolish</name>
             <anchorfile>qproxystyle.html</anchorfile>
-            <anchor>unpolish-1</anchor>
+            <anchor>unpolish</anchor>
             <arglist>(QApplication *app) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>unpolish</name>
             <anchorfile>qproxystyle.html</anchorfile>
-            <anchor>unpolish</anchor>
+            <anchor>unpolish-1</anchor>
             <arglist>(QWidget *widget) override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -31559,6 +31632,356 @@
             <anchorfile>qradiobutton.html</anchorfile>
             <anchor>initStyleOption</anchor>
             <arglist>(QStyleOptionButton *option) const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QRhiWidget</name>
+        <filename>qrhiwidget.html</filename>
+        <base>QWidget</base>
+        <member kind="enumeration">
+            <name>Api</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Null</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OpenGL</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Metal</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Vulkan</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Direct3D11</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Direct3D12</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>Api-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>TextureFormat</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>TextureFormat-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>RGBA8</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>TextureFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RGBA16F</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>TextureFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RGBA32F</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>TextureFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RGB10A2</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>TextureFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QRhiWidget</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>QRhiWidget</anchor>
+            <arglist>(QWidget *parent, Qt::WindowFlags f)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual bool</type>
+            <name>event</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>event</anchor>
+            <arglist>(QEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>colorBufferFormatChanged</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>colorBufferFormat-prop</anchor>
+            <arglist>(QRhiWidget::TextureFormat format)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>fixedColorBufferSizeChanged</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>fixedColorBufferSize-prop</anchor>
+            <arglist>(const QSize &amp;pixelSize)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>frameSubmitted</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>frameSubmitted</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>initialize</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>initialize</anchor>
+            <arglist>(QRhiCommandBuffer *cb)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>mirrorVerticallyChanged</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>mirrorVertically-prop</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>paintEvent</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>paintEvent</anchor>
+            <arglist>(QPaintEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>releaseResources</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>releaseResources</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>render</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>render</anchor>
+            <arglist>(QRhiCommandBuffer *cb)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>renderFailed</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>renderFailed</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>resizeEvent</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>resizeEvent</anchor>
+            <arglist>(QResizeEvent *e) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>sampleCountChanged</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>sampleCount-prop</anchor>
+            <arglist>(int samples)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setApi</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>setApi</anchor>
+            <arglist>(QRhiWidget::Api api)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAutoRenderTarget</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>setAutoRenderTarget</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setColorBufferFormat</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>colorBufferFormat-prop</anchor>
+            <arglist>(QRhiWidget::TextureFormat format)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDebugLayerEnabled</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>setDebugLayerEnabled</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFixedColorBufferSize</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>fixedColorBufferSize-prop</anchor>
+            <arglist>(QSize pixelSize)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFixedColorBufferSize</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>fixedColorBufferSize-prop</anchor>
+            <arglist>(int w, int h)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMirrorVertically</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>mirrorVertically-prop</anchor>
+            <arglist>(bool enabled)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSampleCount</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>sampleCount-prop</anchor>
+            <arglist>(int samples)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QRhiWidget</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>dtor.QRhiWidget</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QImage</type>
+            <name>grabFramebuffer</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>grabFramebuffer</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhi *</type>
+            <name>rhi</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>rhi</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhiRenderBuffer *</type>
+            <name>depthStencilBuffer</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>depthStencilBuffer</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhiRenderBuffer *</type>
+            <name>msaaColorBuffer</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>msaaColorBuffer</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhiRenderTarget *</type>
+            <name>renderTarget</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>renderTarget</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhiTexture *</type>
+            <name>colorTexture</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>colorTexture</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QRhiTexture *</type>
+            <name>resolveTexture</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>resolveTexture</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiWidget::Api</type>
+            <name>api</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>api</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiWidget::TextureFormat</type>
+            <name>colorBufferFormat</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>colorBufferFormat-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSize</type>
+            <name>fixedColorBufferSize</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>fixedColorBufferSize-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isDebugLayerEnabled</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>isDebugLayerEnabled</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isMirrorVerticallyEnabled</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>mirrorVertically-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>int</type>
+            <name>sampleCount</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>sampleCount-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>autoRenderTarget</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>autoRenderTarget-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="TextureFormat">
+            <name>colorBufferFormat</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>colorBufferFormat-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QSize">
+            <name>fixedColorBufferSize</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>fixedColorBufferSize-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="bool">
+            <name>mirrorVertically</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>mirrorVertically-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>sampleCount</name>
+            <anchorfile>qrhiwidget.html</anchorfile>
+            <anchor>sampleCount-prop</anchor>
+            <arglist></arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -33459,7 +33882,7 @@
             <type></type>
             <name>QSplashScreen</name>
             <anchorfile>qsplashscreen.html</anchorfile>
-            <anchor>QSplashScreen-1</anchor>
+            <anchor>QSplashScreen-2</anchor>
             <arglist>(QScreen *screen, const QPixmap &amp;pixmap, Qt::WindowFlags f)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -33998,14 +34421,14 @@
             <type></type>
             <name>QStackedLayout</name>
             <anchorfile>qstackedlayout.html</anchorfile>
-            <anchor>QStackedLayout-2</anchor>
+            <anchor>QStackedLayout-1</anchor>
             <arglist>(QLayout *parentLayout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QStackedLayout</name>
             <anchorfile>qstackedlayout.html</anchorfile>
-            <anchor>QStackedLayout-1</anchor>
+            <anchor>QStackedLayout-2</anchor>
             <arglist>(QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -37933,7 +38356,7 @@
             <type></type>
             <name>QStyle</name>
             <anchorfile>qstyle.html</anchorfile>
-            <anchor>QStyle-1</anchor>
+            <anchor>QStyle</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -38526,28 +38949,28 @@
             <type></type>
             <name>QStyleOption</name>
             <anchorfile>qstyleoption.html</anchorfile>
-            <anchor>QStyleOption-1</anchor>
+            <anchor>QStyleOption</anchor>
             <arglist>(const QStyleOption &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QStyleOption</name>
             <anchorfile>qstyleoption.html</anchorfile>
-            <anchor>QStyleOption</anchor>
+            <anchor>QStyleOption-1</anchor>
             <arglist>(int version, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>T</type>
             <name>qstyleoption_cast</name>
             <anchorfile>qstyleoption.html</anchorfile>
-            <anchor>qstyleoption_cast-1</anchor>
+            <anchor>qstyleoption_cast</anchor>
             <arglist>(QStyleOption *option)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>T</type>
             <name>qstyleoption_cast</name>
             <anchorfile>qstyleoption.html</anchorfile>
-            <anchor>qstyleoption_cast</anchor>
+            <anchor>qstyleoption_cast-1</anchor>
             <arglist>(const QStyleOption *option)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -38724,14 +39147,14 @@
             <type></type>
             <name>QStyleOptionComplex</name>
             <anchorfile>qstyleoptioncomplex.html</anchorfile>
-            <anchor>QStyleOptionComplex-1</anchor>
+            <anchor>QStyleOptionComplex</anchor>
             <arglist>(const QStyleOptionComplex &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QStyleOptionComplex</name>
             <anchorfile>qstyleoptioncomplex.html</anchorfile>
-            <anchor>QStyleOptionComplex</anchor>
+            <anchor>QStyleOptionComplex-1</anchor>
             <arglist>(int version, int type)</arglist>
         </member>
     </compound>
@@ -42065,6 +42488,13 @@
             <anchor>currentChanged</anchor>
             <arglist>(const QModelIndex &amp;current, const QModelIndex &amp;previous) override</arglist>
         </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>dropEvent</name>
+            <anchorfile>qtableview.html</anchorfile>
+            <anchor>dropEvent</anchor>
+            <arglist>(QDropEvent *event) override</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>hideColumn</name>
@@ -43131,14 +43561,14 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-2</anchor>
             <arglist>(QDataStream &amp;out, const QTableWidgetItem &amp;item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-2</anchor>
             <arglist>(QDataStream &amp;in, QTableWidgetItem &amp;item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -43152,28 +43582,28 @@
             <type></type>
             <name>QTableWidgetItem</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>QTableWidgetItem-2</anchor>
+            <anchor>QTableWidgetItem-3</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTableWidgetItem</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>QTableWidgetItem-1</anchor>
+            <anchor>QTableWidgetItem-2</anchor>
             <arglist>(const QString &amp;text, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTableWidgetItem</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>QTableWidgetItem-3</anchor>
+            <anchor>QTableWidgetItem</anchor>
             <arglist>(const QTableWidgetItem &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTableWidgetItem</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>QTableWidgetItem</anchor>
+            <anchor>QTableWidgetItem-1</anchor>
             <arglist>(int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -43264,14 +43694,14 @@
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qtablewidgetitem.html</anchorfile>
-            <anchor>setTextAlignment-2</anchor>
+            <anchor>setTextAlignment</anchor>
             <arglist>(Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qtablewidgetitem-obsolete.html</anchorfile>
-            <anchor>setTextAlignment</anchor>
+            <anchor>setTextAlignment-1</anchor>
             <arglist>(int alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -44591,14 +45021,14 @@
             <type>QRect</type>
             <name>cursorRect</name>
             <anchorfile>qtextedit.html</anchorfile>
-            <anchor>cursorRect-1</anchor>
+            <anchor>cursorRect</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QRect</type>
             <name>cursorRect</name>
             <anchorfile>qtextedit.html</anchorfile>
-            <anchor>cursorRect</anchor>
+            <anchor>cursorRect-1</anchor>
             <arglist>(const QTextCursor &amp;cursor) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -44951,14 +45381,14 @@
             <type></type>
             <name>QTileRules</name>
             <anchorfile>qtilerules.html</anchorfile>
-            <anchor>QTileRules</anchor>
+            <anchor>QTileRules-1</anchor>
             <arglist>(Qt::TileRule horizontalRule, Qt::TileRule verticalRule)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTileRules</name>
             <anchorfile>qtilerules.html</anchorfile>
-            <anchor>QTileRules-1</anchor>
+            <anchor>QTileRules</anchor>
             <arglist>(Qt::TileRule rule)</arglist>
         </member>
     </compound>
@@ -45024,14 +45454,14 @@
             <type></type>
             <name>QToolBar</name>
             <anchorfile>qtoolbar.html</anchorfile>
-            <anchor>QToolBar-1</anchor>
+            <anchor>QToolBar</anchor>
             <arglist>(QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QToolBar</name>
             <anchorfile>qtoolbar.html</anchorfile>
-            <anchor>QToolBar</anchor>
+            <anchor>QToolBar-1</anchor>
             <arglist>(const QString &amp;title, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
@@ -47098,14 +47528,14 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-3</anchor>
             <arglist>(QDataStream &amp;out, const QTreeWidgetItem &amp;item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-3</anchor>
             <arglist>(QDataStream &amp;in, QTreeWidgetItem &amp;item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -47133,14 +47563,14 @@
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-4</anchor>
+            <anchor>QTreeWidgetItem-5</anchor>
             <arglist>(QTreeWidget *parent, QTreeWidgetItem *preceding, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-3</anchor>
+            <anchor>QTreeWidgetItem-6</anchor>
             <arglist>(QTreeWidget *parent, const QStringList &amp;strings, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -47161,35 +47591,35 @@
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-6</anchor>
+            <anchor>QTreeWidgetItem-8</anchor>
             <arglist>(QTreeWidgetItem *parent, const QStringList &amp;strings, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-5</anchor>
+            <anchor>QTreeWidgetItem-3</anchor>
             <arglist>(QTreeWidgetItem *parent, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-1</anchor>
+            <anchor>QTreeWidgetItem-4</anchor>
             <arglist>(const QStringList &amp;strings, int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem-8</anchor>
+            <anchor>QTreeWidgetItem</anchor>
             <arglist>(const QTreeWidgetItem &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTreeWidgetItem</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>QTreeWidgetItem</anchor>
+            <anchor>QTreeWidgetItem-1</anchor>
             <arglist>(int type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -47357,14 +47787,14 @@
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qtreewidgetitem.html</anchorfile>
-            <anchor>setTextAlignment-2</anchor>
+            <anchor>setTextAlignment</anchor>
             <arglist>(int column, Qt::Alignment alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setTextAlignment</name>
             <anchorfile>qtreewidgetitem-obsolete.html</anchorfile>
-            <anchor>setTextAlignment</anchor>
+            <anchor>setTextAlignment-1</anchor>
             <arglist>(int column, int alignment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -47826,14 +48256,14 @@
             <type></type>
             <name>QUndoView</name>
             <anchorfile>qundoview.html</anchorfile>
-            <anchor>QUndoView-2</anchor>
+            <anchor>QUndoView-1</anchor>
             <arglist>(QUndoGroup *group, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QUndoView</name>
             <anchorfile>qundoview.html</anchorfile>
-            <anchor>QUndoView-1</anchor>
+            <anchor>QUndoView-2</anchor>
             <arglist>(QUndoStack *stack, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -48037,28 +48467,28 @@
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-8</anchor>
+            <anchor>addAction-4</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-12</anchor>
+            <anchor>addAction-8</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QKeySequence &amp;shortcut, Args &amp;&amp;... args)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-10</anchor>
+            <anchor>addAction-12</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QKeySequence &amp;shortcut, const QObject *receiver, const char *member, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-4</anchor>
+            <anchor>addAction-10</anchor>
             <arglist>(const QIcon &amp;icon, const QString &amp;text, const QObject *receiver, const char *member, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -48079,28 +48509,28 @@
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-7</anchor>
+            <anchor>addAction-3</anchor>
             <arglist>(const QString &amp;text, const QKeySequence &amp;shortcut)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-11</anchor>
+            <anchor>addAction-7</anchor>
             <arglist>(const QString &amp;text, const QKeySequence &amp;shortcut, Args &amp;&amp;... args)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-9</anchor>
+            <anchor>addAction-11</anchor>
             <arglist>(const QString &amp;text, const QKeySequence &amp;shortcut, const QObject *receiver, const char *member, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QAction *</type>
             <name>addAction</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>addAction-3</anchor>
+            <anchor>addAction-9</anchor>
             <arglist>(const QString &amp;text, const QObject *receiver, const char *member, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -48562,21 +48992,21 @@
             <type>void</type>
             <name>repaint</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>repaint-2</anchor>
+            <anchor>repaint-1</anchor>
             <arglist>(const QRect &amp;rect)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>repaint</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>repaint-3</anchor>
+            <anchor>repaint-2</anchor>
             <arglist>(const QRegion &amp;rgn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>repaint</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>repaint-1</anchor>
+            <anchor>repaint-3</anchor>
             <arglist>(int x, int y, int w, int h)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -49248,21 +49678,21 @@
             <type>void</type>
             <name>update</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>update-2</anchor>
+            <anchor>update-1</anchor>
             <arglist>(const QRect &amp;rect)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>update</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>update-3</anchor>
+            <anchor>update-2</anchor>
             <arglist>(const QRegion &amp;rgn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>update</name>
             <anchorfile>qwidget.html</anchorfile>
-            <anchor>update-1</anchor>
+            <anchor>update-3</anchor>
             <arglist>(int x, int y, int w, int h)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -49726,6 +50156,13 @@
             <anchorfile>qwidget.html</anchorfile>
             <anchor>childAt-1</anchor>
             <arglist>(const QPoint &amp;p) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QWidget *</type>
+            <name>childAt</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>childAt-2</anchor>
+            <arglist>(const QPointF &amp;p) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QWidget *</type>
@@ -50611,7 +51048,7 @@
             <type></type>
             <name>QWidgetItem</name>
             <anchorfile>qwidgetitem.html</anchorfile>
-            <anchor>QWidgetItem-1</anchor>
+            <anchor>QWidgetItem</anchor>
             <arglist>(QWidget *widget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">

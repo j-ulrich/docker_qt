@@ -8,7 +8,7 @@
             <type></type>
             <name>QMaskGenerator</name>
             <anchorfile>qmaskgenerator.html</anchorfile>
-            <anchor>QMaskGenerator-1</anchor>
+            <anchor>QMaskGenerator</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
@@ -41,7 +41,7 @@
             <type></type>
             <name>QWebSocket</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>QWebSocket-1</anchor>
+            <anchor>QWebSocket</anchor>
             <arglist>(const QString &amp;origin, QWebSocketProtocol::Version version, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -209,28 +209,28 @@
             <type>void</type>
             <name>open</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>open-1</anchor>
+            <anchor>open</anchor>
             <arglist>(const QNetworkRequest &amp;request)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>open</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>open-3</anchor>
+            <anchor>open-2</anchor>
             <arglist>(const QNetworkRequest &amp;request, const QWebSocketHandshakeOptions &amp;options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>open</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>open</anchor>
+            <anchor>open-1</anchor>
             <arglist>(const QUrl &amp;url)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>open</name>
             <anchorfile>qwebsocket.html</anchorfile>
-            <anchor>open-2</anchor>
+            <anchor>open-3</anchor>
             <arglist>(const QUrl &amp;url, const QWebSocketHandshakeOptions &amp;options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -584,21 +584,21 @@
             <type></type>
             <name>QWebSocketCorsAuthenticator</name>
             <anchorfile>qwebsocketcorsauthenticator.html</anchorfile>
-            <anchor>QWebSocketCorsAuthenticator-2</anchor>
+            <anchor>QWebSocketCorsAuthenticator</anchor>
             <arglist>(QWebSocketCorsAuthenticator &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebSocketCorsAuthenticator</name>
             <anchorfile>qwebsocketcorsauthenticator.html</anchorfile>
-            <anchor>QWebSocketCorsAuthenticator</anchor>
+            <anchor>QWebSocketCorsAuthenticator-1</anchor>
             <arglist>(const QString &amp;origin)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebSocketCorsAuthenticator</name>
             <anchorfile>qwebsocketcorsauthenticator.html</anchorfile>
-            <anchor>QWebSocketCorsAuthenticator-1</anchor>
+            <anchor>QWebSocketCorsAuthenticator-2</anchor>
             <arglist>(const QWebSocketCorsAuthenticator &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -665,14 +665,14 @@
             <type></type>
             <name>QWebSocketHandshakeOptions</name>
             <anchorfile>qwebsockethandshakeoptions.html</anchorfile>
-            <anchor>QWebSocketHandshakeOptions-2</anchor>
+            <anchor>QWebSocketHandshakeOptions-1</anchor>
             <arglist>(QWebSocketHandshakeOptions &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebSocketHandshakeOptions</name>
             <anchorfile>qwebsockethandshakeoptions.html</anchorfile>
-            <anchor>QWebSocketHandshakeOptions-1</anchor>
+            <anchor>QWebSocketHandshakeOptions-2</anchor>
             <arglist>(const QWebSocketHandshakeOptions &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -889,7 +889,7 @@
             <type></type>
             <name>QWebSocketServer</name>
             <anchorfile>qwebsocketserver.html</anchorfile>
-            <anchor>QWebSocketServer-1</anchor>
+            <anchor>QWebSocketServer</anchor>
             <arglist>(const QString &amp;serverName, QWebSocketServer::SslMode secureMode, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

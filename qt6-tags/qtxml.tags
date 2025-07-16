@@ -9,7 +9,7 @@
             <name>operator=</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomAttr &amp;x)</arglist>
+            <arglist>(const QDomAttr &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -23,14 +23,14 @@
             <name>QDomAttr</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>QDomAttr-1</anchor>
-            <arglist>(const QDomAttr &amp;x)</arglist>
+            <arglist>(const QDomAttr &amp;attr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setValue</name>
             <anchorfile>qdomattr.html</anchorfile>
             <anchor>setValue</anchor>
-            <arglist>(const QString &amp;v)</arglist>
+            <arglist>(const QString &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomElement</type>
@@ -77,7 +77,7 @@
             <name>operator=</name>
             <anchorfile>qdomcdatasection.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomCDATASection &amp;x)</arglist>
+            <arglist>(const QDomCDATASection &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -91,7 +91,7 @@
             <name>QDomCDATASection</name>
             <anchorfile>qdomcdatasection.html</anchorfile>
             <anchor>QDomCDATASection-1</anchor>
-            <arglist>(const QDomCDATASection &amp;x)</arglist>
+            <arglist>(const QDomCDATASection &amp;cdataSection)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -110,7 +110,7 @@
             <name>operator=</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomCharacterData &amp;x)</arglist>
+            <arglist>(const QDomCharacterData &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -124,7 +124,7 @@
             <name>QDomCharacterData</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>QDomCharacterData-1</anchor>
-            <arglist>(const QDomCharacterData &amp;x)</arglist>
+            <arglist>(const QDomCharacterData &amp;characterData)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QString</type>
@@ -166,7 +166,7 @@
             <name>setData</name>
             <anchorfile>qdomcharacterdata.html</anchorfile>
             <anchor>setData</anchor>
-            <arglist>(const QString &amp;v)</arglist>
+            <arglist>(const QString &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -199,7 +199,7 @@
             <name>operator=</name>
             <anchorfile>qdomcomment.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomComment &amp;x)</arglist>
+            <arglist>(const QDomComment &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -213,7 +213,7 @@
             <name>QDomComment</name>
             <anchorfile>qdomcomment.html</anchorfile>
             <anchor>QDomComment-1</anchor>
-            <arglist>(const QDomComment &amp;x)</arglist>
+            <arglist>(const QDomComment &amp;comment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -284,7 +284,7 @@
             <name>operator=</name>
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomDocument &amp;x)</arglist>
+            <arglist>(const QDomDocument &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -297,8 +297,8 @@
             <type></type>
             <name>QDomDocument</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>QDomDocument-3</anchor>
-            <arglist>(const QDomDocument &amp;x)</arglist>
+            <anchor>QDomDocument-1</anchor>
+            <arglist>(const QDomDocument &amp;document)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -311,35 +311,35 @@
             <type></type>
             <name>QDomDocument</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>QDomDocument-1</anchor>
+            <anchor>QDomDocument-3</anchor>
             <arglist>(const QString &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument::ParseResult</type>
             <name>setContent</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-8</anchor>
-            <arglist>(QAnyStringView data, QDomDocument::ParseOptions options)</arglist>
+            <anchor>setContent</anchor>
+            <arglist>(QAnyStringView text, QDomDocument::ParseOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument::ParseResult</type>
             <name>setContent</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-9</anchor>
+            <anchor>setContent-1</anchor>
             <arglist>(QIODevice *device, QDomDocument::ParseOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument::ParseResult</type>
             <name>setContent</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-10</anchor>
+            <anchor>setContent-2</anchor>
             <arglist>(QXmlStreamReader *reader, QDomDocument::ParseOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocument::ParseResult</type>
             <name>setContent</name>
             <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent</anchor>
+            <anchor>setContent-3</anchor>
             <arglist>(const QByteArray &amp;data, QDomDocument::ParseOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -409,49 +409,49 @@
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-6</anchor>
+            <anchor>setContent-4</anchor>
             <arglist>(QIODevice *dev, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-3</anchor>
+            <anchor>setContent-7</anchor>
             <arglist>(QIODevice *dev, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-7</anchor>
+            <anchor>setContent-8</anchor>
             <arglist>(QXmlStreamReader *reader, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-4</anchor>
+            <anchor>setContent-5</anchor>
             <arglist>(const QByteArray &amp;buffer, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-1</anchor>
+            <anchor>setContent-9</anchor>
             <arglist>(const QByteArray &amp;data, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-5</anchor>
+            <anchor>setContent-6</anchor>
             <arglist>(const QString &amp;text, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-2</anchor>
+            <anchor>setContent-10</anchor>
             <arglist>(const QString &amp;text, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -537,7 +537,7 @@
             <name>operator=</name>
             <anchorfile>qdomdocumentfragment.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomDocumentFragment &amp;x)</arglist>
+            <arglist>(const QDomDocumentFragment &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -551,7 +551,7 @@
             <name>QDomDocumentFragment</name>
             <anchorfile>qdomdocumentfragment.html</anchorfile>
             <anchor>QDomDocumentFragment-1</anchor>
-            <arglist>(const QDomDocumentFragment &amp;x)</arglist>
+            <arglist>(const QDomDocumentFragment &amp;documentFragment)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -570,7 +570,7 @@
             <name>operator=</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomDocumentType &amp;n)</arglist>
+            <arglist>(const QDomDocumentType &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -584,7 +584,7 @@
             <name>QDomDocumentType</name>
             <anchorfile>qdomdocumenttype.html</anchorfile>
             <anchor>QDomDocumentType-1</anchor>
-            <arglist>(const QDomDocumentType &amp;n)</arglist>
+            <arglist>(const QDomDocumentType &amp;documentType)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNamedNodeMap</type>
@@ -680,7 +680,7 @@
             <name>operator=</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomElement &amp;x)</arglist>
+            <arglist>(const QDomElement &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -694,7 +694,7 @@
             <name>QDomElement</name>
             <anchorfile>qdomelement.html</anchorfile>
             <anchor>QDomElement-1</anchor>
-            <arglist>(const QDomElement &amp;x)</arglist>
+            <arglist>(const QDomElement &amp;element)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -721,14 +721,14 @@
             <type>void</type>
             <name>setAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttribute-6</anchor>
+            <anchor>setAttribute-1</anchor>
             <arglist>(const QString &amp;name, double value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttribute-5</anchor>
+            <anchor>setAttribute-2</anchor>
             <arglist>(const QString &amp;name, float value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -742,21 +742,21 @@
             <type>void</type>
             <name>setAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttribute-1</anchor>
+            <anchor>setAttribute-4</anchor>
             <arglist>(const QString &amp;name, qlonglong value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttribute-2</anchor>
+            <anchor>setAttribute-5</anchor>
             <arglist>(const QString &amp;name, qulonglong value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttribute</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttribute-4</anchor>
+            <anchor>setAttribute-6</anchor>
             <arglist>(const QString &amp;name, uint value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -770,14 +770,14 @@
             <type>void</type>
             <name>setAttributeNS</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttributeNS-5</anchor>
+            <anchor>setAttributeNS-1</anchor>
             <arglist>(const QString &amp;nsURI, const QString &amp;qName, double value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeNS</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttributeNS-1</anchor>
+            <anchor>setAttributeNS-2</anchor>
             <arglist>(const QString &amp;nsURI, const QString &amp;qName, int value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -798,7 +798,7 @@
             <type>void</type>
             <name>setAttributeNS</name>
             <anchorfile>qdomelement.html</anchorfile>
-            <anchor>setAttributeNS-2</anchor>
+            <anchor>setAttributeNS-5</anchor>
             <arglist>(const QString &amp;nsURI, const QString &amp;qName, uint value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -888,7 +888,7 @@
             <name>operator=</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomEntity &amp;x)</arglist>
+            <arglist>(const QDomEntity &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -902,7 +902,7 @@
             <name>QDomEntity</name>
             <anchorfile>qdomentity.html</anchorfile>
             <anchor>QDomEntity-1</anchor>
-            <arglist>(const QDomEntity &amp;x)</arglist>
+            <arglist>(const QDomEntity &amp;entity)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -942,7 +942,7 @@
             <name>operator=</name>
             <anchorfile>qdomentityreference.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomEntityReference &amp;x)</arglist>
+            <arglist>(const QDomEntityReference &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -956,7 +956,7 @@
             <name>QDomEntityReference</name>
             <anchorfile>qdomentityreference.html</anchorfile>
             <anchor>QDomEntityReference-1</anchor>
-            <arglist>(const QDomEntityReference &amp;x)</arglist>
+            <arglist>(const QDomEntityReference &amp;entityReference)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -1011,7 +1011,7 @@
             <name>operator=</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomImplementation &amp;x)</arglist>
+            <arglist>(const QDomImplementation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1025,7 +1025,7 @@
             <name>QDomImplementation</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>QDomImplementation-1</anchor>
-            <arglist>(const QDomImplementation &amp;x)</arglist>
+            <arglist>(const QDomImplementation &amp;implementation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QDomImplementation::InvalidDataPolicy</type>
@@ -1067,14 +1067,14 @@
             <name>operator!=</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomImplementation &amp;x) const const</arglist>
+            <arglist>(const QDomImplementation &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qdomimplementation.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomImplementation &amp;x) const const</arglist>
+            <arglist>(const QDomImplementation &amp;other) const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -1085,7 +1085,7 @@
             <name>operator=</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n)</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1099,7 +1099,7 @@
             <name>QDomNamedNodeMap</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>QDomNamedNodeMap-1</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n)</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;namedNodeMap)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
@@ -1176,14 +1176,14 @@
             <name>operator!=</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n) const const</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qdomnamednodemap.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNamedNodeMap &amp;n) const const</arglist>
+            <arglist>(const QDomNamedNodeMap &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
@@ -1321,7 +1321,7 @@
             <name>operator=</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomNode &amp;n)</arglist>
+            <arglist>(const QDomNode &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode</type>
@@ -1370,7 +1370,7 @@
             <name>QDomNode</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>QDomNode-1</anchor>
-            <arglist>(const QDomNode &amp;n)</arglist>
+            <arglist>(const QDomNode &amp;node)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QTextStream &amp;</type>
@@ -1398,7 +1398,7 @@
             <name>setNodeValue</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>setNodeValue</anchor>
-            <arglist>(const QString &amp;v)</arglist>
+            <arglist>(const QString &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1769,14 +1769,14 @@
             <name>operator!=</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNode &amp;n) const const</arglist>
+            <arglist>(const QDomNode &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qdomnode.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNode &amp;n) const const</arglist>
+            <arglist>(const QDomNode &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
@@ -1808,7 +1808,7 @@
             <name>operator=</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomNodeList &amp;n)</arglist>
+            <arglist>(const QDomNodeList &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1822,7 +1822,7 @@
             <name>QDomNodeList</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>QDomNodeList-1</anchor>
-            <arglist>(const QDomNodeList &amp;n)</arglist>
+            <arglist>(const QDomNodeList &amp;nodeList)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1857,14 +1857,14 @@
             <name>operator!=</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const QDomNodeList &amp;n) const const</arglist>
+            <arglist>(const QDomNodeList &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qdomnodelist.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const QDomNodeList &amp;n) const const</arglist>
+            <arglist>(const QDomNodeList &amp;other) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
@@ -1897,7 +1897,7 @@
             <name>operator=</name>
             <anchorfile>qdomnotation.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomNotation &amp;x)</arglist>
+            <arglist>(const QDomNotation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1911,7 +1911,7 @@
             <name>QDomNotation</name>
             <anchorfile>qdomnotation.html</anchorfile>
             <anchor>QDomNotation-1</anchor>
-            <arglist>(const QDomNotation &amp;x)</arglist>
+            <arglist>(const QDomNotation &amp;notation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -1944,7 +1944,7 @@
             <name>operator=</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomProcessingInstruction &amp;x)</arglist>
+            <arglist>(const QDomProcessingInstruction &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1958,14 +1958,14 @@
             <name>QDomProcessingInstruction</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>QDomProcessingInstruction-1</anchor>
-            <arglist>(const QDomProcessingInstruction &amp;x)</arglist>
+            <arglist>(const QDomProcessingInstruction &amp;processingInstruction)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qdomprocessinginstruction.html</anchorfile>
             <anchor>setData</anchor>
-            <arglist>(const QString &amp;d)</arglist>
+            <arglist>(const QString &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>
@@ -1998,7 +1998,7 @@
             <name>operator=</name>
             <anchorfile>qdomtext.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const QDomText &amp;x)</arglist>
+            <arglist>(const QDomText &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomText</type>
@@ -2019,7 +2019,7 @@
             <name>QDomText</name>
             <anchorfile>qdomtext.html</anchorfile>
             <anchor>QDomText-1</anchor>
-            <arglist>(const QDomText &amp;x)</arglist>
+            <arglist>(const QDomText &amp;text)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomNode::NodeType</type>

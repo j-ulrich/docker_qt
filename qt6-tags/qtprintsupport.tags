@@ -166,14 +166,14 @@
             <type></type>
             <name>QPageSetupDialog</name>
             <anchorfile>qpagesetupdialog.html</anchorfile>
-            <anchor>QPageSetupDialog</anchor>
+            <anchor>QPageSetupDialog-1</anchor>
             <arglist>(QPrinter *printer, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QPageSetupDialog</name>
             <anchorfile>qpagesetupdialog.html</anchorfile>
-            <anchor>QPageSetupDialog-1</anchor>
+            <anchor>QPageSetupDialog</anchor>
             <arglist>(QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -227,14 +227,14 @@
             <type></type>
             <name>QPrintDialog</name>
             <anchorfile>qprintdialog.html</anchorfile>
-            <anchor>QPrintDialog</anchor>
+            <anchor>QPrintDialog-1</anchor>
             <arglist>(QPrinter *printer, QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QPrintDialog</name>
             <anchorfile>qprintdialog.html</anchorfile>
-            <anchor>QPrintDialog-1</anchor>
+            <anchor>QPrintDialog</anchor>
             <arglist>(QWidget *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1619,14 +1619,14 @@
             <type></type>
             <name>QPrinterInfo</name>
             <anchorfile>qprinterinfo.html</anchorfile>
-            <anchor>QPrinterInfo-2</anchor>
+            <anchor>QPrinterInfo-1</anchor>
             <arglist>(const QPrinter &amp;printer)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QPrinterInfo</name>
             <anchorfile>qprinterinfo.html</anchorfile>
-            <anchor>QPrinterInfo-1</anchor>
+            <anchor>QPrinterInfo-2</anchor>
             <arglist>(const QPrinterInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">

@@ -66,14 +66,14 @@
             <type>QGeoAddress &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeoaddress.html</anchorfile>
-            <anchor>operator-eq-2</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoAddress &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoAddress &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeoaddress.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoAddress &amp;address)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -87,14 +87,14 @@
             <type></type>
             <name>QGeoAddress</name>
             <anchorfile>qgeoaddress.html</anchorfile>
-            <anchor>QGeoAddress-2</anchor>
+            <anchor>QGeoAddress-1</anchor>
             <arglist>(QGeoAddress &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoAddress</name>
             <anchorfile>qgeoaddress.html</anchorfile>
-            <anchor>QGeoAddress-1</anchor>
+            <anchor>QGeoAddress-2</anchor>
             <arglist>(const QGeoAddress &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -194,6 +194,13 @@
             <anchorfile>qgeoaddress.html</anchorfile>
             <anchor>setText</anchor>
             <arglist>(const QString &amp;text)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeoaddress.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoAddress &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -308,21 +315,21 @@
             <type>QGeoAreaMonitorInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeoareamonitorinfo.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoAreaMonitorInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoAreaMonitorInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeoareamonitorinfo.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoAreaMonitorInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoAreaMonitorInfo</name>
             <anchorfile>qgeoareamonitorinfo.html</anchorfile>
-            <anchor>QGeoAreaMonitorInfo-2</anchor>
+            <anchor>QGeoAreaMonitorInfo</anchor>
             <arglist>(QGeoAreaMonitorInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -336,7 +343,7 @@
             <type></type>
             <name>QGeoAreaMonitorInfo</name>
             <anchorfile>qgeoareamonitorinfo.html</anchorfile>
-            <anchor>QGeoAreaMonitorInfo</anchor>
+            <anchor>QGeoAreaMonitorInfo-2</anchor>
             <arglist>(const QString &amp;name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -387,6 +394,13 @@
             <anchorfile>qgeoareamonitorinfo.html</anchorfile>
             <anchor>setPersistent</anchor>
             <arglist>(bool isPersistent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeoareamonitorinfo.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoAreaMonitorInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -671,21 +685,21 @@
             <type></type>
             <name>QGeoCircle</name>
             <anchorfile>qgeocircle.html</anchorfile>
-            <anchor>QGeoCircle-2</anchor>
+            <anchor>QGeoCircle-1</anchor>
             <arglist>(const QGeoCircle &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoCircle</name>
             <anchorfile>qgeocircle.html</anchorfile>
-            <anchor>QGeoCircle-1</anchor>
+            <anchor>QGeoCircle-3</anchor>
             <arglist>(const QGeoCoordinate &amp;center, qreal radius)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoCircle</name>
             <anchorfile>qgeocircle.html</anchorfile>
-            <anchor>QGeoCircle-3</anchor>
+            <anchor>QGeoCircle-2</anchor>
             <arglist>(const QGeoShape &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -835,7 +849,7 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;stream, const QGeoCoordinate &amp;coordinate)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -849,14 +863,14 @@
             <type>QGeoCoordinate &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoCoordinate &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoCoordinate &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoCoordinate &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -870,28 +884,28 @@
             <type></type>
             <name>QGeoCoordinate</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>QGeoCoordinate-4</anchor>
+            <anchor>QGeoCoordinate-1</anchor>
             <arglist>(QGeoCoordinate &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoCoordinate</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>QGeoCoordinate-3</anchor>
+            <anchor>QGeoCoordinate-2</anchor>
             <arglist>(const QGeoCoordinate &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoCoordinate</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>QGeoCoordinate-1</anchor>
+            <anchor>QGeoCoordinate-3</anchor>
             <arglist>(double latitude, double longitude)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoCoordinate</name>
             <anchorfile>qgeocoordinate.html</anchorfile>
-            <anchor>QGeoCoordinate-2</anchor>
+            <anchor>QGeoCoordinate-4</anchor>
             <arglist>(double latitude, double longitude, double altitude)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -928,6 +942,13 @@
             <anchorfile>qgeocoordinate.html</anchorfile>
             <anchor>setLongitude</anchor>
             <arglist>(double longitude)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeocoordinate.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoCoordinate &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1031,14 +1052,14 @@
             <type>QGeoLocation &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeolocation.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoLocation &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoLocation &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeolocation.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoLocation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1052,14 +1073,14 @@
             <type></type>
             <name>QGeoLocation</name>
             <anchorfile>qgeolocation.html</anchorfile>
-            <anchor>QGeoLocation-2</anchor>
+            <anchor>QGeoLocation-1</anchor>
             <arglist>(QGeoLocation &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoLocation</name>
             <anchorfile>qgeolocation.html</anchorfile>
-            <anchor>QGeoLocation-1</anchor>
+            <anchor>QGeoLocation-2</anchor>
             <arglist>(const QGeoLocation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1080,7 +1101,7 @@
             <type>size_t</type>
             <name>qHash</name>
             <anchorfile>qgeolocation.html</anchorfile>
-            <anchor>qHash</anchor>
+            <anchor>qHash-2</anchor>
             <arglist>(const QGeoLocation &amp;location, size_t seed)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1110,6 +1131,13 @@
             <anchorfile>qgeolocation.html</anchorfile>
             <anchor>setExtendedAttributes</anchor>
             <arglist>(const QVariantMap &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeolocation.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoLocation &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1176,21 +1204,21 @@
             <type></type>
             <name>QGeoPath</name>
             <anchorfile>qgeopath.html</anchorfile>
-            <anchor>QGeoPath-2</anchor>
+            <anchor>QGeoPath-1</anchor>
             <arglist>(const QGeoPath &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoPath</name>
             <anchorfile>qgeopath.html</anchorfile>
-            <anchor>QGeoPath-3</anchor>
+            <anchor>QGeoPath-2</anchor>
             <arglist>(const QGeoShape &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoPath</name>
             <anchorfile>qgeopath.html</anchorfile>
-            <anchor>QGeoPath-1</anchor>
+            <anchor>QGeoPath-3</anchor>
             <arglist>(const QList&lt;QGeoCoordinate&gt; &amp;path, const qreal &amp;width)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1354,21 +1382,21 @@
             <type></type>
             <name>QGeoPolygon</name>
             <anchorfile>qgeopolygon.html</anchorfile>
-            <anchor>QGeoPolygon-2</anchor>
+            <anchor>QGeoPolygon-1</anchor>
             <arglist>(const QGeoPolygon &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoPolygon</name>
             <anchorfile>qgeopolygon.html</anchorfile>
-            <anchor>QGeoPolygon-3</anchor>
+            <anchor>QGeoPolygon-2</anchor>
             <arglist>(const QGeoShape &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoPolygon</name>
             <anchorfile>qgeopolygon.html</anchorfile>
-            <anchor>QGeoPolygon-1</anchor>
+            <anchor>QGeoPolygon-3</anchor>
             <arglist>(const QList&lt;QGeoCoordinate&gt; &amp;path)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1382,14 +1410,14 @@
             <type>void</type>
             <name>addHole</name>
             <anchorfile>qgeopolygon.html</anchorfile>
-            <anchor>addHole-1</anchor>
+            <anchor>addHole</anchor>
             <arglist>(const QList&lt;QGeoCoordinate&gt; &amp;holePath)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addHole</name>
             <anchorfile>qgeopolygon.html</anchorfile>
-            <anchor>addHole</anchor>
+            <anchor>addHole-1</anchor>
             <arglist>(const QVariant &amp;holePath)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1573,7 +1601,7 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qgeopositioninfo.html</anchorfile>
-            <anchor>operator-lt-lt-2</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;stream, QGeoPositionInfo::Attribute attr)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1601,14 +1629,14 @@
             <type>QGeoPositionInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeopositioninfo.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoPositionInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoPositionInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeopositioninfo.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoPositionInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1622,14 +1650,14 @@
             <type></type>
             <name>QGeoPositionInfo</name>
             <anchorfile>qgeopositioninfo.html</anchorfile>
-            <anchor>QGeoPositionInfo-3</anchor>
+            <anchor>QGeoPositionInfo-1</anchor>
             <arglist>(QGeoPositionInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoPositionInfo</name>
             <anchorfile>qgeopositioninfo.html</anchorfile>
-            <anchor>QGeoPositionInfo-1</anchor>
+            <anchor>QGeoPositionInfo-3</anchor>
             <arglist>(const QGeoCoordinate &amp;coordinate, const QDateTime &amp;timestamp)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1680,6 +1708,13 @@
             <anchorfile>qgeopositioninfo.html</anchorfile>
             <anchor>setTimestamp</anchor>
             <arglist>(const QDateTime &amp;timestamp)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeopositioninfo.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoPositionInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -2066,28 +2101,28 @@
             <type></type>
             <name>QGeoRectangle</name>
             <anchorfile>qgeorectangle.html</anchorfile>
-            <anchor>QGeoRectangle-1</anchor>
+            <anchor>QGeoRectangle-5</anchor>
             <arglist>(const QGeoCoordinate &amp;center, double degreesWidth, double degreesHeight)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoRectangle</name>
             <anchorfile>qgeorectangle.html</anchorfile>
-            <anchor>QGeoRectangle-2</anchor>
+            <anchor>QGeoRectangle-4</anchor>
             <arglist>(const QGeoCoordinate &amp;topLeft, const QGeoCoordinate &amp;bottomRight)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoRectangle</name>
             <anchorfile>qgeorectangle.html</anchorfile>
-            <anchor>QGeoRectangle-4</anchor>
+            <anchor>QGeoRectangle-1</anchor>
             <arglist>(const QGeoRectangle &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoRectangle</name>
             <anchorfile>qgeorectangle.html</anchorfile>
-            <anchor>QGeoRectangle-5</anchor>
+            <anchor>QGeoRectangle-2</anchor>
             <arglist>(const QGeoShape &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2378,7 +2413,7 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;stream, const QGeoSatelliteInfo &amp;info)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2392,14 +2427,14 @@
             <type>QGeoSatelliteInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QGeoSatelliteInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QGeoSatelliteInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QGeoSatelliteInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2413,14 +2448,14 @@
             <type></type>
             <name>QGeoSatelliteInfo</name>
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
-            <anchor>QGeoSatelliteInfo-3</anchor>
+            <anchor>QGeoSatelliteInfo-1</anchor>
             <arglist>(QGeoSatelliteInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QGeoSatelliteInfo</name>
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
-            <anchor>QGeoSatelliteInfo-1</anchor>
+            <anchor>QGeoSatelliteInfo-2</anchor>
             <arglist>(const QGeoSatelliteInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2471,6 +2506,13 @@
             <anchorfile>qgeosatelliteinfo.html</anchorfile>
             <anchor>setSignalStrength</anchor>
             <arglist>(int signalStrength)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qgeosatelliteinfo.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QGeoSatelliteInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

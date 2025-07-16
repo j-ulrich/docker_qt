@@ -23,6 +23,13 @@
             <name>availableDevices</name>
             <anchorfile>qcanbus.html</anchorfile>
             <anchor>availableDevices</anchor>
+            <arglist>(QString *errorMessage) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QCanBusDeviceInfo&gt;</type>
+            <name>availableDevices</name>
+            <anchorfile>qcanbus.html</anchorfile>
+            <anchor>availableDevices-1</anchor>
             <arglist>(const QString &amp;plugin, QString *errorMessage) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -241,7 +248,7 @@
             <type></type>
             <name>QCanBusDevice</name>
             <anchorfile>qcanbusdevice.html</anchorfile>
-            <anchor>QCanBusDevice-1</anchor>
+            <anchor>QCanBusDevice</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -520,14 +527,14 @@
             <name>operator!=</name>
             <anchorfile>qcanbusdevice-filter.html</anchorfile>
             <anchor>operator-not-eq</anchor>
-            <arglist>(const Filter &amp;a, const Filter &amp;b)</arglist>
+            <arglist>(const QCanBusDevice::Filter &amp;a, const QCanBusDevice::Filter &amp;b)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>operator==</name>
             <anchorfile>qcanbusdevice-filter.html</anchorfile>
             <anchor>operator-eq-eq</anchor>
-            <arglist>(const Filter &amp;a, const Filter &amp;b)</arglist>
+            <arglist>(const QCanBusDevice::Filter &amp;a, const QCanBusDevice::Filter &amp;b)</arglist>
         </member>
         <member kind="typedef" type="QCanBusDevice::Filter::FormatFilter">
             <name>FormatFilters</name>
@@ -543,21 +550,21 @@
             <type>QCanBusDeviceInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanbusdeviceinfo.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QCanBusDeviceInfo &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCanBusDeviceInfo &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanbusdeviceinfo.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QCanBusDeviceInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCanBusDeviceInfo</name>
             <anchorfile>qcanbusdeviceinfo.html</anchorfile>
-            <anchor>QCanBusDeviceInfo-1</anchor>
+            <anchor>QCanBusDeviceInfo</anchor>
             <arglist>(const QCanBusDeviceInfo &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -783,14 +790,14 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qcanbusframe.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;out, const QCanBusFrame &amp;frame)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qcanbusframe.html</anchorfile>
-            <anchor>operator-gt-gt-1</anchor>
+            <anchor>operator-gt-gt</anchor>
             <arglist>(QDataStream &amp;in, QCanBusFrame &amp;frame)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -964,7 +971,7 @@
         <name>QCanBusFrame::TimeStamp</name>
         <filename>qcanbusframe-timestamp.html</filename>
         <member kind="function" protection="public" virtualness="non" static="yes">
-            <type>TimeStamp</type>
+            <type>QCanBusFrame::TimeStamp</type>
             <name>fromMicroSeconds</name>
             <anchorfile>qcanbusframe-timestamp.html</anchorfile>
             <anchor>fromMicroSeconds</anchor>
@@ -1045,6 +1052,13 @@
             <anchorfile>qcandbcfileparser.html</anchorfile>
             <anchor>parse-1</anchor>
             <arglist>(const QStringList &amp;fileNames)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>parseData</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>parseData</anchor>
+            <arglist>(QStringView data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1249,14 +1263,14 @@
             <type>QCanMessageDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanmessagedescription.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QCanMessageDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCanMessageDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanmessagedescription.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QCanMessageDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1270,14 +1284,14 @@
             <type></type>
             <name>QCanMessageDescription</name>
             <anchorfile>qcanmessagedescription.html</anchorfile>
-            <anchor>QCanMessageDescription-2</anchor>
+            <anchor>QCanMessageDescription-1</anchor>
             <arglist>(QCanMessageDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCanMessageDescription</name>
             <anchorfile>qcanmessagedescription.html</anchorfile>
-            <anchor>QCanMessageDescription-1</anchor>
+            <anchor>QCanMessageDescription-2</anchor>
             <arglist>(const QCanMessageDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1408,14 +1422,14 @@
             <type>QCanSignalDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcansignaldescription.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QCanSignalDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCanSignalDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcansignaldescription.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QCanSignalDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1429,14 +1443,14 @@
             <type></type>
             <name>QCanSignalDescription</name>
             <anchorfile>qcansignaldescription.html</anchorfile>
-            <anchor>QCanSignalDescription-2</anchor>
+            <anchor>QCanSignalDescription-1</anchor>
             <arglist>(QCanSignalDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCanSignalDescription</name>
             <anchorfile>qcansignaldescription.html</anchorfile>
-            <anchor>QCanSignalDescription-1</anchor>
+            <anchor>QCanSignalDescription-2</anchor>
             <arglist>(const QCanSignalDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1715,14 +1729,14 @@
             <type>QCanUniqueIdDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanuniqueiddescription.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QCanUniqueIdDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QCanUniqueIdDescription &amp;</type>
             <name>operator=</name>
             <anchorfile>qcanuniqueiddescription.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QCanUniqueIdDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1736,14 +1750,14 @@
             <type></type>
             <name>QCanUniqueIdDescription</name>
             <anchorfile>qcanuniqueiddescription.html</anchorfile>
-            <anchor>QCanUniqueIdDescription-2</anchor>
+            <anchor>QCanUniqueIdDescription-1</anchor>
             <arglist>(QCanUniqueIdDescription &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCanUniqueIdDescription</name>
             <anchorfile>qcanuniqueiddescription.html</anchorfile>
-            <anchor>QCanUniqueIdDescription-1</anchor>
+            <anchor>QCanUniqueIdDescription-2</anchor>
             <arglist>(const QCanUniqueIdDescription &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1962,14 +1976,14 @@
             <type></type>
             <name>QModbusDataUnit</name>
             <anchorfile>qmodbusdataunit.html</anchorfile>
-            <anchor>QModbusDataUnit-3</anchor>
+            <anchor>QModbusDataUnit-2</anchor>
             <arglist>(QModbusDataUnit::RegisterType type, int address, const QList&lt;quint16&gt; &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QModbusDataUnit</name>
             <anchorfile>qmodbusdataunit.html</anchorfile>
-            <anchor>QModbusDataUnit-2</anchor>
+            <anchor>QModbusDataUnit-3</anchor>
             <arglist>(QModbusDataUnit::RegisterType type, int address, quint16 size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2789,14 +2803,14 @@
             <type>QDataStream &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qmodbuspdu.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDataStream &amp;stream, const QModbusPdu &amp;pdu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qmodbuspdu.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-1</anchor>
             <arglist>(QDebug debug, const QModbusPdu &amp;pdu)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
@@ -2817,14 +2831,14 @@
             <type></type>
             <name>QModbusPdu</name>
             <anchorfile>qmodbuspdu.html</anchorfile>
-            <anchor>QModbusPdu-1</anchor>
+            <anchor>QModbusPdu-2</anchor>
             <arglist>(QModbusPdu::FunctionCode code, const QByteArray &amp;data)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="non" static="no">
             <type></type>
             <name>QModbusPdu</name>
             <anchorfile>qmodbuspdu.html</anchorfile>
-            <anchor>QModbusPdu-2</anchor>
+            <anchor>QModbusPdu-1</anchor>
             <arglist>(const QModbusPdu &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3025,7 +3039,7 @@
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qmodbusrequest.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-1</anchor>
             <arglist>(QDataStream &amp;stream, QModbusRequest &amp;pdu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3039,14 +3053,14 @@
             <type></type>
             <name>QModbusRequest</name>
             <anchorfile>qmodbusrequest.html</anchorfile>
-            <anchor>QModbusRequest-3</anchor>
+            <anchor>QModbusRequest-2</anchor>
             <arglist>(QModbusPdu::FunctionCode code, Args... data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QModbusRequest</name>
             <anchorfile>qmodbusrequest.html</anchorfile>
-            <anchor>QModbusRequest-2</anchor>
+            <anchor>QModbusRequest-3</anchor>
             <arglist>(QModbusPdu::FunctionCode code, const QByteArray &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3092,7 +3106,7 @@
             <type>QDataStream &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qmodbusresponse.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-2</anchor>
             <arglist>(QDataStream &amp;stream, QModbusResponse &amp;pdu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3106,14 +3120,14 @@
             <type></type>
             <name>QModbusResponse</name>
             <anchorfile>qmodbusresponse.html</anchorfile>
-            <anchor>QModbusResponse-3</anchor>
+            <anchor>QModbusResponse-2</anchor>
             <arglist>(QModbusPdu::FunctionCode code, Args... data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QModbusResponse</name>
             <anchorfile>qmodbusresponse.html</anchorfile>
-            <anchor>QModbusResponse-2</anchor>
+            <anchor>QModbusResponse-3</anchor>
             <arglist>(QModbusPdu::FunctionCode code, const QByteArray &amp;data)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

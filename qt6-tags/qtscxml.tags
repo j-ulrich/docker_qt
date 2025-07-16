@@ -335,7 +335,7 @@
             <type></type>
             <name>ForeachLoopBody</name>
             <anchorfile>qscxmldatamodel-foreachloopbody.html</anchorfile>
-            <anchor>ForeachLoopBody-1</anchor>
+            <anchor>ForeachLoopBody</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="pure" static="no">
@@ -393,14 +393,14 @@
             <type></type>
             <name>QScxmlError</name>
             <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QScxmlError-2</anchor>
+            <anchor>QScxmlError-1</anchor>
             <arglist>(const QScxmlError &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QScxmlError</name>
             <anchorfile>qscxmlerror.html</anchorfile>
-            <anchor>QScxmlError-1</anchor>
+            <anchor>QScxmlError-2</anchor>
             <arglist>(const QString &amp;fileName, int line, int column, const QString &amp;description)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1088,12 +1088,12 @@
             <type>QMetaObject::Connection</type>
             <name>connectToEvent</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToEvent-2</anchor>
+            <anchor>connectToEvent</anchor>
             <arglist>(const QString &amp;scxmlEventSpec, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMetaObject::Connection</type>
-            <name>connectToEvent</name>
+            <name>connectToState</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
             <anchor>connectToEvent-1</anchor>
             <arglist>(const QString &amp;scxmlEventSpec, const QObject *context, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
@@ -1102,14 +1102,14 @@
             <type>QMetaObject::Connection</type>
             <name>connectToEvent</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToEvent</anchor>
+            <anchor>connectToEvent-2</anchor>
             <arglist>(const QString &amp;scxmlEventSpec, const QObject *receiver, const char *method, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMetaObject::Connection</type>
             <name>connectToState</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToState-2</anchor>
+            <anchor>connectToState</anchor>
             <arglist>(const QString &amp;scxmlStateName, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1123,7 +1123,7 @@
             <type>QMetaObject::Connection</type>
             <name>connectToState</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToState</anchor>
+            <anchor>connectToState-2</anchor>
             <arglist>(const QString &amp;scxmlStateName, const QObject *receiver, const char *method, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -1158,14 +1158,14 @@
             <type>std::function&lt;void (bool)&gt;</type>
             <name>onEntry</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>onEntry-1</anchor>
+            <anchor>onEntry</anchor>
             <arglist>(bool)&gt; onEntry(Functor functor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>std::function&lt;void (bool)&gt;</type>
             <name>onEntry</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>onEntry</anchor>
+            <anchor>onEntry-1</anchor>
             <arglist>(bool)&gt; onEntry(const QObject *receiver, const char *method)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -1179,14 +1179,14 @@
             <type>std::function&lt;void (bool)&gt;</type>
             <name>onExit</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>onExit-1</anchor>
+            <anchor>onExit</anchor>
             <arglist>(bool)&gt; onExit(Functor functor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>std::function&lt;void (bool)&gt;</type>
             <name>onExit</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>onExit</anchor>
+            <anchor>onExit-1</anchor>
             <arglist>(bool)&gt; onExit(const QObject *receiver, const char *method)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">

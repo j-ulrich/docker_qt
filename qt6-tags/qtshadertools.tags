@@ -47,6 +47,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setMultiViewCount</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setMultiViewCount</anchor>
+            <arglist>(int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setPerTargetCompilation</name>
             <anchorfile>qshaderbaker.html</anchorfile>
             <anchor>setPerTargetCompilation</anchor>

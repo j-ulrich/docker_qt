@@ -7,7 +7,7 @@
             <type></type>
             <name>QAbstractOpenGLFunctions</name>
             <anchorfile>qabstractopenglfunctions.html</anchorfile>
-            <anchor>QAbstractOpenGLFunctions-1</anchor>
+            <anchor>QAbstractOpenGLFunctions</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -185,6 +185,13 @@
             <name>operator=</name>
             <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>operator-eq</anchor>
+            <arglist>(QOpenGLBuffer &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpenGLBuffer &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qopenglbuffer.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QOpenGLBuffer &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -206,13 +213,20 @@
             <name>QOpenGLBuffer</name>
             <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>QOpenGLBuffer-1</anchor>
-            <arglist>(QOpenGLBuffer::Type type)</arglist>
+            <arglist>(QOpenGLBuffer &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLBuffer</name>
             <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>QOpenGLBuffer-2</anchor>
+            <arglist>(QOpenGLBuffer::Type type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpenGLBuffer</name>
+            <anchorfile>qopenglbuffer.html</anchorfile>
+            <anchor>QOpenGLBuffer-3</anchor>
             <arglist>(const QOpenGLBuffer &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -699,21 +713,21 @@
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
-            <anchor>operator-lt-lt-2</anchor>
+            <anchor>operator-lt-lt</anchor>
             <arglist>(QDebug debug, QOpenGLDebugMessage::Severity severity)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-1</anchor>
             <arglist>(QDebug debug, QOpenGLDebugMessage::Source source)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDebug</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
-            <anchor>operator-lt-lt-1</anchor>
+            <anchor>operator-lt-lt-2</anchor>
             <arglist>(QDebug debug, QOpenGLDebugMessage::Type type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -727,14 +741,14 @@
             <type>QOpenGLDebugMessage &amp;</type>
             <name>operator=</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QOpenGLDebugMessage &amp;&amp;debugMessage)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QOpenGLDebugMessage &amp;</type>
             <name>operator=</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QOpenGLDebugMessage &amp;debugMessage)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -770,7 +784,7 @@
             <name>swap</name>
             <anchorfile>qopengldebugmessage.html</anchorfile>
             <anchor>swap</anchor>
-            <arglist>(QOpenGLDebugMessage &amp;debugMessage)</arglist>
+            <arglist>(QOpenGLDebugMessage &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -921,35 +935,35 @@
             <type></type>
             <name>QOpenGLFramebufferObject</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>QOpenGLFramebufferObject-2</anchor>
+            <anchor>QOpenGLFramebufferObject-4</anchor>
             <arglist>(const QSize &amp;size, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internalFormat)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLFramebufferObject</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>QOpenGLFramebufferObject-4</anchor>
+            <anchor>QOpenGLFramebufferObject-1</anchor>
             <arglist>(const QSize &amp;size, const QOpenGLFramebufferObjectFormat &amp;format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLFramebufferObject</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>QOpenGLFramebufferObject-1</anchor>
+            <anchor>QOpenGLFramebufferObject-2</anchor>
             <arglist>(int width, int height, GLenum target)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLFramebufferObject</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>QOpenGLFramebufferObject-3</anchor>
+            <anchor>QOpenGLFramebufferObject-5</anchor>
             <arglist>(int width, int height, QOpenGLFramebufferObject::Attachment attachment, GLenum target, GLenum internalFormat)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLFramebufferObject</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>QOpenGLFramebufferObject-5</anchor>
+            <anchor>QOpenGLFramebufferObject-3</anchor>
             <arglist>(int width, int height, const QOpenGLFramebufferObjectFormat &amp;format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1005,7 +1019,7 @@
             <type>void</type>
             <name>blitFramebuffer</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>blitFramebuffer-3</anchor>
+            <anchor>blitFramebuffer-1</anchor>
             <arglist>(QOpenGLFramebufferObject *target, QOpenGLFramebufferObject *source, GLbitfield buffers, GLenum filter)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -1019,7 +1033,7 @@
             <type>void</type>
             <name>blitFramebuffer</name>
             <anchorfile>qopenglframebufferobject.html</anchorfile>
-            <anchor>blitFramebuffer-1</anchor>
+            <anchor>blitFramebuffer-3</anchor>
             <arglist>(QOpenGLFramebufferObject *target, const QRect &amp;targetRect, QOpenGLFramebufferObject *source, const QRect &amp;sourceRect, GLbitfield buffers, GLenum filter, int readColorAttachmentIndex, int drawColorAttachmentIndex)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -1577,6 +1591,13 @@
             <arglist>(bool swapBytes)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qopenglpixeltransferoptions.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QOpenGLPixelTransferOptions &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>~QOpenGLPixelTransferOptions</name>
             <anchorfile>qopenglpixeltransferoptions.html</anchorfile>
@@ -1959,28 +1980,28 @@
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-5</anchor>
+            <anchor>setAttributeArray-8</anchor>
             <arglist>(const char *name, const GLfloat *values, int tupleSize, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-6</anchor>
+            <anchor>setAttributeArray-5</anchor>
             <arglist>(const char *name, const QVector2D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-7</anchor>
+            <anchor>setAttributeArray-6</anchor>
             <arglist>(const char *name, const QVector3D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-8</anchor>
+            <anchor>setAttributeArray-7</anchor>
             <arglist>(const char *name, const QVector4D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1994,28 +2015,28 @@
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray</anchor>
+            <anchor>setAttributeArray-3</anchor>
             <arglist>(int location, const GLfloat *values, int tupleSize, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-1</anchor>
+            <anchor>setAttributeArray</anchor>
             <arglist>(int location, const QVector2D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-2</anchor>
+            <anchor>setAttributeArray-1</anchor>
             <arglist>(int location, const QVector3D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeArray-3</anchor>
+            <anchor>setAttributeArray-2</anchor>
             <arglist>(int location, const QVector4D *values, int stride)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2043,56 +2064,56 @@
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-10</anchor>
+            <anchor>setAttributeValue-14</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-11</anchor>
+            <anchor>setAttributeValue-15</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y, GLfloat z)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-12</anchor>
+            <anchor>setAttributeValue-17</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y, GLfloat z, GLfloat w)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-17</anchor>
+            <anchor>setAttributeValue-16</anchor>
             <arglist>(const char *name, const GLfloat *values, int columns, int rows)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-16</anchor>
+            <anchor>setAttributeValue-10</anchor>
             <arglist>(const char *name, const QColor &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-13</anchor>
+            <anchor>setAttributeValue-11</anchor>
             <arglist>(const char *name, const QVector2D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-14</anchor>
+            <anchor>setAttributeValue-12</anchor>
             <arglist>(const char *name, const QVector3D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-15</anchor>
+            <anchor>setAttributeValue-13</anchor>
             <arglist>(const char *name, const QVector4D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2106,56 +2127,56 @@
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-1</anchor>
+            <anchor>setAttributeValue-5</anchor>
             <arglist>(int location, GLfloat x, GLfloat y)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-2</anchor>
+            <anchor>setAttributeValue-6</anchor>
             <arglist>(int location, GLfloat x, GLfloat y, GLfloat z)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-3</anchor>
+            <anchor>setAttributeValue-8</anchor>
             <arglist>(int location, GLfloat x, GLfloat y, GLfloat z, GLfloat w)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-8</anchor>
+            <anchor>setAttributeValue-7</anchor>
             <arglist>(int location, const GLfloat *values, int columns, int rows)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-7</anchor>
+            <anchor>setAttributeValue-1</anchor>
             <arglist>(int location, const QColor &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-4</anchor>
+            <anchor>setAttributeValue-2</anchor>
             <arglist>(int location, const QVector2D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-5</anchor>
+            <anchor>setAttributeValue-3</anchor>
             <arglist>(int location, const QVector3D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAttributeValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setAttributeValue-6</anchor>
+            <anchor>setAttributeValue-4</anchor>
             <arglist>(int location, const QVector4D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2183,189 +2204,189 @@
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-27</anchor>
+            <anchor>setUniformValue-24</anchor>
             <arglist>(const char *name, GLfloat value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-30</anchor>
+            <anchor>setUniformValue-51</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-31</anchor>
+            <anchor>setUniformValue-52</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y, GLfloat z)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-32</anchor>
+            <anchor>setUniformValue-53</anchor>
             <arglist>(const char *name, GLfloat x, GLfloat y, GLfloat z, GLfloat w)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-28</anchor>
+            <anchor>setUniformValue-25</anchor>
             <arglist>(const char *name, GLint value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-29</anchor>
+            <anchor>setUniformValue-26</anchor>
             <arglist>(const char *name, GLuint value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-50</anchor>
-            <arglist>(const char *name, const GLfloat [2][2] value)</arglist>
+            <anchor>setUniformValue-27</anchor>
+            <arglist>(const char *name, const GLfloat[2][2] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-51</anchor>
-            <arglist>(const char *name, const GLfloat [3][3] value)</arglist>
+            <anchor>setUniformValue-28</anchor>
+            <arglist>(const char *name, const GLfloat[3][3] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-52</anchor>
-            <arglist>(const char *name, const GLfloat [4][4] value)</arglist>
+            <anchor>setUniformValue-29</anchor>
+            <arglist>(const char *name, const GLfloat[4][4] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-36</anchor>
+            <anchor>setUniformValue-30</anchor>
             <arglist>(const char *name, const QColor &amp;color)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-41</anchor>
+            <anchor>setUniformValue-31</anchor>
             <arglist>(const char *name, const QMatrix2x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-42</anchor>
+            <anchor>setUniformValue-32</anchor>
             <arglist>(const char *name, const QMatrix2x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-43</anchor>
+            <anchor>setUniformValue-33</anchor>
             <arglist>(const char *name, const QMatrix2x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-44</anchor>
+            <anchor>setUniformValue-34</anchor>
             <arglist>(const char *name, const QMatrix3x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-45</anchor>
+            <anchor>setUniformValue-35</anchor>
             <arglist>(const char *name, const QMatrix3x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-46</anchor>
+            <anchor>setUniformValue-36</anchor>
             <arglist>(const char *name, const QMatrix3x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-47</anchor>
+            <anchor>setUniformValue-37</anchor>
             <arglist>(const char *name, const QMatrix4x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-48</anchor>
+            <anchor>setUniformValue-38</anchor>
             <arglist>(const char *name, const QMatrix4x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-49</anchor>
+            <anchor>setUniformValue-39</anchor>
             <arglist>(const char *name, const QMatrix4x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-37</anchor>
+            <anchor>setUniformValue-40</anchor>
             <arglist>(const char *name, const QPoint &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-38</anchor>
+            <anchor>setUniformValue-41</anchor>
             <arglist>(const char *name, const QPointF &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-39</anchor>
+            <anchor>setUniformValue-42</anchor>
             <arglist>(const char *name, const QSize &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-40</anchor>
+            <anchor>setUniformValue-43</anchor>
             <arglist>(const char *name, const QSizeF &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-53</anchor>
+            <anchor>setUniformValue-44</anchor>
             <arglist>(const char *name, const QTransform &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-33</anchor>
+            <anchor>setUniformValue-45</anchor>
             <arglist>(const char *name, const QVector2D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-34</anchor>
+            <anchor>setUniformValue-46</anchor>
             <arglist>(const char *name, const QVector3D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-35</anchor>
+            <anchor>setUniformValue-47</anchor>
             <arglist>(const char *name, const QVector4D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2379,21 +2400,21 @@
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-3</anchor>
+            <anchor>setUniformValue-21</anchor>
             <arglist>(int location, GLfloat x, GLfloat y)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-4</anchor>
+            <anchor>setUniformValue-22</anchor>
             <arglist>(int location, GLfloat x, GLfloat y, GLfloat z)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-5</anchor>
+            <anchor>setUniformValue-23</anchor>
             <arglist>(int location, GLfloat x, GLfloat y, GLfloat z, GLfloat w)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2414,357 +2435,357 @@
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-23</anchor>
-            <arglist>(int location, const GLfloat [2][2] value)</arglist>
+            <anchor>setUniformValue-48</anchor>
+            <arglist>(int location, const GLfloat[2][2] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-24</anchor>
-            <arglist>(int location, const GLfloat [3][3] value)</arglist>
+            <anchor>setUniformValue-49</anchor>
+            <arglist>(int location, const GLfloat[3][3] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-25</anchor>
-            <arglist>(int location, const GLfloat [4][4] value)</arglist>
+            <anchor>setUniformValue-50</anchor>
+            <arglist>(int location, const GLfloat[4][4] value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-9</anchor>
+            <anchor>setUniformValue-3</anchor>
             <arglist>(int location, const QColor &amp;color)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-14</anchor>
+            <anchor>setUniformValue-4</anchor>
             <arglist>(int location, const QMatrix2x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-15</anchor>
+            <anchor>setUniformValue-5</anchor>
             <arglist>(int location, const QMatrix2x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-16</anchor>
+            <anchor>setUniformValue-6</anchor>
             <arglist>(int location, const QMatrix2x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-17</anchor>
+            <anchor>setUniformValue-7</anchor>
             <arglist>(int location, const QMatrix3x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-18</anchor>
+            <anchor>setUniformValue-8</anchor>
             <arglist>(int location, const QMatrix3x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-19</anchor>
+            <anchor>setUniformValue-9</anchor>
             <arglist>(int location, const QMatrix3x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-20</anchor>
+            <anchor>setUniformValue-10</anchor>
             <arglist>(int location, const QMatrix4x2 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-21</anchor>
+            <anchor>setUniformValue-11</anchor>
             <arglist>(int location, const QMatrix4x3 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-22</anchor>
+            <anchor>setUniformValue-12</anchor>
             <arglist>(int location, const QMatrix4x4 &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-10</anchor>
+            <anchor>setUniformValue-13</anchor>
             <arglist>(int location, const QPoint &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-11</anchor>
+            <anchor>setUniformValue-14</anchor>
             <arglist>(int location, const QPointF &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-12</anchor>
+            <anchor>setUniformValue-15</anchor>
             <arglist>(int location, const QSize &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-13</anchor>
+            <anchor>setUniformValue-16</anchor>
             <arglist>(int location, const QSizeF &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-26</anchor>
+            <anchor>setUniformValue-17</anchor>
             <arglist>(int location, const QTransform &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-6</anchor>
+            <anchor>setUniformValue-18</anchor>
             <arglist>(int location, const QVector2D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-7</anchor>
+            <anchor>setUniformValue-19</anchor>
             <arglist>(int location, const QVector3D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValue</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValue-8</anchor>
+            <anchor>setUniformValue-20</anchor>
             <arglist>(int location, const QVector4D &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-15</anchor>
+            <anchor>setUniformValueArray-29</anchor>
             <arglist>(const char *name, const GLfloat *values, int count, int tupleSize)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-16</anchor>
+            <anchor>setUniformValueArray-15</anchor>
             <arglist>(const char *name, const GLint *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-17</anchor>
+            <anchor>setUniformValueArray-16</anchor>
             <arglist>(const char *name, const GLuint *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-21</anchor>
+            <anchor>setUniformValueArray-17</anchor>
             <arglist>(const char *name, const QMatrix2x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-22</anchor>
+            <anchor>setUniformValueArray-18</anchor>
             <arglist>(const char *name, const QMatrix2x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-23</anchor>
+            <anchor>setUniformValueArray-19</anchor>
             <arglist>(const char *name, const QMatrix2x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-24</anchor>
+            <anchor>setUniformValueArray-20</anchor>
             <arglist>(const char *name, const QMatrix3x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-25</anchor>
+            <anchor>setUniformValueArray-21</anchor>
             <arglist>(const char *name, const QMatrix3x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-26</anchor>
+            <anchor>setUniformValueArray-22</anchor>
             <arglist>(const char *name, const QMatrix3x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-27</anchor>
+            <anchor>setUniformValueArray-23</anchor>
             <arglist>(const char *name, const QMatrix4x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-28</anchor>
+            <anchor>setUniformValueArray-24</anchor>
             <arglist>(const char *name, const QMatrix4x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-29</anchor>
+            <anchor>setUniformValueArray-25</anchor>
             <arglist>(const char *name, const QMatrix4x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-18</anchor>
+            <anchor>setUniformValueArray-26</anchor>
             <arglist>(const char *name, const QVector2D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-19</anchor>
+            <anchor>setUniformValueArray-27</anchor>
             <arglist>(const char *name, const QVector3D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-20</anchor>
+            <anchor>setUniformValueArray-28</anchor>
             <arglist>(const char *name, const QVector4D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray</anchor>
+            <anchor>setUniformValueArray-14</anchor>
             <arglist>(int location, const GLfloat *values, int count, int tupleSize)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-1</anchor>
+            <anchor>setUniformValueArray</anchor>
             <arglist>(int location, const GLint *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-2</anchor>
+            <anchor>setUniformValueArray-1</anchor>
             <arglist>(int location, const GLuint *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-6</anchor>
+            <anchor>setUniformValueArray-2</anchor>
             <arglist>(int location, const QMatrix2x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-7</anchor>
+            <anchor>setUniformValueArray-3</anchor>
             <arglist>(int location, const QMatrix2x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-8</anchor>
+            <anchor>setUniformValueArray-4</anchor>
             <arglist>(int location, const QMatrix2x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-9</anchor>
+            <anchor>setUniformValueArray-5</anchor>
             <arglist>(int location, const QMatrix3x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-10</anchor>
+            <anchor>setUniformValueArray-6</anchor>
             <arglist>(int location, const QMatrix3x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-11</anchor>
+            <anchor>setUniformValueArray-7</anchor>
             <arglist>(int location, const QMatrix3x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-12</anchor>
+            <anchor>setUniformValueArray-8</anchor>
             <arglist>(int location, const QMatrix4x2 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-13</anchor>
+            <anchor>setUniformValueArray-9</anchor>
             <arglist>(int location, const QMatrix4x3 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-14</anchor>
+            <anchor>setUniformValueArray-10</anchor>
             <arglist>(int location, const QMatrix4x4 *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-3</anchor>
+            <anchor>setUniformValueArray-11</anchor>
             <arglist>(int location, const QVector2D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-4</anchor>
+            <anchor>setUniformValueArray-12</anchor>
             <arglist>(int location, const QVector3D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setUniformValueArray</name>
             <anchorfile>qopenglshaderprogram.html</anchorfile>
-            <anchor>setUniformValueArray-5</anchor>
+            <anchor>setUniformValueArray-13</anchor>
             <arglist>(int location, const QVector4D *values, int count)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -4656,14 +4677,14 @@
             <type>void</type>
             <name>setCompressedData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setCompressedData-4</anchor>
+            <anchor>setCompressedData-1</anchor>
             <arglist>(int dataSize, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setCompressedData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setCompressedData-3</anchor>
+            <anchor>setCompressedData-2</anchor>
             <arglist>(int mipLevel, int dataSize, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4677,28 +4698,28 @@
             <type>void</type>
             <name>setCompressedData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setCompressedData-2</anchor>
+            <anchor>setCompressedData-3</anchor>
             <arglist>(int mipLevel, int layer, int dataSize, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setCompressedData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setCompressedData-1</anchor>
+            <anchor>setCompressedData-4</anchor>
             <arglist>(int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-4</anchor>
+            <anchor>setData-2</anchor>
             <arglist>(QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-10</anchor>
+            <anchor>setData-1</anchor>
             <arglist>(const QImage &amp;image, QOpenGLTexture::MipMapGeneration genMipMaps)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4719,49 +4740,49 @@
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-2</anchor>
+            <anchor>setData-4</anchor>
             <arglist>(int mipLevel, int layer, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-1</anchor>
+            <anchor>setData-5</anchor>
             <arglist>(int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-5</anchor>
+            <anchor>setData-6</anchor>
             <arglist>(int xOffset, int yOffset, int zOffset, int width, int height, int depth, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-6</anchor>
+            <anchor>setData-7</anchor>
             <arglist>(int xOffset, int yOffset, int zOffset, int width, int height, int depth, int mipLevel, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-8</anchor>
+            <anchor>setData-9</anchor>
             <arglist>(int xOffset, int yOffset, int zOffset, int width, int height, int depth, int mipLevel, int layer, QOpenGLTexture::CubeMapFace face, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-9</anchor>
+            <anchor>setData-10</anchor>
             <arglist>(int xOffset, int yOffset, int zOffset, int width, int height, int depth, int mipLevel, int layer, QOpenGLTexture::CubeMapFace face, int layerCount, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setData</name>
             <anchorfile>qopengltexture.html</anchorfile>
-            <anchor>setData-7</anchor>
+            <anchor>setData-8</anchor>
             <arglist>(int xOffset, int yOffset, int zOffset, int width, int height, int depth, int mipLevel, int layer, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void *data, const QOpenGLPixelTransferOptions *const options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -5541,14 +5562,14 @@
             <type></type>
             <name>QOpenGLVersionProfile</name>
             <anchorfile>qopenglversionprofile.html</anchorfile>
-            <anchor>QOpenGLVersionProfile-2</anchor>
+            <anchor>QOpenGLVersionProfile-1</anchor>
             <arglist>(const QOpenGLVersionProfile &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QOpenGLVersionProfile</name>
             <anchorfile>qopenglversionprofile.html</anchorfile>
-            <anchor>QOpenGLVersionProfile-1</anchor>
+            <anchor>QOpenGLVersionProfile-2</anchor>
             <arglist>(const QSurfaceFormat &amp;format)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

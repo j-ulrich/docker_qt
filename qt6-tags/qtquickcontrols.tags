@@ -54,6 +54,20 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>animateClick</name>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
+            <anchor>animateClick-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>click</name>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
+            <anchor>click-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>toggle</name>
             <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>toggle-method</anchor>
@@ -1176,6 +1190,27 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
+            <name>popCurrentItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>popCurrentItem-method</anchor>
+            <arglist>(operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>popToIndex</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>popToIndex-method</anchor>
+            <arglist>(index, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>popToItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>popToItem-method</anchor>
+            <arglist>(item, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
             <name>push</name>
             <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>push-method</anchor>
@@ -1183,10 +1218,66 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
+            <name>pushItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>pushItem-method</anchor>
+            <arglist>(component, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>pushItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>pushItem-method</anchor>
+            <arglist>(item, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>pushItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>pushItem-method</anchor>
+            <arglist>(url, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>pushItems</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>pushItems-method</anchor>
+            <arglist>(items, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
             <name>replace</name>
             <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>replace-method</anchor>
             <arglist>(target, item, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>replaceCurrentItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>replaceCurrentItem-method</anchor>
+            <arglist>(component, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>replaceCurrentItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>replaceCurrentItem-method</anchor>
+            <arglist>(item, properties, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>replaceCurrentItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>replaceCurrentItem-method</anchor>
+            <arglist>(items, operation)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>replaceCurrentItem</name>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
+            <anchor>replaceCurrentItem-method</anchor>
+            <arglist>(url, properties, operation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

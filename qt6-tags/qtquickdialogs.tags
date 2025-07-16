@@ -33,7 +33,7 @@
             <name>done</name>
             <anchorfile>qml-qtquick-dialogs-dialog.html</anchorfile>
             <anchor>done-method</anchor>
-            <arglist>(StandardCode result)</arglist>
+            <arglist>(int result)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

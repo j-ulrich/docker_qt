@@ -29,21 +29,21 @@
             <type>bool</type>
             <name>appendRecord</name>
             <anchorfile>qndeffilter.html</anchorfile>
-            <anchor>appendRecord-1</anchor>
+            <anchor>appendRecord-2</anchor>
             <arglist>(QNdefRecord::TypeNameFormat typeNameFormat, const QByteArray &amp;type, unsigned int min, unsigned int max)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>appendRecord</name>
             <anchorfile>qndeffilter.html</anchorfile>
-            <anchor>appendRecord-2</anchor>
+            <anchor>appendRecord</anchor>
             <arglist>(const QNdefFilter::Record &amp;record)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>appendRecord</name>
             <anchorfile>qndeffilter.html</anchorfile>
-            <anchor>appendRecord</anchor>
+            <anchor>appendRecord-1</anchor>
             <arglist>(unsigned int min, unsigned int max)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -108,14 +108,14 @@
             <type>QNdefMessage &amp;</type>
             <name>operator=</name>
             <anchorfile>qndefmessage.html</anchorfile>
-            <anchor>operator-eq-1</anchor>
+            <anchor>operator-eq</anchor>
             <arglist>(QNdefMessage &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QNdefMessage &amp;</type>
             <name>operator=</name>
             <anchorfile>qndefmessage.html</anchorfile>
-            <anchor>operator-eq</anchor>
+            <anchor>operator-eq-1</anchor>
             <arglist>(const QNdefMessage &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -136,7 +136,7 @@
             <type></type>
             <name>QNdefMessage</name>
             <anchorfile>qndefmessage.html</anchorfile>
-            <anchor>QNdefMessage-3</anchor>
+            <anchor>QNdefMessage-1</anchor>
             <arglist>(const QList&lt;QNdefRecord&gt; &amp;records)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -150,7 +150,7 @@
             <type></type>
             <name>QNdefMessage</name>
             <anchorfile>qndefmessage.html</anchorfile>
-            <anchor>QNdefMessage-1</anchor>
+            <anchor>QNdefMessage-3</anchor>
             <arglist>(const QNdefRecord &amp;record)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -252,14 +252,14 @@
             <type></type>
             <name>QNdefNfcSmartPosterRecord</name>
             <anchorfile>qndefnfcsmartposterrecord.html</anchorfile>
-            <anchor>QNdefNfcSmartPosterRecord-2</anchor>
+            <anchor>QNdefNfcSmartPosterRecord-1</anchor>
             <arglist>(const QNdefNfcSmartPosterRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QNdefNfcSmartPosterRecord</name>
             <anchorfile>qndefnfcsmartposterrecord.html</anchorfile>
-            <anchor>QNdefNfcSmartPosterRecord-1</anchor>
+            <anchor>QNdefNfcSmartPosterRecord-2</anchor>
             <arglist>(const QNdefRecord &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -280,14 +280,14 @@
             <type>bool</type>
             <name>removeIcon</name>
             <anchorfile>qndefnfcsmartposterrecord.html</anchorfile>
-            <anchor>removeIcon-1</anchor>
+            <anchor>removeIcon</anchor>
             <arglist>(const QByteArray &amp;type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>removeIcon</name>
             <anchorfile>qndefnfcsmartposterrecord.html</anchorfile>
-            <anchor>removeIcon</anchor>
+            <anchor>removeIcon-1</anchor>
             <arglist>(const QNdefNfcIconRecord &amp;icon)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1012,6 +1012,12 @@
             <anchor>Error-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>UnsupportedTargetError</name>
+            <anchorfile>qnearfieldtarget.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="enumeration">
             <name>Type</name>
             <anchorfile>qnearfieldtarget.html</anchorfile>
@@ -1195,11 +1201,11 @@
         <name>QNearFieldTarget::RequestId</name>
         <filename>qnearfieldtarget-requestid.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>RequestId &amp;</type>
+            <type>QNearFieldTarget::RequestId &amp;</type>
             <name>operator=</name>
             <anchorfile>qnearfieldtarget-requestid.html</anchorfile>
             <anchor>operator-eq</anchor>
-            <arglist>(const RequestId &amp;other)</arglist>
+            <arglist>(const QNearFieldTarget::RequestId &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1213,7 +1219,7 @@
             <name>RequestId</name>
             <anchorfile>qnearfieldtarget-requestid.html</anchorfile>
             <anchor>RequestId-1</anchor>
-            <arglist>(const RequestId &amp;other)</arglist>
+            <arglist>(const QNearFieldTarget::RequestId &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

@@ -150,20 +150,6 @@
         <name>QtQml.Models.ItemSelectionModel</name>
         <filename>qml-qtqml-models-itemselectionmodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QModelIndexList</type>
-            <name>selectedColumns</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>selectedColumns-method</anchor>
-            <arglist>(int row)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QModelIndexList</type>
-            <name>selectedRows</name>
-            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
-            <anchor>selectedRows-method</anchor>
-            <arglist>(int column)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>columnIntersectsSelection</name>
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
@@ -204,6 +190,20 @@
             <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
             <anchor>currentChanged-signal</anchor>
             <arglist>(QModelIndex current, QModelIndex previous)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>list&lt;var&gt;</type>
+            <name>selectedColumns</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>selectedColumns-method</anchor>
+            <arglist>(int row)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>list&lt;var&gt;</type>
+            <name>selectedRows</name>
+            <anchorfile>qml-qtqml-models-itemselectionmodel.html</anchorfile>
+            <anchor>selectedRows-method</anchor>
+            <arglist>(int column)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
