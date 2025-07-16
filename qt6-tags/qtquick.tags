@@ -291,6 +291,13 @@
             <anchor>returnToBounds-method</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>returnedToBounds</name>
+            <anchorfile>qml-qt-labs-animation-boundaryrule.html</anchorfile>
+            <anchor>returnedToBounds-signal</anchor>
+            <arglist>()</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Canvas</name>
@@ -421,8 +428,8 @@
         <filename>qml-qtquick-canvaspixelarray.html</filename>
     </compound>
     <compound kind="class">
-        <name>CloseEvent</name>
-        <filename>qml-closeevent.html</filename>
+        <name>QtQuick.CloseEvent</name>
+        <filename>qml-qtquick-closeevent.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.ColorAnimation</name>
@@ -1340,8 +1347,8 @@
         <filename>qml-qtquick-particles-imageparticle.html</filename>
     </compound>
     <compound kind="class">
-        <name>InputMethod</name>
-        <filename>qml-inputmethod.html</filename>
+        <name>QtQuick.InputMethod</name>
+        <filename>qml-qtquick-inputmethod.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.IntValidator</name>
@@ -1817,6 +1824,10 @@
         <filename>qml-qtquick-layouts-layout.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.Layouts.LayoutItemProxy</name>
+        <filename>qml-qtquick-layouts-layoutitemproxy.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.LayoutMirroring</name>
         <filename>qml-qtquick-layoutmirroring.html</filename>
     </compound>
@@ -2026,6 +2037,17 @@
     <compound kind="class">
         <name>QtQuick.MouseEvent</name>
         <filename>qml-qtquick-mouseevent.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.Effects.MultiEffect</name>
+        <filename>qml-qtquick-effects-multieffect.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>shaderChanged</name>
+            <anchorfile>qml-qtquick-effects-multieffect.html</anchorfile>
+            <anchor>shaderChanged-signal</anchor>
+            <arglist>()</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.MultiPointHandler</name>
@@ -2249,6 +2271,13 @@
             <arglist>(real x, real y)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>itemAtIndex</name>
+            <anchorfile>qml-qtquick-pathview.html</anchorfile>
+            <anchor>itemAtIndex-method</anchor>
+            <arglist>(int index)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>decrementCurrentIndex</name>
             <anchorfile>qml-qtquick-pathview.html</anchorfile>
@@ -2362,6 +2391,27 @@
     <compound kind="class">
         <name>QtQuick.PinchHandler</name>
         <filename>qml-qtquick-pinchhandler.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>rotationChanged</name>
+            <anchorfile>qml-qtquick-pinchhandler.html</anchorfile>
+            <anchor>rotationChanged-signal</anchor>
+            <arglist>(qreal delta)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>scaleChanged</name>
+            <anchorfile>qml-qtquick-pinchhandler.html</anchorfile>
+            <anchor>scaleChanged-signal</anchor>
+            <arglist>(qreal delta)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>translationChanged</name>
+            <anchorfile>qml-qtquick-pinchhandler.html</anchorfile>
+            <anchor>translationChanged-signal</anchor>
+            <arglist>(QVector2D delta)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Particles.PointDirection</name>
@@ -2372,8 +2422,23 @@
         <filename>qml-qtquick-pointhandler.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.PointerDevice</name>
+        <filename>qml-qtquick-pointerdevice.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>grabChanged</name>
+            <anchorfile>qml-qtquick-pointerdevice.html</anchorfile>
+            <anchor>grabChanged-signal</anchor>
+            <arglist>(QtObject grabber, enumeration transition, PointerEvent event, eventPoint point)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.PointerDeviceHandler</name>
         <filename>qml-qtquick-pointerdevicehandler.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.PointerEvent</name>
+        <filename>qml-qtquick-pointerevent.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.PointerHandler</name>
@@ -2383,14 +2448,14 @@
             <name>canceled</name>
             <anchorfile>qml-qtquick-pointerhandler.html</anchorfile>
             <anchor>canceled-signal</anchor>
-            <arglist>(EventPoint point)</arglist>
+            <arglist>(eventPoint point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>grabChanged</name>
             <anchorfile>qml-qtquick-pointerhandler.html</anchorfile>
             <anchor>grabChanged-signal</anchor>
-            <arglist>(GrabTransition transition, EventPoint point)</arglist>
+            <arglist>(PointerDevice::GrabTransition transition, eventPoint point)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -2413,6 +2478,7 @@
         <name>QNativeInterface</name>
         <filename>qnativeinterface-sub-qtquick.html</filename>
         <class>QNativeInterface::QSGD3D11Texture</class>
+        <class>QNativeInterface::QSGD3D12Texture</class>
         <class>QNativeInterface::QSGMetalTexture</class>
         <class>QNativeInterface::QSGOpenGLTexture</class>
         <class>QNativeInterface::QSGVulkanTexture</class>
@@ -2431,6 +2497,24 @@
             <type>virtual void *</type>
             <name>nativeTexture</name>
             <anchorfile>qnativeinterface-qsgd3d11texture.html</anchorfile>
+            <anchor>nativeTexture</anchor>
+            <arglist>() const const = 0</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QNativeInterface::QSGD3D12Texture</name>
+        <filename>qnativeinterface-qsgd3d12texture.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QSGTexture *</type>
+            <name>fromNative</name>
+            <anchorfile>qnativeinterface-qsgd3d12texture.html</anchorfile>
+            <anchor>fromNative</anchor>
+            <arglist>(void *texture, int resourceState, QQuickWindow *window, const QSize &amp;size, QQuickWindow::CreateTextureOptions options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void *</type>
+            <name>nativeTexture</name>
+            <anchorfile>qnativeinterface-qsgd3d12texture.html</anchorfile>
             <anchor>nativeTexture</anchor>
             <arglist>() const const = 0</arglist>
         </member>
@@ -2689,6 +2773,27 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setAutomaticPipelineCache</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setAutomaticPipelineCache</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDebugLayer</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setDebugLayer</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDebugMarkers</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setDebugMarkers</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setDepthBufferFor2D</name>
             <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
             <anchor>setDepthBufferFor2D</anchor>
@@ -2700,6 +2805,34 @@
             <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
             <anchor>setDeviceExtensions</anchor>
             <arglist>(const QByteArrayList &amp;extensions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPipelineCacheLoadFile</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setPipelineCacheLoadFile</anchor>
+            <arglist>(const QString &amp;filename)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPipelineCacheSaveFile</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setPipelineCacheSaveFile</anchor>
+            <arglist>(const QString &amp;filename)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPreferSoftwareDevice</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setPreferSoftwareDevice</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTimestamps</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>setTimestamps</anchor>
+            <arglist>(bool enable)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -2716,10 +2849,59 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>pipelineCacheLoadFile</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>pipelineCacheLoadFile</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>pipelineCacheSaveFile</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>pipelineCacheSaveFile</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isAutomaticPipelineCacheEnabled</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>isAutomaticPipelineCacheEnabled</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isDebugLayerEnabled</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>isDebugLayerEnabled</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isDebugMarkersEnabled</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>isDebugMarkersEnabled</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isDepthBufferEnabledFor2D</name>
             <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
             <anchor>isDepthBufferEnabledFor2D</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>prefersSoftwareDevice</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>prefersSoftwareDevice</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>timestampsEnabled</name>
+            <anchorfile>qquickgraphicsconfiguration.html</anchorfile>
+            <anchor>timestampsEnabled</anchor>
             <arglist>() const const</arglist>
         </member>
     </compound>
@@ -2767,6 +2949,13 @@
             <anchorfile>qquickgraphicsdevice.html</anchorfile>
             <anchor>fromPhysicalDevice</anchor>
             <arglist>(VkPhysicalDevice physicalDevice)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QQuickGraphicsDevice</type>
+            <name>fromRhi</name>
+            <anchorfile>qquickgraphicsdevice.html</anchorfile>
+            <anchor>fromRhi</anchor>
+            <arglist>(QRhi *rhi)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -3073,6 +3262,34 @@
             <anchorfile>qquickitem.html</anchorfile>
             <anchor>TransformOrigin-enum</anchor>
             <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;qreal&gt;</type>
+            <name>bindableHeight</name>
+            <anchorfile>qquickitem.html</anchorfile>
+            <anchor>height-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;qreal&gt;</type>
+            <name>bindableWidth</name>
+            <anchorfile>qquickitem.html</anchorfile>
+            <anchor>width-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;qreal&gt;</type>
+            <name>bindableX</name>
+            <anchorfile>qquickitem.html</anchorfile>
+            <anchor>x-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;qreal&gt;</type>
+            <name>bindableY</name>
+            <anchorfile>qquickitem.html</anchorfile>
+            <anchor>y-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QQuickItem *</type>
@@ -3855,14 +4072,14 @@
             <type>QPointF</type>
             <name>mapFromGlobal</name>
             <anchorfile>qquickitem.html</anchorfile>
-            <anchor>mapFromGlobal</anchor>
+            <anchor>mapFromGlobal-2</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapFromItem</name>
             <anchorfile>qquickitem.html</anchorfile>
-            <anchor>mapFromItem</anchor>
+            <anchor>mapFromItem-1</anchor>
             <arglist>(const QQuickItem *item, const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -3876,14 +4093,14 @@
             <type>QPointF</type>
             <name>mapToGlobal</name>
             <anchorfile>qquickitem.html</anchorfile>
-            <anchor>mapToGlobal</anchor>
+            <anchor>mapToGlobal-2</anchor>
             <arglist>(const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QPointF</type>
             <name>mapToItem</name>
             <anchorfile>qquickitem.html</anchorfile>
-            <anchor>mapToItem</anchor>
+            <anchor>mapToItem-1</anchor>
             <arglist>(const QQuickItem *item, const QPointF &amp;point) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4898,6 +5115,20 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhi *</type>
+            <name>rhi</name>
+            <anchorfile>qquickrendercontrol.html</anchorfile>
+            <anchor>rhi</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiCommandBuffer *</type>
+            <name>commandBuffer</name>
+            <anchorfile>qquickrendercontrol.html</anchorfile>
+            <anchor>commandBuffer</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>samples</name>
             <anchorfile>qquickrendercontrol.html</anchorfile>
@@ -4921,6 +5152,13 @@
             <anchorfile>qquickrendertarget.html</anchorfile>
             <anchor>fromD3D11Texture</anchor>
             <arglist>(void *texture, uint format, const QSize &amp;pixelSize, int sampleCount)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QQuickRenderTarget</type>
+            <name>fromD3D12Texture</name>
+            <anchorfile>qquickrendertarget.html</anchorfile>
+            <anchor>fromD3D12Texture</anchor>
+            <arglist>(void *texture, int resourceState, uint format, const QSize &amp;pixelSize, int sampleCount)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QQuickRenderTarget</type>
@@ -4963,6 +5201,13 @@
             <anchorfile>qquickrendertarget.html</anchorfile>
             <anchor>fromPaintDevice</anchor>
             <arglist>(QPaintDevice *device)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QQuickRenderTarget</type>
+            <name>fromRhiRenderTarget</name>
+            <anchorfile>qquickrendertarget.html</anchorfile>
+            <anchor>fromRhiRenderTarget</anchor>
+            <arglist>(QRhiRenderTarget *renderTarget)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QQuickRenderTarget</type>
@@ -5931,13 +6176,6 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
-            <name>closing</name>
-            <anchorfile>qquickwindow.html</anchorfile>
-            <anchor>closing</anchor>
-            <arglist>(QQuickCloseEvent *close)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>void</type>
             <name>colorChanged</name>
             <anchorfile>qquickwindow.html</anchorfile>
             <anchor>color-prop</anchor>
@@ -6245,6 +6483,20 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhi *</type>
+            <name>rhi</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>rhi</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiSwapChain *</type>
+            <name>swapChain</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>swapChain</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSGImageNode *</type>
             <name>createImageNode</name>
             <anchorfile>qquickwindow.html</anchorfile>
@@ -6285,6 +6537,13 @@
             <anchorfile>qquickwindow.html</anchorfile>
             <anchor>createTextureFromImage</anchor>
             <arglist>(const QImage &amp;image, QQuickWindow::CreateTextureOptions options) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSGTexture *</type>
+            <name>createTextureFromRhiTexture</name>
+            <anchorfile>qquickwindow.html</anchorfile>
+            <anchor>createTextureFromRhiTexture</anchor>
+            <arglist>(QRhiTexture *texture, QQuickWindow::CreateTextureOptions options) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -8350,6 +8609,20 @@
             <anchor>rect</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiCommandBuffer *</type>
+            <name>commandBuffer</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>commandBuffer</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QRhiRenderTarget *</type>
+            <name>renderTarget</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>renderTarget</anchor>
+            <arglist>() const const</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QSGRenderNode::RenderingFlags</type>
             <name>flags</name>
@@ -8369,6 +8642,13 @@
             <name>matrix</name>
             <anchorfile>qsgrendernode.html</anchorfile>
             <anchor>matrix</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const QMatrix4x4 *</type>
+            <name>projectionMatrix</name>
+            <anchorfile>qsgrendernode.html</anchorfile>
+            <anchor>projectionMatrix</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -8450,6 +8730,12 @@
         </member>
         <member kind="enumvalue">
             <name>Null</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>GraphicsApi-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Direct3D12</name>
             <anchorfile>qsgrendererinterface.html</anchorfile>
             <anchor>GraphicsApi-enum</anchor>
             <arglist></arglist>
@@ -8598,6 +8884,18 @@
         </member>
         <member kind="enumvalue">
             <name>RedirectPaintDevice</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>GraphicsQueueFamilyIndexResource</name>
+            <anchorfile>qsgrendererinterface.html</anchorfile>
+            <anchor>Resource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>GraphicsQueueIndexResource</name>
             <anchorfile>qsgrendererinterface.html</anchorfile>
             <anchor>Resource-enum</anchor>
             <arglist></arglist>
@@ -9025,6 +9323,13 @@
             <anchor>QSGTexture</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>commitTextureOperations</name>
+            <anchorfile>qsgtexture.html</anchorfile>
+            <anchor>commitTextureOperations</anchor>
+            <arglist>(QRhi *rhi, QRhiResourceUpdateBatch *resourceUpdates)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setAnisotropyLevel</name>
@@ -9086,6 +9391,13 @@
             <name>normalizedTextureSubRect</name>
             <anchorfile>qsgtexture.html</anchorfile>
             <anchor>normalizedTextureSubRect</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QRhiTexture *</type>
+            <name>rhiTexture</name>
+            <anchorfile>qsgtexture.html</anchorfile>
+            <anchor>rhiTexture</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
@@ -9464,7 +9776,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>itemAtCell</name>
-            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchorfile>qml-qtquick-tableview-obsolete.html</anchorfile>
             <anchor>itemAtCell-method</anchor>
             <arglist>(int column, int row)</arglist>
         </member>
@@ -9474,6 +9786,13 @@
             <anchorfile>qml-qtquick-tableview.html</anchorfile>
             <anchor>itemAtCell-method</anchor>
             <arglist>(point cell)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Item</type>
+            <name>itemAtIndex</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>itemAtIndex-method</anchor>
+            <arglist>(QModelIndex index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Point</type>
@@ -9515,7 +9834,7 @@
             <name>modelIndex</name>
             <anchorfile>qml-qtquick-tableview-obsolete.html</anchorfile>
             <anchor>modelIndex-method</anchor>
-            <arglist>(int column, int row)</arglist>
+            <arglist>(int row, int column)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QModelIndex</type>
@@ -9540,6 +9859,41 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>clearColumnWidths</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>clearColumnWidths-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>clearRowHeights</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>clearRowHeights-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>closeEditor</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>closeEditor-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>commit</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>commit-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>edit</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>edit-method</anchor>
+            <arglist>(QModelIndex modelIndex)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>forceLayout</name>
             <anchorfile>qml-qtquick-tableview.html</anchorfile>
             <anchor>forceLayout-method</anchor>
@@ -9560,6 +9914,13 @@
             <arglist>(QModelIndex modelIndex)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>layoutChanged</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>layoutChanged-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>point</type>
             <name>cellAtIndex</name>
             <anchorfile>qml-qtquick-tableview.html</anchorfile>
@@ -9576,7 +9937,7 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>positionViewAtCell</name>
-            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchorfile>qml-qtquick-tableview-obsolete.html</anchorfile>
             <anchor>positionViewAtCell-method</anchor>
             <arglist>(int column, int row, PositionMode mode, point offset, rect subRect)</arglist>
         </member>
@@ -9596,10 +9957,31 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>positionViewAtIndex</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>positionViewAtIndex-method</anchor>
+            <arglist>(QModelIndex index, PositionMode mode, point offset, rect subRect)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>positionViewAtRow</name>
             <anchorfile>qml-qtquick-tableview.html</anchorfile>
             <anchor>positionViewAtRow-method</anchor>
             <arglist>(int row, PositionMode mode, real offset, rect subRect)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>explicitColumnWidth</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>explicitColumnWidth-method</anchor>
+            <arglist>(int column)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qreal</type>
+            <name>explicitRowHeight</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>explicitRowHeight-method</anchor>
+            <arglist>(int row)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>real</type>
@@ -9636,6 +10018,20 @@
             <anchor>reused-signal</anchor>
             <arglist>()</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>setColumnWidth</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>setColumnWidth-method</anchor>
+            <arglist>(int column, real size)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>setRowHeight</name>
+            <anchorfile>qml-qtquick-tableview.html</anchorfile>
+            <anchor>setRowHeight-method</anchor>
+            <arglist>(int row, real size)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.TapHandler</name>
@@ -9645,7 +10041,7 @@
             <name>doubleTapped</name>
             <anchorfile>qml-qtquick-taphandler.html</anchorfile>
             <anchor>doubleTapped-signal</anchor>
-            <arglist>(EventPoint eventPoint, Qt::MouseButton button)</arglist>
+            <arglist>(eventPoint eventPoint, Qt::MouseButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -9659,7 +10055,7 @@
             <name>singleTapped</name>
             <anchorfile>qml-qtquick-taphandler.html</anchorfile>
             <anchor>singleTapped-signal</anchor>
-            <arglist>(EventPoint eventPoint, Qt::MouseButton button)</arglist>
+            <arglist>(eventPoint eventPoint, Qt::MouseButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -9673,7 +10069,7 @@
             <name>tapped</name>
             <anchorfile>qml-qtquick-taphandler.html</anchorfile>
             <anchor>tapped-signal</anchor>
-            <arglist>(EventPoint eventPoint, Qt::MouseButton button)</arglist>
+            <arglist>(eventPoint eventPoint, Qt::MouseButton button)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -10304,7 +10700,15 @@
         <filename>qml-qtquick-yanimator.html</filename>
     </compound>
     <compound kind="class">
+        <name>QtQuick.eventPoint</name>
+        <filename>qml-qtquick-eventpoint.html</filename>
+    </compound>
+    <compound kind="class">
         <name>QtQuick.handlerPoint</name>
         <filename>qml-qtquick-handlerpoint.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick.pointingDeviceUniqueId</name>
+        <filename>qml-qtquick-pointingdeviceuniqueid.html</filename>
     </compound>
 </tagfile>

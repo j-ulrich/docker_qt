@@ -1,4 +1,4 @@
-FROM ubuntu:noble
+FROM ubuntu:oracular
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     cmake \
@@ -30,12 +30,12 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
 RUN python3 -m venv ~/.virtualenvs/coverxygen \
  && . ~/.virtualenvs/coverxygen/bin/activate \
  && pip3 install "coverxygen==1.8.1" \
- && pipx install "conan==2.9.3"
+ && pipx install "conan==2.18.1"
 
 ENV VIRTUAL_ENV=/root/.virtualenvs/coverxygen
 ENV PATH=/root/.local/bin:/root/.virtualenvs/coverxygen/bin:$PATH
 
-RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-4-2-bin && qbs config defaultProfile qt-6-4-2-bin \
+RUN qbs setup-toolchains --detect && qbs setup-qt /usr/bin/qmake6 qt-6-6-2-bin && qbs config defaultProfile qt-6-6-2-bin \
   && conan profile detect --force
 
 COPY sonar-scanner /opt/sonar-scanner/

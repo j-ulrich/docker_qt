@@ -5,6 +5,20 @@
         <filename>qwebchannel.html</filename>
         <base>QObject</base>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;bool&gt;</type>
+            <name>bindableBlockUpdates</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>blockUpdates-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;int&gt;</type>
+            <name>bindablePropertyUpdateInterval</name>
+            <anchorfile>qwebchannel.html</anchorfile>
+            <anchor>propertyUpdateInterval-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QWebChannel</name>
             <anchorfile>qwebchannel.html</anchorfile>

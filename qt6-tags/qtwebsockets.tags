@@ -116,6 +116,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>authenticationRequired</name>
+            <anchorfile>qwebsocket.html</anchorfile>
+            <anchor>authenticationRequired</anchor>
+            <arglist>(QAuthenticator *authenticator)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>binaryFrameReceived</name>
             <anchorfile>qwebsocket.html</anchorfile>
             <anchor>binaryFrameReceived</anchor>
@@ -166,8 +173,15 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>error</name>
-            <anchorfile>qwebsocket.html</anchorfile>
+            <anchorfile>qwebsocket-obsolete.html</anchorfile>
             <anchor>error-1</anchor>
+            <arglist>(QAbstractSocket::SocketError error)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>errorOccurred</name>
+            <anchorfile>qwebsocket.html</anchorfile>
+            <anchor>errorOccurred</anchor>
             <arglist>(QAbstractSocket::SocketError error)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

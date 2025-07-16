@@ -1,2 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tagfile/>
+<tagfile>
+    <compound kind="class">
+        <name>QShaderBaker</name>
+        <filename>qshaderbaker.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QShader</type>
+            <name>bake</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>bake</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QShaderBaker</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>QShaderBaker</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBatchableVertexShaderExtraInputLocation</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setBatchableVertexShaderExtraInputLocation</anchor>
+            <arglist>(int location)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBreakOnShaderTranslationError</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setBreakOnShaderTranslationError</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setGeneratedShaderVariants</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setGeneratedShaderVariants</anchor>
+            <arglist>(const QList&lt;QShader::Variant&gt; &amp;v)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setGeneratedShaders</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setGeneratedShaders</anchor>
+            <arglist>(const QList&lt;QShaderBaker::GeneratedShader&gt; &amp;v)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPerTargetCompilation</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setPerTargetCompilation</anchor>
+            <arglist>(bool enable)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPreamble</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setPreamble</anchor>
+            <arglist>(const QByteArray &amp;preamble)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSourceDevice</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setSourceDevice</anchor>
+            <arglist>(QIODevice *device, QShader::Stage stage, const QString &amp;fileName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSourceFileName</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setSourceFileName</anchor>
+            <arglist>(const QString &amp;fileName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSourceFileName</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setSourceFileName-1</anchor>
+            <arglist>(const QString &amp;fileName, QShader::Stage stage)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSourceString</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setSourceString</anchor>
+            <arglist>(const QByteArray &amp;sourceString, QShader::Stage stage, const QString &amp;fileName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTessellationMode</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setTessellationMode</anchor>
+            <arglist>(QShaderDescription::TessellationMode mode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTessellationOutputVertexCount</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>setTessellationOutputVertexCount</anchor>
+            <arglist>(int count)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QShaderBaker</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>dtor.QShaderBaker</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorMessage</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>errorMessage</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>GeneratedShader</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>GeneratedShader-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QShaderBaker::SpirvOption">
+            <name>SpirvOptions</name>
+            <anchorfile>qshaderbaker.html</anchorfile>
+            <anchor>SpirvOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+</tagfile>

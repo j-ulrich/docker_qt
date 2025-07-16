@@ -188,6 +188,13 @@
         <filename>qscxmldatamodel.html</filename>
         <base>QObject</base>
         <class>QScxmlDataModel::ForeachLoopBody</class>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QScxmlStateMachine *&gt;</type>
+            <name>bindableStateMachine</name>
+            <anchorfile>qscxmldatamodel.html</anchorfile>
+            <anchor>stateMachine-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QScxmlDataModel *</type>
             <name>createScxmlDataModel</name>
@@ -1043,6 +1050,55 @@
         <filename>qscxmlstatemachine.html</filename>
         <base>QObject</base>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QList&lt;QScxmlInvokableService *&gt;&gt;</type>
+            <name>bindableInvokedServices</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>invokedServices-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QScxmlCompiler::Loader *&gt;</type>
+            <name>bindableLoader</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>loader-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QScxmlDataModel *&gt;</type>
+            <name>bindableDataModel</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>dataModel-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QScxmlTableData *&gt;</type>
+            <name>bindableTableData</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>tableData-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QVariantMap&gt;</type>
+            <name>bindableInitialValues</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>initialValues-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMetaObject::Connection</type>
+            <name>connectToEvent</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>connectToEvent-2</anchor>
+            <arglist>(const QString &amp;scxmlEventSpec, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMetaObject::Connection</type>
+            <name>connectToEvent</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>connectToEvent-1</anchor>
+            <arglist>(const QString &amp;scxmlEventSpec, const QObject *context, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMetaObject::Connection</type>
             <name>connectToEvent</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
@@ -1051,10 +1107,17 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMetaObject::Connection</type>
-            <name>connectToEvent</name>
+            <name>connectToState</name>
             <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToEvent-1</anchor>
-            <arglist>(const QString &amp;scxmlEventSpec, const typename QtPrivate::FunctionPointer&lt;PointerToMemberFunction&gt;::Object *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</arglist>
+            <anchor>connectToState-2</anchor>
+            <arglist>(const QString &amp;scxmlStateName, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMetaObject::Connection</type>
+            <name>connectToState</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>connectToState-1</anchor>
+            <arglist>(const QString &amp;scxmlStateName, const QObject *context, Functor &amp;&amp;functor, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMetaObject::Connection</type>
@@ -1062,13 +1125,6 @@
             <anchorfile>qscxmlstatemachine.html</anchorfile>
             <anchor>connectToState</anchor>
             <arglist>(const QString &amp;scxmlStateName, const QObject *receiver, const char *method, Qt::ConnectionType type)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QMetaObject::Connection</type>
-            <name>connectToState</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToState-1</anchor>
-            <arglist>(const QString &amp;scxmlStateName, const typename QtPrivate::FunctionPointer&lt;PointerToMemberFunction&gt;::Object *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QScxmlStateMachine *</type>
@@ -1139,34 +1195,6 @@
             <anchorfile>qscxmlstatemachine.html</anchorfile>
             <anchor>onExit-2</anchor>
             <arglist>(bool)&gt; onExit(const typename QtPrivate::FunctionPointer&lt;PointerToMemberFunction&gt;::Object *receiver, PointerToMemberFunction method)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>typename std::enable_if&lt;!QtPrivate::FunctionPointer&lt;Functor&gt;::IsPointerToMemberFunction &amp;&amp; !std::is_same&lt;const char *, Functor&gt;::value, QMetaObject::Connection&gt;::type</type>
-            <name>connectToEvent</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToEvent-2</anchor>
-            <arglist>(const QString &amp;scxmlEventSpec, Functor functor, Qt::ConnectionType type)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>typename std::enable_if&lt;!QtPrivate::FunctionPointer&lt;Functor&gt;::IsPointerToMemberFunction &amp;&amp; !std::is_same&lt;const char *, Functor&gt;::value, QMetaObject::Connection&gt;::type</type>
-            <name>connectToEvent</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToEvent-3</anchor>
-            <arglist>(const QString &amp;scxmlEventSpec, const QObject *context, Functor functor, Qt::ConnectionType type)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>typename std::enable_if&lt;!QtPrivate::FunctionPointer&lt;Functor&gt;::IsPointerToMemberFunction &amp;&amp; !std::is_same&lt;const char *, Functor&gt;::value, QMetaObject::Connection&gt;::type</type>
-            <name>connectToState</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToState-2</anchor>
-            <arglist>(const QString &amp;scxmlStateName, Functor functor, Qt::ConnectionType type)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>typename std::enable_if&lt;!QtPrivate::FunctionPointer&lt;Functor&gt;::IsPointerToMemberFunction &amp;&amp; !std::is_same&lt;const char *, Functor&gt;::value, QMetaObject::Connection&gt;::type</type>
-            <name>connectToState</name>
-            <anchorfile>qscxmlstatemachine.html</anchorfile>
-            <anchor>connectToState-3</anchor>
-            <arglist>(const QString &amp;scxmlStateName, const QObject *context, Functor functor, Qt::ConnectionType type)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1314,6 +1342,13 @@
             <anchorfile>qscxmlstatemachine.html</anchorfile>
             <anchor>tableData-prop</anchor>
             <arglist>(QScxmlTableData *tableData)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;bool&gt;</type>
+            <name>bindableInitialized</name>
+            <anchorfile>qscxmlstatemachine.html</anchorfile>
+            <anchor>initialized-prop</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;QScxmlError&gt;</type>

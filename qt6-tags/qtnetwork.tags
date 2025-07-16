@@ -1130,6 +1130,12 @@
             <anchor>Error-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>TimeoutError</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="enumeration">
             <name>Type</name>
             <anchorfile>qdnslookup.html</anchorfile>
@@ -1190,6 +1196,34 @@
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QDnsLookup::Type&gt;</type>
+            <name>bindableType</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>type-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QHostAddress&gt;</type>
+            <name>bindableNameserver</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserver-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QString&gt;</type>
+            <name>bindableName</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>name-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;quint16&gt;</type>
+            <name>bindableNameserverPort</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverPort-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QDnsLookup</name>
             <anchorfile>qdnslookup.html</anchorfile>
@@ -1202,6 +1236,13 @@
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>QDnsLookup-2</anchor>
             <arglist>(QDnsLookup::Type type, const QString &amp;name, const QHostAddress &amp;nameserver, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QDnsLookup</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>QDnsLookup-3</anchor>
+            <arglist>(QDnsLookup::Type type, const QString &amp;name, const QHostAddress &amp;nameserver, quint16 port, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -1247,6 +1288,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>nameserverPortChanged</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverPort-prop</anchor>
+            <arglist>(quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setName</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>name-prop</anchor>
@@ -1258,6 +1306,20 @@
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>nameserver-prop</anchor>
             <arglist>(const QHostAddress &amp;nameserver)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNameserver</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>setNameserver-1</anchor>
+            <arglist>(const QHostAddress &amp;nameserver, quint16 port)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNameserverPort</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverPort-prop</anchor>
+            <arglist>(quint16 port)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1371,6 +1433,13 @@
             <anchor>isFinished</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint16</type>
+            <name>nameserverPort</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverPort-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
         <member kind="property" type="Error">
             <name>error</name>
             <anchorfile>qdnslookup.html</anchorfile>
@@ -1393,6 +1462,12 @@
             <name>nameserver</name>
             <anchorfile>qdnslookup.html</anchorfile>
             <anchor>nameserver-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="quint16">
+            <name>nameserverPort</name>
+            <anchorfile>qdnslookup.html</anchorfile>
+            <anchor>nameserverPort-prop</anchor>
             <arglist></arglist>
         </member>
         <member kind="property" type="Type">
@@ -2365,6 +2440,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>isPrivateUse</name>
+            <anchorfile>qhostaddress.html</anchorfile>
+            <anchor>isPrivateUse</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>isSiteLocal</name>
             <anchorfile>qhostaddress.html</anchorfile>
             <anchor>isSiteLocal</anchor>
@@ -2512,8 +2594,8 @@
             <type>int</type>
             <name>lookupHost</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>lookupHost-1</anchor>
-            <arglist>(const QString &amp;name, Functor functor)</arglist>
+            <anchor>lookupHost-2</anchor>
+            <arglist>(const QString &amp;name, Functor &amp;&amp;functor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>int</type>
@@ -2526,7 +2608,7 @@
             <type>int</type>
             <name>lookupHost</name>
             <anchorfile>qhostinfo.html</anchorfile>
-            <anchor>lookupHost-2</anchor>
+            <anchor>lookupHost-1</anchor>
             <arglist>(const QString &amp;name, const QObject *context, Functor functor)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
@@ -2745,6 +2827,94 @@
             <anchorfile>qhstspolicy.html</anchorfile>
             <anchor>PolicyFlag-enum</anchor>
             <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QHttp1Configuration</name>
+        <filename>qhttp1configuration.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttp1Configuration &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QHttp1Configuration &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttp1Configuration &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QHttp1Configuration &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttp1Configuration</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>QHttp1Configuration</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttp1Configuration</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>QHttp1Configuration-2</anchor>
+            <arglist>(QHttp1Configuration &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QHttp1Configuration</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>QHttp1Configuration-1</anchor>
+            <arglist>(const QHttp1Configuration &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QHttp1Configuration &amp;lhs, const QHttp1Configuration &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>operator-eq-eq</anchor>
+            <arglist>(const QHttp1Configuration &amp;lhs, const QHttp1Configuration &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>size_t</type>
+            <name>qHash</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>qHash</anchor>
+            <arglist>(const QHttp1Configuration &amp;key, size_t seed)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNumberOfConnectionsPerHost</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>setNumberOfConnectionsPerHost</anchor>
+            <arglist>(qsizetype number)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QHttp1Configuration &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QHttp1Configuration</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>dtor.QHttp1Configuration</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qsizetype</type>
+            <name>numberOfConnectionsPerHost</name>
+            <anchorfile>qhttp1configuration.html</anchorfile>
+            <anchor>numberOfConnectionsPerHost</anchor>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -3094,6 +3264,13 @@
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QLocalServer::SocketOptions&gt;</type>
+            <name>bindableSocketOptions</name>
+            <anchorfile>qlocalserver.html</anchorfile>
+            <anchor>socketOptions-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QLocalServer</name>
             <anchorfile>qlocalserver.html</anchorfile>
@@ -3387,6 +3564,13 @@
             <anchorfile>qlocalsocket.html</anchorfile>
             <anchor>SocketOption-enum</anchor>
             <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QLocalSocket::SocketOptions&gt;</type>
+            <name>bindableSocketOptions</name>
+            <anchorfile>qlocalsocket.html</anchorfile>
+            <anchor>socketOptions-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -6861,6 +7045,12 @@
             <arglist></arglist>
         </member>
         <member kind="enumvalue">
+            <name>UseCredentialsAttribute</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>Attribute-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
             <name>User</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>Attribute-enum</anchor>
@@ -7115,6 +7305,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setHttp1Configuration</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>setHttp1Configuration</anchor>
+            <arglist>(const QHttp1Configuration &amp;configuration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setHttp2Configuration</name>
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>setHttp2Configuration</anchor>
@@ -7196,6 +7393,13 @@
             <anchorfile>qnetworkrequest.html</anchorfile>
             <anchor>rawHeader</anchor>
             <arglist>(const QByteArray &amp;headerName) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QHttp1Configuration</type>
+            <name>http1Configuration</name>
+            <anchorfile>qnetworkrequest.html</anchorfile>
+            <anchor>http1Configuration</anchor>
+            <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QHttp2Configuration</type>

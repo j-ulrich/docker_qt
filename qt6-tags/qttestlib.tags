@@ -97,6 +97,13 @@
             <arglist>(int timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>wait</name>
+            <anchorfile>qsignalspy.html</anchorfile>
+            <anchor>wait-1</anchor>
+            <arglist>(std::chrono::milliseconds timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QByteArray</type>
             <name>signal</name>
             <anchorfile>qsignalspy.html</anchorfile>
@@ -413,42 +420,42 @@
             <name>QCOMPARE_EQ</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_EQ</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCOMPARE_GE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_GE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCOMPARE_GT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_GT</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCOMPARE_LE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_LE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCOMPARE_LT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_LT</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QCOMPARE_NE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QCOMPARE_NE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -546,84 +553,84 @@
             <name>QTRY_COMPARE_EQ</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_EQ</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_EQ_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_EQ_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_GE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_GE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_GE_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_GE_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_GT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_GT</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_GT_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_GT_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_LE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_LE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_LE_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_LE_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_LT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_LT</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_LT_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_LT_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_NE</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_NE</anchor>
-            <arglist>(left, right)</arglist>
+            <arglist>(computed, baseline)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QTRY_COMPARE_NE_WITH_TIMEOUT</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>QTRY_COMPARE_NE_WITH_TIMEOUT</anchor>
-            <arglist>(left, right, timeout)</arglist>
+            <arglist>(computed, baseline, timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -739,6 +746,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
+            <name>currentTestResolved</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>currentTestResolved</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
             <name>qWaitFor</name>
             <anchorfile>qtest.html</anchorfile>
             <anchor>qWaitFor</anchor>
@@ -783,182 +797,182 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-38</anchor>
+            <anchor>toString-40</anchor>
             <arglist>(QSizePolicy sp)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-37</anchor>
+            <anchor>toString-39</anchor>
             <arglist>(QSizePolicy::ControlType ct)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-36</anchor>
+            <anchor>toString-38</anchor>
             <arglist>(QSizePolicy::ControlTypes cts)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-35</anchor>
+            <anchor>toString-37</anchor>
             <arglist>(QSizePolicy::Policy p)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-7</anchor>
+            <anchor>toString-8</anchor>
             <arglist>(const QByteArray &amp;ba)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-12</anchor>
+            <anchor>toString-13</anchor>
             <arglist>(const QCborError &amp;c)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-13</anchor>
+            <anchor>toString-14</anchor>
             <arglist>(const QChar &amp;character)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-10</anchor>
+            <anchor>toString-11</anchor>
             <arglist>(const QDate &amp;date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-11</anchor>
+            <anchor>toString-12</anchor>
             <arglist>(const QDateTime &amp;dateTime)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-6</anchor>
+            <anchor>toString-36</anchor>
+            <arglist>(const QKeySequence &amp;ks)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>char *</type>
+            <name>toString</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>toString-7</anchor>
             <arglist>(const QLatin1StringView &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-1</anchor>
-            <arglist>(const QPair&lt;T1, T2&gt; &amp;pair)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>char *</type>
-            <name>toString</name>
-            <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-15</anchor>
+            <anchor>toString-16</anchor>
             <arglist>(const QPoint &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-18</anchor>
+            <anchor>toString-19</anchor>
             <arglist>(const QPointF &amp;point)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-17</anchor>
+            <anchor>toString-18</anchor>
             <arglist>(const QRect &amp;rectangle)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-20</anchor>
+            <anchor>toString-21</anchor>
             <arglist>(const QRectF &amp;rectangle)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-16</anchor>
+            <anchor>toString-17</anchor>
             <arglist>(const QSize &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-19</anchor>
+            <anchor>toString-20</anchor>
             <arglist>(const QSizeF &amp;size)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-5</anchor>
+            <anchor>toString-6</anchor>
             <arglist>(const QString &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString</anchor>
+            <anchor>toString-5</anchor>
             <arglist>(const QStringView &amp;string)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-9</anchor>
+            <anchor>toString-10</anchor>
             <arglist>(const QTime &amp;time)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-21</anchor>
+            <anchor>toString-22</anchor>
             <arglist>(const QUrl &amp;url)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-22</anchor>
+            <anchor>toString-23</anchor>
             <arglist>(const QUuid &amp;uuid)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-23</anchor>
+            <anchor>toString-24</anchor>
             <arglist>(const QVariant &amp;variant)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-32</anchor>
+            <anchor>toString-33</anchor>
             <arglist>(const QVector2D &amp;v)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-33</anchor>
+            <anchor>toString-34</anchor>
             <arglist>(const QVector3D &amp;v)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-34</anchor>
+            <anchor>toString-35</anchor>
             <arglist>(const QVector4D &amp;v)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -972,21 +986,21 @@
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-2</anchor>
+            <anchor>toString-1</anchor>
             <arglist>(const std::pair&lt;T1, T2&gt; &amp;pair)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-3</anchor>
+            <anchor>toString-2</anchor>
             <arglist>(const std::tuple&lt;Types...&gt; &amp;tuple)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>char *</type>
             <name>toString</name>
             <anchorfile>qtest.html</anchorfile>
-            <anchor>toString-29</anchor>
+            <anchor>toString-30</anchor>
             <arglist>(std::nullptr_t)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1275,6 +1289,13 @@
             <anchorfile>qtest.html</anchorfile>
             <anchor>mouseRelease-1</anchor>
             <arglist>(QWindow *window, Qt::MouseButton button, Qt::KeyboardModifiers stateKey, QPoint pos, int delay)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>qRegisterTestCase</name>
+            <anchorfile>qtest.html</anchorfile>
+            <anchor>qRegisterTestCase</anchor>
+            <arglist>(const QString &amp;name, QTest::TestEntryFunction entryFunction)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

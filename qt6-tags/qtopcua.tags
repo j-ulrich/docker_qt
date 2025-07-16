@@ -89029,6 +89029,13 @@
             <type></type>
             <name>QOpcUaAddNodeItem</name>
             <anchorfile>qopcuaaddnodeitem.html</anchorfile>
+            <anchor>QOpcUaAddNodeItem</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaAddNodeItem</name>
+            <anchorfile>qopcuaaddnodeitem.html</anchorfile>
             <anchor>QOpcUaAddNodeItem-1</anchor>
             <arglist>(const QOpcUaAddNodeItem &amp;other)</arglist>
         </member>
@@ -89147,6 +89154,13 @@
             <anchorfile>qopcuaaddreferenceitem.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaAddReferenceItem &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaAddReferenceItem</name>
+            <anchorfile>qopcuaaddreferenceitem.html</anchorfile>
+            <anchor>QOpcUaAddReferenceItem</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -89285,6 +89299,13 @@
             <anchorfile>qopcuaapplicationdescription.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaApplicationDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaApplicationDescription</name>
+            <anchorfile>qopcuaapplicationdescription.html</anchorfile>
+            <anchor>QOpcUaApplicationDescription</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -89450,6 +89471,13 @@
             <anchorfile>qopcuaapplicationidentity.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaApplicationIdentity &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaApplicationIdentity</name>
+            <anchorfile>qopcuaapplicationidentity.html</anchorfile>
+            <anchor>QOpcUaApplicationIdentity</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -89687,6 +89715,13 @@
             <type></type>
             <name>QOpcUaArgument</name>
             <anchorfile>qopcuaargument.html</anchorfile>
+            <anchor>QOpcUaArgument</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaArgument</name>
+            <anchorfile>qopcuaargument.html</anchorfile>
             <anchor>QOpcUaArgument-2</anchor>
             <arglist>(const QString &amp;name, const QString &amp;dataTypeId, qint32 valueRank, const QList&lt;quint32&gt; &amp;arrayDimensions, const QOpcUaLocalizedText &amp;description)</arglist>
         </member>
@@ -89796,6 +89831,13 @@
             <type></type>
             <name>QOpcUaAttributeOperand</name>
             <anchorfile>qopcuaattributeoperand.html</anchorfile>
+            <anchor>QOpcUaAttributeOperand</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaAttributeOperand</name>
+            <anchorfile>qopcuaattributeoperand.html</anchorfile>
             <anchor>QOpcUaAttributeOperand-1</anchor>
             <arglist>(const QOpcUaAttributeOperand &amp;rhs)</arglist>
         </member>
@@ -89891,6 +89933,13 @@
             <type></type>
             <name>QOpcUaAuthenticationInformation</name>
             <anchorfile>qopcuaauthenticationinformation.html</anchorfile>
+            <anchor>QOpcUaAuthenticationInformation</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaAuthenticationInformation</name>
+            <anchorfile>qopcuaauthenticationinformation.html</anchorfile>
             <anchor>QOpcUaAuthenticationInformation-1</anchor>
             <arglist>(const QOpcUaAuthenticationInformation &amp;rhs)</arglist>
         </member>
@@ -89953,6 +90002,13 @@
             <anchorfile>qopcuaaxisinformation.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaAxisInformation &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaAxisInformation</name>
+            <anchorfile>qopcuaaxisinformation.html</anchorfile>
+            <anchor>QOpcUaAxisInformation</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -90134,6 +90190,13 @@
             <type></type>
             <name>QOpcUaBrowsePathTarget</name>
             <anchorfile>qopcuabrowsepathtarget.html</anchorfile>
+            <anchor>QOpcUaBrowsePathTarget</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaBrowsePathTarget</name>
+            <anchorfile>qopcuabrowsepathtarget.html</anchorfile>
             <anchor>QOpcUaBrowsePathTarget-1</anchor>
             <arglist>(const QOpcUaBrowsePathTarget &amp;rhs)</arglist>
         </member>
@@ -90219,6 +90282,13 @@
             <anchorfile>qopcuabrowserequest.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaBrowseRequest &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaBrowseRequest</name>
+            <anchorfile>qopcuabrowserequest.html</anchorfile>
+            <anchor>QOpcUaBrowseRequest</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -90577,6 +90647,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setConnectionSettings</name>
+            <anchorfile>qopcuaclient.html</anchorfile>
+            <anchor>setConnectionSettings</anchor>
+            <arglist>(const QOpcUaConnectionSettings &amp;connectionSettings)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setNamespaceAutoupdate</name>
             <anchorfile>qopcuaclient.html</anchorfile>
             <anchor>setNamespaceAutoupdate</anchor>
@@ -90643,6 +90720,13 @@
             <name>state</name>
             <anchorfile>qopcuaclient.html</anchorfile>
             <anchor>state-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpcUaConnectionSettings</type>
+            <name>connectionSettings</name>
+            <anchorfile>qopcuaclient.html</anchorfile>
+            <anchor>connectionSettings</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -90742,6 +90826,13 @@
             <type></type>
             <name>QOpcUaComplexNumber</name>
             <anchorfile>qopcuacomplexnumber.html</anchorfile>
+            <anchor>QOpcUaComplexNumber</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaComplexNumber</name>
+            <anchorfile>qopcuacomplexnumber.html</anchorfile>
             <anchor>QOpcUaComplexNumber-2</anchor>
             <arglist>(float real, float imaginary)</arglist>
         </member>
@@ -90785,6 +90876,136 @@
             <name>real</name>
             <anchorfile>qopcuacomplexnumber.html</anchorfile>
             <anchor>real</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QOpcUaConnectionSettings</name>
+        <filename>qopcuaconnectionsettings.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpcUaConnectionSettings &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QOpcUaConnectionSettings &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpcUaConnectionSettings &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QOpcUaConnectionSettings &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaConnectionSettings</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>QOpcUaConnectionSettings</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaConnectionSettings</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>QOpcUaConnectionSettings-2</anchor>
+            <arglist>(QOpcUaConnectionSettings &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaConnectionSettings</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>QOpcUaConnectionSettings-1</anchor>
+            <arglist>(const QOpcUaConnectionSettings &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QOpcUaConnectionSettings &amp;rhs, const QOpcUaConnectionSettings &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setConnectTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>setConnectTimeout</anchor>
+            <arglist>(std::chrono::milliseconds timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRequestTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>setRequestTimeout</anchor>
+            <arglist>(std::chrono::milliseconds timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSecureChannelLifeTime</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>setSecureChannelLifeTime</anchor>
+            <arglist>(std::chrono::milliseconds lifeTime)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSessionLocaleIds</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>setSessionLocaleIds</anchor>
+            <arglist>(const QStringList &amp;localeIds)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSessionTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>setSessionTimeout</anchor>
+            <arglist>(std::chrono::milliseconds timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QOpcUaConnectionSettings &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QOpcUaConnectionSettings</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>dtor.QOpcUaConnectionSettings</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStringList</type>
+            <name>sessionLocaleIds</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>sessionLocaleIds</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>connectTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>connectTimeout</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>requestTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>requestTimeout</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>secureChannelLifeTime</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>secureChannelLifeTime</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::chrono::milliseconds</type>
+            <name>sessionTimeout</name>
+            <anchorfile>qopcuaconnectionsettings.html</anchorfile>
+            <anchor>sessionTimeout</anchor>
             <arglist>() const const</arglist>
         </member>
     </compound>
@@ -90957,6 +91178,13 @@
             <type></type>
             <name>QOpcUaContentFilterElement</name>
             <anchorfile>qopcuacontentfilterelement.html</anchorfile>
+            <anchor>QOpcUaContentFilterElement</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaContentFilterElement</name>
+            <anchorfile>qopcuacontentfilterelement.html</anchorfile>
             <anchor>QOpcUaContentFilterElement-1</anchor>
             <arglist>(const QOpcUaContentFilterElement &amp;rhs)</arglist>
         </member>
@@ -91019,6 +91247,13 @@
             <anchorfile>qopcuacontentfilterelementresult.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaContentFilterElementResult &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaContentFilterElementResult</name>
+            <anchorfile>qopcuacontentfilterelementresult.html</anchorfile>
+            <anchor>QOpcUaContentFilterElementResult</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -91165,6 +91400,13 @@
             <type></type>
             <name>QOpcUaDeleteReferenceItem</name>
             <anchorfile>qopcuadeletereferenceitem.html</anchorfile>
+            <anchor>QOpcUaDeleteReferenceItem</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaDeleteReferenceItem</name>
+            <anchorfile>qopcuadeletereferenceitem.html</anchorfile>
             <anchor>QOpcUaDeleteReferenceItem-1</anchor>
             <arglist>(const QOpcUaDeleteReferenceItem &amp;other)</arglist>
         </member>
@@ -91253,6 +91495,13 @@
             <type></type>
             <name>QOpcUaDoubleComplexNumber</name>
             <anchorfile>qopcuadoublecomplexnumber.html</anchorfile>
+            <anchor>QOpcUaDoubleComplexNumber</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaDoubleComplexNumber</name>
+            <anchorfile>qopcuadoublecomplexnumber.html</anchorfile>
             <anchor>QOpcUaDoubleComplexNumber-2</anchor>
             <arglist>(double real, double imaginary)</arglist>
         </member>
@@ -91308,6 +91557,13 @@
             <anchorfile>qopcuaeuinformation.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaEUInformation &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaEUInformation</name>
+            <anchorfile>qopcuaeuinformation.html</anchorfile>
+            <anchor>QOpcUaEUInformation</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -91408,6 +91664,13 @@
             <type></type>
             <name>QOpcUaElementOperand</name>
             <anchorfile>qopcuaelementoperand.html</anchorfile>
+            <anchor>QOpcUaElementOperand</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaElementOperand</name>
+            <anchorfile>qopcuaelementoperand.html</anchorfile>
             <anchor>QOpcUaElementOperand-1</anchor>
             <arglist>(const QOpcUaElementOperand &amp;rhs)</arglist>
         </member>
@@ -91492,6 +91755,13 @@
             <anchorfile>qopcuaendpointdescription.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaEndpointDescription &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaEndpointDescription</name>
+            <anchorfile>qopcuaendpointdescription.html</anchorfile>
+            <anchor>QOpcUaEndpointDescription</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -91699,6 +91969,13 @@
             <type></type>
             <name>QOpcUaErrorState</name>
             <anchorfile>qopcuaerrorstate.html</anchorfile>
+            <anchor>QOpcUaErrorState</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaErrorState</name>
+            <anchorfile>qopcuaerrorstate.html</anchorfile>
             <anchor>QOpcUaErrorState-1</anchor>
             <arglist>(const QOpcUaErrorState &amp;other)</arglist>
         </member>
@@ -91787,6 +92064,13 @@
             <type></type>
             <name>QOpcUaEventFilterResult</name>
             <anchorfile>qopcuaeventfilterresult.html</anchorfile>
+            <anchor>QOpcUaEventFilterResult</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaEventFilterResult</name>
+            <anchorfile>qopcuaeventfilterresult.html</anchorfile>
             <anchor>QOpcUaEventFilterResult-1</anchor>
             <arglist>(const QOpcUaEventFilterResult &amp;rhs)</arglist>
         </member>
@@ -91835,6 +92119,13 @@
             <anchorfile>qopcuaexpandednodeid.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaExpandedNodeId &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaExpandedNodeId</name>
+            <anchorfile>qopcuaexpandednodeid.html</anchorfile>
+            <anchor>QOpcUaExpandedNodeId</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -91953,6 +92244,13 @@
             <anchorfile>qopcuaextensionobject.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaExtensionObject &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaExtensionObject</name>
+            <anchorfile>qopcuaextensionobject.html</anchorfile>
+            <anchor>QOpcUaExtensionObject</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -92854,6 +93152,13 @@
             <type></type>
             <name>QOpcUaLiteralOperand</name>
             <anchorfile>qopcualiteraloperand.html</anchorfile>
+            <anchor>QOpcUaLiteralOperand</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaLiteralOperand</name>
+            <anchorfile>qopcualiteraloperand.html</anchorfile>
             <anchor>QOpcUaLiteralOperand-1</anchor>
             <arglist>(const QOpcUaLiteralOperand &amp;rhs)</arglist>
         </member>
@@ -92916,6 +93221,13 @@
             <anchorfile>qopcualocalizedtext.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaLocalizedText &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaLocalizedText</name>
+            <anchorfile>qopcualocalizedtext.html</anchorfile>
+            <anchor>QOpcUaLocalizedText</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -93639,6 +93951,13 @@
             <type></type>
             <name>QOpcUaMultiDimensionalArray</name>
             <anchorfile>qopcuamultidimensionalarray.html</anchorfile>
+            <anchor>QOpcUaMultiDimensionalArray</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaMultiDimensionalArray</name>
+            <anchorfile>qopcuamultidimensionalarray.html</anchorfile>
             <anchor>QOpcUaMultiDimensionalArray-3</anchor>
             <arglist>(const QList&lt;quint32&gt; &amp;arrayDimensions)</arglist>
         </member>
@@ -94027,6 +94346,13 @@
             <anchorfile>qopcuanodecreationattributes.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaNodeCreationAttributes &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaNodeCreationAttributes</name>
+            <anchorfile>qopcuanodecreationattributes.html</anchorfile>
+            <anchor>QOpcUaNodeCreationAttributes</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -94456,6 +94782,13 @@
             <type></type>
             <name>QOpcUaPkiConfiguration</name>
             <anchorfile>qopcuapkiconfiguration.html</anchorfile>
+            <anchor>QOpcUaPkiConfiguration</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaPkiConfiguration</name>
+            <anchorfile>qopcuapkiconfiguration.html</anchorfile>
             <anchor>QOpcUaPkiConfiguration-1</anchor>
             <arglist>(const QOpcUaPkiConfiguration &amp;other)</arglist>
         </member>
@@ -94612,6 +94945,13 @@
             <type></type>
             <name>QOpcUaQualifiedName</name>
             <anchorfile>qopcuaqualifiedname.html</anchorfile>
+            <anchor>QOpcUaQualifiedName</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaQualifiedName</name>
+            <anchorfile>qopcuaqualifiedname.html</anchorfile>
             <anchor>QOpcUaQualifiedName-1</anchor>
             <arglist>(const QOpcUaQualifiedName &amp;rhs)</arglist>
         </member>
@@ -94679,6 +95019,13 @@
             <type></type>
             <name>QOpcUaRange</name>
             <anchorfile>qopcuarange.html</anchorfile>
+            <anchor>QOpcUaRange</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaRange</name>
+            <anchorfile>qopcuarange.html</anchorfile>
             <anchor>QOpcUaRange-1</anchor>
             <arglist>(const QOpcUaRange &amp;rhs)</arglist>
         </member>
@@ -94741,6 +95088,13 @@
             <anchorfile>qopcuareaditem.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaReadItem &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaReadItem</name>
+            <anchorfile>qopcuareaditem.html</anchorfile>
+            <anchor>QOpcUaReadItem</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -94822,6 +95176,13 @@
             <anchorfile>qopcuareadresult.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaReadResult &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaReadResult</name>
+            <anchorfile>qopcuareadresult.html</anchorfile>
+            <anchor>QOpcUaReadResult</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -95189,6 +95550,13 @@
             <type></type>
             <name>QOpcUaSimpleAttributeOperand</name>
             <anchorfile>qopcuasimpleattributeoperand.html</anchorfile>
+            <anchor>QOpcUaSimpleAttributeOperand</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaSimpleAttributeOperand</name>
+            <anchorfile>qopcuasimpleattributeoperand.html</anchorfile>
             <anchor>QOpcUaSimpleAttributeOperand-3</anchor>
             <arglist>(QOpcUa::NodeAttribute attributeId, const QString &amp;typeId)</arglist>
         </member>
@@ -95320,6 +95688,13 @@
             <type></type>
             <name>QOpcUaUserTokenPolicy</name>
             <anchorfile>qopcuausertokenpolicy.html</anchorfile>
+            <anchor>QOpcUaUserTokenPolicy</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaUserTokenPolicy</name>
+            <anchorfile>qopcuausertokenpolicy.html</anchorfile>
             <anchor>QOpcUaUserTokenPolicy-1</anchor>
             <arglist>(const QOpcUaUserTokenPolicy &amp;rhs)</arglist>
         </member>
@@ -95410,6 +95785,13 @@
             <anchorfile>qopcuawriteitem.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaWriteItem &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaWriteItem</name>
+            <anchorfile>qopcuawriteitem.html</anchorfile>
+            <anchor>QOpcUaWriteItem</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -95561,6 +95943,13 @@
             <anchorfile>qopcuawriteresult.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaWriteResult &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaWriteResult</name>
+            <anchorfile>qopcuawriteresult.html</anchorfile>
+            <anchor>QOpcUaWriteResult</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -96246,6 +96635,13 @@
             <anchorfile>qopcuaxvalue.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpcUaXValue &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpcUaXValue</name>
+            <anchorfile>qopcuaxvalue.html</anchorfile>
+            <anchor>QOpcUaXValue</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

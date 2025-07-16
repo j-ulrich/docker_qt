@@ -3669,7 +3669,7 @@
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>void</type>
             <name>setActiveWindow</name>
-            <anchorfile>qapplication.html</anchorfile>
+            <anchorfile>qapplication-obsolete.html</anchorfile>
             <anchor>setActiveWindow</anchor>
             <arglist>(QWidget *active)</arglist>
         </member>
@@ -4370,6 +4370,20 @@
             <anchorfile>qcalendarwidget.html</anchorfile>
             <anchor>activated</anchor>
             <arglist>(QDate date)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearMaximumDate</name>
+            <anchorfile>qcalendarwidget.html</anchorfile>
+            <anchor>maximumDate-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearMinimumDate</name>
+            <anchorfile>qcalendarwidget.html</anchorfile>
+            <anchor>minimumDate-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -6418,7 +6432,7 @@
             <name>sizeFromContents</name>
             <anchorfile>qcommonstyle.html</anchorfile>
             <anchor>sizeFromContents</anchor>
-            <arglist>(QStyle::ContentsType ct, const QStyleOption *opt, const QSize &amp;csz, const QWidget *widget) const const override</arglist>
+            <arglist>(QStyle::ContentsType contentsType, const QStyleOption *opt, const QSize &amp;contentsSize, const QWidget *widget) const const override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="virtual" static="no">
             <type>virtual QStyle::SubControl</type>
@@ -22668,10 +22682,24 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setFinishingKeyCombinations</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>finishingKeyCombinations-prop</anchor>
+            <arglist>(const QList&lt;QKeyCombination&gt; &amp;finishingKeyCombinations)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setKeySequence</name>
             <anchorfile>qkeysequenceedit.html</anchorfile>
             <anchor>keySequence-prop</anchor>
             <arglist>(const QKeySequence &amp;keySequence)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMaximumSequenceLength</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>maximumSequenceLength-prop</anchor>
+            <arglist>(qsizetype count)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -22695,10 +22723,24 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QKeyCombination&gt;</type>
+            <name>finishingKeyCombinations</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>finishingKeyCombinations-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>isClearButtonEnabled</name>
             <anchorfile>qkeysequenceedit.html</anchorfile>
             <anchor>clearButtonEnabled-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>qsizetype</type>
+            <name>maximumSequenceLength</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>maximumSequenceLength-prop</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="property" type="bool">
@@ -22707,10 +22749,22 @@
             <anchor>clearButtonEnabled-prop</anchor>
             <arglist></arglist>
         </member>
+        <member kind="property" type="QList&lt;QKeyCombination&gt;">
+            <name>finishingKeyCombinations</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>finishingKeyCombinations-prop</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="property" type="QKeySequence">
             <name>keySequence</name>
             <anchorfile>qkeysequenceedit.html</anchorfile>
             <anchor>keySequence-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="qsizetype">
+            <name>maximumSequenceLength</name>
+            <anchorfile>qkeysequenceedit.html</anchorfile>
+            <anchor>maximumSequenceLength-prop</anchor>
             <arglist></arglist>
         </member>
     </compound>
@@ -24241,7 +24295,7 @@
             <name>keyReleaseEvent</name>
             <anchorfile>qlineedit.html</anchorfile>
             <anchor>keyReleaseEvent</anchor>
-            <arglist>(QKeyEvent *) override</arglist>
+            <arglist>(QKeyEvent *e) override</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -28402,6 +28456,17 @@
             <arglist></arglist>
         </member>
         <member kind="enumeration">
+            <name>Option</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>Option-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>DontUseNativeDialog</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>Option-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
             <name>StandardButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
             <anchor>StandardButton-enum</anchor>
@@ -28638,6 +28703,13 @@
             <anchor>addButton-1</anchor>
             <arglist>(const QString &amp;text, QMessageBox::ButtonRole role)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QT_REQUIRE_VERSION</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>QT_REQUIRE_VERSION</anchor>
+            <arglist>(int argc, char **argv, const char *version)</arglist>
+        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
             <name>event</name>
@@ -28850,6 +28922,20 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setOption</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>setOption</anchor>
+            <arglist>(QMessageBox::Option option, bool on)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setOptions</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>options-prop</anchor>
+            <arglist>(QMessageBox::Options options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setStandardButtons</name>
             <anchorfile>qmessagebox.html</anchorfile>
             <anchor>standardButtons-prop</anchor>
@@ -28954,6 +29040,13 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMessageBox::Options</type>
+            <name>options</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>options-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QMessageBox::StandardButton</type>
             <name>standardButton</name>
             <anchorfile>qmessagebox.html</anchorfile>
@@ -29023,10 +29116,23 @@
             <anchor>textInteractionFlags-prop</anchor>
             <arglist>() const const</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>testOption</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>testOption</anchor>
+            <arglist>(QMessageBox::Option option) const const</arglist>
+        </member>
         <member kind="typedef" type="">
             <name>Button</name>
             <anchorfile>qmessagebox-obsolete.html</anchorfile>
             <anchor>Button-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="QMessageBox::Option">
+            <name>Options</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>Option-enum</anchor>
             <arglist></arglist>
         </member>
         <member kind="typedef" type="QMessageBox::StandardButton">
@@ -29057,6 +29163,12 @@
             <name>informativeText</name>
             <anchorfile>qmessagebox.html</anchorfile>
             <anchor>informativeText-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="Options">
+            <name>options</name>
+            <anchorfile>qmessagebox.html</anchorfile>
+            <anchor>options-prop</anchor>
             <arglist></arglist>
         </member>
         <member kind="property" type="StandardButtons">
@@ -39438,6 +39550,12 @@
             <anchor>TabPosition-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="enumvalue">
+            <name>Moving</name>
+            <anchorfile>qstyleoptiontab.html</anchorfile>
+            <anchor>TabPosition-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QStyleOptionTab</name>
@@ -48901,6 +49019,13 @@
             <anchorfile>qwidget.html</anchorfile>
             <anchor>setTabOrder</anchor>
             <arglist>(QWidget *first, QWidget *second)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>void</type>
+            <name>setTabOrder</name>
+            <anchorfile>qwidget.html</anchorfile>
+            <anchor>setTabOrder-1</anchor>
+            <arglist>(std::initializer_list&lt;QWidget *&gt; widgets)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

@@ -1,144 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
     <compound kind="class">
-        <name>QtQuick3DPhysics.BoxShape</name>
-        <filename>qml-qtquick3dphysics-boxshape.html</filename>
+        <name>QtQuick3D.Physics.BoxShape</name>
+        <filename>qml-qtquick3d-physics-boxshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.CapsuleShape</name>
-        <filename>qml-qtquick3dphysics-capsuleshape.html</filename>
+        <name>QtQuick3D.Physics.CapsuleShape</name>
+        <filename>qml-qtquick3d-physics-capsuleshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.CharacterController</name>
-        <filename>qml-qtquick3dphysics-charactercontroller.html</filename>
+        <name>QtQuick3D.Physics.CharacterController</name>
+        <filename>qml-qtquick3d-physics-charactercontroller.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>shapeHit</name>
+            <anchorfile>qml-qtquick3d-physics-charactercontroller.html</anchorfile>
+            <anchor>shapeHit-signal</anchor>
+            <arglist>(PhysicsNode *body, vector3D position, vector3D impulse, vector3D normal)</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>teleport</name>
-            <anchorfile>qml-qtquick3dphysics-charactercontroller.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-charactercontroller.html</anchorfile>
             <anchor>teleport-method</anchor>
             <arglist>(vector3d position)</arglist>
         </member>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.CollisionNode</name>
-        <filename>qml-qtquick3dphysics-collisionnode.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>bodyContact</name>
-            <anchorfile>qml-qtquick3dphysics-collisionnode.html</anchorfile>
-            <anchor>bodyContact-signal</anchor>
-            <arglist>(CollisionNode *body, list&lt;vector3D&gt; positions, list&lt;vector3D&gt; impulses, list&lt;vector3D&gt; normals)</arglist>
-        </member>
+        <name>QtQuick3D.Physics.CollisionShape</name>
+        <filename>qml-qtquick3d-physics-collisionshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.CollisionShape</name>
-        <filename>qml-qtquick3dphysics-collisionshape.html</filename>
+        <name>QtQuick3D.Physics.ConvexMeshShape</name>
+        <filename>qml-qtquick3d-physics-convexmeshshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.ConvexMeshShape</name>
-        <filename>qml-qtquick3dphysics-convexmeshshape.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtQuick3DPhysics.DynamicRigidBody</name>
-        <filename>qml-qtquick3dphysics-dynamicrigidbody.html</filename>
+        <name>QtQuick3D.Physics.DynamicRigidBody</name>
+        <filename>qml-qtquick3d-physics-dynamicrigidbody.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyCentralForce</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyCentralForce-method</anchor>
             <arglist>(vector3d force)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyCentralImpulse</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyCentralImpulse-method</anchor>
             <arglist>(vector3d impulse)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyForce</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyForce-method</anchor>
             <arglist>(vector3d force, vector3d position)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyImpulse</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyImpulse-method</anchor>
             <arglist>(vector3d impulse, vector3d position)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyTorque</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyTorque-method</anchor>
             <arglist>(vector3d torque)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applyTorqueImpulse</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>applyTorqueImpulse-method</anchor>
             <arglist>(vector3d impulse)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>reset</name>
-            <anchorfile>qml-qtquick3dphysics-dynamicrigidbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
             <anchor>reset-method</anchor>
             <arglist>(vector3d position, vector3d eulerRotation)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>setAngularVelocity</name>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
+            <anchor>setAngularVelocity-method</anchor>
+            <arglist>(vector3d angularVelocity)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>setLinearVelocity</name>
+            <anchorfile>qml-qtquick3d-physics-dynamicrigidbody.html</anchorfile>
+            <anchor>setLinearVelocity-method</anchor>
+            <arglist>(vector3d linearVelocity)</arglist>
+        </member>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.DynamicsWorld</name>
-        <filename>qml-qtquick3dphysics-dynamicsworld.html</filename>
+        <name>QtQuick3D.Physics.HeightFieldShape</name>
+        <filename>qml-qtquick3d-physics-heightfieldshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.HeightFieldShape</name>
-        <filename>qml-qtquick3dphysics-heightfieldshape.html</filename>
+        <name>QtQuick3D.Physics.PhysicsBody</name>
+        <filename>qml-qtquick3d-physics-physicsbody.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.PhysicsBody</name>
-        <filename>qml-qtquick3dphysics-physicsbody.html</filename>
+        <name>QtQuick3D.Physics.PhysicsMaterial</name>
+        <filename>qml-qtquick3d-physics-physicsmaterial.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.PhysicsMaterial</name>
-        <filename>qml-qtquick3dphysics-physicsmaterial.html</filename>
+        <name>QtQuick3D.Physics.PhysicsNode</name>
+        <filename>qml-qtquick3d-physics-physicsnode.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>bodyContact</name>
+            <anchorfile>qml-qtquick3d-physics-physicsnode.html</anchorfile>
+            <anchor>bodyContact-signal</anchor>
+            <arglist>(PhysicsNode *body, list&lt;vector3D&gt; positions, list&lt;vector3D&gt; impulses, list&lt;vector3D&gt; normals)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>enteredTriggerBody</name>
+            <anchorfile>qml-qtquick3d-physics-physicsnode.html</anchorfile>
+            <anchor>enteredTriggerBody-signal</anchor>
+            <arglist>(TriggerBody *body)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>exitedTriggerBody</name>
+            <anchorfile>qml-qtquick3d-physics-physicsnode.html</anchorfile>
+            <anchor>exitedTriggerBody-signal</anchor>
+            <arglist>(TriggerBody *body)</arglist>
+        </member>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.PlaneShape</name>
-        <filename>qml-qtquick3dphysics-planeshape.html</filename>
+        <name>QtQuick3D.Physics.PhysicsWorld</name>
+        <filename>qml-qtquick3d-physics-physicsworld.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>frameDone</name>
+            <anchorfile>qml-qtquick3d-physics-physicsworld.html</anchorfile>
+            <anchor>frameDone-signal</anchor>
+            <arglist>(float timestep)</arglist>
+        </member>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.SphereShape</name>
-        <filename>qml-qtquick3dphysics-sphereshape.html</filename>
+        <name>QtQuick3D.Physics.PlaneShape</name>
+        <filename>qml-qtquick3d-physics-planeshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.StaticRigidBody</name>
-        <filename>qml-qtquick3dphysics-staticrigidbody.html</filename>
+        <name>QtQuick3D.Physics.SphereShape</name>
+        <filename>qml-qtquick3d-physics-sphereshape.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.TriangleMeshShape</name>
-        <filename>qml-qtquick3dphysics-trianglemeshshape.html</filename>
+        <name>QtQuick3D.Physics.StaticRigidBody</name>
+        <filename>qml-qtquick3d-physics-staticrigidbody.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQuick3DPhysics.TriggerBody</name>
-        <filename>qml-qtquick3dphysics-triggerbody.html</filename>
+        <name>QtQuick3D.Physics.TriangleMeshShape</name>
+        <filename>qml-qtquick3d-physics-trianglemeshshape.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQuick3D.Physics.TriggerBody</name>
+        <filename>qml-qtquick3d-physics-triggerbody.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>bodyEntered</name>
-            <anchorfile>qml-qtquick3dphysics-triggerbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-triggerbody.html</anchorfile>
             <anchor>bodyEntered-signal</anchor>
-            <arglist>(CollisionNode *body)</arglist>
+            <arglist>(PhysicsNode *body)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>bodyExited</name>
-            <anchorfile>qml-qtquick3dphysics-triggerbody.html</anchorfile>
+            <anchorfile>qml-qtquick3d-physics-triggerbody.html</anchorfile>
             <anchor>bodyExited-signal</anchor>
-            <arglist>(CollisionNode *body)</arglist>
+            <arglist>(PhysicsNode *body)</arglist>
         </member>
     </compound>
 </tagfile>

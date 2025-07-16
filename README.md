@@ -1,11 +1,11 @@
-# Dockerfile: Ubuntu Noble, Qt 6.4
+# Dockerfile: Ubuntu Oracular, Qt 6.6
 
 Docker image for building and testing of Qt 6 applications.
 
 Image configuration:
-- Ubuntu Noble (24.04)
-- Python 3.12.2
-- Qt 6.4.2
+- Ubuntu Oracular (24.10)
+- Python 3.12.6
+- Qt 6.6.2
 	- qmake6
 	- qt6-base-dev
 	- qt6-base-dev-tools
@@ -15,17 +15,17 @@ Image configuration:
 	- qt6-image-formats-plugins
 	- qt6-l10n-tools
 	- qt6-translations-l10n
-- GCC/G++ 13.2.0
-- CMake 3.28.3
-- Conan 2.9.3
-- Qbs 2.1.2 (default profile: qt-6-4-2-bin)
+- GCC/G++ 14.1.0
+- CMake 3.30.3
+- Conan 2.18.1
+- Qbs 2.3.1 (default profile: qt-6-6-2-bin)
 - Doxygen 1.9.8
-- gcovr 7.0
-- lcov 2.0
+- gcovr 7.2
+- lcov 2.1
 - coverxygen 1.8.1
-- Tags files for Qt 6.4.2 (to link in Doxygen documentation)
+- Tags files for Qt 6.6 (to link in Doxygen documentation)
 - OpenJDK 17 JRE
-- SonarQube Scanner 6.1.0.4477 (located at `/opt/sonar-scanner`)
+- SonarQube Scanner 6.2.1.4610 (located at `/opt/sonar-scanner`)
 
 
 ### Other Versions ###

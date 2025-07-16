@@ -218,6 +218,13 @@
             <anchor>prepareRequest</anchor>
             <arglist>(QNetworkRequest *request, const QByteArray &amp;verb, const QByteArray &amp;body) = 0</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>requestFailed</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>requestFailed</anchor>
+            <arglist>(const QAbstractOAuth::Error error)</arglist>
+        </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
             <name>resourceOwnerAuthorization</name>
@@ -557,6 +564,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
+            <name>setSslConfiguration</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>setSslConfiguration</anchor>
+            <arglist>(const QSslConfiguration &amp;configuration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
             <name>setState</name>
             <anchorfile>qabstractoauth2.html</anchorfile>
             <anchor>state-prop</anchor>
@@ -568,6 +582,13 @@
             <anchorfile>qabstractoauth2.html</anchorfile>
             <anchor>userAgent-prop</anchor>
             <arglist>(const QString &amp;userAgent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>sslConfigurationChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>sslConfigurationChanged</anchor>
+            <arglist>(const QSslConfiguration &amp;configuration)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -595,6 +616,13 @@
             <name>expirationAt</name>
             <anchorfile>qabstractoauth2.html</anchorfile>
             <anchor>expiration-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSslConfiguration</type>
+            <name>sslConfiguration</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>sslConfiguration</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -708,6 +736,13 @@
             <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
             <anchor>replyDataReceived</anchor>
             <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>tokenRequestErrorOccurred</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>tokenRequestErrorOccurred</anchor>
+            <arglist>(QAbstractOAuth::Error error, const QString &amp;errorString)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>

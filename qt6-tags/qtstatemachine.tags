@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tagfile>
     <compound kind="class">
-        <name>QtQml.StateMachine.FinalState</name>
-        <filename>qml-qtqml-statemachine-finalstate.html</filename>
-    </compound>
-    <compound kind="class">
-        <name>QtQml.StateMachine.HistoryState</name>
-        <filename>qml-qtqml-statemachine-historystate.html</filename>
-    </compound>
-    <compound kind="class">
         <name>QAbstractState</name>
         <filename>qabstractstate.html</filename>
         <base>QObject</base>
@@ -18,6 +10,13 @@
             <anchorfile>qabstractstate.html</anchorfile>
             <anchor>QAbstractState</anchor>
             <arglist>(QState *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;bool&gt;</type>
+            <name>bindableActive</name>
+            <anchorfile>qabstractstate.html</anchorfile>
+            <anchor>active-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
@@ -97,24 +96,6 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QtQml.StateMachine.QAbstractState</name>
-        <filename>qml-qtqml-statemachine-qabstractstate.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>entered</name>
-            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
-            <anchor>entered-signal</anchor>
-            <arglist>()</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>exited</name>
-            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
-            <anchor>exited-signal</anchor>
-            <arglist>()</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
         <name>QAbstractTransition</name>
         <filename>qabstracttransition.html</filename>
         <base>QObject</base>
@@ -141,6 +122,13 @@
             <anchorfile>qabstracttransition.html</anchorfile>
             <anchor>QAbstractTransition</anchor>
             <arglist>(QState *sourceState)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QAbstractTransition::TransitionType&gt;</type>
+            <name>bindableTransitionType</name>
+            <anchorfile>qabstracttransition.html</anchorfile>
+            <anchor>transitionType-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual bool</type>
@@ -294,20 +282,23 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QtQml.StateMachine.QAbstractTransition</name>
-        <filename>qml-qtqml-statemachine-qabstracttransition.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type></type>
-            <name>triggered</name>
-            <anchorfile>qml-qtqml-statemachine-qabstracttransition.html</anchorfile>
-            <anchor>triggered-signal</anchor>
-            <arglist>()</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
         <name>QEventTransition</name>
         <filename>qeventtransition.html</filename>
         <base>QAbstractTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QEvent::Type&gt;</type>
+            <name>bindableEventType</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventType-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QObject *&gt;</type>
+            <name>bindableEventSource</name>
+            <anchorfile>qeventtransition.html</anchorfile>
+            <anchor>eventSource-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QEventTransition</name>
@@ -453,6 +444,20 @@
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QAbstractTransition *&gt;</type>
+            <name>bindableDefaultTransition</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>defaultTransition-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QHistoryState::HistoryType&gt;</type>
+            <name>bindableHistoryType</name>
+            <anchorfile>qhistorystate.html</anchorfile>
+            <anchor>historyType-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QHistoryState</name>
             <anchorfile>qhistorystate.html</anchorfile>
@@ -581,6 +586,20 @@
         <filename>qkeyeventtransition.html</filename>
         <base>QEventTransition</base>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;Qt::KeyboardModifiers&gt;</type>
+            <name>bindableModifierMask</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>modifierMask-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;int&gt;</type>
+            <name>bindableKey</name>
+            <anchorfile>qkeyeventtransition.html</anchorfile>
+            <anchor>key-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QKeyEventTransition</name>
             <anchorfile>qkeyeventtransition.html</anchorfile>
@@ -660,6 +679,20 @@
         <name>QMouseEventTransition</name>
         <filename>qmouseeventtransition.html</filename>
         <base>QEventTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;Qt::KeyboardModifiers&gt;</type>
+            <name>bindableModifierMask</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>modifierMask-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;Qt::MouseButton&gt;</type>
+            <name>bindableButton</name>
+            <anchorfile>qmouseeventtransition.html</anchorfile>
+            <anchor>button-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QMouseEventTransition</name>
@@ -754,6 +787,20 @@
         <name>QSignalTransition</name>
         <filename>qsignaltransition.html</filename>
         <base>QAbstractTransition</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QByteArray&gt;</type>
+            <name>bindableSignal</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>signal-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;const QObject *&gt;</type>
+            <name>bindableSenderObject</name>
+            <anchorfile>qsignaltransition.html</anchorfile>
+            <anchor>senderObject-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSignalTransition</name>
@@ -859,10 +906,6 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>QtQml.StateMachine.QSignalTransition</name>
-        <filename>qml-qtqml-statemachine-qsignaltransition.html</filename>
-    </compound>
-    <compound kind="class">
         <name>QState</name>
         <filename>qstate.html</filename>
         <base>QAbstractState</base>
@@ -906,6 +949,27 @@
             <anchorfile>qstate.html</anchorfile>
             <anchor>addTransition-3</anchor>
             <arglist>(QAbstractState *target)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QAbstractState *&gt;</type>
+            <name>bindableErrorState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>errorState-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QAbstractState *&gt;</type>
+            <name>bindableInitialState</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>initialState-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QState::ChildMode&gt;</type>
+            <name>bindableChildMode</name>
+            <anchorfile>qstate.html</anchorfile>
+            <anchor>childMode-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QSignalTransition *</type>
@@ -1146,6 +1210,20 @@
             <arglist></arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QState::RestorePolicy&gt;</type>
+            <name>bindableGlobalRestorePolicy</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>globalRestorePolicy-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;bool&gt;</type>
+            <name>bindableAnimated</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>animated-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QStateMachine</name>
             <anchorfile>qstatemachine.html</anchorfile>
@@ -1314,6 +1392,13 @@
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QString&gt;</type>
+            <name>bindableErrorString</name>
+            <anchorfile>qstatemachine.html</anchorfile>
+            <anchor>errorString-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QList&lt;QAbstractAnimation *&gt;</type>
             <name>defaultAnimations</name>
             <anchorfile>qstatemachine.html</anchorfile>
@@ -1445,6 +1530,47 @@
             <anchor>object</anchor>
             <arglist>() const const</arglist>
         </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.FinalState</name>
+        <filename>qml-qtqml-statemachine-finalstate.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.HistoryState</name>
+        <filename>qml-qtqml-statemachine-historystate.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QAbstractState</name>
+        <filename>qml-qtqml-statemachine-qabstractstate.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>entered</name>
+            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
+            <anchor>entered-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>exited</name>
+            <anchorfile>qml-qtqml-statemachine-qabstractstate.html</anchorfile>
+            <anchor>exited-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QAbstractTransition</name>
+        <filename>qml-qtqml-statemachine-qabstracttransition.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>triggered</name>
+            <anchorfile>qml-qtqml-statemachine-qabstracttransition.html</anchorfile>
+            <anchor>triggered-signal</anchor>
+            <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.StateMachine.QSignalTransition</name>
+        <filename>qml-qtqml-statemachine-qsignaltransition.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQml.StateMachine.SignalTransition</name>

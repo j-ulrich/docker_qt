@@ -2,893 +2,947 @@
 <tagfile>
     <compound kind="class">
         <name>QtQuick.Controls.AbstractButton</name>
-        <filename>qml-qtquick-controls2-abstractbutton.html</filename>
+        <filename>qml-qtquick-controls-abstractbutton.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>canceled</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>canceled-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clicked</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>clicked-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>doubleClicked</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>doubleClicked-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressAndHold</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>pressAndHold-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressed</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>pressed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>released</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>released-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>toggled</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>toggled-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>toggle</name>
-            <anchorfile>qml-qtquick-controls2-abstractbutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-abstractbutton.html</anchorfile>
             <anchor>toggle-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Action</name>
-        <filename>qml-qtquick-controls2-action.html</filename>
+        <filename>qml-qtquick-controls-action.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>toggled</name>
-            <anchorfile>qml-qtquick-controls2-action.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-action.html</anchorfile>
             <anchor>toggled-signal</anchor>
             <arglist>(QtObject source)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>triggered</name>
-            <anchorfile>qml-qtquick-controls2-action.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-action.html</anchorfile>
             <anchor>triggered-signal</anchor>
             <arglist>(QtObject source)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>toggle</name>
-            <anchorfile>qml-qtquick-controls2-action.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-action.html</anchorfile>
             <anchor>toggle-method</anchor>
             <arglist>(QtObject source)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>trigger</name>
-            <anchorfile>qml-qtquick-controls2-action.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-action.html</anchorfile>
             <anchor>trigger-method</anchor>
             <arglist>(QtObject source)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ActionGroup</name>
-        <filename>qml-qtquick-controls2-actiongroup.html</filename>
+        <filename>qml-qtquick-controls-actiongroup.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>triggered</name>
-            <anchorfile>qml-qtquick-controls2-actiongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-actiongroup.html</anchorfile>
             <anchor>triggered-signal</anchor>
             <arglist>(Action action)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addAction</name>
-            <anchorfile>qml-qtquick-controls2-actiongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-actiongroup.html</anchorfile>
             <anchor>addAction-method</anchor>
             <arglist>(Action action)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeAction</name>
-            <anchorfile>qml-qtquick-controls2-actiongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-actiongroup.html</anchorfile>
             <anchor>removeAction-method</anchor>
             <arglist>(Action action)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ApplicationWindow</name>
-        <filename>qml-qtquick-controls2-applicationwindow.html</filename>
+        <filename>qml-qtquick-controls-applicationwindow.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.BusyIndicator</name>
-        <filename>qml-qtquick-controls2-busyindicator.html</filename>
+        <filename>qml-qtquick-controls-busyindicator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Button</name>
-        <filename>qml-qtquick-controls2-button.html</filename>
+        <filename>qml-qtquick-controls-button.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ButtonGroup</name>
-        <filename>qml-qtquick-controls2-buttongroup.html</filename>
+        <filename>qml-qtquick-controls-buttongroup.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clicked</name>
-            <anchorfile>qml-qtquick-controls2-buttongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-buttongroup.html</anchorfile>
             <anchor>clicked-signal</anchor>
             <arglist>(AbstractButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addButton</name>
-            <anchorfile>qml-qtquick-controls2-buttongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-buttongroup.html</anchorfile>
             <anchor>addButton-method</anchor>
             <arglist>(AbstractButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeButton</name>
-            <anchorfile>qml-qtquick-controls2-buttongroup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-buttongroup.html</anchorfile>
             <anchor>removeButton-method</anchor>
             <arglist>(AbstractButton button)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Calendar</name>
-        <filename>qml-qtquick-controls2-calendar.html</filename>
+        <filename>qml-qtquick-controls-calendar.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.CalendarModel</name>
-        <filename>qml-qtquick-controls2-calendarmodel.html</filename>
+        <filename>qml-qtquick-controls-calendarmodel.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>indexOf</name>
-            <anchorfile>qml-qtquick-controls2-calendarmodel.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-calendarmodel.html</anchorfile>
             <anchor>indexOf-method</anchor>
             <arglist>(Date date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>indexOf</name>
-            <anchorfile>qml-qtquick-controls2-calendarmodel.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-calendarmodel.html</anchorfile>
             <anchor>indexOf-method</anchor>
             <arglist>(int year, int month)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>monthAt</name>
-            <anchorfile>qml-qtquick-controls2-calendarmodel.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-calendarmodel.html</anchorfile>
             <anchor>monthAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>yearAt</name>
-            <anchorfile>qml-qtquick-controls2-calendarmodel.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-calendarmodel.html</anchorfile>
             <anchor>yearAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.CheckBox</name>
-        <filename>qml-qtquick-controls2-checkbox.html</filename>
+        <filename>qml-qtquick-controls-checkbox.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.CheckDelegate</name>
-        <filename>qml-qtquick-controls2-checkdelegate.html</filename>
+        <filename>qml-qtquick-controls-checkdelegate.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ComboBox</name>
-        <filename>qml-qtquick-controls2-combobox.html</filename>
+        <filename>qml-qtquick-controls-combobox.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>find</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>find-method</anchor>
             <arglist>(string text, enumeration flags)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>int</type>
             <name>indexOfValue</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>indexOfValue-method</anchor>
             <arglist>(object value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>string</type>
             <name>textAt</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>textAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>var</type>
             <name>valueAt</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>valueAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>accepted</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>accepted-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>activated</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>activated-signal</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrementCurrentIndex</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>decrementCurrentIndex-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>highlighted</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>highlighted-signal</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>incrementCurrentIndex</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>incrementCurrentIndex-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>selectAll</name>
-            <anchorfile>qml-qtquick-controls2-combobox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-combobox.html</anchorfile>
             <anchor>selectAll-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Container</name>
-        <filename>qml-qtquick-controls2-container.html</filename>
+        <filename>qml-qtquick-controls-container.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>itemAt</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>itemAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>takeItem</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>takeItem-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addItem</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>addItem-method</anchor>
             <arglist>(Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrementCurrentIndex</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>decrementCurrentIndex-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>incrementCurrentIndex</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>incrementCurrentIndex-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertItem</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>insertItem-method</anchor>
             <arglist>(int index, Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>moveItem</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>moveItem-method</anchor>
             <arglist>(int from, int to)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeItem</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>removeItem-method</anchor>
             <arglist>(Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setCurrentIndex</name>
-            <anchorfile>qml-qtquick-controls2-container.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-container.html</anchorfile>
             <anchor>setCurrentIndex-method</anchor>
             <arglist>(int index)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Control</name>
-        <filename>qml-qtquick-controls2-control.html</filename>
+        <filename>qml-qtquick-controls-control.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.DayOfWeekRow</name>
-        <filename>qml-qtquick-controls2-dayofweekrow.html</filename>
+        <filename>qml-qtquick-controls-dayofweekrow.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.DelayButton</name>
-        <filename>qml-qtquick-controls2-delaybutton.html</filename>
+        <filename>qml-qtquick-controls-delaybutton.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>activated</name>
-            <anchorfile>qml-qtquick-controls2-delaybutton.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-delaybutton.html</anchorfile>
             <anchor>activated-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Dial</name>
-        <filename>qml-qtquick-controls2-dial.html</filename>
+        <filename>qml-qtquick-controls-dial.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>moved</name>
-            <anchorfile>qml-qtquick-controls2-dial.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dial.html</anchorfile>
             <anchor>moved-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrease</name>
-            <anchorfile>qml-qtquick-controls2-dial.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dial.html</anchorfile>
             <anchor>decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>increase</name>
-            <anchorfile>qml-qtquick-controls2-dial.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dial.html</anchorfile>
             <anchor>increase-method</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>wrapped</name>
+            <anchorfile>qml-qtquick-controls-dial.html</anchorfile>
+            <anchor>wrapped-signal</anchor>
+            <arglist>(Dial.WrapDirection direction)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Dialog</name>
-        <filename>qml-qtquick-controls2-dialog.html</filename>
+        <filename>qml-qtquick-controls-dialog.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>AbstractButton</type>
             <name>standardButton</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>standardButton-method</anchor>
             <arglist>(StandardButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>accepted</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>accepted-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applied</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>applied-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>discarded</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>discarded-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>helpRequested</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>helpRequested-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>rejected</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>rejected-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>reset</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>reset-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>accept</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>accept-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>done</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>done-method</anchor>
             <arglist>(int result)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>reject</name>
-            <anchorfile>qml-qtquick-controls2-dialog.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialog.html</anchorfile>
             <anchor>reject-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.DialogButtonBox</name>
-        <filename>qml-qtquick-controls2-dialogbuttonbox.html</filename>
+        <filename>qml-qtquick-controls-dialogbuttonbox.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>AbstractButton</type>
             <name>standardButton</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>standardButton-method</anchor>
             <arglist>(StandardButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>accepted</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>accepted-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>applied</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>applied-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clicked</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>clicked-signal</anchor>
             <arglist>(AbstractButton button)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>discarded</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>discarded-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>helpRequested</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>helpRequested-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>rejected</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>rejected-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>reset</name>
-            <anchorfile>qml-qtquick-controls2-dialogbuttonbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-dialogbuttonbox.html</anchorfile>
             <anchor>reset-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Drawer</name>
-        <filename>qml-qtquick-controls2-drawer.html</filename>
+        <filename>qml-qtquick-controls-drawer.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Frame</name>
-        <filename>qml-qtquick-controls2-frame.html</filename>
+        <filename>qml-qtquick-controls-frame.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.GroupBox</name>
-        <filename>qml-qtquick-controls2-groupbox.html</filename>
+        <filename>qml-qtquick-controls-groupbox.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.HorizontalHeaderView</name>
-        <filename>qml-qtquick-controls2-horizontalheaderview.html</filename>
+        <filename>qml-qtquick-controls-horizontalheaderview.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ItemDelegate</name>
-        <filename>qml-qtquick-controls2-itemdelegate.html</filename>
+        <filename>qml-qtquick-controls-itemdelegate.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Label</name>
-        <filename>qml-qtquick-controls2-label.html</filename>
+        <filename>qml-qtquick-controls-label.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Menu</name>
-        <filename>qml-qtquick-controls2-menu.html</filename>
+        <filename>qml-qtquick-controls-menu.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Action</type>
             <name>actionAt</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>actionAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Action</type>
             <name>takeAction</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>takeAction-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>itemAt</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>itemAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Menu</type>
             <name>menuAt</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>menuAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Menu</type>
             <name>takeMenu</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>takeMenu-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>MenuItem</type>
             <name>takeItem</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>takeItem-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addAction</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>addAction-method</anchor>
             <arglist>(Action action)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addItem</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>addItem-method</anchor>
             <arglist>(Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addMenu</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>addMenu-method</anchor>
             <arglist>(Menu menu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>dismiss</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>dismiss-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertAction</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>insertAction-method</anchor>
             <arglist>(int index, Action action)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertItem</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>insertItem-method</anchor>
             <arglist>(int index, Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertMenu</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>insertMenu-method</anchor>
             <arglist>(int index, Menu menu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>moveItem</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>moveItem-method</anchor>
             <arglist>(int from, int to)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(Item parent, MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(Item parent, point pos, MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(Item parent, real x, real y, MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(point pos, MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>popup</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>popup-method</anchor>
             <arglist>(real x, real y, MenuItem item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeAction</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>removeAction-method</anchor>
             <arglist>(Action action)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeItem</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>removeItem-method</anchor>
             <arglist>(Item item)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeMenu</name>
-            <anchorfile>qml-qtquick-controls2-menu.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menu.html</anchorfile>
             <anchor>removeMenu-method</anchor>
             <arglist>(Menu menu)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.MenuBar</name>
-        <filename>qml-qtquick-controls2-menubar.html</filename>
+        <filename>qml-qtquick-controls-menubar.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Menu</type>
             <name>menuAt</name>
-            <anchorfile>qml-qtquick-controls2-menubar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubar.html</anchorfile>
             <anchor>menuAt-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Menu</type>
             <name>takeMenu</name>
-            <anchorfile>qml-qtquick-controls2-menubar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubar.html</anchorfile>
             <anchor>takeMenu-method</anchor>
             <arglist>(int index)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>addMenu</name>
-            <anchorfile>qml-qtquick-controls2-menubar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubar.html</anchorfile>
             <anchor>addMenu-method</anchor>
             <arglist>(Menu menu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>insertMenu</name>
-            <anchorfile>qml-qtquick-controls2-menubar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubar.html</anchorfile>
             <anchor>insertMenu-method</anchor>
             <arglist>(int index, Menu menu)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>removeMenu</name>
-            <anchorfile>qml-qtquick-controls2-menubar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubar.html</anchorfile>
             <anchor>removeMenu-method</anchor>
             <arglist>(Menu menu)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.MenuBarItem</name>
-        <filename>qml-qtquick-controls2-menubaritem.html</filename>
+        <filename>qml-qtquick-controls-menubaritem.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>triggered</name>
-            <anchorfile>qml-qtquick-controls2-menubaritem.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menubaritem.html</anchorfile>
             <anchor>triggered-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.MenuItem</name>
-        <filename>qml-qtquick-controls2-menuitem.html</filename>
+        <filename>qml-qtquick-controls-menuitem.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>triggered</name>
-            <anchorfile>qml-qtquick-controls2-menuitem.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-menuitem.html</anchorfile>
             <anchor>triggered-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.MenuSeparator</name>
-        <filename>qml-qtquick-controls2-menuseparator.html</filename>
+        <filename>qml-qtquick-controls-menuseparator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.MonthGrid</name>
-        <filename>qml-qtquick-controls2-monthgrid.html</filename>
+        <filename>qml-qtquick-controls-monthgrid.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clicked</name>
-            <anchorfile>qml-qtquick-controls2-monthgrid.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-monthgrid.html</anchorfile>
             <anchor>clicked-signal</anchor>
             <arglist>(date date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressAndHold</name>
-            <anchorfile>qml-qtquick-controls2-monthgrid.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-monthgrid.html</anchorfile>
             <anchor>pressAndHold-signal</anchor>
             <arglist>(date date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressed</name>
-            <anchorfile>qml-qtquick-controls2-monthgrid.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-monthgrid.html</anchorfile>
             <anchor>pressed-signal</anchor>
             <arglist>(date date)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>released</name>
-            <anchorfile>qml-qtquick-controls2-monthgrid.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-monthgrid.html</anchorfile>
             <anchor>released-signal</anchor>
             <arglist>(date date)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Overlay</name>
-        <filename>qml-qtquick-controls2-overlay.html</filename>
+        <filename>qml-qtquick-controls-overlay.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressed</name>
-            <anchorfile>qml-qtquick-controls2-overlay.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-overlay.html</anchorfile>
             <anchor>pressed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>released</name>
-            <anchorfile>qml-qtquick-controls2-overlay.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-overlay.html</anchorfile>
             <anchor>released-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Page</name>
-        <filename>qml-qtquick-controls2-page.html</filename>
+        <filename>qml-qtquick-controls-page.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.PageIndicator</name>
-        <filename>qml-qtquick-controls2-pageindicator.html</filename>
+        <filename>qml-qtquick-controls-pageindicator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Pane</name>
-        <filename>qml-qtquick-controls2-pane.html</filename>
+        <filename>qml-qtquick-controls-pane.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Popup</name>
-        <filename>qml-qtquick-controls2-popup.html</filename>
+        <filename>qml-qtquick-controls-popup.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>forceActiveFocus</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>forceActiveFocus-method</anchor>
             <arglist>(enumeration reason)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>aboutToHide</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>aboutToHide-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>aboutToShow</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>aboutToShow-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>close</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>close-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>closed</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>closed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>open</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>open-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>opened</name>
-            <anchorfile>qml-qtquick-controls2-popup.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-popup.html</anchorfile>
             <anchor>opened-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ProgressBar</name>
-        <filename>qml-qtquick-controls2-progressbar.html</filename>
+        <filename>qml-qtquick-controls-progressbar.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QQuickAttachedPropertyPropagator</name>
+        <filename>qquickattachedpropertypropagator.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QQuickAttachedPropertyPropagator</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>QQuickAttachedPropertyPropagator</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>attachedParentChange</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>attachedParentChange</anchor>
+            <arglist>(QQuickAttachedPropertyPropagator *newParent, QQuickAttachedPropertyPropagator *oldParent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>initialize</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>initialize</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QQuickAttachedPropertyPropagator</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>dtor.QQuickAttachedPropertyPropagator</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QQuickAttachedPropertyPropagator *&gt;</type>
+            <name>attachedChildren</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>attachedChildren</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QQuickAttachedPropertyPropagator *</type>
+            <name>attachedParent</name>
+            <anchorfile>qquickattachedpropertypropagator.html</anchorfile>
+            <anchor>attachedParent</anchor>
+            <arglist>() const const</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QQuickStyle</name>
@@ -917,447 +971,447 @@
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.RadioButton</name>
-        <filename>qml-qtquick-controls2-radiobutton.html</filename>
+        <filename>qml-qtquick-controls-radiobutton.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.RadioDelegate</name>
-        <filename>qml-qtquick-controls2-radiodelegate.html</filename>
+        <filename>qml-qtquick-controls-radiodelegate.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.RangeSlider</name>
-        <filename>qml-qtquick-controls2-rangeslider.html</filename>
+        <filename>qml-qtquick-controls-rangeslider.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>real</type>
             <name>valueAt</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>valueAt-method</anchor>
             <arglist>(real position)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>first.decrease</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>first.decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>first.increase</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>first.increase-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>first.moved</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>first.moved-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>second.decrease</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>second.decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>second.increase</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>second.increase-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>second.moved</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>second.moved-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>setValues</name>
-            <anchorfile>qml-qtquick-controls2-rangeslider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-rangeslider.html</anchorfile>
             <anchor>setValues-method</anchor>
             <arglist>(real firstValue, real secondValue)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.RoundButton</name>
-        <filename>qml-qtquick-controls2-roundbutton.html</filename>
+        <filename>qml-qtquick-controls-roundbutton.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ScrollBar</name>
-        <filename>qml-qtquick-controls2-scrollbar.html</filename>
+        <filename>qml-qtquick-controls-scrollbar.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrease</name>
-            <anchorfile>qml-qtquick-controls2-scrollbar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-scrollbar.html</anchorfile>
             <anchor>decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>increase</name>
-            <anchorfile>qml-qtquick-controls2-scrollbar.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-scrollbar.html</anchorfile>
             <anchor>increase-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ScrollIndicator</name>
-        <filename>qml-qtquick-controls2-scrollindicator.html</filename>
+        <filename>qml-qtquick-controls-scrollindicator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ScrollView</name>
-        <filename>qml-qtquick-controls2-scrollview.html</filename>
+        <filename>qml-qtquick-controls-scrollview.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SelectionRectangle</name>
-        <filename>qml-qtquick-controls2-selectionrectangle.html</filename>
+        <filename>qml-qtquick-controls-selectionrectangle.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Slider</name>
-        <filename>qml-qtquick-controls2-slider.html</filename>
+        <filename>qml-qtquick-controls-slider.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>moved</name>
-            <anchorfile>qml-qtquick-controls2-slider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-slider.html</anchorfile>
             <anchor>moved-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>real</type>
             <name>valueAt</name>
-            <anchorfile>qml-qtquick-controls2-slider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-slider.html</anchorfile>
             <anchor>valueAt-method</anchor>
             <arglist>(real position)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrease</name>
-            <anchorfile>qml-qtquick-controls2-slider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-slider.html</anchorfile>
             <anchor>decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>increase</name>
-            <anchorfile>qml-qtquick-controls2-slider.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-slider.html</anchorfile>
             <anchor>increase-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SpinBox</name>
-        <filename>qml-qtquick-controls2-spinbox.html</filename>
+        <filename>qml-qtquick-controls-spinbox.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>valueModified</name>
-            <anchorfile>qml-qtquick-controls2-spinbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-spinbox.html</anchorfile>
             <anchor>valueModified-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>decrease</name>
-            <anchorfile>qml-qtquick-controls2-spinbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-spinbox.html</anchorfile>
             <anchor>decrease-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>increase</name>
-            <anchorfile>qml-qtquick-controls2-spinbox.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-spinbox.html</anchorfile>
             <anchor>increase-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SplitHandle</name>
-        <filename>qml-qtquick-controls2-splithandle.html</filename>
+        <filename>qml-qtquick-controls-splithandle.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SplitView</name>
-        <filename>qml-qtquick-controls2-splitview.html</filename>
+        <filename>qml-qtquick-controls-splitview.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>restoreState</name>
-            <anchorfile>qml-qtquick-controls2-splitview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-splitview.html</anchorfile>
             <anchor>restoreState-method</anchor>
             <arglist>(state)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>var</type>
             <name>saveState</name>
-            <anchorfile>qml-qtquick-controls2-splitview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-splitview.html</anchorfile>
             <anchor>saveState-method</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.StackView</name>
-        <filename>qml-qtquick-controls2-stackview.html</filename>
+        <filename>qml-qtquick-controls-stackview.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>find</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>find-method</anchor>
             <arglist>(callback, behavior)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>get</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>get-method</anchor>
             <arglist>(index, behavior)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>pop</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>pop-method</anchor>
             <arglist>(item, operation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>push</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>push-method</anchor>
             <arglist>(item, properties, operation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>Item</type>
             <name>replace</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>replace-method</anchor>
             <arglist>(target, item, properties, operation)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>activated</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>activated-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>activating</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>activating-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>deactivated</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>deactivated-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>deactivating</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>deactivating-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>removed</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>removed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>clear</name>
-            <anchorfile>qml-qtquick-controls2-stackview.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-stackview.html</anchorfile>
             <anchor>clear-method</anchor>
             <arglist>(transition)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SwipeDelegate</name>
-        <filename>qml-qtquick-controls2-swipedelegate.html</filename>
+        <filename>qml-qtquick-controls-swipedelegate.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>clicked</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>clicked-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swipe.close</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>swipe.close-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swipe.closed</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>swipe.closed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swipe.completed</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>swipe.completed-signal</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swipe.open</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>swipe.open-method</anchor>
             <arglist>(enumeration side)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>swipe.opened</name>
-            <anchorfile>qml-qtquick-controls2-swipedelegate.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-swipedelegate.html</anchorfile>
             <anchor>swipe.opened-signal</anchor>
             <arglist>()</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SwipeView</name>
-        <filename>qml-qtquick-controls2-swipeview.html</filename>
+        <filename>qml-qtquick-controls-swipeview.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Switch</name>
-        <filename>qml-qtquick-controls2-switch.html</filename>
+        <filename>qml-qtquick-controls-switch.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.SwitchDelegate</name>
-        <filename>qml-qtquick-controls2-switchdelegate.html</filename>
+        <filename>qml-qtquick-controls-switchdelegate.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.TabBar</name>
-        <filename>qml-qtquick-controls2-tabbar.html</filename>
+        <filename>qml-qtquick-controls-tabbar.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.TabButton</name>
-        <filename>qml-qtquick-controls2-tabbutton.html</filename>
+        <filename>qml-qtquick-controls-tabbutton.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.TextArea</name>
-        <filename>qml-qtquick-controls2-textarea.html</filename>
+        <filename>qml-qtquick-controls-textarea.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressAndHold</name>
-            <anchorfile>qml-qtquick-controls2-textarea.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textarea.html</anchorfile>
             <anchor>pressAndHold-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressed</name>
-            <anchorfile>qml-qtquick-controls2-textarea.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textarea.html</anchorfile>
             <anchor>pressed-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>released</name>
-            <anchorfile>qml-qtquick-controls2-textarea.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textarea.html</anchorfile>
             <anchor>released-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.TextField</name>
-        <filename>qml-qtquick-controls2-textfield.html</filename>
+        <filename>qml-qtquick-controls-textfield.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressAndHold</name>
-            <anchorfile>qml-qtquick-controls2-textfield.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textfield.html</anchorfile>
             <anchor>pressAndHold-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>pressed</name>
-            <anchorfile>qml-qtquick-controls2-textfield.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textfield.html</anchorfile>
             <anchor>pressed-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>released</name>
-            <anchorfile>qml-qtquick-controls2-textfield.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-textfield.html</anchorfile>
             <anchor>released-signal</anchor>
             <arglist>(MouseEvent event)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ToolBar</name>
-        <filename>qml-qtquick-controls2-toolbar.html</filename>
+        <filename>qml-qtquick-controls-toolbar.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ToolButton</name>
-        <filename>qml-qtquick-controls2-toolbutton.html</filename>
+        <filename>qml-qtquick-controls-toolbutton.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ToolSeparator</name>
-        <filename>qml-qtquick-controls2-toolseparator.html</filename>
+        <filename>qml-qtquick-controls-toolseparator.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.ToolTip</name>
-        <filename>qml-qtquick-controls2-tooltip.html</filename>
+        <filename>qml-qtquick-controls-tooltip.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>hide</name>
-            <anchorfile>qml-qtquick-controls2-tooltip.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-tooltip.html</anchorfile>
             <anchor>hide-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>hide</name>
-            <anchorfile>qml-qtquick-controls2-tooltip.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-tooltip.html</anchorfile>
             <anchor>hide-method</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>show</name>
-            <anchorfile>qml-qtquick-controls2-tooltip.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-tooltip.html</anchorfile>
             <anchor>show-method</anchor>
             <arglist>(string text, int timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>show</name>
-            <anchorfile>qml-qtquick-controls2-tooltip.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-tooltip.html</anchorfile>
             <anchor>show-method</anchor>
             <arglist>(string text, int timeout)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.TreeViewDelegate</name>
-        <filename>qml-qtquick-controls2-treeviewdelegate.html</filename>
+        <filename>qml-qtquick-controls-treeviewdelegate.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.Tumbler</name>
-        <filename>qml-qtquick-controls2-tumbler.html</filename>
+        <filename>qml-qtquick-controls-tumbler.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
             <name>positionViewAtIndex</name>
-            <anchorfile>qml-qtquick-controls2-tumbler.html</anchorfile>
+            <anchorfile>qml-qtquick-controls-tumbler.html</anchorfile>
             <anchor>positionViewAtIndex-method</anchor>
             <arglist>(int index, PositionMode mode)</arglist>
         </member>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.VerticalHeaderView</name>
-        <filename>qml-qtquick-controls2-verticalheaderview.html</filename>
+        <filename>qml-qtquick-controls-verticalheaderview.html</filename>
     </compound>
     <compound kind="class">
         <name>QtQuick.Controls.WeekNumberColumn</name>
-        <filename>qml-qtquick-controls2-weeknumbercolumn.html</filename>
+        <filename>qml-qtquick-controls-weeknumbercolumn.html</filename>
     </compound>
 </tagfile>

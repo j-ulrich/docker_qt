@@ -717,6 +717,13 @@
             <arglist>() override</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QRemoteObjectSourceLocations&gt;</type>
+            <name>bindableSourceLocations</name>
+            <anchorfile>qremoteobjectregistry.html</anchorfile>
+            <anchor>sourceLocations-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QRemoteObjectSourceLocations</type>
             <name>sourceLocations</name>
             <anchorfile>qremoteobjectregistry.html</anchorfile>

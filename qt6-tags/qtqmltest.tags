@@ -93,14 +93,21 @@
             <name>isPolishScheduled</name>
             <anchorfile>qml-qttest-testcase.html</anchorfile>
             <anchor>isPolishScheduled-method</anchor>
-            <arglist>(object item)</arglist>
+            <arglist>(object itemOrWindow)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>waitForItemPolished</name>
-            <anchorfile>qml-qttest-testcase.html</anchorfile>
+            <anchorfile>qml-qttest-testcase-obsolete.html</anchorfile>
             <anchor>waitForItemPolished-method</anchor>
             <arglist>(object item, int timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>waitForPolish</name>
+            <anchorfile>qml-qttest-testcase.html</anchorfile>
+            <anchor>waitForPolish-method</anchor>
+            <arglist>(object windowOrItem, int timeout)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

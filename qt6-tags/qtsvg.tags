@@ -112,12 +112,36 @@
         <name>QSvgGenerator</name>
         <filename>qsvggenerator.html</filename>
         <base>QPaintDevice</base>
+        <member kind="enumeration">
+            <name>SvgVersion</name>
+            <anchorfile>qsvggenerator.html</anchorfile>
+            <anchor>SvgVersion-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>SvgTiny12</name>
+            <anchorfile>qsvggenerator.html</anchorfile>
+            <anchor>SvgVersion-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Svg11</name>
+            <anchorfile>qsvggenerator.html</anchorfile>
+            <anchor>SvgVersion-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QSvgGenerator</name>
             <anchorfile>qsvggenerator.html</anchorfile>
             <anchor>QSvgGenerator</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QSvgGenerator</name>
+            <anchorfile>qsvggenerator.html</anchorfile>
+            <anchor>QSvgGenerator-1</anchor>
+            <arglist>(QSvgGenerator::SvgVersion version)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -236,6 +260,13 @@
             <name>title</name>
             <anchorfile>qsvggenerator.html</anchorfile>
             <anchor>title-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSvgGenerator::SvgVersion</type>
+            <name>svgVersion</name>
+            <anchorfile>qsvggenerator.html</anchorfile>
+            <anchor>svgVersion</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">

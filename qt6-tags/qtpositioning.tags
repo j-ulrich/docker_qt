@@ -1792,6 +1792,20 @@
             <anchor>PositioningMethod-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QGeoPositionInfoSource::PositioningMethods&gt;</type>
+            <name>bindablePreferredPositioningMethods</name>
+            <anchorfile>qgeopositioninfosource.html</anchorfile>
+            <anchor>preferredPositioningMethods-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;int&gt;</type>
+            <name>bindableUpdateInterval</name>
+            <anchorfile>qgeopositioninfosource.html</anchorfile>
+            <anchor>updateInterval-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QGeoPositionInfoSource *</type>
             <name>createDefaultSource</name>
@@ -2540,6 +2554,13 @@
             <anchor>Error-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;int&gt;</type>
+            <name>bindableUpdateInterval</name>
+            <anchorfile>qgeosatelliteinfosource.html</anchorfile>
+            <anchor>updateInterval-prop</anchor>
+            <arglist>()</arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="yes">
             <type>QGeoSatelliteInfoSource *</type>
             <name>createDefaultSource</name>
@@ -3242,6 +3263,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>georectangle</type>
+            <name>rectangle</name>
+            <anchorfile>qml-qtpositioning-qtpositioning.html</anchorfile>
+            <anchor>rectangle-method</anchor>
+            <arglist>(list&lt;coordinate&gt; coordinates)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>georectangle</type>
             <name>shapeToRectangle</name>
             <anchorfile>qml-qtpositioning-qtpositioning.html</anchorfile>
             <anchor>shapeToRectangle-method</anchor>
@@ -3260,6 +3288,45 @@
             <anchorfile>qml-qtpositioning-qtpositioning.html</anchorfile>
             <anchor>coordToMercator-method</anchor>
             <arglist>(coordinate coord)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtPositioning.SatelliteSource</name>
+        <filename>qml-qtpositioning-satellitesource.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>setBackendProperty</name>
+            <anchorfile>qml-qtpositioning-satellitesource.html</anchorfile>
+            <anchor>setBackendProperty-method</anchor>
+            <arglist>(string name, var value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>start</name>
+            <anchorfile>qml-qtpositioning-satellitesource.html</anchorfile>
+            <anchor>start-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>stop</name>
+            <anchorfile>qml-qtpositioning-satellitesource.html</anchorfile>
+            <anchor>stop-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>update</name>
+            <anchorfile>qml-qtpositioning-satellitesource.html</anchorfile>
+            <anchor>update-method</anchor>
+            <arglist>(int timeout)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>var</type>
+            <name>backendProperty</name>
+            <anchorfile>qml-qtpositioning-satellitesource.html</anchorfile>
+            <anchor>backendProperty-method</anchor>
+            <arglist>(string name)</arglist>
         </member>
     </compound>
 </tagfile>

@@ -177,6 +177,13 @@
             <type>QOpenGLBuffer &amp;</type>
             <name>operator=</name>
             <anchorfile>qopenglbuffer.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QOpenGLBuffer &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpenGLBuffer &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>operator-eq</anchor>
             <arglist>(const QOpenGLBuffer &amp;other)</arglist>
         </member>
@@ -186,6 +193,13 @@
             <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>QOpenGLBuffer</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QOpenGLBuffer</name>
+            <anchorfile>qopenglbuffer.html</anchorfile>
+            <anchor>QOpenGLBuffer-3</anchor>
+            <arglist>(QOpenGLBuffer &amp;&amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -284,6 +298,13 @@
             <anchorfile>qopenglbuffer.html</anchorfile>
             <anchor>setUsagePattern</anchor>
             <arglist>(QOpenGLBuffer::UsagePattern value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>swap</name>
+            <anchorfile>qopenglbuffer.html</anchorfile>
+            <anchor>swap</anchor>
+            <arglist>(QOpenGLBuffer &amp;other)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -5686,6 +5707,23 @@
         <filename>qopenglwidget.html</filename>
         <base>QWidget</base>
         <member kind="enumeration">
+            <name>TargetBuffer</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>TargetBuffer-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>LeftBuffer</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>TargetBuffer-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>RightBuffer</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>TargetBuffer-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
             <name>UpdateBehavior</name>
             <anchorfile>qopenglwidget.html</anchorfile>
             <anchor>UpdateBehavior-enum</anchor>
@@ -5708,6 +5746,13 @@
             <anchorfile>qopenglwidget.html</anchorfile>
             <anchor>grabFramebuffer</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QImage</type>
+            <name>grabFramebuffer</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>grabFramebuffer-1</anchor>
+            <arglist>(QOpenGLWidget::TargetBuffer targetBuffer)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -5764,6 +5809,13 @@
             <anchorfile>qopenglwidget.html</anchorfile>
             <anchor>makeCurrent</anchor>
             <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>makeCurrent</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>makeCurrent-1</anchor>
+            <arglist>(QOpenGLWidget::TargetBuffer targetBuffer)</arglist>
         </member>
         <member kind="function" protection="protected" virtualness="virtual" static="no">
             <type>virtual void</type>
@@ -5843,10 +5895,24 @@
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>GLuint</type>
+            <name>defaultFramebufferObject</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>defaultFramebufferObject-1</anchor>
+            <arglist>(QOpenGLWidget::TargetBuffer targetBuffer) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QOpenGLContext *</type>
             <name>context</name>
             <anchorfile>qopenglwidget.html</anchorfile>
             <anchor>context</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QOpenGLWidget::TargetBuffer</type>
+            <name>currentTargetBuffer</name>
+            <anchorfile>qopenglwidget.html</anchorfile>
+            <anchor>currentTargetBuffer</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">

@@ -227,6 +227,30 @@
         <name>QDomDocument</name>
         <filename>qdomdocument.html</filename>
         <base>QDomNode</base>
+        <class>QDomDocument::ParseResult</class>
+        <member kind="enumeration">
+            <name>ParseOption</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>ParseOption-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Default</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>ParseOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UseNamespaceProcessing</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>ParseOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PreserveSpacingOnlyNodes</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>ParseOption-enum</anchor>
+            <arglist></arglist>
+        </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomAttr</type>
             <name>createAttribute</name>
@@ -289,6 +313,34 @@
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>QDomDocument-1</anchor>
             <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDomDocument::ParseResult</type>
+            <name>setContent</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>setContent-8</anchor>
+            <arglist>(QAnyStringView data, QDomDocument::ParseOptions options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDomDocument::ParseResult</type>
+            <name>setContent</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>setContent-9</anchor>
+            <arglist>(QIODevice *device, QDomDocument::ParseOptions options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDomDocument::ParseResult</type>
+            <name>setContent</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>setContent-10</anchor>
+            <arglist>(QXmlStreamReader *reader, QDomDocument::ParseOptions options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDomDocument::ParseResult</type>
+            <name>setContent</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>setContent</anchor>
+            <arglist>(const QByteArray &amp;data, QDomDocument::ParseOptions options)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QDomDocumentFragment</type>
@@ -357,49 +409,49 @@
             <type>bool</type>
             <name>setContent</name>
             <anchorfile>qdomdocument-obsolete.html</anchorfile>
-            <anchor>setContent-5</anchor>
+            <anchor>setContent-6</anchor>
             <arglist>(QIODevice *dev, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-2</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-3</anchor>
             <arglist>(QIODevice *dev, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-6</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-7</anchor>
             <arglist>(QXmlStreamReader *reader, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-3</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-4</anchor>
             <arglist>(const QByteArray &amp;buffer, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-1</anchor>
             <arglist>(const QByteArray &amp;data, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-4</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-5</anchor>
             <arglist>(const QString &amp;text, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
             <name>setContent</name>
-            <anchorfile>qdomdocument.html</anchorfile>
-            <anchor>setContent-1</anchor>
+            <anchorfile>qdomdocument-obsolete.html</anchorfile>
+            <anchor>setContent-2</anchor>
             <arglist>(const QString &amp;text, bool namespaceProcessing, QString *errorMsg, int *errorLine, int *errorColumn)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -457,6 +509,23 @@
             <anchorfile>qdomdocument.html</anchorfile>
             <anchor>toString</anchor>
             <arglist>(int indent) const const</arglist>
+        </member>
+        <member kind="typedef" type="QDomDocument::ParseOption">
+            <name>ParseOptions</name>
+            <anchorfile>qdomdocument.html</anchorfile>
+            <anchor>ParseOption-enum</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QDomDocument::ParseResult</name>
+        <filename>qdomdocument-parseresult.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator bool</name>
+            <anchorfile>qdomdocument-parseresult.html</anchorfile>
+            <anchor>operator-bool</anchor>
+            <arglist>() const const</arglist>
         </member>
     </compound>
     <compound kind="class">

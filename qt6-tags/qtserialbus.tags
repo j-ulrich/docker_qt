@@ -953,6 +953,12 @@
             <anchor>FrameError-enum</anchor>
             <arglist></arglist>
         </member>
+        <member kind="typedef" type="">
+            <name>FrameId</name>
+            <anchorfile>qcanbusframe.html</anchorfile>
+            <anchor>FrameId-typedef</anchor>
+            <arglist></arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QCanBusFrame::TimeStamp</name>
@@ -983,6 +989,831 @@
             <name>seconds</name>
             <anchorfile>qcanbusframe-timestamp.html</anchorfile>
             <anchor>seconds</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QCanDbcFileParser</name>
+        <filename>qcandbcfileparser.html</filename>
+        <member kind="enumeration">
+            <name>Error</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>Error-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>None</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>FileReading</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Parsing</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanDbcFileParser</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>QCanDbcFileParser</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QCanUniqueIdDescription</type>
+            <name>uniqueIdDescription</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>uniqueIdDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>parse</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>parse</anchor>
+            <arglist>(const QString &amp;fileName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>parse</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>parse-1</anchor>
+            <arglist>(const QStringList &amp;fileNames)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QCanDbcFileParser</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>dtor.QCanDbcFileParser</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanDbcFileParser::Error</type>
+            <name>error</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanDbcFileParser::MessageValueDescriptions</type>
+            <name>messageValueDescriptions</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>messageValueDescriptions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QCanMessageDescription&gt;</type>
+            <name>messageDescriptions</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>messageDescriptions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorString</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>errorString</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStringList</type>
+            <name>warnings</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>warnings</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>MessageValueDescriptions</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>MessageValueDescriptions-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>SignalValueDescriptions</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>SignalValueDescriptions-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>ValueDescriptions</name>
+            <anchorfile>qcandbcfileparser.html</anchorfile>
+            <anchor>ValueDescriptions-typedef</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QCanFrameProcessor</name>
+        <filename>qcanframeprocessor.html</filename>
+        <class>QCanFrameProcessor::ParseResult</class>
+        <member kind="enumeration">
+            <name>Error</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>None</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>InvalidFrame</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UnsupportedFrameFormat</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Decoding</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Encoding</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanBusFrame</type>
+            <name>prepareFrame</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>prepareFrame</anchor>
+            <arglist>(QtCanBus::UniqueId uniqueId, const QVariantMap &amp;signalValues)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanFrameProcessor</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>QCanFrameProcessor</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanFrameProcessor::ParseResult</type>
+            <name>parseFrame</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>parseFrame</anchor>
+            <arglist>(const QCanBusFrame &amp;frame)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addMessageDescriptions</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>addMessageDescriptions</anchor>
+            <arglist>(const QList&lt;QCanMessageDescription&gt; &amp;descriptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearMessageDescriptions</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>clearMessageDescriptions</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMessageDescriptions</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>setMessageDescriptions</anchor>
+            <arglist>(const QList&lt;QCanMessageDescription&gt; &amp;descriptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setUniqueIdDescription</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>setUniqueIdDescription</anchor>
+            <arglist>(const QCanUniqueIdDescription &amp;description)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QCanFrameProcessor</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>dtor.QCanFrameProcessor</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanFrameProcessor::Error</type>
+            <name>error</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanUniqueIdDescription</type>
+            <name>uniqueIdDescription</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>uniqueIdDescription</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QCanMessageDescription&gt;</type>
+            <name>messageDescriptions</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>messageDescriptions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>errorString</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>errorString</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QStringList</type>
+            <name>warnings</name>
+            <anchorfile>qcanframeprocessor.html</anchorfile>
+            <anchor>warnings</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QCanFrameProcessor::ParseResult</name>
+        <filename>qcanframeprocessor-parseresult.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QCanMessageDescription</name>
+        <filename>qcanmessagedescription.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanMessageDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QCanMessageDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanMessageDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QCanMessageDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanMessageDescription</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>QCanMessageDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanMessageDescription</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>QCanMessageDescription-2</anchor>
+            <arglist>(QCanMessageDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanMessageDescription</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>QCanMessageDescription-1</anchor>
+            <arglist>(const QCanMessageDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addSignalDescription</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>addSignalDescription</anchor>
+            <arglist>(const QCanSignalDescription &amp;description)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearSignalDescriptions</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>clearSignalDescriptions</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setComment</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setComment</anchor>
+            <arglist>(const QString &amp;text)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setName</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setName</anchor>
+            <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSignalDescriptions</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setSignalDescriptions</anchor>
+            <arglist>(const QList&lt;QCanSignalDescription&gt; &amp;descriptions)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSize</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setSize</anchor>
+            <arglist>(quint8 size)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setTransmitter</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setTransmitter</anchor>
+            <arglist>(const QString &amp;transmitter)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setUniqueId</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>setUniqueId</anchor>
+            <arglist>(QtCanBus::UniqueId id)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QCanMessageDescription</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>dtor.QCanMessageDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanSignalDescription</type>
+            <name>signalDescriptionForName</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>signalDescriptionForName</anchor>
+            <arglist>(const QString &amp;name) const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QList&lt;QCanSignalDescription&gt;</type>
+            <name>signalDescriptions</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>signalDescriptions</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>comment</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>comment</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>name</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>name</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>transmitter</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>transmitter</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtCanBus::UniqueId</type>
+            <name>uniqueId</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>uniqueId</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint8</type>
+            <name>size</name>
+            <anchorfile>qcanmessagedescription.html</anchorfile>
+            <anchor>size</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QCanSignalDescription</name>
+        <filename>qcansignaldescription.html</filename>
+        <class>QCanSignalDescription::MultiplexValueRange</class>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanSignalDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QCanSignalDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanSignalDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QCanSignalDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanSignalDescription</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>QCanSignalDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanSignalDescription</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>QCanSignalDescription-2</anchor>
+            <arglist>(QCanSignalDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanSignalDescription</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>QCanSignalDescription-1</anchor>
+            <arglist>(const QCanSignalDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addMultiplexSignal</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>addMultiplexSignal</anchor>
+            <arglist>(const QString &amp;name, const QCanSignalDescription::MultiplexValues &amp;ranges)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>addMultiplexSignal</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>addMultiplexSignal-1</anchor>
+            <arglist>(const QString &amp;name, const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clearMultiplexSignals</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>clearMultiplexSignals</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBitLength</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setBitLength</anchor>
+            <arglist>(quint16 length)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setComment</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setComment</anchor>
+            <arglist>(const QString &amp;text)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDataEndian</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setDataEndian</anchor>
+            <arglist>(QSysInfo::Endian endian)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDataFormat</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setDataFormat</anchor>
+            <arglist>(QtCanBus::DataFormat format)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setDataSource</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setDataSource</anchor>
+            <arglist>(QtCanBus::DataSource source)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setFactor</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setFactor</anchor>
+            <arglist>(double factor)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMultiplexSignals</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setMultiplexSignals</anchor>
+            <arglist>(const QCanSignalDescription::MultiplexSignalValues &amp;multiplexorSignals)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMultiplexState</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setMultiplexState</anchor>
+            <arglist>(QtCanBus::MultiplexState state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setName</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setName</anchor>
+            <arglist>(const QString &amp;name)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setOffset</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setOffset</anchor>
+            <arglist>(double offset)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPhysicalUnit</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setPhysicalUnit</anchor>
+            <arglist>(const QString &amp;unit)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRange</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setRange</anchor>
+            <arglist>(double minimum, double maximum)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setReceiver</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setReceiver</anchor>
+            <arglist>(const QString &amp;receiver)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setScaling</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setScaling</anchor>
+            <arglist>(double scaling)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setStartBit</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>setStartBit</anchor>
+            <arglist>(quint16 bit)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QCanSignalDescription</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>dtor.QCanSignalDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanSignalDescription::MultiplexSignalValues</type>
+            <name>multiplexSignals</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>multiplexSignals</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>comment</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>comment</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>name</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>name</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>physicalUnit</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>physicalUnit</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>receiver</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>receiver</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSysInfo::Endian</type>
+            <name>dataEndian</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>dataEndian</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtCanBus::DataFormat</type>
+            <name>dataFormat</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>dataFormat</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtCanBus::DataSource</type>
+            <name>dataSource</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>dataSource</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtCanBus::MultiplexState</type>
+            <name>multiplexState</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>multiplexState</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>factor</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>factor</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>maximum</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>maximum</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>minimum</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>minimum</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>offset</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>offset</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>scaling</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>scaling</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint16</type>
+            <name>bitLength</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>bitLength</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint16</type>
+            <name>startBit</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>startBit</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>MultiplexSignalValues</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>MultiplexSignalValues-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>MultiplexValues</name>
+            <anchorfile>qcansignaldescription.html</anchorfile>
+            <anchor>MultiplexValues-typedef</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QCanSignalDescription::MultiplexValueRange</name>
+        <filename>qcansignaldescription-multiplexvaluerange.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>QCanUniqueIdDescription</name>
+        <filename>qcanuniqueiddescription.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanUniqueIdDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QCanUniqueIdDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QCanUniqueIdDescription &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QCanUniqueIdDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanUniqueIdDescription</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>QCanUniqueIdDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanUniqueIdDescription</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>QCanUniqueIdDescription-2</anchor>
+            <arglist>(QCanUniqueIdDescription &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QCanUniqueIdDescription</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>QCanUniqueIdDescription-1</anchor>
+            <arglist>(const QCanUniqueIdDescription &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setBitLength</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>setBitLength</anchor>
+            <arglist>(quint8 length)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setEndian</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>setEndian</anchor>
+            <arglist>(QSysInfo::Endian endian)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setSource</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>setSource</anchor>
+            <arglist>(QtCanBus::DataSource source)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setStartBit</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>setStartBit</anchor>
+            <arglist>(quint16 bit)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QCanUniqueIdDescription</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>dtor.QCanUniqueIdDescription</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QSysInfo::Endian</type>
+            <name>endian</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>endian</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QtCanBus::DataSource</type>
+            <name>source</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>source</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>isValid</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>isValid</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint16</type>
+            <name>startBit</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>startBit</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>quint8</type>
+            <name>bitLength</name>
+            <anchorfile>qcanuniqueiddescription.html</anchorfile>
+            <anchor>bitLength</anchor>
             <arglist>() const const</arglist>
         </member>
     </compound>
@@ -2713,6 +3544,96 @@
             <anchorfile>qmodbustcpserver.html</anchorfile>
             <anchor>dtor.QModbusTcpServer</anchor>
             <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="namespace">
+        <name>QtCanBus</name>
+        <filename>qtcanbus.html</filename>
+        <member kind="enumeration">
+            <name>DataFormat</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>SignedInteger</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>UnsignedInteger</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Float</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Double</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AsciiString</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataFormat-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>DataSource</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataSource-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Payload</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataSource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>FrameId</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>DataSource-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>MultiplexState</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>MultiplexState-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>None</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>MultiplexState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MultiplexorSwitch</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>MultiplexState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>MultiplexedSignal</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>MultiplexState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>SwitchAndSignal</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>MultiplexState-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumeration">
+            <name>UniqueId</name>
+            <anchorfile>qtcanbus.html</anchorfile>
+            <anchor>UniqueId-enum</anchor>
         </member>
     </compound>
 </tagfile>

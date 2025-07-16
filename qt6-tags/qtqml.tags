@@ -166,6 +166,34 @@
             <anchor>timeFormat-method</anchor>
             <arglist>(type)</arglist>
         </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>toString</name>
+            <anchorfile>qml-qtqml-locale.html</anchorfile>
+            <anchor>toString-method</anchor>
+            <arglist>(Date date, FormatType format)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>toString</name>
+            <anchorfile>qml-qtqml-locale.html</anchorfile>
+            <anchor>toString-method</anchor>
+            <arglist>(Date date, string format)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>toString</name>
+            <anchorfile>qml-qtqml-locale.html</anchorfile>
+            <anchor>toString-method</anchor>
+            <arglist>(double f, char format, int precision)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>toString</name>
+            <anchorfile>qml-qtqml-locale.html</anchorfile>
+            <anchor>toString-method</anchor>
+            <arglist>(int i)</arglist>
+        </member>
     </compound>
     <compound kind="class">
         <name>QtQml.LoggingCategory</name>
@@ -275,6 +303,20 @@
             <arglist>(QObject *object)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QJSManagedValue</type>
+            <name>toManagedValue</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>toManagedValue</anchor>
+            <arglist>(const T &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QJSPrimitiveValue</type>
+            <name>toPrimitiveValue</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>toPrimitiveValue</anchor>
+            <arglist>(const T &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QJSValue</type>
             <name>catchError</name>
             <anchorfile>qjsengine.html</anchorfile>
@@ -353,6 +395,20 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>T</type>
+            <name>fromManagedValue</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>fromManagedValue</anchor>
+            <arglist>(const QJSManagedValue &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>T</type>
+            <name>fromPrimitiveValue</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>fromPrimitiveValue</anchor>
+            <arglist>(const QJSPrimitiveValue &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>T</type>
             <name>fromScriptValue</name>
             <anchorfile>qjsengine.html</anchorfile>
             <anchor>fromScriptValue</anchor>
@@ -364,6 +420,13 @@
             <anchorfile>qjsengine.html</anchorfile>
             <anchor>fromVariant</anchor>
             <arglist>(const QVariant &amp;value)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>To</type>
+            <name>coerceValue</name>
+            <anchorfile>qjsengine.html</anchorfile>
+            <anchor>coerceValue</anchor>
+            <arglist>(const From &amp;from)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>bool</type>
@@ -1010,63 +1073,63 @@
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue</anchor>
+            <anchor>QJSPrimitiveValue-1</anchor>
             <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-2</anchor>
+            <anchor>QJSPrimitiveValue-3</anchor>
             <arglist>(QJSPrimitiveNull null)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-1</anchor>
+            <anchor>QJSPrimitiveValue-2</anchor>
             <arglist>(QJSPrimitiveUndefined undefined)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-9</anchor>
+            <anchor>QJSPrimitiveValue-11</anchor>
             <arglist>(QMetaType type, const void *value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-6</anchor>
+            <anchor>QJSPrimitiveValue-7</anchor>
             <arglist>(QString value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-3</anchor>
+            <anchor>QJSPrimitiveValue-4</anchor>
             <arglist>(bool value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-8</anchor>
+            <anchor>QJSPrimitiveValue-10</anchor>
             <arglist>(const QVariant &amp;value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-5</anchor>
+            <anchor>QJSPrimitiveValue-6</anchor>
             <arglist>(double value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QJSPrimitiveValue</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
-            <anchor>QJSPrimitiveValue-4</anchor>
+            <anchor>QJSPrimitiveValue-5</anchor>
             <arglist>(int value)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1112,10 +1175,31 @@
             <arglist>(const QJSPrimitiveValue &amp;lhs, const QJSPrimitiveValue &amp;rhs)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void *</type>
+            <name>data</name>
+            <anchorfile>qjsprimitivevalue.html</anchorfile>
+            <anchor>data</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QJSPrimitiveValue</type>
+            <name>to</name>
+            <anchorfile>qjsprimitivevalue.html</anchorfile>
+            <anchor>to</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
             <type>QJSPrimitiveValue::Type</type>
             <name>type</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
             <anchor>type</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QMetaType</type>
+            <name>metaType</name>
+            <anchorfile>qjsprimitivevalue.html</anchorfile>
+            <anchor>metaType</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1144,6 +1228,20 @@
             <name>toBoolean</name>
             <anchorfile>qjsprimitivevalue.html</anchorfile>
             <anchor>toBoolean</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const void *</type>
+            <name>constData</name>
+            <anchorfile>qjsprimitivevalue.html</anchorfile>
+            <anchor>constData</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>const void *</type>
+            <name>data</name>
+            <anchorfile>qjsprimitivevalue.html</anchorfile>
+            <anchor>data-1</anchor>
             <arglist>() const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1751,6 +1849,13 @@
             <type></type>
             <name>QQmlApplicationEngine</name>
             <anchorfile>qqmlapplicationengine.html</anchorfile>
+            <anchor>QQmlApplicationEngine-2</anchor>
+            <arglist>(QAnyStringView uri, QAnyStringView typeName, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QQmlApplicationEngine</name>
+            <anchorfile>qqmlapplicationengine.html</anchorfile>
             <anchor>QQmlApplicationEngine</anchor>
             <arglist>(QObject *parent)</arglist>
         </member>
@@ -1758,7 +1863,7 @@
             <type></type>
             <name>QQmlApplicationEngine</name>
             <anchorfile>qqmlapplicationengine.html</anchorfile>
-            <anchor>QQmlApplicationEngine-2</anchor>
+            <anchor>QQmlApplicationEngine-3</anchor>
             <arglist>(const QString &amp;filePath, QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -1788,6 +1893,13 @@
             <anchorfile>qqmlapplicationengine.html</anchorfile>
             <anchor>loadData</anchor>
             <arglist>(const QByteArray &amp;data, const QUrl &amp;url)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>loadFromModule</name>
+            <anchorfile>qqmlapplicationengine.html</anchorfile>
+            <anchor>loadFromModule</anchor>
+            <arglist>(QAnyStringView uri, QAnyStringView typeName)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -1907,6 +2019,20 @@
             <type></type>
             <name>QQmlComponent</name>
             <anchorfile>qqmlcomponent.html</anchorfile>
+            <anchor>QQmlComponent-6</anchor>
+            <arglist>(QQmlEngine *engine, QAnyStringView uri, QAnyStringView typeName, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QQmlComponent</name>
+            <anchorfile>qqmlcomponent.html</anchorfile>
+            <anchor>QQmlComponent-7</anchor>
+            <arglist>(QQmlEngine *engine, QAnyStringView uri, QAnyStringView typeName, QQmlComponent::CompilationMode mode, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QQmlComponent</name>
+            <anchorfile>qqmlcomponent.html</anchorfile>
             <anchor>QQmlComponent-1</anchor>
             <arglist>(QQmlEngine *engine, QObject *parent)</arglist>
         </member>
@@ -1951,6 +2077,13 @@
             <anchorfile>qqmlcomponent.html</anchorfile>
             <anchor>create-1</anchor>
             <arglist>(QQmlIncubator &amp;incubator, QQmlContext *context, QQmlContext *forContext)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>loadFromModule</name>
+            <anchorfile>qqmlcomponent.html</anchorfile>
+            <anchor>loadFromModule</anchor>
+            <arglist>(QAnyStringView uri, QAnyStringView typeName, QQmlComponent::CompilationMode mode)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -2256,9 +2389,16 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QML_ADDED_IN_MINOR_VERSION</name>
-            <anchorfile>qqmlengine.html</anchorfile>
+            <anchorfile>qqmlengine-obsolete.html</anchorfile>
             <anchor>QML_ADDED_IN_MINOR_VERSION</anchor>
             <arglist>(VERSION)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QML_ADDED_IN_VERSION</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>QML_ADDED_IN_VERSION</anchor>
+            <arglist>(MAJOR, MINOR)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -2311,6 +2451,13 @@
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
+            <name>QML_EXTRA_VERSION</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>QML_EXTRA_VERSION</anchor>
+            <arglist>(MAJOR, MINOR)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
             <name>QML_FOREIGN</name>
             <anchorfile>qqmlengine.html</anchorfile>
             <anchor>QML_FOREIGN</anchor>
@@ -2347,9 +2494,23 @@
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
             <name>QML_REMOVED_IN_MINOR_VERSION</name>
-            <anchorfile>qqmlengine.html</anchorfile>
+            <anchorfile>qqmlengine-obsolete.html</anchorfile>
             <anchor>QML_REMOVED_IN_MINOR_VERSION</anchor>
             <arglist>(VERSION)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QML_REMOVED_IN_VERSION</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>QML_REMOVED_IN_VERSION</anchor>
+            <arglist>(MAJOR, MINOR)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QML_SEQUENTIAL_CONTAINER</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>QML_SEQUENTIAL_CONTAINER</anchor>
+            <arglist>(VALUE_TYPE)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>
@@ -2371,6 +2532,13 @@
             <anchorfile>qqmlengine.html</anchorfile>
             <anchor>QML_UNCREATABLE</anchor>
             <arglist>(reason)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QML_VALUE_TYPE</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>QML_VALUE_TYPE</anchor>
+            <arglist>(name)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>QObject *</type>
@@ -2408,25 +2576,11 @@
             <arglist>(QObject *parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QQmlInfo</type>
-            <name>qmlDebug</name>
+            <type>T</type>
+            <name>singletonInstance</name>
             <anchorfile>qqmlengine.html</anchorfile>
-            <anchor>qmlDebug</anchor>
-            <arglist>(const QObject *object)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QQmlInfo</type>
-            <name>qmlInfo</name>
-            <anchorfile>qqmlengine.html</anchorfile>
-            <anchor>qmlInfo</anchor>
-            <arglist>(const QObject *object)</arglist>
-        </member>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>QQmlInfo</type>
-            <name>qmlWarning</name>
-            <anchorfile>qqmlengine.html</anchorfile>
-            <anchor>qmlWarning</anchor>
-            <arglist>(const QObject *object)</arglist>
+            <anchor>singletonInstance-1</anchor>
+            <arglist>(QAnyStringView uri, QAnyStringView typeName)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>T</type>
@@ -2609,6 +2763,20 @@
             <anchorfile>qqmlengine.html</anchorfile>
             <anchor>exit</anchor>
             <arglist>(int retCode)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>markCurrentFunctionAsTranslationBinding</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>markCurrentFunctionAsTranslationBinding</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>offlineStoragePathChanged</name>
+            <anchorfile>qqmlengine.html</anchorfile>
+            <anchor>offlineStoragePathChanged</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>void</type>
@@ -3484,6 +3652,32 @@
             <anchorfile>qqmlincubator.html</anchorfile>
             <anchor>isReady</anchor>
             <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QQmlInfo</name>
+        <filename>qqmlinfo.html</filename>
+        <base>QDebug</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QQmlInfo</type>
+            <name>qmlDebug</name>
+            <anchorfile>qqmlinfo.html</anchorfile>
+            <anchor>qmlDebug</anchor>
+            <arglist>(const QObject *object)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QQmlInfo</type>
+            <name>qmlInfo</name>
+            <anchorfile>qqmlinfo.html</anchorfile>
+            <anchor>qmlInfo</anchor>
+            <arglist>(const QObject *object)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QQmlInfo</type>
+            <name>qmlWarning</name>
+            <anchorfile>qqmlinfo.html</anchorfile>
+            <anchor>qmlWarning</anchor>
+            <arglist>(const QObject *object)</arglist>
         </member>
     </compound>
     <compound kind="class">
@@ -4364,6 +4558,13 @@
             <name>createComponent</name>
             <anchorfile>qml-qtqml-qt.html</anchorfile>
             <anchor>createComponent-method</anchor>
+            <arglist>(string moduleUri, string typeName, enumeration mode, QtObject parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Component</type>
+            <name>createComponent</name>
+            <anchorfile>qml-qtqml-qt.html</anchorfile>
+            <anchor>createComponent-method</anchor>
             <arglist>(url url, enumeration mode, QtObject parent)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4497,7 +4698,21 @@
             <name>matrix4x4</name>
             <anchorfile>qml-qtqml-qt.html</anchorfile>
             <anchor>matrix4x4-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>matrix4x4</type>
+            <name>matrix4x4</name>
+            <anchorfile>qml-qtqml-qt.html</anchorfile>
+            <anchor>matrix4x4-method</anchor>
             <arglist>(real m11, real m12, real m13, real m14, real m21, real m22, real m23, real m24, real m31, real m32, real m33, real m34, real m41, real m42, real m43, real m44)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>matrix4x4</type>
+            <name>matrix4x4</name>
+            <anchorfile>qml-qtqml-qt.html</anchorfile>
+            <anchor>matrix4x4-method</anchor>
+            <arglist>(var values)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type>object</type>
@@ -4680,17 +4895,6 @@
         <filename>qml-qtqml-qtobject.html</filename>
     </compound>
     <compound kind="class">
-        <name>QtQml.String</name>
-        <filename>qml-qtqml-string.html</filename>
-        <member kind="function" protection="public" virtualness="non" static="no">
-            <type>string</type>
-            <name>arg</name>
-            <anchorfile>qml-qtqml-string.html</anchorfile>
-            <anchor>arg-method</anchor>
-            <arglist>(value)</arglist>
-        </member>
-    </compound>
-    <compound kind="class">
         <name>QtQml.Timer</name>
         <filename>qml-qtqml-timer.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -4720,6 +4924,59 @@
             <anchorfile>qml-qtqml-timer.html</anchorfile>
             <anchor>triggered-signal</anchor>
             <arglist>()</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QtQml.XMLHttpRequest</name>
+        <filename>qml-qtqml-xmlhttprequest.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>getAllResponseHeaders</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>getAllResponseHeaders-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>string</type>
+            <name>getResponseHeader</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>getResponseHeader-method</anchor>
+            <arglist>(headerName)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>abort</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>abort-method</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>open</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>open-method</anchor>
+            <arglist>(method, url, async)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>overrideMimeType</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>overrideMimeType-method</anchor>
+            <arglist>(mime)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>send</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>send-method</anchor>
+            <arglist>(data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRequestHeader</name>
+            <anchorfile>qml-qtqml-xmlhttprequest.html</anchorfile>
+            <anchor>setRequestHeader-method</anchor>
+            <arglist>(header, value)</arglist>
         </member>
     </compound>
 </tagfile>

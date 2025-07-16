@@ -251,7 +251,7 @@
             <type>QDBusArgument &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qdbusargument.html</anchorfile>
-            <anchor>operator-lt-lt-11</anchor>
+            <anchor>operator-lt-lt-12</anchor>
             <arglist>(const QByteArray &amp;arg)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -272,7 +272,7 @@
             <type>QDBusArgument &amp;</type>
             <name>operator&lt;&lt;</name>
             <anchorfile>qdbusargument.html</anchorfile>
-            <anchor>operator-lt-lt</anchor>
+            <anchor>operator-lt-lt-11</anchor>
             <arglist>(const QStringList &amp;arg)</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -461,7 +461,7 @@
             <type>const QDBusArgument &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qdbusargument.html</anchorfile>
-            <anchor>operator-gt-gt-11</anchor>
+            <anchor>operator-gt-gt-12</anchor>
             <arglist>(QByteArray &amp;arg) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -482,7 +482,7 @@
             <type>const QDBusArgument &amp;</type>
             <name>operator&gt;&gt;</name>
             <anchorfile>qdbusargument.html</anchorfile>
-            <anchor>operator-gt-gt</anchor>
+            <anchor>operator-gt-gt-11</anchor>
             <arglist>(QStringList &amp;arg) const const</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2268,6 +2268,20 @@
             <anchorfile>qdbusservicewatcher.html</anchorfile>
             <anchor>WatchModeFlag-enum</anchor>
             <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QDBusServiceWatcher::WatchMode&gt;</type>
+            <name>bindableWatchMode</name>
+            <anchorfile>qdbusservicewatcher.html</anchorfile>
+            <anchor>watchMode-prop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QBindable&lt;QStringList&gt;</type>
+            <name>bindableWatchedServices</name>
+            <anchorfile>qdbusservicewatcher.html</anchorfile>
+            <anchor>watchedServices-prop</anchor>
+            <arglist>()</arglist>
         </member>
         <member kind="function" protection="public" virtualness="non" static="no">
             <type></type>

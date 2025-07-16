@@ -2264,10 +2264,6 @@
         </member>
     </compound>
     <compound kind="class">
-        <name>qoutputrange</name>
-        <filename>qoutputrange.html</filename>
-    </compound>
-    <compound kind="class">
         <name>QtSensors.QmlSensors</name>
         <filename>qml-qtsensors-qmlsensors.html</filename>
         <member kind="function" protection="public" virtualness="non" static="no">
@@ -2321,6 +2317,10 @@
     <compound kind="class">
         <name>QtSensors.SensorReading</name>
         <filename>qml-qtsensors-sensorreading.html</filename>
+    </compound>
+    <compound kind="class">
+        <name>qoutputrange</name>
+        <filename>qoutputrange.html</filename>
     </compound>
     <compound kind="class">
         <name>QtSensors.TiltReading</name>

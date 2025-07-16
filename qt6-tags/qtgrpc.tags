@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QAbstractGrpcChannel</name>
+        <filename>qabstractgrpcchannel.html</filename>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QGrpcStatus</type>
+            <name>call</name>
+            <anchorfile>qabstractgrpcchannel.html</anchorfile>
+            <anchor>call</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, QByteArray &amp;ret, const QGrpcCallOptions &amp;options) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcCallReply&gt;</type>
+            <name>call</name>
+            <anchorfile>qabstractgrpcchannel.html</anchorfile>
+            <anchor>call-1</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, const QGrpcCallOptions &amp;options) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcStream&gt;</type>
+            <name>startStream</name>
+            <anchorfile>qabstractgrpcchannel.html</anchorfile>
+            <anchor>startStream</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView arg, const QGrpcCallOptions &amp;options) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual std::shared_ptr&lt;QAbstractProtobufSerializer&gt;</type>
+            <name>serializer</name>
+            <anchorfile>qabstractgrpcchannel.html</anchorfile>
+            <anchor>serializer</anchor>
+            <arglist>() const const = 0</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QAbstractGrpcClient</name>
+        <filename>qabstractgrpcclient.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QGrpcStatus</type>
+            <name>call</name>
+            <anchorfile>qabstractgrpcclient.html</anchorfile>
+            <anchor>call</anchor>
+            <arglist>(QLatin1StringView method, const QProtobufMessage &amp;arg, ReturnType &amp;ret, const QGrpcCallOptions &amp;options)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>std::shared_ptr&lt;QGrpcCallReply&gt;</type>
+            <name>call</name>
+            <anchorfile>qabstractgrpcclient.html</anchorfile>
+            <anchor>call-1</anchor>
+            <arglist>(QLatin1StringView method, const QProtobufMessage &amp;arg, const QGrpcCallOptions &amp;options)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>std::shared_ptr&lt;QGrpcStream&gt;</type>
+            <name>startStream</name>
+            <anchorfile>qabstractgrpcclient.html</anchorfile>
+            <anchor>startStream</anchor>
+            <arglist>(QLatin1StringView method, const QProtobufMessage &amp;arg, const QGrpcCallOptions &amp;options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>attachChannel</name>
+            <anchorfile>qabstractgrpcclient.html</anchorfile>
+            <anchor>attachChannel</anchor>
+            <arglist>(const std::shared_ptr&lt;QAbstractGrpcChannel&gt; &amp;channel)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>errorOccurred</name>
+            <anchorfile>qabstractgrpcclient.html</anchorfile>
+            <anchor>errorOccurred</anchor>
+            <arglist>(const QGrpcStatus &amp;status)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcCallOptions</name>
+        <filename>qgrpccalloptions.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcCallOptions &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QGrpcCallOptions &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcCallOptions &amp;</type>
+            <name>withDeadline</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>withDeadline</anchor>
+            <arglist>(std::chrono::milliseconds deadline)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcCallOptions &amp;</type>
+            <name>withMaxRetryAttempts</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>withMaxRetryAttempts</anchor>
+            <arglist>(qint64 maxRetryAttempts)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcCallOptions &amp;</type>
+            <name>withMetadata</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>withMetadata</anchor>
+            <arglist>(const QGrpcMetadata &amp;metadata)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcCallOptions</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>QGrpcCallOptions</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcCallOptions</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>QGrpcCallOptions-1</anchor>
+            <arglist>(const QGrpcCallOptions &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QGrpcCallOptions</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>dtor.QGrpcCallOptions</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcMetadata</type>
+            <name>metadata</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>metadata</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;qint64&gt;</type>
+            <name>maxRetryAttempts</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>maxRetryAttempts</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;std::chrono::milliseconds&gt;</type>
+            <name>deadline</name>
+            <anchorfile>qgrpccalloptions.html</anchorfile>
+            <anchor>deadline</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcCallReply</name>
+        <filename>qgrpccallreply.html</filename>
+        <base>QGrpcOperation</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>abort</name>
+            <anchorfile>qgrpccallreply.html</anchorfile>
+            <anchor>abort</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>subscribe</name>
+            <anchorfile>qgrpccallreply.html</anchorfile>
+            <anchor>subscribe</anchor>
+            <arglist>(QObject *receiver, Func1 &amp;&amp;finishCallback, Func2 &amp;&amp;errorCallback, Qt::ConnectionType type)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>subscribe</name>
+            <anchorfile>qgrpccallreply.html</anchorfile>
+            <anchor>subscribe-1</anchor>
+            <arglist>(QObject *receiver, Func1 &amp;&amp;finishCallback, Qt::ConnectionType type)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcChannel</name>
+        <filename>qgrpcchannel.html</filename>
+        <base>QAbstractGrpcChannel</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcChannel</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>QGrpcChannel</anchor>
+            <arglist>(const QGrpcChannelOptions &amp;options, QGrpcChannel::NativeGrpcChannelCredentials credentialsType)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QGrpcStatus</type>
+            <name>call</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>call</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, QByteArray &amp;ret, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcCallReply&gt;</type>
+            <name>call</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>call-1</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcStream&gt;</type>
+            <name>startStream</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>startStream</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView arg, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QGrpcChannel</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>dtor.QGrpcChannel</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QAbstractProtobufSerializer&gt;</type>
+            <name>serializer</name>
+            <anchorfile>qgrpcchannel.html</anchorfile>
+            <anchor>serializer</anchor>
+            <arglist>() const const override</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcChannelOptions</name>
+        <filename>qgrpcchanneloptions.html</filename>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcChannelOptions &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QGrpcChannelOptions &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcChannelOptions &amp;</type>
+            <name>withDeadline</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>withDeadline</anchor>
+            <arglist>(std::chrono::milliseconds deadline)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcChannelOptions &amp;</type>
+            <name>withHost</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>withHost</anchor>
+            <arglist>(const QUrl &amp;host)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcChannelOptions &amp;</type>
+            <name>withMetadata</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>withMetadata</anchor>
+            <arglist>(const QGrpcMetadata &amp;metadata)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcChannelOptions &amp;</type>
+            <name>withSslConfiguration</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>withSslConfiguration</anchor>
+            <arglist>(const QSslConfiguration &amp;sslConfiguration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcChannelOptions</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>QGrpcChannelOptions-1</anchor>
+            <arglist>(const QGrpcChannelOptions &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcChannelOptions</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>QGrpcChannelOptions</anchor>
+            <arglist>(const QUrl &amp;host)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QGrpcChannelOptions</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>dtor.QGrpcChannelOptions</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcMetadata</type>
+            <name>metadata</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>metadata</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrl</type>
+            <name>host</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>host</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;QSslConfiguration&gt;</type>
+            <name>sslConfiguration</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>sslConfiguration</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>std::optional&lt;std::chrono::milliseconds&gt;</type>
+            <name>deadline</name>
+            <anchorfile>qgrpcchanneloptions.html</anchorfile>
+            <anchor>deadline</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcHttp2Channel</name>
+        <filename>qgrpchttp2channel.html</filename>
+        <base>QAbstractGrpcChannel</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcHttp2Channel</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>QGrpcHttp2Channel</anchor>
+            <arglist>(const QGrpcChannelOptions &amp;options)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QGrpcStatus</type>
+            <name>call</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>call</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, QByteArray &amp;ret, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcCallReply&gt;</type>
+            <name>call</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>call-1</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView args, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QGrpcStream&gt;</type>
+            <name>startStream</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>startStream</anchor>
+            <arglist>(QLatin1StringView method, QLatin1StringView service, QByteArrayView arg, const QGrpcCallOptions &amp;options) override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QGrpcHttp2Channel</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>dtor.QGrpcHttp2Channel</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual std::shared_ptr&lt;QAbstractProtobufSerializer&gt;</type>
+            <name>serializer</name>
+            <anchorfile>qgrpchttp2channel.html</anchorfile>
+            <anchor>serializer</anchor>
+            <arglist>() const const override</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcOperation</name>
+        <filename>qgrpcoperation.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>errorOccurred</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>errorOccurred</anchor>
+            <arglist>(const QGrpcStatus &amp;status)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>finished</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>finished</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setData</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>setData-1</anchor>
+            <arglist>(QByteArray &amp;&amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setData</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>setData</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMetadata</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>setMetadata-1</anchor>
+            <arglist>(QGrpcMetadata &amp;&amp;metadata)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setMetadata</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>setMetadata</anchor>
+            <arglist>(const QGrpcMetadata &amp;metadata)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcMetadata</type>
+            <name>metadata</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>metadata</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>T</type>
+            <name>read</name>
+            <anchorfile>qgrpcoperation.html</anchorfile>
+            <anchor>read</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcStatus</name>
+        <filename>qgrpcstatus.html</filename>
+        <member kind="enumeration">
+            <name>StatusCode</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+        </member>
+        <member kind="enumvalue">
+            <name>Ok</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Cancelled</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Unknown</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>InvalidArgument</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DeadlineExceeded</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>NotFound</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>AlreadyExists</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>PermissionDenied</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Unauthenticated</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>ResourceExhausted</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>FailedPrecondition</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Aborted</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>OutOfRange</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Unimplemented</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Internal</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>Unavailable</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enumvalue">
+            <name>DataLoss</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>StatusCode-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcStatus &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-eq-1</anchor>
+            <arglist>(QGrpcStatus &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcStatus &amp;</type>
+            <name>operator=</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-eq</anchor>
+            <arglist>(const QGrpcStatus &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcStatus</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>QGrpcStatus-2</anchor>
+            <arglist>(QGrpcStatus &amp;&amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcStatus</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>QGrpcStatus</anchor>
+            <arglist>(QGrpcStatus::StatusCode code, const QString &amp;message)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QGrpcStatus</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>QGrpcStatus-1</anchor>
+            <arglist>(const QGrpcStatus &amp;other)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-not-eq</anchor>
+            <arglist>(const QGrpcStatus &amp;lhs, QGrpcStatus::StatusCode code)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator!=</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-not-eq-1</anchor>
+            <arglist>(const QGrpcStatus &amp;lhs, const QGrpcStatus &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-eq-eq</anchor>
+            <arglist>(const QGrpcStatus &amp;lhs, QGrpcStatus::StatusCode code)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>bool</type>
+            <name>operator==</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>operator-eq-eq-1</anchor>
+            <arglist>(const QGrpcStatus &amp;lhs, const QGrpcStatus &amp;rhs)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QGrpcStatus</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>dtor.QGrpcStatus</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QGrpcStatus::StatusCode</type>
+            <name>code</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>code-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>message</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>message-prop</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="property" type="StatusCode">
+            <name>code</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>code-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>message</name>
+            <anchorfile>qgrpcstatus.html</anchorfile>
+            <anchor>message-prop</anchor>
+            <arglist></arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QGrpcStream</name>
+        <filename>qgrpcstream.html</filename>
+        <base>QGrpcOperation</base>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>abort</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>abort</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>messageReceived</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>messageReceived</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>updateData</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>updateData</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QGrpcStream</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>dtor.QGrpcStream</anchor>
+            <arglist>() override</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QByteArrayView</type>
+            <name>arg</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>arg</anchor>
+            <arglist>() const const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QLatin1StringView</type>
+            <name>method</name>
+            <anchorfile>qgrpcstream.html</anchorfile>
+            <anchor>method</anchor>
+            <arglist>() const const</arglist>
+        </member>
+    </compound>
+</tagfile>
